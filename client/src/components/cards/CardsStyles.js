@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
     paperNormal: {
-       height: "300px",
+       //height: "300px",
       marginBottom: '1.6rem',
         // borderTop: "8px solid #3f51b5",
         "&:hover": {
@@ -60,7 +60,10 @@ export const useStyles = makeStyles((theme) => ({
         color: 'grey',
         backgroundColor: '#fff',
         paddingLeft: '0.3rem'
-    }
+    },
+    // row: {
+    //     padding: '8px'
+    // }
     // icon: {
 
     // }
