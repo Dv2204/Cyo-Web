@@ -7,10 +7,8 @@ function App() {
   return (
     <div style={{backgroundColor: '#fff'}}>
     <Container fixed>
-    <Grid container>
-      <Grid item lg={3}>
+    <Grid container spacing={4}>
       <Cards />
-      </Grid>
     </Grid>
     </Container>
     </div>
