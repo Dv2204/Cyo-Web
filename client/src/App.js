@@ -8,7 +8,7 @@ function App() {
     <div style={{backgroundColor: '#fff'}}>
     <LandingPage />
     <Container fixed>
-    <Grid container spacing={4}>
+    <Grid container spacing={8} style={{marginTop: '0.2rem'}}>
       <Cards />
     </Grid>
     </Container>
