@@ -5,6 +5,7 @@ import {Grid, Container} from "@material-ui/core";
 
 function App() {
   return (
+    <div style={{backgroundColor: '#fff'}}>
     <Container fixed>
     <Grid container>
       <Grid item lg={3}>
@@ -12,6 +13,7 @@ function App() {
       </Grid>
     </Grid>
     </Container>
+    </div>
   );
 }
 
