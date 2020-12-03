@@ -13,9 +13,61 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 const Cards = () => {
     const classes = useStyles();
+    const GymList = [
+        {
+          name: "Gym 1",
+         location: "Blahhhh 1",
+        },
+        {
+          name: "Gym 2",
+          location: "Blaaahhhhh 2",
+        },
+        {
+          name: "Gym 3",
+          location: "Blahhhhhh 3",
+        },
+        {
+            name: "Gym 4",
+            location: 'Blahhhhhh 4'
+        },
+        {
+            name: "Gym 1",
+           location: "Blahhhh 1",
+          },
+          {
+            name: "Gym 2",
+            location: "Blaaahhhhh 2",
+          },
+          {
+            name: "Gym 3",
+            location: "Blahhhhhh 3",
+          },
+          {
+              name: "Gym 4",
+              location: 'Blahhhhhh 4'
+          },
+          {
+            name: "Gym 1",
+           location: "Blahhhh 1",
+          },
+          {
+            name: "Gym 2",
+            location: "Blaaahhhhh 2",
+          },
+          {
+            name: "Gym 3",
+            location: "Blahhhhhh 3",
+          },
+          {
+            name: "Gym 4",
+            location: 'Blahhhhhh 4'
+        },
+      ];
     return(
         <>
-        <Paper elevation={3}>
+        {GymList.map((item, index) => (
+            <Grid item lg={3}>
+            <Paper elevation={3} className={classes.paperNormal}>
         <Container fixed>
             <Grid container >
             <Grid item lg={10}>
@@ -24,16 +76,17 @@ const Cards = () => {
                 <Avatar src={head} alt="Profile" className={classes.small}/ >
                 </Grid>
                 <Grid item lg={10}>
-                <Typography variant="h6" className={classes.title}>  Sasta Gym </Typography>
+                <Typography variant="h6" className={classes.title}>  {item.name} </Typography>
                 </Grid>
             </Grid>
                <Grid container>
-                   <Grid item lg={2}>
+                   <Grid item lg={3}>
                    <Typography className={classes.rating}>4.3
+                    <StarIcon className={classes.ratingIcon}/>
                     <StarIcon className={classes.ratingIcon}/>
                    </Typography>
                    </Grid>
-                   <Grid item lg={10}>
+                   <Grid item lg={9}>
                    <Typography className={classes.count}>2.3k people</Typography>
                    </Grid>
                </Grid>
@@ -53,7 +106,7 @@ const Cards = () => {
                     <Grid item lg={12}>
                         <Typography variant="caption" className={classes.location}>
                         <LocationOnOutlinedIcon fontSize="small" />
-                            blah blah blah, blah city, india
+                            {item.location}
                         </Typography>
                     </Grid>
                 </Grid>
@@ -82,6 +135,8 @@ const Cards = () => {
                 </Grid>
             </Container>
         </Paper>
+        </Grid>
+        ))}
         </>
     )
 }
