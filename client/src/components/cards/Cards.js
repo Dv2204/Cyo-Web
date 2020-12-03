@@ -66,52 +66,51 @@ const Cards = () => {
     return(
         <>
         {GymList.map((item, index) => (
-            <Grid item lg={3}>
+            <Grid item lg={4} md={4}>
             <Paper elevation={3} className={classes.paperNormal}>
-        <Container fixed>
-            <Grid container >
-            <Grid item lg={10}>
             <Grid container>
-                <Grid item lg={2} >
+            <Grid item lg={12} md={12} >
+                <Grid container  className={classes.row}>
+                <Grid item lg={10} md={10} >
+            <Grid container>
+                <Grid item lg={2} md={2} >
                 <Avatar src={head} alt="Profile" className={classes.small}/ >
                 </Grid>
-                <Grid item lg={10}>
+                <Grid item lg={10} md={10}>
                 <Typography variant="h6" className={classes.title}>  {item.name} </Typography>
                 </Grid>
             </Grid>
                <Grid container>
-                   <Grid item lg={3}>
+                   <Grid item lg={2} md={2}>
                    <Typography className={classes.rating}>4.3
-                    <StarIcon className={classes.ratingIcon}/>
                     <StarIcon className={classes.ratingIcon}/>
                    </Typography>
                    </Grid>
-                   <Grid item lg={9}>
+                   <Grid item lg={10} md={10}>
                    <Typography className={classes.count}>2.3k people</Typography>
                    </Grid>
                </Grid>
               </Grid>
-              <Grid item lg={2}>
+              <Grid item lg={2} md={2}>
                   <BeenhereOutlinedIcon style={{color: '#11C62E', float: 'right'}}/>
               </Grid> 
+                </Grid>
             </Grid>
-            </Container>
             <Grid container justify="center" spacing={0}>
-                <Grid item lg={12}>
+                <Grid item lg={12} md={12}>
                   <Avatar src={pic} alt="Profile" variant="square" style={{width: '100%', height: '20vh'}} />
                 </Grid>
             </Grid>
-            <Container fixed>
-                <Grid container>
-                    <Grid item lg={12}>
+                <Grid container className={classes.row}>
+                    <Grid item lg={12} md={12}>
                         <Typography variant="caption" className={classes.location}>
                         <LocationOnOutlinedIcon fontSize="small" />
                             {item.location}
                         </Typography>
                     </Grid>
                 </Grid>
-                <Grid container>
-                    <Grid item lg={12}>
+                <Grid container  className={classes.row}>
+                    <Grid item lg={12} md={12}>
                         <Typography variant="body2" className={classes.body} >
                         Lorem ipsum dolor sit amet,
                          consectetur adipiscing elit.Faucibus auctor eu platea 
@@ -119,21 +118,18 @@ const Cards = () => {
                         </Typography>
                     </Grid>
                 </Grid>
-                <Grid container>
-                    <Grid item lg={10}>
+                <Grid container className={classes.row}>
+                    <Grid item lg={10} md={10}>
                         <Typography variant="body2" className={classes.details}>
                             View Details
                             <ShareIcon style={{fontSize: '19px', marginLeft: '1rem', paddingTop: '0.2rem'}}  />
                         </Typography>
                     </Grid>
-                    {/* <Grid item lg={2} style={{borderRadius: '50%', backgroundColor: '#E93E7F'}}>
-                    <LocationOnOutlinedIcon className={classes.locationicon} />
-                    </Grid> */}
-                    <Grid item lg={2}>
+                    <Grid item lg={2} md={2}>
                             <LocationOnIcon fontSize="large" style={{color: '#E93E7F'}} />
                     </Grid>
                 </Grid>
-            </Container>
+            </Grid>
         </Paper>
         </Grid>
         ))}
