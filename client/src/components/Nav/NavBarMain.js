@@ -7,7 +7,7 @@ import '../Nav/navbar.css';
 const NavBar = ({toggle}) => {
     return (
         <>
-            <Nav>
+            <Nav style={{marginTop: '1rem', position: 'relative'}}>
                 <MobileIcons onClick={toggle}>
                     <Bars />
                 </MobileIcons>

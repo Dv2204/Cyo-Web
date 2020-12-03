@@ -67,20 +67,18 @@ const Cards = () => {
         <>
         {GymList.map((item, index) => (
             <Grid item lg={4} md={4}>
-            <Paper elevation={3} className={classes.paperNormal}>
+            <Paper elevation={4} className={classes.paperNormal}>
             <Grid container>
             <Grid item lg={12} md={12} >
                 <Grid container  className={classes.row}>
                 <Grid item lg={10} md={10} >
-            <Grid container>
+            <Grid container className={classes.top}>
                 <Grid item lg={2} md={2} >
                 <Avatar src={head} alt="Profile" className={classes.small}/ >
                 </Grid>
                 <Grid item lg={10} md={10}>
                 <Typography variant="h6" className={classes.title}>  {item.name} </Typography>
-                </Grid>
-            </Grid>
-               <Grid container>
+                <Grid container>
                    <Grid item lg={2} md={2}>
                    <Typography className={classes.rating}>4.3
                     <StarIcon className={classes.ratingIcon}/>
@@ -90,9 +88,12 @@ const Cards = () => {
                    <Typography className={classes.count}>2.3k people</Typography>
                    </Grid>
                </Grid>
+                </Grid>
+            </Grid>
+             
               </Grid>
               <Grid item lg={2} md={2}>
-                  <BeenhereOutlinedIcon style={{color: '#11C62E', float: 'right'}}/>
+                  <BeenhereOutlinedIcon fontSize="small" style={{color: '#11C62E', float: 'right'}}/>
               </Grid> 
                 </Grid>
             </Grid>
@@ -122,7 +123,7 @@ const Cards = () => {
                     <Grid item lg={10} md={10}>
                         <Typography variant="body2" className={classes.details}>
                             View Details
-                            <ShareIcon style={{fontSize: '19px', marginLeft: '1rem', paddingTop: '0.2rem'}}  />
+                            <ShareIcon style={{fontSize: '25px', marginLeft: '1rem'}}  />
                         </Typography>
                     </Grid>
                     <Grid item lg={2} md={2}>

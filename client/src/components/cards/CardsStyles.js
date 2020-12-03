@@ -3,36 +3,38 @@ import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme) => ({
     paperNormal: {
        //height: "300px",
-      marginBottom: '1.6rem',
+      marginBottom: '0.5rem',
         // borderTop: "8px solid #3f51b5",
         "&:hover": {
           transition: "all 0.2s ease-out",
-          boxShadow: "0px 10px 12px rgba(38, 38, 38, 0.4)",
+          boxShadow: "0px 10px 12px rgba(38, 38, 38, 0.5)",
          bottom: '-1rem',
           border: "1.4px solid #cccccc",
           cursor: 'pointer'
         },
       },
+      top:{
+          paddingTop: '0.2rem',
+      },
     location: {
         fontSize: '11px',
         color: 'grey',
+        padding: '10px'
     },
     title: {
-        paddingTop: '0.4rem',
+        //paddingTop: '0.4rem',
        fontWeight: 'bold',
        
     },
     body:{
-        fontSize: '12px'
-    },
-    details: {
-        fontSize: '14px',
-        color: 'grey',
-        padding: '5px',
+        fontSize: '12px',
+        paddingLeft: '19px',
+        paddingRight: '19px'
     },
     small: {
-        width: theme.spacing(4),
-        height: theme.spacing(4),
+        width: theme.spacing(5),
+        height: theme.spacing(5),
+        paddingLeft: '10px'
       },
     // locationicon: {
     //     alignSelf: 'center',
@@ -60,6 +62,11 @@ export const useStyles = makeStyles((theme) => ({
         color: 'grey',
         backgroundColor: '#fff',
         paddingLeft: '0.3rem'
+    },
+    details: {
+        fontSize: '15px',
+        color: 'grey',
+        padding: '10px',
     },
     // row: {
     //     padding: '8px'
