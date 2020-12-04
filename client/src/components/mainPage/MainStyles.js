@@ -12,11 +12,11 @@ export const useStyles = makeStyles((theme) => ({
       //  height: theme.spacing(70),
       height: '100vh',
       width: '20vw',
-       paddingTop: '3.5rem'
+       paddingTop: '3.2rem'
     },
     paper:{
         backgroundColor: 'rgba(255, 255, 255, 0.13)',
-        marginTop: '6rem',
+        marginTop: '6.2rem',
         height: '65vh',
         borderRadius: '6%'
     },
