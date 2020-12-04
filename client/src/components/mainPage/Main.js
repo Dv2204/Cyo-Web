@@ -14,8 +14,8 @@ const Main = () => {
                <Grid item lg={8} md={8}>
                     Left
                </Grid>
-               <Grid item lg={4} md={4}>
-                    Right
+               <Grid item lg={4} md={4} >
+               <Avatar src={main} alt="Profile" className={classes.image} / >
                </Grid>
            </Grid>          
         </Grid>
