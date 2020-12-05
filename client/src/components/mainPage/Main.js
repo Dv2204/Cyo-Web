@@ -2,7 +2,7 @@ import React from 'react';
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import { Avatar, Typography, Chip} from '@material-ui/core';
-import mainimage from "../../assets/mainimage.png";
+import mainimage from "../../assets/newMain.png";
 import { useStyles } from "./MainStyles";
 
 const Main = () => {
@@ -27,7 +27,7 @@ const Main = () => {
                </Grid>
                </Grid>
                <Grid item lg={4} md={4} >
-               <Avatar src={mainimage} alt="Profile" className={classes.image} / >
+               <Avatar src={mainimage} alt="Profile" variant={"square"} className={classes.image} / >
                </Grid>
            </Grid>          
         </Grid>

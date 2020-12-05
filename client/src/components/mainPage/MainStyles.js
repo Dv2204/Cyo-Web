@@ -11,7 +11,7 @@ export const useStyles = makeStyles((theme) => ({
        // width: theme.spacing(40),
       //  height: theme.spacing(70),
       height: '100vh',
-      width: '20vw',
+      width: '30vw',
        paddingTop: '3.1rem'
     },
     paper:{

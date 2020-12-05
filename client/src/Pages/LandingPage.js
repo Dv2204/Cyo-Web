@@ -17,11 +17,11 @@ const LandingPage = () => {
         return (
             <div>
                 <Router>
-                <Sidebar isOpen={isOpen} toggle={toggle} />
-                <NavBar toggle={toggle} />
+                <Sidebar isOpen={isOpen} toggle={toggle}/>
+                <NavBar toggle={toggle}/>
                 <Switch>
                 <Route exact path="/pages/gyms" component={Gym} />
-                <Route exact path="/pages/products" component={Products} />
+                <Route exact path="/pages/products" component={Products}/>
                 <Route exact path="/pages/compare" component={Compare} />
                 <Route exact path="/pages/guide" component={Guide} />
                 <Route exact path="/pages/about" component={About} />

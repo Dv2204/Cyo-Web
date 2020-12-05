@@ -7,7 +7,6 @@ export const Nav = styled.nav`
     background : #000;
     height: 6vh;
    ${'' /* width: 100vw; */}
-    dipsplay: flex;
     position: fixed;
     z-index: 2;
     padding: 1vh 2vw;
