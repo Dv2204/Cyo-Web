@@ -4,7 +4,7 @@ export const useStyles = makeStyles((theme) => ({
     row:{
        background: 'linear-gradient(to right bottom, #FED469, #ED0891)',
        // height: '100vh',
-        width: '100%',
+        width: '100vw',
         overflowX: 'hidden'
     },
     image: {
