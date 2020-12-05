@@ -1,8 +1,8 @@
 import React from 'react';
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import { Avatar, Typography, Container, Button} from '@material-ui/core';
-import main1 from "../../assets/main1.png";
+import { Avatar, Typography, Chip} from '@material-ui/core';
+import mainimage from "../../assets/mainimage.png";
 import { useStyles } from "./MainStyles";
 
 const Main = () => {
@@ -21,13 +21,13 @@ const Main = () => {
                         Feed your <br/>
                         Focus
                        </Typography>
-                       <Button className={classes.btn}>Get the App</Button>
+                      <Chip className={classes.btn} label="Get the App!"></Chip>
                        </Paper>
                    </Grid>
                </Grid>
                </Grid>
                <Grid item lg={4} md={4} >
-               <Avatar src={main1} alt="Profile" className={classes.image} / >
+               <Avatar src={mainimage} alt="Profile" className={classes.image} / >
                </Grid>
            </Grid>          
         </Grid>
