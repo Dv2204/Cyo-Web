@@ -3,6 +3,7 @@ import Cards from './components/cards/Cards';
 import {Grid, Container} from "@material-ui/core";
 import LandingPage from './Pages/LandingPage';
 import Main from './components/mainPage/Main';
+import Carousel from './components/carousel/Carousel';
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
     <LandingPage />
     <Grid container>
       <Main />
+    </Grid>
+    <Grid container>
+      <Carousel/>
     </Grid>
     <Container fixed>
     <Grid container spacing={8} style={{marginTop: '0.2rem'}}>
