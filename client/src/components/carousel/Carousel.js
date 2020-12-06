@@ -2,6 +2,7 @@ import React from 'react';
 import Grid from "@material-ui/core/Grid";
 import { Avatar, Typography, Chip} from '@material-ui/core';
 import { useStyles } from "./CarouselStyles";
+import Search from '../search/Search';
 //import CarouselComp from './CarouselComp';
 
 const Carousel = () => {
@@ -13,6 +14,11 @@ const Carousel = () => {
                     <Typography variant="h2" className={classes.text} justify="center">
                         TRENDING GYMS
                     </Typography>
+                </Grid>
+            </Grid>
+            <Grid container md={12} lg={12} justify="center">
+                <Grid item lg={7} md={7} justify="center">
+                    <Search/>
                 </Grid>
             </Grid>
                     {/* <CarouselComp /> */}
