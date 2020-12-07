@@ -10,7 +10,7 @@ import BeenhereOutlinedIcon from '@material-ui/icons/BeenhereOutlined';
 import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined';
 import StarIcon from '@material-ui/icons/Star';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
-import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
+
 
 const Cards = () => {
     const classes = useStyles();
@@ -135,11 +135,6 @@ const Cards = () => {
         </Paper>
         </Grid>
         ))}
-        <Grid container lg={12} md={12} justify="center">
-        <Grid item lg={2} md={2} >
-            <Typography className={classes.text}>View More  <DoubleArrowIcon /></Typography>
-        </Grid>
-        </Grid>
         </>
     )
 }
