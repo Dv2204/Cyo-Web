@@ -68,6 +68,19 @@ export const useStyles = makeStyles((theme) => ({
         color: 'grey',
         padding: '10px',
     },
+    text: {
+        fontSize: '1.7rem',
+        fontWeight: 'normal',
+        color: 'rgba(0, 0, 0, 0.33)',
+        "&:hover":{
+            cursor: 'pointer',
+            fontSize:'1.75rem'
+        }
+    },
+    // arrowIcon: {
+    //    // fontSize: '2rem',
+    //     color: 'rgba(0, 0, 0, 0.33)',
+    // }
     // row: {
     //     padding: '8px'
     // }
