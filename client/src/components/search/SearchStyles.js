@@ -6,21 +6,25 @@ export const useStyles = makeStyles((theme) => ({
         marginTop: '1rem',
     },
    select: {
-       marginLeft: '-0.5rem'
+       marginLeft: '-0.5rem',
+       color: ' rgba(0, 0, 0, 0.48)'
    },
      root: {
       padding: '2px 4px',
       display: 'flex',
       alignItems: 'center',
-      width: 400,
-      marginLeft: '1rem'
+      //width: 400,
+      marginLeft: '1rem',
+    //  borderRadius: '10%'
     },
     input: {
       marginLeft: theme.spacing(1),
       flex: 1,
+      color: 'rgba(0, 0, 0, 0.98)'
     },
     iconButton: {
       padding: 10,
+      color: 'rgba(0, 0, 0, 1)',
     },
     divider: {
       height: 28,

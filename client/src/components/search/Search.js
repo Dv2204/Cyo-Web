@@ -38,7 +38,7 @@ const Search = () => {
                               />
                         </Grid>
                         <Grid lg={8} md={8}>
-                             <Paper component="form" className={classes.root}>
+                             <Paper component="form" className={classes.root} elevation={2}>
                               <InputBase
                                 className={classes.input}
                                 placeholder="Search"
