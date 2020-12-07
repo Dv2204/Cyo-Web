@@ -5,6 +5,9 @@ import { useStyles } from "./SearchStyles";
 import PinDropIcon from '@material-ui/icons/PinDrop';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
+import InputBase from '@material-ui/core/InputBase';
+import IconButton from '@material-ui/core/IconButton';
+import SearchIcon from '@material-ui/icons/Search';
 
 
 const Search = () => {
@@ -19,13 +22,14 @@ const Search = () => {
   const [value, setValue] = React.useState(null);
 
     return(
-         <Paper justify="center" classsName={classes.paper}>
+        //  <Paper justify="center" classsName={classes.paper}>
                     <Grid container lg={12} md={12}>
                        <Grid item lg={1} md={1} >
                        <PinDropIcon fontSize='large' className={classes.icon} />
                         </Grid>
-                        <Grid item lg={4} md={4}>
+                        <Grid item lg={3} md={3}>
                              <Autocomplete
+                             className={classes.select}
                                 {...defaultProps}
                                 id="auto-complete"
                                 autoComplete
@@ -33,8 +37,20 @@ const Search = () => {
                                 renderInput={(params) => <TextField {...params} label="Your Location" style={{margin: 'auto'}} />}
                               />
                         </Grid>
+                        <Grid lg={8} md={8}>
+                             <Paper component="form" className={classes.root}>
+                              <InputBase
+                                className={classes.input}
+                                placeholder="Search"
+                                inputProps={{ 'aria-label': 'Search' }}
+                              />
+                              <IconButton type="submit" className={classes.iconButton} aria-label="search">
+                                <SearchIcon />
+                              </IconButton>
+                            </Paper>
+                        </Grid>
                     </Grid>
-                    </Paper>          
+                    // </Paper>          
     )
 }
 

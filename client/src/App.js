@@ -7,7 +7,7 @@ import Carousel from './components/carousel/Carousel';
 
 function App() {
   return (
-    <div style={{backgroundColor: '#fff'}}>
+    <div style={{backgroundColor: 'rgba(248, 248, 248, 1)'}}>
     <LandingPage />
     <Grid container>
       <Main />
