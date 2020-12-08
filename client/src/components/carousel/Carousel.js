@@ -1,8 +1,9 @@
 import React from 'react';
-import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import { Avatar, Typography, Chip} from '@material-ui/core';
 import { useStyles } from "./CarouselStyles";
+import Search from '../search/Search';
+//import CarouselComp from './CarouselComp';
 
 const Carousel = () => {
     const classes = useStyles();
@@ -15,7 +16,13 @@ const Carousel = () => {
                     </Typography>
                 </Grid>
             </Grid>
-        </Grid>
+            <Grid container md={12} lg={12} justify="center">
+                <Grid item lg={7} md={7} justify="center">
+                    <Search/>
+                </Grid>
+            </Grid>
+                    {/* <CarouselComp /> */}
+            </Grid>
     )
 }
 

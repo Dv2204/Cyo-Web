@@ -11,6 +11,7 @@ import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined';
 import StarIcon from '@material-ui/icons/Star';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
+
 const Cards = () => {
     const classes = useStyles();
     const GymList = [
