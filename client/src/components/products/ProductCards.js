@@ -16,6 +16,9 @@ const ProductCards = () => {
            <Typography variant="h6" className={classes.text}>
                6780 only
            </Typography>
+           <Typography variant="caption" className={classes.text} >
+               MRP: 8000
+           </Typography>
         </Grid>
     )
 }
