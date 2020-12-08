@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from "@material-ui/core/Grid";
-import { Avatar, Typography, Chip, Paper} from '@material-ui/core';
+import { Paper} from '@material-ui/core';
 import { useStyles } from "./SearchStyles";
 import PinDropIcon from '@material-ui/icons/PinDrop';
 import TextField from '@material-ui/core/TextField';

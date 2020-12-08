@@ -1,6 +1,7 @@
 import React from 'react';
 import { Avatar, Typography,Paper,Grid, Container} from '@material-ui/core';
 import { useStyles } from "./ProductsStyles";
+import ProductCards from './ProductCards';
 
 const Products = () => {
     const classes = useStyles();
@@ -13,6 +14,15 @@ const Products = () => {
                     </Typography>
                 </Grid>
             </Grid>
+            <Container fixed>
+            <Grid container lg={12} md={12} >
+                <ProductCards />
+                <ProductCards />
+                <ProductCards />
+                <ProductCards />
+                <ProductCards />
+            </Grid>
+            </Container>
             </Grid>
         
     )
