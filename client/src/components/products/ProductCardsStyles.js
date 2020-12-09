@@ -6,7 +6,11 @@ export const useStyles = makeStyles((theme) => ({
         backgroundColor: 'rgba(251, 217, 203, 1)',
         height: '38vh',
        // padding: '5rem',
-       marginTop: '6rem'
+       marginTop: '6rem',
+       borderRadius: '13px',
+    //    top: '-9%',
+    //    right:'-9%',
+       //borderTopRightRadius: '20%'
     },
     text:{
         color: '#FFF',

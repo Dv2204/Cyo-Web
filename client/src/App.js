@@ -5,6 +5,7 @@ import LandingPage from './Pages/LandingPage';
 import Main from './components/mainPage/Main';
 import Carousel from './components/carousel/Carousel';
 import Products from './components/products/Products';
+import ViewMoreProducts from './components/products/ViewMoreProducts';
 import ViewMore from './components/more/More';
 
 function App() {
@@ -23,9 +24,11 @@ function App() {
     </Grid>
     <ViewMore/>
     </Container>
-    <Grid container style={{marginTop: '8rem'}}>
+    <Grid container style={{marginTop: '8rem', backgroundColor: '#3F3F3F'}}>
      <Products/>
+     <ViewMoreProducts />
      </Grid>
+     
     </div>
   );
 }
