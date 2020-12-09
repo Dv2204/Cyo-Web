@@ -17,10 +17,6 @@ const Products = () => {
             <Container fixed>
             <Grid container lg={12} md={12} >
                 <ProductCards />
-                <ProductCards />
-                <ProductCards />
-                <ProductCards />
-                <ProductCards />
             </Grid>
             </Container>
             </Grid>
