@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid , Typography, Avatar, Paper} from "@material-ui/core";
+import {Grid , Typography, Avatar, Paper, Chip} from "@material-ui/core";
 import { useStyles } from "./ConnectWithUsStyles";
 import mobile from "../../assets/mobile.png";
 // import bottom from "../../assets/bottom.png";
@@ -14,9 +14,16 @@ const ConnectWithUs = () => {
                     <Grid container justify="center">
                         <Grid item lg={8} md={8}>
                             <Paper elevation={0} className={classes.paper}>
-                            <Typography variant="h3" className={classes.heading}>
-                            CONNECT WITH US
-                            </Typography>
+                            <Grid container>
+                                <Grid item lg={1} md={1}>
+                                <Paper elevation={0} className={classes.vertical}></Paper>
+                                </Grid>
+                                <Grid item lg={11} md={11}>
+                                <Typography variant="h3" className={classes.heading}>
+                           CONNECT WITH US
+                           </Typography>
+                                </Grid>
+                            </Grid>
                                 <Typography variant="body1" className={classes.body}>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Dui ultricies accumsan et viverra. Arcu auctor maecenas 
@@ -31,6 +38,7 @@ const ConnectWithUs = () => {
                                    Libero tempus phasellus fames nisl in vestibulum. Aenean euismod
                                     tortor fames odio amet interdum quam et, ornare.
                                 </Typography>
+                                <Chip className={classes.btn} label="Get the App!"></Chip>
                             </Paper>
                         </Grid>
                     </Grid>
