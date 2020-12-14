@@ -62,7 +62,7 @@ const ProductCards = () => {
                {item.current} only
            </Typography>
            <Typography variant="caption" className={classes.mrp} >
-               MRP: {item.mrp}
+               MRP: <span style={{textDecoration: 'line-through'}}> {item.mrp}</span>
            </Typography>
             </Grid>
         </Grid>
