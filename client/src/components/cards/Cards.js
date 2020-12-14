@@ -1,7 +1,7 @@
 import React from 'react';
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import { Avatar, Typography, Container} from '@material-ui/core';
+import { Avatar, Typography} from '@material-ui/core';
 import pic from "../../assets/1.jpg";
 import head from "../../assets/2.PNG";
 import { useStyles } from "./CardsStyles";
