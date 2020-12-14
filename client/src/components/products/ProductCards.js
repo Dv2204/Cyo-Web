@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, Typography,Paper,Grid, Container} from '@material-ui/core';
+import { Typography,Paper,Grid} from '@material-ui/core';
 import { useStyles } from "./ProductCardsStyles";
 import { HiOutlineCurrencyRupee } from "react-icons/hi";
 
@@ -62,7 +62,7 @@ const ProductCards = () => {
                {item.current} only
            </Typography>
            <Typography variant="caption" className={classes.mrp} >
-               MRP: {item.mrp}
+               MRP: <HiOutlineCurrencyRupee/> <span style={{textDecoration: 'line-through'}}> {item.mrp}</span>
            </Typography>
             </Grid>
         </Grid>

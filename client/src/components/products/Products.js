@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, Typography,Paper,Grid, Container} from '@material-ui/core';
+import { Typography,Grid, Container} from '@material-ui/core';
 import { useStyles } from "./ProductsStyles";
 import ProductCards from './ProductCards';
 

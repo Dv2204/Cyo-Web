@@ -2,7 +2,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
     text: {
-        textAlign: 'center',
         paddingTop: '8rem',
         paddingBottom: '4rem',
         fontWeight: 'bold',

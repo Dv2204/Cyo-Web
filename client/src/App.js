@@ -7,6 +7,7 @@ import Carousel from './components/carousel/Carousel';
 import Products from './components/products/Products';
 import ViewMoreProducts from './components/products/ViewMoreProducts';
 import ViewMore from './components/more/More';
+import ConnectWithUs from './components/connect/ConnectWithUs';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
     <Grid container style={{marginTop: '8rem', backgroundColor: '#3F3F3F'}}>
      <Products/>
      <ViewMoreProducts />
+     </Grid>
+     <Grid container>
+       <ConnectWithUs />
      </Grid>
      
     </div>

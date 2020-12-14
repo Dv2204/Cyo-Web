@@ -6,6 +6,7 @@ export const useStyles = makeStyles((theme) => ({
         fontSize: '1.7rem',
         fontWeight: 'normal',
         color: 'rgba(255, 255, 255, 0.55)',
+        marginBottom: '5rem',
         "&:hover":{
             cursor: 'pointer',
             fontSize:'1.75rem'
