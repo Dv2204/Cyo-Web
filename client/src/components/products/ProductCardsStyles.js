@@ -11,6 +11,13 @@ export const useStyles = makeStyles((theme) => ({
     //    top: '-9%',
     //    right:'-9%',
        //borderTopRightRadius: '20%'
+       "&:hover":{
+        transition: "all 0.2s ease-out",
+        boxShadow: "0px 10px 12px rgba(38, 38, 38, 0.7)",
+       bottom: '-1rem',
+        border: "1.4px solid #cccccc",
+        cursor: 'pointer'
+       }
     },
     text:{
         color: '#FFF',
