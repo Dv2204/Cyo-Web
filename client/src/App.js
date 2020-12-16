@@ -1,40 +1,22 @@
-import React from 'react';
-import Cards from './components/cards/Cards';
-import {Grid, Container} from "@material-ui/core";
-import LandingPage from './Pages/LandingPage';
-import Main from './components/mainPage/Main';
-import Carousel from './components/carousel/Carousel';
-import Products from './components/products/Products';
-import ViewMoreProducts from './components/products/ViewMoreProducts';
-import ViewMore from './components/more/More';
-import ConnectWithUs from './components/connect/ConnectWithUs';
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from "./routes/Routes";
+import history from "./services/History";
+import configureStore from "./redux/store";
+import { ConnectedRouter } from 'connected-react-router'
+import { Provider } from "react-redux";
 
-function App() {
+// const store = configureStore(history)
+const App = () => {
   return (
-    <div style={{backgroundColor: 'rgba(248, 248, 248, 1)'}}>
-    <LandingPage />
-    <Grid container>
-      <Main />
-    </Grid>
-    <Grid container>
-      <Carousel/>
-    </Grid>
-    <Container fixed>
-    <Grid container spacing={8} style={{marginTop: '0.2rem'}}>
-      <Cards />
-    </Grid>
-    <ViewMore/>
-    </Container>
-    <Grid container style={{marginTop: '8rem', backgroundColor: '#3F3F3F'}}>
-     <Products/>
-     <ViewMoreProducts />
-     </Grid>
-     <Grid container>
-       <ConnectWithUs />
-     </Grid>
-     
-    </div>
+    // <Provider store={store}>
+    <div className="App">
+    {/* <ConnectedRouter history={history}> */}
+        <Routes/>
+      {/* </ConnectedRouter> */}
+      </div>
+   // </Provider>
   );
-}
+};
 
 export default App;

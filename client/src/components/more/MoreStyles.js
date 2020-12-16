@@ -5,10 +5,11 @@ export const useStyles = makeStyles((theme) => ({
  text: {
         fontSize: '1.7rem',
         fontWeight: 'normal',
+        textDecoration: 'none',
         color: 'rgba(0, 0, 0, 0.33)',
         "&:hover":{
             cursor: 'pointer',
-            fontSize:'1.75rem'
+            // fontSize:'1.75rem'
         }
     },
 
