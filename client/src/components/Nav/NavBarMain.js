@@ -26,9 +26,9 @@ const NavBar = ({toggle}) => {
                             Gyms
                         </NavLink></Link>
                         <Dot />
-                        <NavLink to="/pages/products" activeStyle>
+                        <Link to="products" smooth={true} duration={2000}><NavLink activeStyle>
                             Products
-                        </NavLink>
+                        </NavLink></Link>
                         <Dot />
                         <NavLink to="/pages/compare" activeStyle>
                             Compare
