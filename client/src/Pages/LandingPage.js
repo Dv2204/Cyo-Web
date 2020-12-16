@@ -1,34 +1,41 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Cards from '../components/cards/Cards';
+import {Grid, Container} from "@material-ui/core";
+import Main from '../components/mainPage/Main';
+import Carousel from '../components/carousel/Carousel';
+import Products from '../components/products/Products';
+import ViewMoreProducts from '../components/products/ViewMoreProducts';
+import ViewMore from '../components/more/More';
+import ConnectWithUs from '../components/connect/ConnectWithUs';
 import NavBar from '../components/Nav/NavBarMain';
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import Gym from './Gyms';
-import Products from './Products';
-import Guide from './Guide';
-import Compare from './Compare';
-import About from './About';
-import Sidebar from '../components/Sidebar/Sidebar';
 
 const LandingPage = () => {
-    const[isOpen, setIsOpen] = useState(false)
-
-    const toggle =() => {
-        setIsOpen(!isOpen)
-    }
-        return (
-            <div>
-                <Router>
-                <Sidebar isOpen={isOpen} toggle={toggle}/>
-                <NavBar toggle={toggle}/>
-                <Switch>
-                <Route exact path="/pages/gyms" component={Gym} />
-                <Route exact path="/pages/products" component={Products}/>
-                <Route exact path="/pages/compare" component={Compare} />
-                <Route exact path="/pages/guide" component={Guide} />
-                <Route exact path="/pages/about" component={About} />
-                </Switch> 
-                </Router> 
-            </div>
-        )
+            return (
+                <div style={{backgroundColor: 'rgba(248, 248, 248, 1)'}}>
+                {/* <LandingPage /> */}
+                <NavBar/>
+                <Grid container>
+                  <Main />
+                </Grid>
+                <Grid container>
+                  <Carousel/>
+                </Grid>
+                <Container fixed>
+                <Grid container spacing={8} style={{marginTop: '0.2rem'}}>
+                  <Cards />
+                </Grid>
+                <ViewMore/>
+                </Container>
+                <Grid container style={{marginTop: '8rem', backgroundColor: '#3F3F3F'}}>
+                 <Products/>
+                 <ViewMoreProducts />
+                 </Grid>
+                 <Grid container>
+                   <ConnectWithUs />
+                 </Grid>
+                 
+                </div>
+              );
 }
 
 export default LandingPage;
