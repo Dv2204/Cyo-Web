@@ -3,6 +3,7 @@ import React from 'react';
 import {Nav, Bars, NavMenu, NavLink, NavDiv, Dot, NavLogo, MobileIcons} from './NavItems';
 import Logo from '../../assets/logo-white.png';
 import '../Nav/navbar.css';
+import {Link} from 'react-scroll'
 
 const NavBar = ({toggle}) => {
     return (
@@ -18,13 +19,16 @@ const NavBar = ({toggle}) => {
                         <h2 className="LogoName">Choose Your Option</h2>
                     </NavLogo>
                     <NavMenu>
-                        <NavLink to="/pages/gyms" activeStyle>
+                        {/* <NavLink activeStyle>
                             Gyms
-                        </NavLink>
+                        </NavLink> */}
+                        <Link to="gym" smooth={true} duration={1000}><NavLink activeStyle>
+                            Gyms
+                        </NavLink></Link>
                         <Dot />
-                        <NavLink to="/pages/products" activeStyle>
+                        <Link to="products" smooth={true} duration={2000}><NavLink activeStyle>
                             Products
-                        </NavLink>
+                        </NavLink></Link>
                         <Dot />
                         <NavLink to="/pages/compare" activeStyle>
                             Compare
