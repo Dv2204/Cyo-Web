@@ -8,7 +8,7 @@ const ViewMore = () => {
     return(
          <Grid container lg={12} md={12} justify="center" style={{marginTop: '2rem'}}>
         <Grid item lg={2} md={2} >
-            <Typography className={classes.text}>View More <DoubleArrowIcon/> </Typography>
+            <Typography ><Link to="/gyms" className={classes.text}>View More <DoubleArrowIcon/></Link> </Typography>
         </Grid>
         </Grid>
     )
