@@ -8,34 +8,38 @@ import ViewMoreProducts from '../components/products/ViewMoreProducts';
 import ViewMore from '../components/more/More';
 import ConnectWithUs from '../components/connect/ConnectWithUs';
 import NavBar from '../components/Nav/NavBarMain';
+import Contact from '../components/connect-us/Contact';
 
 const LandingPage = () => {
-            return (
-                <div style={{backgroundColor: 'rgba(248, 248, 248, 1)'}}>
-                {/* <LandingPage /> */}
-                <NavBar/>
-                <Grid container>
-                  <Main />
-                </Grid>
-                <Grid container>
-                  <Carousel/>
-                </Grid>
-                <Container fixed>
-                <Grid container spacing={8} style={{marginTop: '0.2rem'}}>
-                  <Cards />
-                </Grid>
-                <ViewMore/>
-                </Container>
-                <Grid container style={{marginTop: '8rem', backgroundColor: '#3F3F3F'}}>
-                 <Products/>
-                 <ViewMoreProducts />
-                 </Grid>
-                 <Grid container>
-                   <ConnectWithUs />
-                 </Grid>
-                 
-                </div>
-              );
+    return (
+        <div style={{backgroundColor: 'rgba(248, 248, 248, 1)'}}>
+        {/* <LandingPage /> */}
+        <NavBar/>
+        <Grid container>
+          <Main />
+        </Grid>
+        <Grid container>
+          <Carousel/>
+        </Grid>
+        <Container fixed>
+        <Grid container spacing={8} style={{marginTop: '0.2rem'}}>
+          <Cards />
+        </Grid>
+        <ViewMore/>
+        </Container>
+        <Grid container style={{marginTop: '8rem', backgroundColor: '#3F3F3F'}}>
+          <Products/>
+          <ViewMoreProducts />
+          </Grid>
+          <Grid container>
+            <ConnectWithUs />
+          </Grid>
+          <Grid container>
+            <Contact />
+          </Grid>
+          
+        </div>
+      );
 }
 
 export default LandingPage;

@@ -1,8 +1,8 @@
 import React from 'react';
 import {Grid , Typography, Avatar, Paper, Chip} from "@material-ui/core";
 import { useStyles } from "./ConnectWithUsStyles";
-import mobile from "../../assets/mobile.png";
-// import bottom from "../../assets/bottom.png";
+import mobile from "../../assets/Mobile.svg";
+import bottom from "../../assets/bottom.png";
 
 
 const ConnectWithUs = () => {
@@ -10,6 +10,7 @@ const ConnectWithUs = () => {
     return(
         <Grid item lg={12} md={12}>
             <Grid container lg={12} md={12}>
+            <img src={bottom} alt="bottom" className={classes.bottom} />
                 <Grid item lg={7} md={7}>
                     <Grid container justify="center">
                         <Grid item lg={8} md={8}>
@@ -44,9 +45,10 @@ const ConnectWithUs = () => {
                     </Grid>
                 </Grid>
                 <Grid item lg={5} md={5}>
-                <Avatar src={mobile} alt="Mobile" variant={"square"} className={classes.image} / >
+                <img src={mobile} alt="Mobile" className={classes.image} />
                 </Grid>
             </Grid>
+            
         </Grid>
     )
 }

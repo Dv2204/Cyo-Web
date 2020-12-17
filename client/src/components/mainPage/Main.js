@@ -27,7 +27,7 @@ const Main = () => {
                </Grid>
                </Grid>
                <Grid item lg={4} md={4} justify="center">
-               <Avatar src={mainimage} alt="Profile" variant={"square"} className={classes.image} / >
+               <Avatar src={mainimage} alt="Profile" variant={"square"} className={classes.image} />
                </Grid>
            </Grid>          
         </Grid>

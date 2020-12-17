@@ -17,10 +17,18 @@ export const useStyles = makeStyles((theme) => ({
         marginTop: '0.5rem'
     },
     image: {
-       height: '90vh',
-      width: '37vw',
+       height: '75vh',
+      width: 'auto',
         paddingTop: '7rem',
-        paddingBottom: '5rem'
+        paddingBottom: '5rem',
+        zIndex: '100',
+        position:'relative'
+    },
+    bottom:{
+        position: 'absolute',
+        zIndex:'0',
+        width: '100%',
+        marginTop: '34vh'
     },
     btn:{
         backgroundColor: '#000',
