@@ -67,7 +67,8 @@ const Cards = () => {
     return(
         <>
         {GymList.map((item, index) => (
-            <Grid item lg={4} md={4}  id="gym">
+         index <9 ? (
+          <Grid item lg={4} md={4}  id="gym">
             <Paper elevation={4} className={classes.paperNormal}>
             <Grid container>
             <Grid item lg={12} md={12} >
@@ -134,6 +135,8 @@ const Cards = () => {
             </Grid>
         </Paper>
         </Grid>
+         ) : null
+           
         ))}
         </>
     )
