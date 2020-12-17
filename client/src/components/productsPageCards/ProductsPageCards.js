@@ -1,10 +1,10 @@
 import React from 'react';
 import { Typography,Paper,Grid} from '@material-ui/core';
-import { useStyles } from "./ProductCardsStyles";
+import { useStyles } from "./ProductsPageCardsStyles";
 import { HiOutlineCurrencyRupee } from "react-icons/hi";
 
 
-const ProductCards = () => {
+const ProductsPageCards = () => {
     const classes = useStyles();
     const ProductList = [
         {
@@ -59,7 +59,6 @@ const ProductCards = () => {
     return(
         <>
         {ProductList.map((item, index) => (
-        index <9 ? (
         <Grid item lg={4} md={4} >
         <Grid container justify="center">
             <Grid item lg={6} md={6}>
@@ -80,10 +79,9 @@ const ProductCards = () => {
             </Grid>
         </Grid>
         </Grid>
-        ) : null
         ))}
         </>
     )
 }
 
-export default ProductCards;
+export default ProductsPageCards;
