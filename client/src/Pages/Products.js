@@ -4,6 +4,7 @@ import NavBar from '../components/Nav/NavBarMain';
 import { useStyles } from "./PageStyles/ProductsStyles";
 import Contact from '../components/contactUs/Contact';
 import ProductsSearch from '../components/productsSearch/ProductsSearch';
+import ProductsPageCards from '../components/productsPageCards/ProductsPageCards';
 
 
 const Products = () => {
@@ -23,6 +24,11 @@ const Products = () => {
                     <ProductsSearch/>
                 </Grid>
             </Grid>
+            <Container fixed >
+            <Grid container lg={12} md={12} >
+                <ProductsPageCards />
+            </Grid>
+            </Container>
         </div>
     )
 }
