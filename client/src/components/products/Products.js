@@ -6,7 +6,7 @@ import ProductCards from './ProductCards';
 const Products = () => {
     const classes = useStyles();
     return(
-            <Grid item lg={12} md={12} style={{backgroundColor: '#3F3F3F'}}>
+            <Grid item lg={12} md={12} style={{backgroundColor: '#3F3F3F', paddingBottom:'5vh'}}>
             <Grid container lg={12} md={12} justify="center">
                 <Grid item lg={6} md={6}>
                     <Typography variant="h3" className={classes.heading} id="products">

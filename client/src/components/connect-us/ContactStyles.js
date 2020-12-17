@@ -15,5 +15,9 @@ export const useStyles = makeStyles((theme) => ({
         paddingTop: '2vh',
         color: '#959595',
         cursor:'pointer'
+    },
+    about:{
+        color:'#b2b2b2',
+        padding: '2vh'
     }
 }))

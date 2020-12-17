@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 const ViewMoreProducts = () => {
     const classes = useStyles();
     return(
-         <Grid container lg={12} md={12} justify="center" style={{marginTop: '2rem'}}>
-        <Grid item lg={2} md={2} >
+         <Grid container lg={12} md={12} justify="center" style={{marginTop: '2rem', paddingBottom: '5vh'}}>
+        <Grid item lg={2} md={2} justify="center"  >
             <Typography ><Link to="/products" className={classes.text}>View More  <DoubleArrowIcon /></Link> </Typography>
         </Grid>
         </Grid>
