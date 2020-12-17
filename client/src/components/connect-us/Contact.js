@@ -46,7 +46,7 @@ const Contact = () => {
             </Typography>
         </Grid>
 
-        < />
+        </>
     )
 }
 
