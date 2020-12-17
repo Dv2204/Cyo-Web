@@ -4,6 +4,7 @@ import {Grid, Container, Typography} from "@material-ui/core";
 import NavBar from '../components/Nav/NavBarMain';
 import Search from '../components/search/Search';
 import { useStyles } from "./PageStyles/GymsStyles";
+import Contact from '../components/contactUs/Contact';
 
 const Gyms = () => {
   const classes = useStyles();
@@ -23,10 +24,13 @@ const Gyms = () => {
           </Grid>
         </Grid>
         <Container fixed>
-        <Grid container spacing={8} style={{marginTop: '0.2rem'}}>
+        <Grid container spacing={8} style={{marginTop: '1rem', paddingBottom: '6rem'}}>
           <GymPageCard />
         </Grid>
         </Container>
+        <Grid container>
+            <Contact />
+          </Grid>
       </div>
     )
 }

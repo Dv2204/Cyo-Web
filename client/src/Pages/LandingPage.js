@@ -8,7 +8,7 @@ import ViewMoreProducts from '../components/products/ViewMoreProducts';
 import ViewMore from '../components/more/More';
 import ConnectWithUs from '../components/connect/ConnectWithUs';
 import NavBar from '../components/Nav/NavBarMain';
-import Contact from '../components/connect-us/Contact';
+import Contact from '../components/contactUs/Contact';
 
 const LandingPage = () => {
     return (
