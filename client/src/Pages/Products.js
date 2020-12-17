@@ -25,10 +25,13 @@ const Products = () => {
                 </Grid>
             </Grid>
             <Container fixed >
-            <Grid container lg={12} md={12} >
+            <Grid container lg={12} md={12} style={{marginBottom: '5rem'}} >
                 <ProductsPageCards />
             </Grid>
             </Container>
+            <Grid container>
+            <Contact />
+          </Grid>
         </div>
     )
 }
