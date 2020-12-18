@@ -1,6 +1,6 @@
 import React from 'react';
 import {Grid, Container, Typography} from "@material-ui/core";
-import NavBar from '../components/Nav/NavBarMain';
+import NavBar from '../components/productsNav/NavBarMain';
 import { useStyles } from "./PageStyles/ProductsStyles";
 import Contact from '../components/contactUs/Contact';
 import ProductsSearch from '../components/productsSearch/ProductsSearch';

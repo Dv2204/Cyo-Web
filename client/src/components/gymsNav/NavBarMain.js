@@ -1,10 +1,8 @@
 import React from 'react';
-// import { NavLink as Link} from 'react-router-dom';
 import {Nav, Bars, NavMenu, NavLink, NavDiv, Dot, NavLogo, MobileIcons} from './NavItems';
 import Logo from '../../assets/logo-white.png';
 import '../Nav/navbar.css';
-import {Link} from 'react-scroll';
-// import { Link } from "react-router-dom";
+import {Link} from 'react-router-dom';
 
 const NavBar = ({toggle}) => {
     return (
@@ -15,23 +13,23 @@ const NavBar = ({toggle}) => {
                 </MobileIcons>
                 
                 <NavDiv>
-                    <NavLogo to="/" className="logo-name-img">
-                    <NavLink to="/" >
+                <NavLogo className="logo-name-img">
+                    <Link to="/">
                     <img className="Logo" src={Logo} alt="logo" />
-                        </NavLink>
-                        <h2 className="LogoName">Choose Your Option</h2>
+                    </Link>
+                    <h2 className="LogoName">Choose Your Option</h2>
                     </NavLogo>
                     <NavMenu>
                         {/* <NavLink activeStyle>
                             Gyms
                         </NavLink> */}
-                        <Link to="gym" smooth={true} duration={1000}><NavLink activeStyle>
+                        {/* <Link to="gym" smooth={true} duration={1000}><NavLink activeStyle>
                             Gyms
                         </NavLink></Link>
-                        <Dot />
-                        <Link to="products" smooth={true} duration={2000}><NavLink activeStyle>
+                        <Dot /> */}
+                        <NavLink to="/products" activeStyle>
                             Products
-                        </NavLink></Link>
+                        </NavLink>
                         <Dot />
                         <NavLink to="/compare" activeStyle>
                             Compare

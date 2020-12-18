@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Container, Typography, Avatar} from "@material-ui/core";
+import {Grid, Typography, Avatar} from "@material-ui/core";
 import pic from '../../assets/parth.jpg';
 import { useStyles } from "./DevelopersStyles";
 

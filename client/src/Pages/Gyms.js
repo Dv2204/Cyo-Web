@@ -1,7 +1,7 @@
 import React from 'react';
 import GymPageCard from '../components/GymPageCard/GymPageCard';
 import {Grid, Container, Typography} from "@material-ui/core";
-import NavBar from '../components/Nav/NavBarMain';
+import NavBar from '../components/gymsNav/NavBarMain';
 import Search from '../components/search/Search';
 import { useStyles } from "./PageStyles/GymsStyles";
 import Contact from '../components/contactUs/Contact';

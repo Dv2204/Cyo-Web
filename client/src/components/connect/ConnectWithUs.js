@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid , Typography, Avatar, Paper, Chip} from "@material-ui/core";
+import {Grid , Typography, Paper, Chip} from "@material-ui/core";
 import { useStyles } from "./ConnectWithUsStyles";
 import mobile from "../../assets/Mobile.svg";
 import bottom from "../../assets/bottom.png";
