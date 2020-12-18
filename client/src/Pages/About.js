@@ -1,8 +1,8 @@
 import React from 'react';
 import top from '../assets/about.png';
 import { useStyles } from "./PageStyles/AboutStyles";
-import NavBar from '../components/Nav/NavBarMain';
-import {Grid, Container, Typography} from "@material-ui/core";
+import NavBar from '../components/aboutNav/NavBarMain';
+import {Grid, Typography} from "@material-ui/core";
 import Contact from '../components/contactUs/Contact';
 import Developers from '../components/developers/Developers';
 

@@ -16,7 +16,9 @@ const NavBar = ({toggle}) => {
                 
                 <NavDiv>
                     <NavLogo to="/" className="logo-name-img">
-                        <img className="Logo" src={Logo} alt="logo" />
+                    <NavLink to="/" >
+                    <img className="Logo" src={Logo} alt="logo" />
+                        </NavLink>
                         <h2 className="LogoName">Choose Your Option</h2>
                     </NavLogo>
                     <NavMenu>

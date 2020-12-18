@@ -1,10 +1,8 @@
 import React from 'react';
-// import { NavLink as Link} from 'react-router-dom';
 import {Nav, Bars, NavMenu, NavLink, NavDiv, Dot, NavLogo, MobileIcons} from './NavItems';
 import Logo from '../../assets/logo-white.png';
 import '../Nav/navbar.css';
-import {Link} from 'react-scroll';
-// import { Link } from "react-router-dom";
+import {Link} from 'react-router-dom';
 
 const NavBar = ({toggle}) => {
     return (
@@ -15,9 +13,11 @@ const NavBar = ({toggle}) => {
                 </MobileIcons>
                 
                 <NavDiv>
-                    <NavLogo to="/" className="logo-name-img">
-                        <img className="Logo" src={Logo} alt="logo" />
-                        <h2 className="LogoName">Choose Your Option</h2>
+                <NavLogo className="logo-name-img">
+                    <Link to="/">
+                    <img className="Logo" src={Logo} alt="logo" />
+                    </Link>
+                    <h2 className="LogoName">Choose Your Option</h2>
                     </NavLogo>
                     <NavMenu>
                         {/* <NavLink activeStyle>

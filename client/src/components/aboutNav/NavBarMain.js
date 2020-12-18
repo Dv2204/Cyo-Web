@@ -4,6 +4,7 @@ import Logo from '../../assets/logo-white.png';
 import '../Nav/navbar.css';
 import {Link} from 'react-router-dom';
 
+
 const NavBar = ({toggle}) => {
     return (
         <>
@@ -13,7 +14,7 @@ const NavBar = ({toggle}) => {
                 </MobileIcons>
                 
                 <NavDiv>
-                <NavLogo className="logo-name-img">
+                    <NavLogo className="logo-name-img">
                     <Link to="/">
                     <img className="Logo" src={Logo} alt="logo" />
                     </Link>
@@ -23,10 +24,10 @@ const NavBar = ({toggle}) => {
                         {/* <NavLink activeStyle>
                             Gyms
                         </NavLink> */}
-                        {/* <Link to="gym" smooth={true} duration={1000}><NavLink activeStyle>
+                        <NavLink  to="/gyms" activeStyle>
                             Gyms
-                        </NavLink></Link>
-                        <Dot /> */}
+                        </NavLink>
+                        <Dot />
                         <NavLink to="/products" activeStyle>
                             Products
                         </NavLink>
@@ -38,10 +39,10 @@ const NavBar = ({toggle}) => {
                         <NavLink to="/guide" activeStyle>
                             Help Centre
                         </NavLink>
-                        <Dot />
-                        <NavLink  to="/about" activeStyle>
+                        {/* <Dot /> */}
+                        {/* <NavLink  to="/about" activeStyle>
                             About-Developers
-                        </NavLink>
+                        </NavLink> */}
                     </NavMenu>
                 </NavDiv>             
             </Nav>            

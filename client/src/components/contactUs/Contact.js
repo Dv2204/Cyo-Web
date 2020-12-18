@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Grid, Container, Paper} from '@material-ui/core';
+import { Typography, Grid, Paper} from '@material-ui/core';
 import { useStyles } from "./ContactStyles";
 
 const Contact = () => {
