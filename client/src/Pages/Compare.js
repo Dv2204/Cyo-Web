@@ -43,7 +43,6 @@ const Compare = () => {
                 </Grid>
             </Grid>
             </div>
-            {/* <Contact /> */}
             </div>
             </>
         )

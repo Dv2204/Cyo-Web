@@ -14,7 +14,7 @@ const ConnectWithUs = () => {
                 <Grid item lg={7} md={7}>
                     <Grid container justify="center">
                         <Grid item lg={8} md={8}>
-                            <Paper elevation={0} className={classes.paper}>
+                            <Paper elevation={0} className={classes.paper} id="connect">
                             <Grid container>
                                 <Grid item lg={1} md={1}>
                                 <Paper elevation={0} className={classes.vertical}></Paper>

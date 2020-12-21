@@ -37,9 +37,9 @@ const NavBar = ({toggle}) => {
                             Compare
                         </NavLink>
                         <Dot />
-                        <NavLink to="/guide" activeStyle>
+                        <Link to="connect" smooth={true} duration={2500}><NavLink activeStyle>
                             Help Centre
-                        </NavLink>
+                        </NavLink></Link>
                         <Dot />
                         <NavLink  to="/about" activeStyle>
                             About-Developers
