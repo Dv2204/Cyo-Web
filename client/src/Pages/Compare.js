@@ -1,7 +1,7 @@
 import React from 'react';
 import compare from '../assets/compare.jpg';
 import { useStyles } from "./PageStyles/CompareStyles";
-import NavBar from '../components/aboutNav/NavBarMain';
+import NavBar from '../components/compareNav/NavBarMain';
 import {Grid, Typography, Chip} from "@material-ui/core";
 import Contact from '../components/contactUs/Contact';
 import CompareSearch from '../components/compareSearch/CompareSearch';
@@ -27,12 +27,12 @@ const Compare = () => {
                     </Typography>
                 </Grid>
             </Grid>
-            <Grid container md={12} lg={12} justify="center" style={{marginTop: '3rem'}}>
+            <Grid container md={12} lg={12} justify="center" style={{marginTop: '1rem'}}>
                 <Grid item lg={7} md={7} justify="center">
                     <CompareSearch name="Gym name 1"/>
                 </Grid>
             </Grid>
-            <Grid container md={12} lg={12} justify="center">
+            <Grid container md={12} lg={12} justify="center" style={{marginTop: '1rem'}}>
                 <Grid item lg={7} md={7} justify="center">
                     <CompareSearch name="Gym name 2"/>
                 </Grid>

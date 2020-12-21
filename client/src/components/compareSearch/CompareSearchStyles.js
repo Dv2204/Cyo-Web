@@ -7,7 +7,9 @@ export const useStyles = makeStyles((theme) => ({
     },
    select: {
        marginLeft: '-0.5rem',
-       color: '#ffffff'
+       color: '#ffffff',
+       backgroundColor: 'rgba(255, 190, 157, 1)',
+       borderRadius: '15px',
    },
      root: {
       padding: '2px 4px',
