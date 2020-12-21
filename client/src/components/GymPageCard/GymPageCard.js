@@ -1,6 +1,4 @@
 import React from 'react';
-// import Paper from "@material-ui/core/Paper";
-// import Grid from "@material-ui/core/Grid";
 import { Avatar, Typography, Paper, Grid } from '@material-ui/core';
 import pic from "../../assets/1.jpg";
 import head from "../../assets/2.PNG";
@@ -10,10 +8,14 @@ import BeenhereOutlinedIcon from '@material-ui/icons/BeenhereOutlined';
 import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined';
 import StarIcon from '@material-ui/icons/Star';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
-
+import { useTheme } from '@material-ui/core/styles';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const GymPageCard = () => {
   const classes = useStyles();
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up('sm'));
+
   const GymList = [
     {
       name: "Gym 1",

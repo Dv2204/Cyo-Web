@@ -4,6 +4,7 @@ export const useStyles = makeStyles((theme) => ({
     paperNormal: {
        //height: "300px",
       marginBottom: '0.5rem',
+     // margin:'0px 50px',
         // borderTop: "8px solid #3f51b5",
         "&:hover": {
           transition: "all 0.2s ease-out",

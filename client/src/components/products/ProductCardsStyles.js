@@ -8,6 +8,7 @@ export const useStyles = makeStyles((theme) => ({
        // padding: '5rem',
        marginTop: '6rem',
        borderRadius: '13px',
+       // margin:'0px 30px',
     //    top: '-9%',
     //    right:'-9%',
        //borderTopRightRadius: '20%'
