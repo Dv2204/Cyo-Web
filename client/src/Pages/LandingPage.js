@@ -10,12 +10,16 @@ import ConnectWithUs from '../components/connect/ConnectWithUs';
 import NavBar from '../components/Nav/NavBarMain';
 import Contact from '../components/contactUs/Contact';
 import '../components/Nav/navbar.css';
+import phone from '../assets/phoneview-01.png';
+import './PageStyles/landingpage.css';
 
 const LandingPage = () => {
     return (
-        <div style={{backgroundColor: 'rgba(248, 248, 248, 1)'}}>
+      <div>
+      <img src={phone} alt="phone" className="phoneview" style={{display:'none'}} />
+        <div style={{backgroundColor: 'rgba(248, 248, 248, 1)'}} className="bla">
         {/* <LandingPage /> */}
-        <NavBar/>
+        <NavBar />
         <Grid container>
           <Main />
         </Grid>
@@ -39,6 +43,7 @@ const LandingPage = () => {
             <Contact />
           </Grid>
           
+        </div>
         </div>
       );
 }

@@ -7,7 +7,7 @@ export const Nav = styled.nav`
     background : #000;
     height: 6vh;
    ${'' /* width: 100vw; */}
-    position: fixed;
+    position: fixed !important;
     z-index: 2;
     padding: 1vh 2vw;
 `;

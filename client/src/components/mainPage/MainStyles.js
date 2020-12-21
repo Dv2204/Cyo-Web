@@ -10,9 +10,9 @@ export const useStyles = makeStyles((theme) => ({
     image: {
        // width: theme.spacing(40),
       //  height: theme.spacing(70),
-      height: '100vh',
-      width: '30vw',
-       paddingTop: '3.1rem'
+      height: '90vh',
+      width: 'auto',
+       paddingTop: '3.2rem'
     },
     paper:{
         backgroundColor: 'rgba(255, 255, 255, 0.13)',
