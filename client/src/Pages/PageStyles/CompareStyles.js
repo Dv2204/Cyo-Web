@@ -22,6 +22,7 @@ export const useStyles = makeStyles((theme) => ({
         fontSize: '19px',
         letterSpacing: '0.1rem',
         marginTop:'3rem',
+        textDecoration: 'none',
         "&:hover":{
             cursor: 'pointer'
         }

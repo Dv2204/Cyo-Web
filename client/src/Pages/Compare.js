@@ -5,6 +5,7 @@ import NavBar from '../components/compareNav/NavBarMain';
 import {Grid, Typography, Chip} from "@material-ui/core";
 import Contact from '../components/contactUs/Contact';
 import CompareSearch from '../components/compareSearch/CompareSearch';
+import {Link} from 'react-router-dom';
 
 const Compare = () => {
     const classes = useStyles();
@@ -39,11 +40,12 @@ const Compare = () => {
             </Grid>
             <Grid container md={12} lg={12} justify="center">
                 <Grid item lg={2} md={2} justify="center">
+                <Link to="/maincompare">
                 <Chip className={classes.btn} label="Compare"></Chip>
+                </Link>
                 </Grid>
             </Grid>
             </div>
-            {/* <Contact /> */}
             </div>
             </>
         )
