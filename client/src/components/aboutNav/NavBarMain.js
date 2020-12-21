@@ -2,7 +2,7 @@ import React from 'react';
 import {Nav, Bars, NavMenu, NavLink, NavDiv, Dot, NavLogo, MobileIcons} from './NavItems';
 import Logo from '../../assets/logo-white.png';
 import '../Nav/navbar.css';
-import {Link} from 'react-router-dom';
+import {Link} from 'react-scroll';
 
 
 const NavBar = ({toggle}) => {
@@ -15,9 +15,9 @@ const NavBar = ({toggle}) => {
                 
                 <NavDiv>
                     <NavLogo className="logo-name-img">
-                    <Link to="/">
+                    <NavLink to="/">
                     <img className="Logo" src={Logo} alt="logo" />
-                    </Link>
+                    </NavLink>
                     <h2 className="LogoName">Choose Your Option</h2>
                     </NavLogo>
                     <NavMenu>
@@ -36,9 +36,9 @@ const NavBar = ({toggle}) => {
                             Compare
                         </NavLink>
                         <Dot />
-                        <NavLink to="/guide" activeStyle>
+                        <Link to="contact" smooth={true} duration={1000}><NavLink activeStyle>
                             Help Centre
-                        </NavLink>
+                        </NavLink></Link>
                         {/* <Dot /> */}
                         {/* <NavLink  to="/about" activeStyle>
                             About-Developers

@@ -35,10 +35,10 @@ const NavBar = ({toggle}) => {
                             Products
                         </NavLink>
                         <Dot />
-                        <NavLink to="/guide" activeStyle>
+                        {/* <NavLink to="/guide" activeStyle>
                             Help Centre
                         </NavLink>
-                        <Dot />
+                        <Dot /> */}
                         <NavLink  to="/about" activeStyle>
                             About-Developers
                         </NavLink>
