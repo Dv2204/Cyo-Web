@@ -32,6 +32,8 @@ const About = () => {
                </Grid>
                <hr className={classes.line}/>
                  <Chip className={classes.btn} label="Trainers"></Chip>
+                  <hr className={classes.line}/>
+                 <Chip className={classes.btn} label="Price Info"></Chip>
             <Contact />
             </div>
             </>
