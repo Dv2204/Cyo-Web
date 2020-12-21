@@ -6,6 +6,8 @@ import Compare from '../Pages/Compare';
 // import Guide from '../Pages/Guide';
 import About from '../Pages/About';
 import LandingPage from '../Pages/LandingPage';
+import MainCompare from '../Pages/MainCompare';
+
 
 
 const Routes = () => {
@@ -19,6 +21,7 @@ const Routes = () => {
           <Route exact path="/compare" component={Compare} />
           {/* <Route exact path="/guide" component={Guide} /> */}
           <Route exact path="/about" component={About} />
+          <Route exact path="/maincompare" component={MainCompare} />
         </Switch>
       </Router>
     </div>
