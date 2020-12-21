@@ -9,6 +9,7 @@ import ViewMore from '../components/more/More';
 import ConnectWithUs from '../components/connect/ConnectWithUs';
 import NavBar from '../components/Nav/NavBarMain';
 import Contact from '../components/contactUs/Contact';
+import '../components/Nav/navbar.css';
 
 const LandingPage = () => {
     return (

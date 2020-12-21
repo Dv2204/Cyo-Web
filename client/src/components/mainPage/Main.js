@@ -9,9 +9,9 @@ const Main = () => {
     const classes = useStyles();
     return(
         <>
-        <Grid item lg={12} md={12}>
-           <Grid container lg={12} md={12} className={classes.row}>
-               <Grid item lg={8} md={8}>
+        <Grid item xs={12} md={12}>
+           <Grid container xs={12} md={12} className={classes.row}>
+               <Grid item xs={8} md={8}>
                <Grid container lg={12} md={12}  justify="center">
                    <Grid item lg={9} md={9} >
                    <Paper elevation={3} className={classes.paper} justify="center">
