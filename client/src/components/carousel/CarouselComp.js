@@ -6,17 +6,16 @@ import { useStyles } from "./CarouselStyles";
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2 },
-  { width: 768, itemsToShow: 3 },
-  { width: 1200, itemsToShow: 4 },
+  // { width: 550, itemsToShow: 2 },
+  // { width: 768, itemsToShow: 3 },
+  // { width: 1200, itemsToShow: 4 },
 ];
 
 const CarouselComp = () => {
   const classes = useStyles();
   return (
     <>
-      <h1 style={{ textAlign: "center" }}>Example to setup your carousel in react</h1>
-      <div className="carousel">
+      <div className={classes.carousel}>
         <Carousel breakPoints={breakPoints}>
           <Item>One</Item>
           <Item>Two</Item>
