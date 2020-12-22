@@ -1,10 +1,8 @@
 import React, {useState} from 'react';
-import top from '../assets/about.png';
 import { useStyles } from "./PageStyles/MainCompareStyles";
 import NavBar from '../components/compareNav/NavBarMain';
 import {Grid, Typography, Chip} from "@material-ui/core";
 import Contact from '../components/contactUs/Contact';
-import Developers from '../components/developers/Developers';
 import Sidebar from '../components/Sidebar/Sidebar';
 
 const About = () => {

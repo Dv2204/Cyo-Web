@@ -3,7 +3,6 @@ import compare from '../assets/compare.jpg';
 import { useStyles } from "./PageStyles/CompareStyles";
 import NavBar from '../components/compareNav/NavBarMain';
 import {Grid, Typography, Chip} from "@material-ui/core";
-import Contact from '../components/contactUs/Contact';
 import CompareSearch from '../components/compareSearch/CompareSearch';
 import {Link} from 'react-router-dom';
 import Sidebar from '../components/Sidebar/Sidebar';

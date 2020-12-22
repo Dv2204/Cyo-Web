@@ -10,6 +10,7 @@ import BeenhereOutlinedIcon from "@material-ui/icons/BeenhereOutlined";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import StarIcon from "@material-ui/icons/Star";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
+import {Link} from 'react-router-dom';
 
 const Cards = () => {
   const classes = useStyles();
@@ -139,12 +140,14 @@ const Cards = () => {
                 </Grid>
                 <Grid container className={classes.row}>
                   <Grid item lg={10} md={10}>
+                  <Link to="/gymdetails">
                     <Typography variant="body2" className={classes.details}>
                       View Details
                       <ShareIcon
                         style={{ fontSize: "25px", marginLeft: "1rem" }}
                       />
                     </Typography>
+                    </Link>
                   </Grid>
                   <Grid item lg={2} md={2}>
                     <LocationOnIcon
