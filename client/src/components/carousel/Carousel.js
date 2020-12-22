@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import { Typography} from '@material-ui/core';
 import { useStyles } from "./CarouselStyles";
 import Search from '../search/Search';
-//import CarouselComp from './CarouselComp';
+import CarouselComp from './CarouselComp';
 
 const Carousel = () => {
     const classes = useStyles();
@@ -21,7 +21,7 @@ const Carousel = () => {
                     <Search/>
                 </Grid>
             </Grid>
-                    {/* <CarouselComp /> */}
+                    <CarouselComp />
             </Grid>
     )
 }

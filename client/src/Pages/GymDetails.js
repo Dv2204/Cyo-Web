@@ -16,9 +16,9 @@ const GymDetails = () => {
       <div style={{backgroundColor: 'rgba(248, 248, 248, 1)'}}>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
         <NavBar toggle={toggle}/>
-        <Grid container>
+        {/* <Grid container>
             <Contact />
-          </Grid>
+          </Grid> */}
       </div>
     )
 }

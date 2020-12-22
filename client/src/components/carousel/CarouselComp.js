@@ -1,34 +1,35 @@
-import ImageGallery from 'react-image-gallery';
-import React from 'react';
-import {Grid} from '@material-ui/core';
- 
-const images = [
-  {
-    original: 'https://picsum.photos/id/1018/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1018/250/150/',
-  },
-  {
-    original: 'https://picsum.photos/id/1015/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1015/250/150/',
-  },
-  {
-    original: 'https://picsum.photos/id/1019/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1019/250/150/',
-  },
+import React from "react";
+import ReactDOM from "react-dom";
+import Carousel from "react-elastic-carousel";
+import Item from "./Item";
+import { useStyles } from "./CarouselStyles";
+
+const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  { width: 550, itemsToShow: 2 },
+  { width: 768, itemsToShow: 3 },
+  { width: 1200, itemsToShow: 4 },
 ];
 
 const CarouselComp = () => {
-    return(
-        <Grid item lg={12} md={12}>
-        <ImageGallery 
-        items={images}
-        showBullets={true}
-        autoPlay={true}
-        showPlayButton={false}
-        showFullscreenButton={false}
-         />
-         </Grid>
-    )
+  const classes = useStyles();
+  return (
+    <>
+      <h1 style={{ textAlign: "center" }}>Example to setup your carousel in react</h1>
+      <div className="carousel">
+        <Carousel breakPoints={breakPoints}>
+          <Item>One</Item>
+          <Item>Two</Item>
+          <Item>Three</Item>
+          <Item>Four</Item>
+          <Item>Five</Item>
+          <Item>Six</Item>
+          <Item>Seven</Item>
+          <Item>Eight</Item>
+        </Carousel>
+      </div>
+    </>
+  );
 }
 
 export default CarouselComp;

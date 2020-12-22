@@ -22,7 +22,7 @@ const NavBar = ({toggle}) => {
                         <h2 className="LogoName">Choose Your Option</h2>
                     </NavLogo>
                     <NavMenu>
-                        <NavLink to="/gym" activeStyle>
+                        <NavLink to="/gyms" activeStyle>
                             Gyms
                         </NavLink>
                         <Dot />

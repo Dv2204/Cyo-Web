@@ -58,8 +58,12 @@ export const useStyles = makeStyles((theme) => ({
         paddingLeft: '0.3rem'
     },
     details: {
-        fontSize: '15px',
+        fontSize: '18px',
         color: 'grey',
         padding: '10px',
+        textDecoration: 'none',
+        "&:hover": {
+            color: '#000'
+        }
     },
 }))
