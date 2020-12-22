@@ -8,5 +8,13 @@ export const useStyles = makeStyles((theme) => ({
         color: 'rgba(233, 62, 127, 1)',
         letterSpacing: '0.1rem',
         textAlign: 'center'
-    }
+    },
+    carousel: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '82vh',
+        //marginTop:'1rem',
+        marginBottom:'3rem',
+      }
  }))

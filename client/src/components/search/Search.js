@@ -22,9 +22,9 @@ const Search = () => {
   const [value, setValue] = React.useState(null);
 
     return(
-        //  <Paper justify="center" classsName={classes.paper}>
                     <Grid container xs={12} lg={12} md={12}>
-                       <Grid item xs={2} lg={1} md={1} >
+
+                       <Grid item xs={2} lg={1} md={1} style={{ marginBottom: '2rem'}} >
                        <PinDropIcon fontSize='large' className={classes.icon} />
                         </Grid>
                         <Grid item xs={8} lg={3} md={3}>
@@ -49,8 +49,7 @@ const Search = () => {
                               </IconButton>
                             </Paper>
                         </Grid>
-                    </Grid>
-                    // </Paper>          
+                    </Grid>      
     )
 }
 
