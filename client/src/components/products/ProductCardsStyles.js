@@ -1,4 +1,4 @@
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
     paper: {
@@ -12,9 +12,6 @@ export const useStyles = makeStyles((theme) => ({
         margin:'0px 50px',
         marginTop:'20px',
     },
-    //    top: '-9%',
-    //    right:'-9%',
-       //borderTopRightRadius: '20%'
        "&:hover":{
         transition: "all 0.2s ease-out",
         boxShadow: "0px 10px 12px rgba(38, 38, 38, 0.7)",

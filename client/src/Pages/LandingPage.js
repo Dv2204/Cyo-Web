@@ -10,7 +10,6 @@ import ConnectWithUs from '../components/connect/ConnectWithUs';
 import NavBar from '../components/Nav/NavBarMain';
 import Contact from '../components/contactUs/Contact';
 import '../components/Nav/navbar.css';
-import phone from '../assets/phoneview-01.png';
 import './PageStyles/landingpage.css';
 import Sidebar from '../components/Sidebar/Sidebar';
 

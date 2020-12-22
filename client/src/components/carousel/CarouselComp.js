@@ -1,34 +1,37 @@
-import ImageGallery from 'react-image-gallery';
-import React from 'react';
-import {Grid} from '@material-ui/core';
- 
-const images = [
-  {
-    original: 'https://picsum.photos/id/1018/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1018/250/150/',
-  },
-  {
-    original: 'https://picsum.photos/id/1015/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1015/250/150/',
-  },
-  {
-    original: 'https://picsum.photos/id/1019/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1019/250/150/',
-  },
+import React from "react";
+import Carousel from "react-elastic-carousel";
+import Item from "./Item";
+import { useStyles } from "./CarouselStyles";
+import pic from "../../assets/1.jpg";
+import compare from "../../assets/compare.jpg";
+
+
+const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  // { width: 550, itemsToShow: 2 },
+  // { width: 768, itemsToShow: 3 },
+  // { width: 1200, itemsToShow: 4 },
 ];
 
 const CarouselComp = () => {
-    return(
-        <Grid item lg={12} md={12}>
-        <ImageGallery 
-        items={images}
-        showBullets={true}
-        autoPlay={true}
-        showPlayButton={false}
-        showFullscreenButton={false}
-         />
-         </Grid>
-    )
+  const classes = useStyles();
+  return (
+    <>
+      <div className={classes.carousel}>
+        <Carousel breakPoints={breakPoints}>
+          <Item><img src={pic}></img></Item>
+          <Item><img src={compare}></img></Item>
+          <Item><img src={pic}></img></Item>
+          <Item><img src={compare}></img></Item>
+          <Item><img src={pic}></img></Item>
+          <Item><img src={compare}></img></Item>
+          <Item><img src={pic}></img></Item>
+          <Item><img src={compare}></img></Item>
+          <Item><img src={pic}></img></Item>
+        </Carousel>
+      </div>
+    </>
+  );
 }
 
 export default CarouselComp;

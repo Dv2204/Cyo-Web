@@ -99,7 +99,7 @@ const About = () => {
           <Grid container justify="center">
             <Grid item lg={4}>
               <Developers
-                name="Saurav Srivastva"
+                name="Saurav Shrivastav"
                 skill="Backend Developer"
                 pic={Saurav}
               />

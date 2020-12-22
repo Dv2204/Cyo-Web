@@ -1,4 +1,4 @@
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
     card:{
@@ -8,10 +8,7 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
     paperNormal: {
-       //height: "300px",
       marginBottom: '0.5rem',
-     
-        // borderTop: "8px solid #3f51b5",
         "&:hover": {
           transition: "all 0.2s ease-out",
           boxShadow: "0px 10px 12px rgba(38, 38, 38, 0.5)",
@@ -29,7 +26,6 @@ export const useStyles = makeStyles((theme) => ({
         padding: '10px'
     },
     title: {
-        //paddingTop: '0.4rem',
        fontWeight: 'bold',
        
     },
@@ -43,14 +39,6 @@ export const useStyles = makeStyles((theme) => ({
         height: theme.spacing(5),
         paddingLeft: '10px'
       },
-    // locationicon: {
-    //     alignSelf: 'center',
-    //     fontSize: '31px',
-    //     justifyContent: 'center',
-    //     color: '#fff',
-    //     fontWeight: 'bold',
-    //     marginLeft: '0.4rem'
-    // },
     rating: {
         fontSize: '8px',
         color: '#fff',
@@ -61,7 +49,6 @@ export const useStyles = makeStyles((theme) => ({
         fontSize: '10px',
         color: '#fff',
         backgroundColor: '#11C62E',
-       // paddingTop: '0.04rem',
         float: 'right'
     },
     count: {
@@ -71,18 +58,12 @@ export const useStyles = makeStyles((theme) => ({
         paddingLeft: '0.3rem'
     },
     details: {
-        fontSize: '15px',
+        fontSize: '18px',
         color: 'grey',
         padding: '10px',
+        textDecoration: 'none',
+        "&:hover": {
+            color: '#000'
+        }
     },
-    // arrowIcon: {
-    //    // fontSize: '2rem',
-    //     color: 'rgba(0, 0, 0, 0.33)',
-    // }
-    // row: {
-    //     padding: '8px'
-    // }
-    // icon: {
-
-    // }
 }))

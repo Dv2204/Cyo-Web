@@ -13,7 +13,6 @@ export const useStyles = makeStyles((theme) => ({
      btn:{
         backgroundColor: 'rgba(255, 147, 108, 1)',
         color: '#fff',
-        marginTop:'0.1rem',
         marginLeft: '4rem',
         padding: '1.3rem 2.2rem',
         fontSize: '19px',

@@ -10,6 +10,7 @@ import StarIcon from "@material-ui/icons/Star";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import {Link} from 'react-router-dom';
 
 const GymPageCard = () => {
   const classes = useStyles();
@@ -141,12 +142,14 @@ const GymPageCard = () => {
               </Grid>
               <Grid container className={classes.row}>
                 <Grid item lg={10} md={10}>
+                <Link to="/gymdetails">
                   <Typography variant="body2" className={classes.details}>
                     View Details
                     <ShareIcon
                       style={{ fontSize: "25px", marginLeft: "1rem" }}
                     />
                   </Typography>
+                  </Link>
                 </Grid>
                 <Grid item lg={2} md={2}>
                   <LocationOnIcon
