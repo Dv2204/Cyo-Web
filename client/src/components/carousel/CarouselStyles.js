@@ -14,7 +14,7 @@ export const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
         height: '82vh',
-        marginTop:'3rem',
+        //marginTop:'1rem',
         marginBottom:'3rem',
       }
  }))

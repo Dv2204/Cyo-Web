@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Grid, Container, Typography} from "@material-ui/core";
+import {Grid, Typography} from "@material-ui/core";
 import NavBar from '../components/gymDetailsNav/NavBarMain';
 import { useStyles } from "./PageStyles/GymDetailsStyles";
 import Contact from '../components/contactUs/Contact';
@@ -16,9 +16,24 @@ const GymDetails = () => {
       <div style={{backgroundColor: 'rgba(248, 248, 248, 1)'}}>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
         <NavBar toggle={toggle}/>
-        {/* <Grid container>
+        <Grid container lg={12} md={12}>
+          <Grid item lg={12} md={12}>
+            <Typography variant="h4" className={classes.heading}>
+              Gym 1
+            </Typography>
+          </Grid>
+        </Grid>
+        <Grid container lg={12} md={12} justify="center">
+          <Grid item lg={8} md={8}>
+            <Typography variant="body2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Faucibus auctor eu platea dolor etiam vitae aliquam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Faucibus auctor eu platea dolor etiam vitae aliquam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Faucibus auctor eu platea dolor etiam vitae aliquam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Faucibus auctor eu platea dolor etiam vitae aliquam urna.
+            </Typography>
+          </Grid>
+        </Grid>
+
+        <Grid container>
             <Contact />
-          </Grid> */}
+          </Grid>
       </div>
     )
 }

@@ -19,15 +19,15 @@ const CarouselComp = () => {
     <>
       <div className={classes.carousel}>
         <Carousel breakPoints={breakPoints}>
-          <Item><img src={pic}></img></Item>
-          <Item><img src={compare}></img></Item>
-          <Item><img src={pic}></img></Item>
-          <Item><img src={compare}></img></Item>
-          <Item><img src={pic}></img></Item>
-          <Item><img src={compare}></img></Item>
-          <Item><img src={pic}></img></Item>
-          <Item><img src={compare}></img></Item>
-          <Item><img src={pic}></img></Item>
+          <Item><img src={pic} alt="Gym"></img></Item>
+          <Item><img src={compare}  alt="Gym"></img></Item>
+          <Item><img src={pic} alt="Gym"></img></Item>
+          <Item><img src={compare} alt="Gym"></img></Item>
+          <Item><img src={pic} alt="Gym"></img></Item>
+          <Item><img src={compare} alt="Gym"></img></Item>
+          <Item><img src={pic} alt="Gym"></img></Item>
+          <Item><img src={compare} alt="Gym"></img></Item>
+          <Item><img src={pic} alt="Gym"></img></Item>
         </Carousel>
       </div>
     </>
