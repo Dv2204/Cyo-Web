@@ -1,8 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
 import { useStyles } from "./CarouselStyles";
+import pic from "../../assets/1.jpg";
+import compare from "../../assets/compare.jpg";
+
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -17,14 +19,15 @@ const CarouselComp = () => {
     <>
       <div className={classes.carousel}>
         <Carousel breakPoints={breakPoints}>
-          <Item>One</Item>
-          <Item>Two</Item>
-          <Item>Three</Item>
-          <Item>Four</Item>
-          <Item>Five</Item>
-          <Item>Six</Item>
-          <Item>Seven</Item>
-          <Item>Eight</Item>
+          <Item><img src={pic}></img></Item>
+          <Item><img src={compare}></img></Item>
+          <Item><img src={pic}></img></Item>
+          <Item><img src={compare}></img></Item>
+          <Item><img src={pic}></img></Item>
+          <Item><img src={compare}></img></Item>
+          <Item><img src={pic}></img></Item>
+          <Item><img src={compare}></img></Item>
+          <Item><img src={pic}></img></Item>
         </Carousel>
       </div>
     </>

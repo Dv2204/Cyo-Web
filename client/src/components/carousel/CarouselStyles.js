@@ -13,7 +13,8 @@ export const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        height: '70vh',
-        width: '80vw'
+        height: '82vh',
+        marginTop:'3rem',
+        marginBottom:'3rem',
       }
  }))

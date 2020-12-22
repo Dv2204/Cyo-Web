@@ -19,9 +19,13 @@ const Carousel = () => {
             <Grid container md={12} lg={12} justify="center">
                 <Grid item lg={7} md={7} justify="center">
                     <Search/>
-                </Grid>
+                </Grid>    
             </Grid>
-                    <CarouselComp />
+            <Grid container md={12} lg={12} justify="center">
+                <Grid item lg={10} md={10} justify="center">
+                    <CarouselComp/>
+                </Grid>    
+            </Grid>
             </Grid>
     )
 }
