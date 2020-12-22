@@ -29,7 +29,7 @@ const Contact = () => {
                     <Grid lg={1}/>
 
                     <Grid item lg={5} md={5} justify="center">
-                    <Paper elevation={5} variant="outlined" style={{padding:'5rem'}}>
+                    <Paper elevation={5} variant="outlined" className={classes.mailbox} >
                     <Typography variant="h6" className={classes.mailus} style={{textAlign: 'center'}} >
                       Mail Us
                     </Typography>

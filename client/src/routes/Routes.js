@@ -9,8 +9,8 @@ import LandingPage from '../Pages/LandingPage';
 import MainCompare from '../Pages/MainCompare';
 
 
-
 const Routes = () => {
+  
   return (
     <div>
       <Router>

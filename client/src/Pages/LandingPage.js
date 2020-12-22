@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Cards from '../components/cards/Cards';
 import {Grid, Container} from "@material-ui/core";
 import Main from '../components/mainPage/Main';
@@ -12,14 +12,21 @@ import Contact from '../components/contactUs/Contact';
 import '../components/Nav/navbar.css';
 import phone from '../assets/phoneview-01.png';
 import './PageStyles/landingpage.css';
+import Sidebar from '../components/Sidebar/Sidebar';
 
 const LandingPage = () => {
+  const[isOpen, setIsOpen] = useState(false)
+
+  const toggle =() => {
+      setIsOpen(!isOpen)
+  }
     return (
       <div>
-      <img src={phone} alt="phone" className="phoneview" style={{display:'none'}} />
+   {/* <img src={phone} alt="phone" className="phoneview" style={{display:'none'}} /> */}
         <div style={{backgroundColor: 'rgba(248, 248, 248, 1)'}} className="bla">
         {/* <LandingPage /> */}
-        <NavBar />
+        <Sidebar isOpen={isOpen} toggle={toggle}/>
+        <NavBar toggle={toggle}/>
         <Grid container>
           <Main />
         </Grid>

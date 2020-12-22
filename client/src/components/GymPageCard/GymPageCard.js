@@ -69,12 +69,12 @@ const GymPageCard = () => {
   return (
     <>
       {GymList.map((item, index) => (
-        <Grid item lg={4} md={4} id="gym">
+        <Grid item xs={12} lg={4} md={4} id="gym" className={classes.card}>
           <Paper elevation={4} className={classes.paperNormal}>
-            <Grid container>
-              <Grid item lg={12} md={12}>
+            <Grid container >
+              <Grid item xs={12} lg={12} md={12}>
                 <Grid container className={classes.row}>
-                  <Grid item lg={10} md={10}>
+                  <Grid item xs={12} lg={10} md={10}>
                     <Grid container className={classes.top}>
                       <Grid item lg={2} md={2}>
                         <Avatar

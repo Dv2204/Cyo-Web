@@ -1,17 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 import top from '../assets/about.png';
 import { useStyles } from "./PageStyles/MainCompareStyles";
 import NavBar from '../components/compareNav/NavBarMain';
 import {Grid, Typography, Chip} from "@material-ui/core";
 import Contact from '../components/contactUs/Contact';
 import Developers from '../components/developers/Developers';
+import Sidebar from '../components/Sidebar/Sidebar';
 
 const About = () => {
     const classes = useStyles();
+    const[isOpen, setIsOpen] = useState(false)
+
+  const toggle =() => {
+      setIsOpen(!isOpen)
+  }
         return (
             <>
             <div style={{backgroundColor: 'rgba(248, 248, 248, 1)'}}>
-                <NavBar/>
+            <Sidebar isOpen={isOpen} toggle={toggle}/>
+            <NavBar toggle={toggle}/>
                <Grid container lg={12} md={12} justify="space-around" className={classes.top}>
                    <Grid item lg={5} md={5}>
                        <Typography variant="h3">

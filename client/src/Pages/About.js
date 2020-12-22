@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import top from "../assets/about.png";
 import { useStyles } from "./PageStyles/AboutStyles";
 import NavBar from "../components/aboutNav/NavBarMain";
@@ -14,12 +14,21 @@ import Sushila from "../assets/Sushila.jpeg";
 import Saurav from "../assets/Saurav.jpg";
 import Priya from "../assets/Priya.jpeg";
 import Divyanshu from "../assets/Divyanshu.jpg";
+import Sidebar from '../components/Sidebar/Sidebar';
+
+
 const About = () => {
   const classes = useStyles();
+  const[isOpen, setIsOpen] = useState(false)
+
+  const toggle =() => {
+      setIsOpen(!isOpen)
+  }
   return (
     <>
       <div style={{ backgroundColor: "rgba(248, 248, 248, 1)" }}>
-        <NavBar />
+      <Sidebar isOpen={isOpen} toggle={toggle}/>
+      <NavBar toggle={toggle}/>
         <Grid container md={12} lg={12} justify="center">
           <img src={top} alt="topBg" className={classes.top} />
           <Typography variant="h2" className={classes.head}>

@@ -1,10 +1,16 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
+    card:{
+        [theme.breakpoints.down("xs")]:{
+            margin:'0px 20px',
+            marginTop:'20px',
+        },
+    },
     paperNormal: {
        //height: "300px",
       marginBottom: '0.5rem',
-     // margin:'0px 50px',
+     
         // borderTop: "8px solid #3f51b5",
         "&:hover": {
           transition: "all 0.2s ease-out",
