@@ -12,21 +12,35 @@ export const useStyles = makeStyles((theme) => ({
       //  height: theme.spacing(70),
       height: '90vh',
       width: 'auto',
-       paddingTop: '3.2rem'
+       paddingTop: '3.2rem',
+       [theme.breakpoints.down("xs")]:{
+       height:'40vh',
+       width:'auto',
+       paddingLeft:'1rem'
+    },
     },
     paper:{
         backgroundColor: 'rgba(255, 255, 255, 0.13)',
         marginTop: '6.2rem',
         height: '72vh',
-        borderRadius: '6%'
+        borderRadius: '6%',
+        [theme.breakpoints.down("xs")]:{
+            marginLeft: '1.8rem',
+            height:'33vh ',
+            marginTop: '3rem',
+         },
     },
     text: {
         fontWeight: 'bold',
         paddingLeft: '4.8rem',
         paddingTop: '2.7rem',
         letterSpacing: '0.1rem',
-        fontSize: '4.2rem'
+        fontSize: '4.2rem',
         //textAlign: 'center'
+        [theme.breakpoints.down("xs")]:{
+           fontSize:'1.4rem',
+           padding: '1.8rem 1rem 0rem 1rem',
+        },
     },
     btn:{
         backgroundColor: '#000',
@@ -38,6 +52,11 @@ export const useStyles = makeStyles((theme) => ({
         marginLeft: '4.6rem',
         "&:hover":{
             cursor: 'pointer'
-        }
+        },
+        [theme.breakpoints.down("xs")]:{
+            fontSize:'0.6rem',
+            margin:'1rem 1.5rem',
+            padding: '0.2rem 1rem',
+         },
     }
 }))

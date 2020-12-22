@@ -20,12 +20,13 @@ export const useStyles = makeStyles((theme) => ({
         height: '8vh',
         [theme.breakpoints.down('xs')]:{
            height:'5vh',
+           marginLeft:'1rem'
         }
     },
     body: {
         marginTop: '0.5rem',
         [theme.breakpoints.down('xs')]:{
-            fontSize:'0.6rem',
+            fontSize:'0.8rem',
             margin:'10px 20px 0px 20px',
         }
     },
@@ -37,7 +38,7 @@ export const useStyles = makeStyles((theme) => ({
         zIndex: '100',
         position:'relative',
         [theme.breakpoints.down('xs')]:{
-            height:'40vh',
+            height:'30vh',
             paddingTop: '0rem',
         }
     },

@@ -9,4 +9,8 @@ export default styled.div`
   color: #fff;
   margin: 0 15px;
   font-size: 4em;
+
+  @media screen and (max-width: 700px) {
+    height: 30vh;
+} 
 `;

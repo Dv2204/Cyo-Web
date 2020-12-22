@@ -7,7 +7,11 @@ export const useStyles = makeStyles((theme) => ({
         fontWeight: 'bold',
         color: 'rgba(233, 62, 127, 1)',
         letterSpacing: '0.1rem',
-        textAlign: 'center'
+        textAlign: 'center',
+        [theme.breakpoints.down('xs')]:{
+            fontSize:'3rem',
+            paddingTop:'4rem'
+        }
     },
     carousel: {
         display: 'flex',
@@ -16,5 +20,8 @@ export const useStyles = makeStyles((theme) => ({
         height: '82vh',
         //marginTop:'1rem',
         marginBottom:'3rem',
+        [theme.breakpoints.down('xs')]:{
+            height:'40vh !important'
+        }
       }
  }))

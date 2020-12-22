@@ -11,9 +11,9 @@ const Main = () => {
         <>
         <Grid item xs={12} md={12}>
            <Grid container xs={12} md={12} className={classes.row}>
-               <Grid item xs={8} md={8}>
-               <Grid container lg={12} md={12}  justify="center">
-                   <Grid item lg={9} md={9} >
+               <Grid item xs={7} md={8}>
+               <Grid container xs={12} lg={12} md={12}  justify="center">
+                   <Grid item xs={12} lg={9} md={9} >
                    <Paper elevation={3} className={classes.paper} justify="center">
                        <Typography variant="h2" className={classes.text}>
                         Starve your <br/>
@@ -26,7 +26,7 @@ const Main = () => {
                    </Grid>
                </Grid>
                </Grid>
-               <Grid item lg={4} md={4} justify="center">
+               <Grid item xs={5} lg={4} md={4} justify="center">
                <img src={mainimage} alt="Profile" className={classes.image} />
                </Grid>
            </Grid>          
