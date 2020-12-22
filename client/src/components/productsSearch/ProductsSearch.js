@@ -13,8 +13,8 @@ const ProductsSearch = () => {
 
     return(
         //  <Paper justify="center" classsName={classes.paper}>
-                    <Grid container lg={12} md={12} justify="center">
-                        <Grid lg={8} md={8}>
+                    <Grid container xs={12} lg={12} md={12} justify="center" >
+                        <Grid xs={6} lg={8} md={8}>
                              <Paper component="form" className={classes.root} elevation={2}>
                               <InputBase
                                 className={classes.input}
@@ -26,7 +26,7 @@ const ProductsSearch = () => {
                               </IconButton>
                             </Paper>
                         </Grid>
-                        <Grid item lg={2} md={2}>
+                        <Grid item xs={1} lg={2} md={2}>
                         <Typography variant="h5" className={classes.filter}>filter</Typography>
                         </Grid>
                         

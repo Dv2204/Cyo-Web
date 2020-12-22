@@ -8,6 +8,10 @@ export const useStyles = makeStyles((theme) => ({
        // padding: '5rem',
        marginTop: '6rem',
        borderRadius: '13px',
+       [theme.breakpoints.down("xs")]:{
+        margin:'0px 50px',
+        marginTop:'20px',
+    },
     //    top: '-9%',
     //    right:'-9%',
        //borderTopRightRadius: '20%'
@@ -21,11 +25,17 @@ export const useStyles = makeStyles((theme) => ({
     },
     text:{
         color: 'rgba(145, 145, 145, 1)',
-     //   marginLeft: '1rem'
+        [theme.breakpoints.down("xs")]:{
+             marginLeft: '5rem',
+        },
     },
     mrp: {
         color: 'rgba(145, 145, 145, 1)',
-        marginLeft: '2.2rem'
+        marginLeft: '2.2rem',
+        [theme.breakpoints.down("xs")]:{
+            marginLeft: '6rem',
+            marginBottom: '2rem',
+       },
     },
     icon: {
          fontSize: '1.7rem',

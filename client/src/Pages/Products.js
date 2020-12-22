@@ -19,14 +19,14 @@ const Products = () => {
         <div style={{backgroundColor: 'rgba(248, 248, 248, 1)'}}>
         <Sidebar isOpen={isOpen} toggle={toggle}/>
         <NavBar toggle={toggle}/>
-        <Grid container lg={12} md={12}>
-                <Grid item lg={12} md={12} >
+        <Grid container xs={12} lg={12} md={12}>
+                <Grid item xs={12} lg={12} md={12} >
                     <Typography variant="h2" className={classes.text}  justify="center" >
                         EXPLORE OUR PRODUCTS
                     </Typography>
                 </Grid>
             </Grid>
-            <Grid container md={12} lg={12} justify="center">
+            <Grid container xs={12} md={12} lg={12} justify="center">
                 <Grid item lg={7} md={7} justify="center">
                     <ProductsSearch/>
                 </Grid>

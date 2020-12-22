@@ -58,9 +58,9 @@ const ProductsPageCards = () => {
   return (
     <>
       {ProductList.map((item, index) => (
-        <Grid item lg={4} md={4}>
+        <Grid item xs={12} lg={4} md={4}>
           <Grid container justify="center">
-            <Grid item lg={6} md={6}>
+            <Grid item xs={ 12} lg={6} md={6}>
               <Paper elevation={2} className={classes.paper}>
                 <Grid container justify="center">
                   <Grid item lg={12} md={12}>

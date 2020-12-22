@@ -1,6 +1,12 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
+    card:{
+        [theme.breakpoints.down("xs")]:{
+            margin:'0px 20px',
+            marginTop:'20px', 
+        },
+    },
     paperNormal: {
        //height: "300px",
       marginBottom: '0.5rem',

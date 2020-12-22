@@ -67,7 +67,7 @@ const Cards = () => {
     <>
       {GymList.map((item, index) =>
         index < 9 ? (
-          <Grid item lg={4} md={4} id="gym">
+          <Grid item lg={4} md={4} id="gym" className={classes.card} >
             <Paper elevation={4} className={classes.paperNormal}>
               <Grid container>
                 <Grid item lg={12} md={12}>

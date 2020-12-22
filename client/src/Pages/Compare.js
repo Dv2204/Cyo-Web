@@ -17,7 +17,7 @@ const Compare = () => {
   }
         return (
             <>
-            <div style={{backgroundImage: `url(${compare})`, height: '100vh', width: '100vw'}}>
+            <div style={{height:'100vh', backgroundImage: `url(${compare})`,backgroundRepeat:'no-repeat', backgroundSize:'cover',backgroundAttachment:'fixed'}}>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <NavBar toggle={toggle}/>
                 <div className={classes.compare}>
@@ -29,7 +29,7 @@ const Compare = () => {
                 </Grid>
             </Grid>
              <Grid container lg={12} md={12}>
-                <Grid item lg={12} md={12} >
+                <Grid item xs={12} lg={12} md={12} >
                     <Typography variant="h6" className={classes.selection}  justify="center" >
                        Select the two gyms
                     </Typography>
@@ -49,7 +49,7 @@ const Compare = () => {
                 <Grid item lg={2} md={2} justify="center">
                 <Link to="/maincompare">
                 <Chip className={classes.btn} label="Compare"></Chip>
-                </Link>
+                </Link> 
                 </Grid>
             </Grid>
             </div>

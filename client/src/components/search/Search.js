@@ -23,11 +23,12 @@ const Search = () => {
 
     return(
         //  <Paper justify="center" classsName={classes.paper}>
-                    <Grid container lg={12} md={12}>
-                       <Grid item lg={1} md={1} >
+                    <Grid container xs={12} lg={12} md={12}>
+                      <Grid item xs={1} md={0} lg={0}/>
+                       <Grid item xs={2} lg={1} md={1} >
                        <PinDropIcon fontSize='large' className={classes.icon} />
                         </Grid>
-                        <Grid item lg={3} md={3}>
+                        <Grid item xs={8} lg={3} md={3}>
                              <Autocomplete
                              className={classes.select}
                                 {...defaultProps}
@@ -37,7 +38,7 @@ const Search = () => {
                                 renderInput={(params) => <TextField {...params} label="Your Location" style={{margin: 'auto'}} />}
                               />
                         </Grid>
-                        <Grid lg={8} md={8}>
+                        <Grid xs={12} lg={8} md={8}>
                              <Paper component="form" className={classes.root} elevation={2}>
                               <InputBase
                                 className={classes.input}

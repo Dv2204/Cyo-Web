@@ -4,7 +4,7 @@ export const useStyles = makeStyles((theme) => ({
     card:{
         [theme.breakpoints.down("xs")]:{
             margin:'0px 20px',
-            marginTop:'20px',
+            marginTop:'20px', 
         },
     },
     paperNormal: {

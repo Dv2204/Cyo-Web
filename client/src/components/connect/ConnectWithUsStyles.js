@@ -11,7 +11,7 @@ export const useStyles = makeStyles((theme) => ({
     heading: {
         fontWeight: 'bold',
         [theme.breakpoints.down('xs')]:{
-            fontSize:'1.8rem',
+            fontSize:'1.6rem',
         }
     },
     vertical: {
