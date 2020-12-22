@@ -24,7 +24,6 @@ const Search = () => {
     return(
         //  <Paper justify="center" classsName={classes.paper}>
                     <Grid container xs={12} lg={12} md={12}>
-                      <Grid item xs={1} md={0} lg={0}/>
                        <Grid item xs={2} lg={1} md={1} >
                        <PinDropIcon fontSize='large' className={classes.icon} />
                         </Grid>
