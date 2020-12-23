@@ -1,10 +1,8 @@
 import React from 'react';
-// import { NavLink as Link} from 'react-router-dom';
 import {Nav, Bars, NavMenu, NavLink, NavDiv, Dot, NavLogo, MobileIcons} from './NavItems';
 import Logo from '../../assets/logo-white.png';
 import '../Nav/navbar.css';
 import {Link} from 'react-scroll';
-// import { Link } from "react-router-dom";
 
 const NavBar = ({toggle}) => {
     return (
@@ -22,9 +20,6 @@ const NavBar = ({toggle}) => {
                         <h2 className="LogoName">Choose Your Option</h2>
                     </NavLogo>
                     <NavMenu>
-                        {/* <NavLink activeStyle>
-                            Gyms
-                        </NavLink> */}
                         <Link to="gym" smooth={true} duration={1000}><NavLink activeStyle>
                             Gyms
                         </NavLink></Link>

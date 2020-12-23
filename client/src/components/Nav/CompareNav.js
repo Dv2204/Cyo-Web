@@ -20,25 +20,14 @@ const CompareNavBar = ({toggle}) => {
                     <h2 className="LogoName">Choose Your Option</h2>
                     </NavLogo>
                     <NavMenu>
-                        {/* <NavLink activeStyle>
-                            Gyms
-                        </NavLink> */}
                         <NavLink  to="/gyms" activeStyle>
                             Gyms
                         </NavLink>
                         <Dot />
-                        {/* <Link to="products" smooth={true} duration={2000}><NavLink activeStyle>
-                            Products
-                        </NavLink></Link>
-                        <Dot /> */}
                         <NavLink to="/products" activeStyle>
                             Products
                         </NavLink>
                         <Dot />
-                        {/* <NavLink to="/guide" activeStyle>
-                            Help Centre
-                        </NavLink>
-                        <Dot /> */}
                         <NavLink  to="/about" activeStyle>
                             About-Developers
                         </NavLink>

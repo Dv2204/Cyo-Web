@@ -21,9 +21,6 @@ const AboutNavBar = ({toggle}) => {
                     <h2 className="LogoName">Choose Your Option</h2>
                     </NavLogo>
                     <NavMenu>
-                        {/* <NavLink activeStyle>
-                            Gyms
-                        </NavLink> */}
                         <NavLink  to="/gyms" activeStyle>
                             Gyms
                         </NavLink>
@@ -39,10 +36,6 @@ const AboutNavBar = ({toggle}) => {
                         <Link to="contact" smooth={true} duration={1000}><NavLink activeStyle>
                             Help Centre
                         </NavLink></Link>
-                        {/* <Dot /> */}
-                        {/* <NavLink  to="/about" activeStyle>
-                            About-Developers
-                        </NavLink> */}
                     </NavMenu>
                 </NavDiv>             
             </Nav>            
