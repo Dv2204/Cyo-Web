@@ -14,6 +14,9 @@ export const useStyles = makeStyles((theme) => ({
     },
     facheading: {
         textAlign:'center',
-        marginTop: '2rem'
+        marginTop: '4rem'
+    },
+    detailsheading: {
+        marginTop: '4rem'
     }
  }))

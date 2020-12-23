@@ -36,7 +36,7 @@ const GymDetails = () => {
         </Grid>
         <Grid container lg={12} md={12} justify="center">
           <Grid item lg={8} md={8}>
-            <Typography variant="body2">
+            <Typography variant="body1" style={{color: 'rgba(92, 92, 92, 1)', marginTop: '0.5rem'}}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.Faucibus auctor eu platea dolor etiam vitae aliquam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Faucibus auctor eu platea dolor etiam vitae aliquam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Faucibus auctor eu platea dolor etiam vitae aliquam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Faucibus auctor eu platea dolor etiam vitae aliquam urna.
             </Typography>
           </Grid>
@@ -50,6 +50,22 @@ const GymDetails = () => {
         </Grid>
         <Grid container lg={12} md={12} justify="center" style={{marginTop: '0.5rem'}}>
           <CircleDetails/>
+        </Grid>
+        <Grid container lg={12} md={12} justify="center">
+          <Grid item lg={8} md={8}>
+            <Typography variant="h4" className={classes.detailsheading}>
+              Details:
+            </Typography>
+          </Grid>
+        </Grid>
+        <Grid container lg={12} md={12} justify="center">
+          <Grid item lg={8} md={8}>
+            <Typography variant="body1" style={{color: 'rgba(92, 92, 92, 1)', marginTop: '0.5rem'}}>
+            Lorem ipsum dolor sit amet falana ddhamkana gym , le lo slot boook karlo, consectetur adipiscing elit. Lorem ipsum dolor sit amet falana ddhamkana gym , le lo slot boook karlo, consectetur adipiscing elit.
+            Lorem ipsum dolor sit amet falana ddhamkana gym , le lo slot boook karlo, consectetur adipiscing elit. Lorem ipsum dolor sit amet falana ddhamkana gym , le lo slot boook karlo, consectetur adipiscing elit.
+            Lorem ipsum dolor sit amet falana ddhamkana gym , le lo slot boook karlo, consectetur adipiscing elit. Lorem ipsum dolor sit amet falana ddhamkana gym , le lo slot boook karlo, consectetur adipiscing elit.
+            </Typography>
+          </Grid>
         </Grid>
         <Grid container>
             <Contact />
