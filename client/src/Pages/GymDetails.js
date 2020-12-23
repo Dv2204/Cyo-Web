@@ -4,6 +4,7 @@ import NavBar from '../components/gymDetailsNav/NavBarMain';
 import { useStyles } from "./PageStyles/GymDetailsStyles";
 import Contact from '../components/contactUs/Contact';
 import Sidebar from '../components/Sidebar/Sidebar';
+import CircleDetails from '../components/circle/CircleDetails';
 import DetailsCarousel from '../components/detailsCarousel/DetailsCarousel';
 import head from "../assets/2.PNG";
 
@@ -46,6 +47,9 @@ const GymDetails = () => {
               FACILITIES:
             </Typography>
           </Grid>
+        </Grid>
+        <Grid container lg={12} md={12} justify="center" style={{marginTop: '0.5rem'}}>
+          <CircleDetails/>
         </Grid>
         <Grid container>
             <Contact />
