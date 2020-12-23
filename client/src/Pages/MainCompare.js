@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import { useStyles } from "./PageStyles/MainCompareStyles";
 import NavBar from '../components/compareNav/NavBarMain';
-import {Grid, Typography, Chip} from "@material-ui/core";
-import Contact from '../components/contactUs/Contact';
+import {Grid, Typography} from "@material-ui/core";
+// import Contact from '../components/contactUs/Contact';
 import Sidebar from '../components/Sidebar/Sidebar';
 import Accordion from '../components/dropdownCompare/Accordion';
 import './PageStyles/compare.css';
