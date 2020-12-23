@@ -5,6 +5,7 @@ import { useStyles } from "./PageStyles/GymDetailsStyles";
 import Contact from '../components/contactUs/Contact';
 import Sidebar from '../components/Sidebar/Sidebar';
 import CircleDetails from '../components/circle/CircleDetails';
+import ReviewCard from '../components/reviewCard/ReviewCard';
 import DetailsCarousel from '../components/detailsCarousel/DetailsCarousel';
 import head from "../assets/2.PNG";
 
@@ -54,7 +55,7 @@ const GymDetails = () => {
         <Grid container lg={12} md={12} justify="center">
           <Grid item lg={8} md={8}>
             <Typography variant="h4" className={classes.detailsheading}>
-              Details:
+              DETAILS:
             </Typography>
           </Grid>
         </Grid>
@@ -67,7 +68,17 @@ const GymDetails = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Grid container>
+        <Grid container lg={12} md={12} justify="center">
+          <Grid item lg={8} md={8}>
+            <Typography variant="h4" className={classes.detailsheading}>
+             REVIEWS:
+            </Typography>
+          </Grid>
+        </Grid>
+        <Grid container lg={12} md={12} justify="center">
+          <ReviewCard/>
+        </Grid>
+        <Grid container style={{marginTop: '4rem'}}>
             <Contact />
           </Grid>
       </div>

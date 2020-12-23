@@ -9,14 +9,14 @@ export const useStyles = makeStyles((theme) => ({
     },
     headingicon:{
         marginLeft: '15rem',
-        marginTop: '4rem',
+        marginTop: '5rem',
         marginBottom: '0.5rem',
     },
     facheading: {
         textAlign:'center',
-        marginTop: '4rem'
+        marginTop: '5rem'
     },
     detailsheading: {
-        marginTop: '4rem'
+        marginTop: '5rem'
     }
  }))
