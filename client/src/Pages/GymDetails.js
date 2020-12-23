@@ -4,6 +4,7 @@ import NavBar from '../components/gymDetailsNav/NavBarMain';
 import { useStyles } from "./PageStyles/GymDetailsStyles";
 import Contact from '../components/contactUs/Contact';
 import Sidebar from '../components/Sidebar/Sidebar';
+import DetailsCarousel from '../components/detailsCarousel/DetailsCarousel';
 
 const GymDetails = () => {
   const classes = useStyles();
@@ -16,6 +17,11 @@ const GymDetails = () => {
       <div style={{backgroundColor: 'rgba(248, 248, 248, 1)'}}>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
         <NavBar toggle={toggle}/>
+        <Grid container lg={12} md={12} justify="center">
+          <Grid item lg={10} md={10} sm={12} xs={12}>
+            <DetailsCarousel />
+          </Grid>
+        </Grid>
         <Grid container lg={12} md={12}>
           <Grid item lg={12} md={12}>
             <Typography variant="h4" className={classes.heading}>
