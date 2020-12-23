@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Grid, Typography} from "@material-ui/core";
-import NavBar from '../components/gymDetailsNav/NavBarMain';
+import DetailsNavBar from '../components/Nav/GymDetailsNav';
 import { useStyles } from "./PageStyles/GymDetailsStyles";
 import Contact from '../components/contactUs/Contact';
 import Sidebar from '../components/Sidebar/Sidebar';
@@ -19,7 +19,7 @@ const GymDetails = () => {
     return(
       <div style={{backgroundColor: 'rgba(248, 248, 248, 1)'}}>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
-        <NavBar toggle={toggle}/>
+        <DetailsNavBar toggle={toggle}/>
         <Grid container lg={12} md={12} justify="center">
           <Grid item lg={8} md={8} sm={12} xs={12}>
             <DetailsCarousel />

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { useStyles } from "./PageStyles/MainCompareStyles";
-import NavBar from '../components/compareNav/NavBarMain';
+import CompareNavBar from '../components/Nav/CompareNav';
 import {Grid, Typography} from "@material-ui/core";
 // import Contact from '../components/contactUs/Contact';
 import Sidebar from '../components/Sidebar/Sidebar';
@@ -19,7 +19,7 @@ const About = () => {
             <>
             <div style={{backgroundColor: 'rgba(248, 248, 248, 1)'}}>
                 <Sidebar isOpen={isOpen} toggle={toggle}/>
-                <NavBar toggle={toggle}/>
+                <CompareNavBar toggle={toggle}/>
             
                <Grid container lg={12} md={12} justify="space-around" className={classes.top}>
                    <Grid item lg={4} md={4}>

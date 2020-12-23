@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Grid, Container, Typography} from "@material-ui/core";
-import NavBar from '../components/productsNav/NavBarMain';
+import ProductsNavBar from '../components/Nav/ProductsNav';
 import { useStyles } from "./PageStyles/ProductsStyles";
 import Contact from '../components/contactUs/Contact';
 import ProductsSearch from '../components/productsSearch/ProductsSearch';
@@ -18,7 +18,7 @@ const Products = () => {
     return(
         <div style={{backgroundColor: 'rgba(248, 248, 248, 1)'}}>
         <Sidebar isOpen={isOpen} toggle={toggle}/>
-        <NavBar toggle={toggle}/>
+        <ProductsNavBar toggle={toggle}/>
         <Grid container xs={12} lg={12} md={12}>
                 <Grid item xs={12} lg={12} md={12} >
                     <Typography variant="h2" className={classes.text}  justify="center" >

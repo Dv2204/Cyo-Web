@@ -4,7 +4,7 @@ import Logo from '../../assets/logo-white.png';
 import '../Nav/navbar.css';
 import {Link} from 'react-router-dom';
 
-const NavBar = ({toggle}) => {
+const CompareNavBar = ({toggle}) => {
     return (
         <>
             <Nav style={{ position: 'relative'}}>
@@ -20,25 +20,14 @@ const NavBar = ({toggle}) => {
                     <h2 className="LogoName">Choose Your Option</h2>
                     </NavLogo>
                     <NavMenu>
-                        {/* <NavLink activeStyle>
-                            Gyms
-                        </NavLink> */}
                         <NavLink  to="/gyms" activeStyle>
                             Gyms
                         </NavLink>
                         <Dot />
-                        {/* <Link to="products" smooth={true} duration={2000}><NavLink activeStyle>
-                            Products
-                        </NavLink></Link>
-                        <Dot /> */}
                         <NavLink to="/products" activeStyle>
                             Products
                         </NavLink>
                         <Dot />
-                        {/* <NavLink to="/guide" activeStyle>
-                            Help Centre
-                        </NavLink>
-                        <Dot /> */}
                         <NavLink  to="/about" activeStyle>
                             About-Developers
                         </NavLink>
@@ -49,4 +38,4 @@ const NavBar = ({toggle}) => {
     )
 }
 
-export default NavBar;
+export default CompareNavBar;

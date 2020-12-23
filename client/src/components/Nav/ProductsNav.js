@@ -4,7 +4,7 @@ import Logo from '../../assets/logo-white.png';
 import '../Nav/navbar.css';
 import {Link} from 'react-scroll';
 
-const NavBar = ({toggle}) => {
+const ProductsNavBar = ({toggle}) => {
     return (
         <>
             <Nav style={{ position: 'relative'}}>
@@ -20,15 +20,15 @@ const NavBar = ({toggle}) => {
                     <h2 className="LogoName">Choose Your Option</h2>
                     </NavLogo>
                     <NavMenu>
-                        <NavLink to="/products" activeStyle>
-                            Products
+                        <NavLink  to="/gyms" activeStyle>
+                            Gyms
                         </NavLink>
                         <Dot />
                         <NavLink to="/compare" activeStyle>
                             Compare
                         </NavLink>
                         <Dot />
-                        <Link to="contact" smooth={true} duration={1000}><NavLink activeStyle>
+                        <Link to="contact" smooth={true} duration={2000}><NavLink activeStyle>
                             Help Centre
                         </NavLink></Link>
                         <Dot />
@@ -42,4 +42,4 @@ const NavBar = ({toggle}) => {
     )
 }
 
-export default NavBar;
+export default ProductsNavBar;

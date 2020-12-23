@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import top from "../assets/about.png";
 import { useStyles } from "./PageStyles/AboutStyles";
-import NavBar from "../components/aboutNav/NavBarMain";
+import AboutNavBar from "../components/Nav/AboutNav";
 import { Grid, Typography } from "@material-ui/core";
 import Contact from "../components/contactUs/Contact";
 import Developers from "../components/developers/Developers";
@@ -28,7 +28,7 @@ const About = () => {
     <>
       <div style={{ backgroundColor: "rgba(248, 248, 248, 1)" }}>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
-      <NavBar toggle={toggle}/>
+      <AboutNavBar toggle={toggle}/>
         <Grid container md={12} lg={12} justify="center">
           <img src={top} alt="topBg" className={classes.top} />
           <Typography variant="h2" className={classes.head}>

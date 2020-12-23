@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import compare from '../assets/compare.jpg';
 import { useStyles } from "./PageStyles/CompareStyles";
-import NavBar from '../components/compareNav/NavBarMain';
+import CompareNavBar from '../components/Nav/CompareNav';
 import {Grid, Typography, Chip} from "@material-ui/core";
 import CompareSearch from '../components/compareSearch/CompareSearch';
 import {Link} from 'react-router-dom';
@@ -18,7 +18,7 @@ const Compare = () => {
             <>
             <div style={{height:'100vh', backgroundImage: `url(${compare})`,backgroundRepeat:'no-repeat', backgroundSize:'cover',backgroundAttachment:'fixed'}}>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
-            <NavBar toggle={toggle}/>
+            <CompareNavBar toggle={toggle}/>
                 <div className={classes.compare}>
                 <Grid container lg={12} md={12}>
                 <Grid item lg={12} md={12} >
