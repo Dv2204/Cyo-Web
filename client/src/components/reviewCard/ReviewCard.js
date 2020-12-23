@@ -8,13 +8,16 @@ const ReviewCard = () => {
     const classes = useStyles();
     const ReviewList = [
         {
-            name:'Panda Bleh'
+            name:'Panda Bleh',
+            value: '2'
         },
         {
-            name:'Billi Bleh'
+            name:'Billi Bleh',
+            value:'4'
         },
         {
-            name:'Doggo Bleh'
+            name:'Doggo Bleh',
+            value: '3'
         },
     ]
     return(
@@ -34,7 +37,7 @@ const ReviewCard = () => {
                    <Grid item lg={4} md={4}>
                    <Box mb={3}>
                             <Rating
-                            defaultValue={2}
+                            defaultValue={item.value}
                             precision={0.5}
                             emptyIcon={<StarBorderIcon fontSize="inherit" />}
                             />

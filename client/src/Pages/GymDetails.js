@@ -78,7 +78,7 @@ const GymDetails = () => {
         <Grid container lg={12} md={12} justify="center">
           <ReviewCard/>
         </Grid>
-        <Grid container style={{marginTop: '4rem'}}>
+        <Grid container style={{marginTop: '6rem'}}>
             <Contact />
           </Grid>
       </div>

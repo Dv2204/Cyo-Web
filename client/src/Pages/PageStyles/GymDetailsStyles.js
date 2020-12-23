@@ -5,7 +5,7 @@ export const useStyles = makeStyles((theme) => ({
         marginBottom: '0.5rem',
         marginLeft: '14rem',
         fontWeight:'bold',
-        marginTop:'4rem'
+        marginTop:'5rem'
     },
     headingicon:{
         marginLeft: '15rem',
@@ -14,9 +14,9 @@ export const useStyles = makeStyles((theme) => ({
     },
     facheading: {
         textAlign:'center',
-        marginTop: '5rem'
+        marginTop: '5.4rem'
     },
     detailsheading: {
-        marginTop: '5rem'
+        marginTop: '5.4rem'
     }
  }))
