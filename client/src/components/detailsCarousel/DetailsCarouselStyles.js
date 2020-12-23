@@ -4,7 +4,7 @@ export const useStyles = makeStyles((theme) => ({
     paper: {
         marginTop: '3rem',
         borderRadius: '20px',
-        boxShadow: "0px 10px 12px rgba(38, 38, 38, 0.5)",
+        boxShadow: "0px 10px 12px rgba(38, 38, 38, 0.6)",
     },
     location: {
         color: 'rgba(243, 103, 156, 1)',

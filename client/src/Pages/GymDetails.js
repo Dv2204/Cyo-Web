@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
-import {Grid, Typography} from "@material-ui/core";
+import {Grid, Typography, Avatar} from "@material-ui/core";
 import NavBar from '../components/gymDetailsNav/NavBarMain';
 import { useStyles } from "./PageStyles/GymDetailsStyles";
 import Contact from '../components/contactUs/Contact';
 import Sidebar from '../components/Sidebar/Sidebar';
 import DetailsCarousel from '../components/detailsCarousel/DetailsCarousel';
+import head from "../assets/2.PNG";
 
 const GymDetails = () => {
   const classes = useStyles();
@@ -23,8 +24,11 @@ const GymDetails = () => {
           </Grid>
         </Grid>
         <Grid container lg={12} md={12}>
-          <Grid item lg={12} md={12}>
-            <Typography variant="h4" className={classes.heading}>
+          <Grid item lg={1} md={1}>
+             <img src={head} className={classes.headingicon} alt="Profile" />
+          </Grid>
+          <Grid item lg={11} md={11}>
+          <Typography variant="h3" className={classes.heading}>
               Gym 1
             </Typography>
           </Grid>
@@ -36,7 +40,6 @@ const GymDetails = () => {
             </Typography>
           </Grid>
         </Grid>
-
         <Grid container>
             <Contact />
           </Grid>
