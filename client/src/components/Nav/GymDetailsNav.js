@@ -6,7 +6,7 @@ import '../Nav/navbar.css';
 import {Link} from 'react-scroll';
 // import { Link } from "react-router-dom";
 
-const NavBar = ({toggle}) => {
+const DetailsNavBar = ({toggle}) => {
     return (
         <>
             <Nav style={{ position: 'relative'}}>
@@ -34,7 +34,7 @@ const NavBar = ({toggle}) => {
                             Compare
                         </NavLink>
                         <Dot />
-                        <Link to="connect" smooth={true} duration={2500}><NavLink activeStyle>
+                        <Link to="contact" smooth={true} duration={2500}><NavLink activeStyle>
                             Help Centre
                         </NavLink></Link>
                         <Dot />
@@ -48,4 +48,4 @@ const NavBar = ({toggle}) => {
     )
 }
 
-export default NavBar;
+export default DetailsNavBar;

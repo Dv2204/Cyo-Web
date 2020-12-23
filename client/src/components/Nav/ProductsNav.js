@@ -4,7 +4,7 @@ import Logo from '../../assets/logo-white.png';
 import '../Nav/navbar.css';
 import {Link} from 'react-scroll';
 
-const NavBar = ({toggle}) => {
+const ProductsNavBar = ({toggle}) => {
     return (
         <>
             <Nav style={{ position: 'relative'}}>
@@ -49,4 +49,4 @@ const NavBar = ({toggle}) => {
     )
 }
 
-export default NavBar;
+export default ProductsNavBar;
