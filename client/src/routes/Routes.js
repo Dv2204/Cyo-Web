@@ -7,6 +7,7 @@ import GymDetails from '../Pages/GymDetails';
 import About from '../Pages/About';
 import LandingPage from '../Pages/LandingPage';
 import MainCompare from '../Pages/MainCompare';
+import Contact from '../components/contactUs/Contact';
 
 
 const Routes = () => {
@@ -22,6 +23,7 @@ const Routes = () => {
           <Route exact path="/gymdetails" component={GymDetails} />
           <Route exact path="/about" component={About} />
           <Route exact path="/maincompare" component={MainCompare} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
       </Router>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import {SidebarContainer, Close, Icons, SideLink, SideMenu} from '../Sidebar/SidebarItems';
 
+
 const Sidebar = ({isOpen, toggle}) => {
     return (
         <>
@@ -9,11 +10,11 @@ const Sidebar = ({isOpen, toggle}) => {
                     <Close />
                 </Icons>
                 <SideMenu>
-                    <SideLink to="/pages/gyms">Gyms</SideLink>
-                    <SideLink to="/pages/products">Products</SideLink>
-                    <SideLink to="/pages/compare">Compare</SideLink>
-                    <SideLink to="/pages/guide">Help Centre</SideLink>
-                    <SideLink to="/pages/about">About-Developers</SideLink>
+                    <SideLink to="/gyms">Gyms</SideLink>
+                    <SideLink to="/products">Products</SideLink>
+                    <SideLink to="/compare">Compare</SideLink>
+                    <SideLink to="/contact">Help Centre</SideLink>
+                    <SideLink to="/about">About-Developers</SideLink>
                 </SideMenu>
             </SidebarContainer>
         </>
