@@ -18,7 +18,7 @@ const GymDetails = () => {
       <Sidebar isOpen={isOpen} toggle={toggle}/>
         <NavBar toggle={toggle}/>
         <Grid container lg={12} md={12} justify="center">
-          <Grid item lg={10} md={10} sm={12} xs={12}>
+          <Grid item lg={8} md={8} sm={12} xs={12}>
             <DetailsCarousel />
           </Grid>
         </Grid>
