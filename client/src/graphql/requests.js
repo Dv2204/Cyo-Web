@@ -52,3 +52,19 @@ export const GET_TOKEN_AUTH = gql`
   }
 `;
 
+export const SHOW_USER_FEEDBACKS = gql `
+query ShowUserFeedbacks($gymid : String!){
+    userFeedbacks(gymid: $gymid){
+      id
+      userId{
+        id
+      }
+      madeTo{
+        id
+      }
+      rating
+      description
+    }
+  }
+`
+

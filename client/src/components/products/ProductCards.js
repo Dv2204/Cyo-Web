@@ -61,7 +61,7 @@ const ProductCards = () => {
       {/* {ProductList.map((item, index) => */}
       {products.products.map((item, index) =>
         index < 9 ? (
-          <Grid item xs={12} lg={4} md={4}>
+          <Grid item xs={12} lg={4} md={4} key={item.id}>
             <Grid container justify="center">
               <Grid item xs={12} lg={6} md={6}>
                 <Paper elevation={2} className={classes.paper}>
