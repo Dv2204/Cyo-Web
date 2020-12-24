@@ -2,62 +2,64 @@ import React from "react";
 import { Typography, Paper, Grid } from "@material-ui/core";
 import { useStyles } from "./ProductCardsStyles";
 import { HiOutlineCurrencyRupee } from "react-icons/hi";
+import { ALL_PRODUCTS } from "../../graphql/requests";
+import { useQuery } from "@apollo/client";
 
 const ProductCards = () => {
   const classes = useStyles();
   const ProductList = [
     {
-      current: "7599",
-      mrp: "8000",
+      basePrice: "7599",
+      discountedPrice: "6000",
     },
     {
-      current: "6599",
-      mrp: "8000",
+      basePrice: "7599",
+      discountedPrice: "6000",
     },
     {
-      current: "8599",
-      mrp: "9000",
+      basePrice: "7599",
+      discountedPrice: "6000",
     },
     {
-      current: "1299",
-      mrp: "2000",
+      basePrice: "7599",
+      discountedPrice: "6000",
     },
     {
-      current: "2599",
-      mrp: "2600",
+      basePrice: "7599",
+      discountedPrice: "6000",
     },
     {
-      current: "4000",
-      mrp: "4500",
+      basePrice: "7599",
+      discountedPrice: "6000",
     },
     {
-      current: "2000",
-      mrp: "2400",
+      basePrice: "7599",
+      discountedPrice: "6000",
     },
     {
-      current: "4300",
-      mrp: "4999",
+      basePrice: "7599",
+      discountedPrice: "6000",
     },
     {
-      current: "4599",
-      mrp: "5000",
-    },
-    {
-      current: "5000",
-      mrp: "6399",
-    },
-    {
-      current: "4000",
-      mrp: "4299",
-    },
-    {
-      current: "2355",
-      mrp: "2999",
+      basePrice: "7599",
+      discountedPrice: "6000",
     },
   ];
+
+  const {data:products, loading, error} = useQuery(ALL_PRODUCTS);
+  if(loading){
+    return <p>Loading</p>
+  }
+
+  if(error){
+    return <p style={{color: '#fff'}}>{error.message}</p>
+  }
+  
+  console.log(products);
   return (
     <>
-      {ProductList.map((item, index) =>
+      {/* {ProductList.map((item, index) => */}
+      {products.products.map((item, index) =>
         index < 9 ? (
           <Grid item xs={12} lg={4} md={4}>
             <Grid container justify="center">
@@ -70,14 +72,14 @@ const ProductCards = () => {
                   </Grid>
                 </Paper>
                 <Typography variant="h5" className={classes.text}>
-                  <HiOutlineCurrencyRupee className={classes.icon} />
-                  {item.current} only
+                  {/* <HiOutlineCurrencyRupee className={classes.icon} /> */}
+                  ₹{item.discountedPrice} only
                 </Typography>
                 <Typography variant="caption" className={classes.mrp}>
-                  MRP: <HiOutlineCurrencyRupee />{" "}
+                  {/* MRP: <HiOutlineCurrencyRupee />{" "} */}
                   <span style={{ textDecoration: "line-through" }}>
                     {" "}
-                    {item.mrp}
+                   MRP: ₹{item.basePrice}
                   </span>
                 </Typography>
               </Grid>
