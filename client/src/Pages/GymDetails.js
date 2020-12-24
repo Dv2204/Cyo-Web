@@ -7,7 +7,7 @@ import Sidebar from '../components/Sidebar/Sidebar';
 import CircleDetails from '../components/circle/CircleDetails';
 import ReviewCard from '../components/reviewCard/ReviewCard';
 import DetailsCarousel from '../components/detailsCarousel/DetailsCarousel';
-import head from "../assets/2.PNG";
+import head from "../assets/3.png";
 
 const GymDetails = () => {
   const classes = useStyles();
