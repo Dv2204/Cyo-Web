@@ -5,9 +5,15 @@ const httpLink = createHttpLink({
     uri: 'https://api.cyogyms.com/graphql/api',
   });
 
+  // const client = new ApolloClient({
+  //   link: authLink.concat(httpLink),
+  //    cache,
+  // });
+
   const client = new ApolloClient({
-    link: authLink.concat(httpLink),
-     cache,
-  });
+    httpLink, 
+    cache,
+})
+
 
   export default client;
