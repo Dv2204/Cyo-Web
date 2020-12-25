@@ -21,8 +21,8 @@ const Compare = () => {
             <CompareNavBar toggle={toggle}/>
                 <div className={classes.compare}>
                 <Grid container lg={12} md={12}>
-                <Grid item lg={12} md={12} >
-                    <Typography variant="h2" className={classes.text}  justify="center" >
+                <Grid item xs={12} lg={12} md={12} >
+                    <Typography variant="h2" className={classes.text} style={{textAlign:'center'}}  justify="center" >
                        COMPARE THE GYMS
                     </Typography>
                 </Grid>
