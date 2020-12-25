@@ -23,20 +23,60 @@ query LandingImage {
   }
 `;
 
-export const GET_GYMS = gql`
-  query GetGyms($city: String!) {
-    gym(city: $city) {
+export const GET_GYM = gql`
+query GetGym($city: String!) {
+  gym(city: $city) {
+    id
+    gym {
+      id
+      name
+    }
+    city
+    pincode
+    area
+    seats
+    description
+    latitude
+    longitude
+    rating
+    userfeedbackSet
+    {
+      id
+      userId
+      {
+        id
+        firstName
+        lastName
+        image
+      }
+      rating 
+      description
+    }
+    gymimageSet{
+      id
+      gym{
+        id
+      }
+      image
+    }
+  }
+}
+`;
+
+export const SEARCH_GYMS = gql`
+  query SearchGym($keyword: String) {
+    searchGym(keyword: $keyword) {
       id
       gym {
         name
       }
+      mobile
+      isMobileVerified
       city
       pincode
       area
       seats
       description
-      basePrice
-      discountedPrice
       latitude
       longitude
       rating
@@ -66,5 +106,19 @@ query ShowUserFeedbacks($gymid : String!){
       description
     }
   }
-`
+`;
+
+export const SEARCH_PRODUCTS = gql`
+query SearchProducts($search: String!) {
+  searchProduct(search: $search){
+    id
+    title
+    image
+    description
+    discountedPrice
+    basePrice
+  }
+}
+`;
+
 

@@ -58,9 +58,8 @@ export const useStyles = makeStyles((theme) => ({
         padding: '1.1rem 2rem',
         fontSize: '19px',
         letterSpacing: '0.1rem',
-        // marginLeft: '4.6rem',
         "&:hover":{
-            cursor: 'pointer'
+            cursor: 'pointer',
         },
         [theme.breakpoints.down('xs')]:{
             fontSize: '10px',

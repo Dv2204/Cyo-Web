@@ -8,6 +8,8 @@ import Autocomplete from '@material-ui/lab/Autocomplete';
 import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
+import { useQuery } from "@apollo/client";
+import { SEARCH_GYMS } from "../../graphql/requests";
 
 
 const Search = () => {
@@ -20,6 +22,12 @@ const Search = () => {
     options: top100Films.map((option) => option.title),
   };
   const [value, setValue] = React.useState(null);
+
+  const { data: gyms, loading, error } = useQuery(SEARCH_GYMS, {
+    variables: {
+      keyword: value,
+    },
+  });
 
     return(
                     <Grid container xs={12} lg={12} md={12}>
