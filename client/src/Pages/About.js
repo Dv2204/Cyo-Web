@@ -35,7 +35,7 @@ const About = () => {
             ABOUT DEVELOPERS
           </Typography>
           <Grid item lg={7} md={7} justify="center">
-            <Typography style={{ textAlign: "center", marginBottom: "10vh" }}>
+            <Typography  className={classes.body} style={{ textAlign: "center", marginBottom: "10vh" }}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
               risus, mattis et nec adipiscing facilisi nisl odio tincidunt.
               Sapien quis amet, neque ut rhoncus dictum nisi, ultricies nec.

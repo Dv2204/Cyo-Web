@@ -9,6 +9,7 @@ const Developers = ({ name, skill, pic }) => {
     <div>
       <Grid
         container
+        xs={12}
         lg={12}
         md={12}
         justify="center"
@@ -22,12 +23,12 @@ const Developers = ({ name, skill, pic }) => {
             style={{ alignContent: "center" }}
           />
           <Typography
-            variant="h5"
+            variant="h5"  className={classes.name}
             style={{ fontWeight: "bold", textAlign: "center" }}
           >
             {name}
           </Typography>
-          <Typography variant="h6" style={{ textAlign: "center" }}>
+          <Typography variant="h6"  className={classes.desig} style={{ textAlign: "center" }}>
             {skill}
           </Typography>
         </Grid>
