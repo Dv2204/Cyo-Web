@@ -110,8 +110,8 @@ query ShowUserFeedbacks($gymid : String!){
   }
 `;
 
-export const SEARCH_PRODUCTS = gql`
-query SearchProducts($search: String!) {
+export const SEARCH_PRODUCT = gql`
+query SearchProduct($search: String!) {
   searchProduct(search: $search){
     id
     title
