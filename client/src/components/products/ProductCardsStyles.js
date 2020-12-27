@@ -4,7 +4,6 @@ export const useStyles = makeStyles((theme) => ({
     paper: {
         backgroundColor: 'rgba(251, 217, 203, 1)',
         height: '38vh',
-      //  width: '13.5vw',
        marginTop: '6rem',
        borderRadius: '13px',
        [theme.breakpoints.down("xs")]:{

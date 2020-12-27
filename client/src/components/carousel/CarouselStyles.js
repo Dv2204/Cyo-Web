@@ -18,10 +18,16 @@ export const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
         height: '82vh',
-        //marginTop:'1rem',
         marginBottom:'3rem',
         [theme.breakpoints.down('xs')]:{
-            height:'40vh !important'
+            height:'40vh !important',
+        }
+      },
+      images: {
+          backgroundSize:'cover',
+          height: '82vh',
+          [theme.breakpoints.down('xs')]:{
+            height:'40vh !important',
         }
       }
  }))

@@ -5,6 +5,7 @@ import { useStyles } from "./CarouselStyles";
 import pic from "../../assets/1.jpg";
 import compare from "../../assets/compare.jpg";
 import { LANDING_IMAGE } from "../../graphql/requests";
+import { IMAGE_URL } from "../../graphql/requests";
 import { useQuery } from "@apollo/client";
 
 
@@ -25,7 +26,7 @@ if(loading){
 }
 
 if(error){
-  return <p style={{color: '#fff'}}>{error.message}</p>
+  return <p style={{color: '#000'}}>{error.message}</p>
 }
 
 console.log(landingImage);
@@ -33,17 +34,9 @@ console.log(landingImage);
     <>
       <div className={classes.carousel}>
         <Carousel breakPoints={breakPoints}>
-          <Item><img src={landingImage.image} alt="Gym"></img></Item>
-          <Item><img src={landingImage.image} alt="Gym"></img></Item>
-          <Item><img src={landingImage.image} alt="Gym"></img></Item>
-          <Item><img src={compare}  alt="Gym"></img></Item>
-          <Item><img src={pic} alt="Gym"></img></Item>
-          {/* <Item><img src={compare} alt="Gym"></img></Item>
-          <Item><img src={pic} alt="Gym"></img></Item>
-          <Item><img src={compare} alt="Gym"></img></Item>
-          <Item><img src={pic} alt="Gym"></img></Item>
-          <Item><img src={compare} alt="Gym"></img></Item>
-          <Item><img src={pic} alt="Gym"></img></Item> */}
+        {landingImage.landingImage.map((item, index) => 
+          <Item><img className={classes.images} src={`${IMAGE_URL}${item.image}`} alt="Gym" /></Item>
+        )}
         </Carousel>
       </div>
     </>
