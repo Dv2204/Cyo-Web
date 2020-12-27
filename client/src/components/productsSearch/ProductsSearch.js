@@ -6,18 +6,18 @@ import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import { SEARCH_PRODUCT } from "../../graphql/requests";
 import { useQuery } from "@apollo/client";
-import { ALL_PRODUCTS } from "../../graphql/requests";
-import { IMAGE_URL } from "../../graphql/requests";
+// import { ALL_PRODUCTS } from "../../graphql/requests";
+// import { IMAGE_URL } from "../../graphql/requests";
 
 
 const ProductsSearch = () => {
     const classes = useStyles();
     const [searchText, setText] = useState(" ");
-    const { data: products, loading, error } = useQuery(SEARCH_PRODUCT, {
-      variables: {
-        search: searchText,
-      },
-    });
+    // const { data: products, loading, error } = useQuery(SEARCH_PRODUCT, {
+    //   variables: {
+    //     search: searchText,
+    //   },
+    // });
 
     const handleChange = (e) => {
       setText(e.target.value)
