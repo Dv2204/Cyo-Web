@@ -2,53 +2,11 @@ import React from "react";
 import { Typography, Paper, Grid } from "@material-ui/core";
 import { useStyles } from "./ProductCardsStyles";
 import { ALL_PRODUCTS } from "../../graphql/requests";
+import { IMAGE_URL } from "../../graphql/requests";
 import { useQuery } from "@apollo/client";
 
 const ProductCards = () => {
-
-  const IMAGE_URL =
-  "https://elasticbeanstalk-ap-south-1-487328506249.s3.ap-south-1.amazonaws.com/media/";
-
   const classes = useStyles();
-  // const ProductList = [
-  //   {
-  //     basePrice: "7599",
-  //     discountedPrice: "6000",
-  //   },
-  //   {
-  //     basePrice: "7599",
-  //     discountedPrice: "6000",
-  //   },
-  //   {
-  //     basePrice: "7599",
-  //     discountedPrice: "6000",
-  //   },
-  //   {
-  //     basePrice: "7599",
-  //     discountedPrice: "6000",
-  //   },
-  //   {
-  //     basePrice: "7599",
-  //     discountedPrice: "6000",
-  //   },
-  //   {
-  //     basePrice: "7599",
-  //     discountedPrice: "6000",
-  //   },
-  //   {
-  //     basePrice: "7599",
-  //     discountedPrice: "6000",
-  //   },
-  //   {
-  //     basePrice: "7599",
-  //     discountedPrice: "6000",
-  //   },
-  //   {
-  //     basePrice: "7599",
-  //     discountedPrice: "6000",
-  //   },
-  // ];
-
   const {data:products, loading, error} = useQuery(ALL_PRODUCTS);
   if(loading){
     return <p>Loading</p>
@@ -73,6 +31,9 @@ const ProductCards = () => {
                     </Grid>
                   </Grid>
                 </Paper>
+                <Typography variant="h5" className={classes.title}>
+                  {item.title}
+                </Typography>
                 <Typography variant="h5" className={classes.text}>
                   ₹{item.discountedPrice} only
                 </Typography>

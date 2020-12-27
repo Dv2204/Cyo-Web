@@ -19,6 +19,13 @@ export const useStyles = makeStyles((theme) => ({
         cursor: 'pointer'
        }
     },
+    title:{
+        color: '#FFF',
+        letterSpacing: '0.2rem',
+        [theme.breakpoints.down("xs")]:{
+             marginLeft: '5rem',
+        },
+    },
     text:{
         color: '#FFF',
         [theme.breakpoints.down("xs")]:{
@@ -40,11 +47,12 @@ export const useStyles = makeStyles((theme) => ({
     },
     images: {
         height: '38vh',
-        width: '13.5vw',
+        width: '13.52vw',
         borderRadius: '13px',
         BackgroundSize:'cover',
         [theme.breakpoints.down("xs")]:{
-           width: '63vw'
+           width: '63.2vw'
         },
-    }
+    },
+    
 }))
