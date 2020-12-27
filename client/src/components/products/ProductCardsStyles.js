@@ -18,6 +18,13 @@ export const useStyles = makeStyles((theme) => ({
         cursor: 'pointer'
        }
     },
+    title:{
+        color: '#FFF',
+        letterSpacing: '0.2rem',
+        [theme.breakpoints.down("xs")]:{
+             marginLeft: '5rem',
+        },
+    },
     text:{
         color: '#FFF',
         [theme.breakpoints.down("xs")]:{
@@ -36,5 +43,15 @@ export const useStyles = makeStyles((theme) => ({
          fontSize: '1.7rem',
         marginTop: '0.6rem',
         marginRight:'0.5rem'
-    }
+    },
+    images: {
+        height: '38vh',
+        width: '13.52vw',
+        borderRadius: '13px',
+        BackgroundSize:'cover',
+        [theme.breakpoints.down("xs")]:{
+           width: '63.2vw'
+        },
+    },
+    
 }))

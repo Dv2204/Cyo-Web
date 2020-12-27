@@ -1,5 +1,7 @@
 import { gql } from "@apollo/client";
 
+export const IMAGE_URL = 'https://elasticbeanstalk-ap-south-1-487328506249.s3.ap-south-1.amazonaws.com/media/';
+
 export const ALL_PRODUCTS = gql`
 query AllProducts {
     products{
@@ -108,8 +110,8 @@ query ShowUserFeedbacks($gymid : String!){
   }
 `;
 
-export const SEARCH_PRODUCTS = gql`
-query SearchProducts($search: String!) {
+export const SEARCH_PRODUCT = gql`
+query SearchProduct($search: String!) {
   searchProduct(search: $search){
     id
     title
