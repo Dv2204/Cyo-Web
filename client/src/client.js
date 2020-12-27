@@ -7,6 +7,10 @@ const httpLink = createHttpLink({
     uri: 'https://api.cyogyms.com/graphql/api/',
   });
 
+  const IMAGE_URL = createHttpLink({
+    uri: 'https://elasticbeanstalk-ap-south-1-487328506249.s3.ap-south-1.amazonaws.com/media/',
+  });
+
   const getToken = async () => {
     try {
       const value = await localStorage.getItem("@token");
@@ -37,6 +41,7 @@ const httpLink = createHttpLink({
   const client = new ApolloClient({
     link: authLink.concat(httpLink),
      cache,
+    // images: authLink.concat(imageLink), 
   });
 
 

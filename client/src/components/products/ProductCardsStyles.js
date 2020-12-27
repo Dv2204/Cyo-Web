@@ -4,6 +4,7 @@ export const useStyles = makeStyles((theme) => ({
     paper: {
         backgroundColor: 'rgba(251, 217, 203, 1)',
         height: '38vh',
+      //  width: '13.5vw',
        marginTop: '6rem',
        borderRadius: '13px',
        [theme.breakpoints.down("xs")]:{
@@ -36,5 +37,14 @@ export const useStyles = makeStyles((theme) => ({
          fontSize: '1.7rem',
         marginTop: '0.6rem',
         marginRight:'0.5rem'
+    },
+    images: {
+        height: '38vh',
+        width: '13.5vw',
+        borderRadius: '13px',
+        BackgroundSize:'cover',
+        [theme.breakpoints.down("xs")]:{
+           width: '63vw'
+        },
     }
 }))
