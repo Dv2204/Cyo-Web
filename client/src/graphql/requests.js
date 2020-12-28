@@ -125,7 +125,7 @@ query SearchProduct($search: String!) {
 
 export const ALL_GYMS = gql`
 query AllGyms($city: String!) {
-  gym(city: " ") {
+  gym(city: $city) {
     id
     gym {
       id

@@ -16,12 +16,18 @@ import Loader from '../Loader';
 
 const Cards = () => {
   const classes = useStyles();
-  const {data:gym, loading, error} = useQuery(ALL_GYMS);
+  const {data:gym, loading, error} = useQuery(ALL_GYMS, 
+    {
+      variables: {
+        city: " "
+      },
+    }
+    );
   if(loading){
     return (
       <Grid container lg={12} md={12} justify="center" style={{margin: '5rem'}}>
         <Grid item lg={3} md={3} justify="center">
-        <Loader color="#fff" />
+        <Loader color="#000" />
         </Grid>
       </Grid>
     )
@@ -34,7 +40,6 @@ const Cards = () => {
   console.log(gym);
   return (
     <>
-      {/* {GymList.map((item, index) => */}
       {gym.gym.map((item, index) =>
         index < 9 ? (
           <Grid item lg={4} md={4} id="gym" className={classes.card} >
