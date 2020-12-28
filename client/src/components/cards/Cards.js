@@ -16,56 +16,6 @@ import Loader from '../Loader';
 
 const Cards = () => {
   const classes = useStyles();
-  const GymList = [
-    {
-      name: "Gym 1",
-      location: "Bathinda",
-    },
-    {
-      name: "Gym 2",
-      location: " Chandigarh",
-    },
-    {
-      name: "Gym 3",
-      location: "Jalandhar ",
-    },
-    {
-      name: "Gym 4",
-      location: "Rudrapur",
-    },
-    {
-      name: "Gym 5",
-      location: "Patiala",
-    },
-    {
-      name: "Gym 6",
-      location: "Panchkula",
-    },
-    {
-      name: "Gym 7",
-      location: "Delhi",
-    },
-    {
-      name: "Gym 8",
-      location: "Ludhiana",
-    },
-    {
-      name: "Gym 9",
-      location: "Dehradun",
-    },
-    {
-      name: "Gym 10",
-      location: "Mirzapur",
-    },
-    {
-      name: "Gym 11",
-      location: "Ghaziabad",
-    },
-    {
-      name: "Gym 12",
-      location: "Banaras",
-    },
-  ];
   const {data:gym, loading, error} = useQuery(ALL_GYMS);
   if(loading){
     return (
