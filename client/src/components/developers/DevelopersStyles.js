@@ -5,12 +5,16 @@ export const useStyles = makeStyles((theme) => ({
         width:'15vw',
         height:'15vw',
         [theme.breakpoints.down("xs")]:{
-            width:'55vw',
-        height:'55vw',
+            // width:'55vw',
+            // height:'55vw',
+        //    alignSelf:"center",
+           marginLeft: '10vw',
+        //   
         },
         [theme.breakpoints.down("sm")]:{
             width:'55vw',
         height:'55vw',
+        alignSelf:"center"
         },
         [theme.breakpoints.down("md")]:{
             width:'15vw',
@@ -20,7 +24,19 @@ export const useStyles = makeStyles((theme) => ({
     },
     name:{
         [theme.breakpoints.down("sm")]:{
-            fontSize:'3rem',
+            fontSize:'1rem',
         }
+    },
+    desig:{
+        [theme.breakpoints.down("sm")]:{
+            fontSize:'0.8rem',
+        }
+    },
+    paper: {
+        backgroundColor:'rgba(248, 248, 248, 1)',
+            [theme.breakpoints.down("sm")]:{
+               height: '20vh',
+               width: '100vw'
+            }
     }
  }))

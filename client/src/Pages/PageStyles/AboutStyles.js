@@ -9,6 +9,12 @@ export const useStyles = makeStyles((theme) => ({
             height: '22vh'
         }
     },
+    // dev: {
+    //     [theme.breakpoints.down("xs")]:{
+    //         height: '30vh',
+    //         width: '100vw'
+    //     }
+    // },
     body:{
         [theme.breakpoints.down("xs")]:{
             margin:'2vh 10vw',
