@@ -54,12 +54,13 @@ const About = () => {
               hendrerit faucibus.
             </Typography>
           </Grid>
-          <Grid container justify="center">
-            <Grid item lg={4}>
+          <Grid container md={12} lg={12} justify="center">
+            <Grid item lg={4} md={4} sm={12} xs={12}>
               <Developers
                 name="Parth Arora"
                 skill="Full Stack Developer"
                 pic={Parth}
+                className={classes.dev}
               />
             </Grid>
             <Grid item lg={4}>
@@ -67,6 +68,7 @@ const About = () => {
                 name="Akriti Singhal"
                 skill="Full Stack Developer"
                 pic={Akriti}
+                className={classes.dev}
               />
             </Grid>
             <Grid item lg={4}>
@@ -74,6 +76,7 @@ const About = () => {
                 name="Divanshu Agarwal"
                 skill="App Developer"
                 pic={Divanshu}
+                className={classes.dev}
               />
             </Grid>
           </Grid>

@@ -22,8 +22,7 @@ const CompareSearch = ({name}) => {
   const [value, setValue] = React.useState(null);
 
     return(
-        //  <Paper justify="center" classsName={classes.paper}>
-                    <Grid container xs={12} lg={12} md={12}  justify="center">
+                 <Grid container xs={12} lg={12} md={12}  justify="center">
                        <Grid item xs={2} lg={1} md={1} >
                        <PinDropIcon fontSize='large' className={classes.icon} />
                         </Grid>
@@ -49,8 +48,7 @@ const CompareSearch = ({name}) => {
                               </IconButton>
                             </Paper>
                         </Grid>
-                    </Grid>
-                    // </Paper>          
+                    </Grid>      
     )
 }
 
