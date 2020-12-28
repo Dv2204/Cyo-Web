@@ -71,12 +71,18 @@ const GymPageCard = () => {
   //     location: "Banaras",
   //   },
   // ];
-  const {data:gym, loading, error} = useQuery(ALL_GYMS);
+  const {data:gym, loading, error} = useQuery(ALL_GYMS, 
+    {
+      variables: {
+        city: " "
+      },
+    }
+    );
   if(loading){
     return (
       <Grid container lg={12} md={12} justify="center" style={{margin: '5rem'}}>
         <Grid item lg={3} md={3} justify="center">
-        <Loader color="#fff" />
+        <Loader color="rgba(38, 38, 38, 0.7)" />
         </Grid>
       </Grid>
     )

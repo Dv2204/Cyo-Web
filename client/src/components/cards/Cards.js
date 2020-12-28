@@ -27,7 +27,7 @@ const Cards = () => {
     return (
       <Grid container lg={12} md={12} justify="center" style={{margin: '5rem'}}>
         <Grid item lg={3} md={3} justify="center">
-        <Loader color="#000" />
+        <Loader color="rgba(38, 38, 38, 0.7)" />
         </Grid>
       </Grid>
     )
