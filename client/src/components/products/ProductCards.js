@@ -4,12 +4,19 @@ import { useStyles } from "./ProductCardsStyles";
 import { ALL_PRODUCTS } from "../../graphql/requests";
 import { IMAGE_URL } from "../../graphql/requests";
 import { useQuery } from "@apollo/client";
+import Loader from '../Loader';
 
 const ProductCards = () => {
   const classes = useStyles();
   const {data:products, loading, error} = useQuery(ALL_PRODUCTS);
   if(loading){
-    return <p>Loading</p>
+    return (
+      <Grid container lg={12} md={12} justify="center" style={{margin: '5rem'}}>
+        <Grid item lg={3} md={3} justify="center">
+        <Loader color="#fff" />
+        </Grid>
+      </Grid>
+    )
   }
 
   if(error){

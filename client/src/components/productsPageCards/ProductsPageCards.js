@@ -11,9 +11,9 @@ const ProductPageCards = () => {
   const {data:products, loading, error} = useQuery(ALL_PRODUCTS);
   if(loading){
     return (
-      <Grid container lg={12} md={12} justify="center" style={{margin: '3rem'}}>
+      <Grid container lg={12} md={12} justify="center" style={{margin: '5rem'}}>
         <Grid item lg={3} md={3} justify="center">
-        <Loader  />
+        <Loader color="rgba(244, 0, 117, 0.42)" />
         </Grid>
       </Grid>
     )
