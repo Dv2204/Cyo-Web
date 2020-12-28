@@ -123,4 +123,42 @@ query SearchProduct($search: String!) {
 }
 `;
 
-
+export const ALL_GYMS = gql`
+query AllGyms($city: String!) {
+  gym(city: $city) {
+    id
+    gym {
+      id
+      name
+    }
+    city
+    pincode
+    area
+    seats
+    description
+    latitude
+    longitude
+    rating
+    userfeedbackSet
+    {
+      id
+      userId
+      {
+        id
+        firstName
+        lastName
+        image
+      }
+      rating 
+      description
+    }
+    gymimageSet{
+      id
+      gym{
+        id
+      }
+      image
+    }
+  }
+}
+`;
