@@ -3,7 +3,10 @@ import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme) => ({
     row:{
        height: '70vh',
-        width: '100vw'
+        width: '100vw',
+        [theme.breakpoints.down('xs')]:{
+            height:'100vh'
+        }
     },
     heading:{
         color: '#fff',
@@ -24,9 +27,24 @@ export const useStyles = makeStyles((theme) => ({
         }
     },
     mailbox:{
-        padding:'5rem',
+        padding:'3rem',
         [theme.breakpoints.down('xs')]:{
-            padding:'3rem 5rem' ,
+            padding:'1rem 2rem' ,
+            width:'70vw',
+            height:'30vh',
+            marginBottom:'10vh',
+            fontSize:'0.5rem'
+        }
+    },
+    mailus:{
+        [theme.breakpoints.down('xs')]:{
+            fontSize:'0.8rem'
+        }
+    },
+    body:{
+        [theme.breakpoints.down('xs')]:{
+            fontSize:'0.5rem !important',
+            width:'15rem !important'
         }
     },
     about:{
@@ -35,6 +53,22 @@ export const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('xs')]:{
             fontSize:'0.6rem',
             textAlign:'justify'
+        }
+    },
+    mac:{
+        width:'10vw !important',
+        marginLeft:'5vw',
+        padding:'12px !important',
+        [theme.breakpoints.down('xs')]:{
+            width:'20vw !important',
+            padding:'8px 12vw !important',
+        }
+    },
+    google:{
+        width:'12vw !important',
+        marginLeft:'5vw',
+        [theme.breakpoints.down('xs')]:{
+            width:'24vw !important',
         }
     }
 }))
