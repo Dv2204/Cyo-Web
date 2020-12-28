@@ -1,20 +1,20 @@
 import React from 'react'
-import ClipLoader from 'react-spinners/ClipLoader'
-import {Grid} from '@material-ui/core'
+// import HashLoader from 'react-spinners/HashLoader'
+import BeatLoader from 'react-spinners/BeatLoader'
+
 
 const Loader = () => 
-  <div className='full-page-loader'>
-  <Grid container lg={12} md={12}  justify="center" >
-  <Grid item lg={5} md={5} justify="center" >
-  <ClipLoader
+  <div className='full-page-loader' style={{alignSelf: 'center'}}>
+  {/* <HashLoader
       sizeUnit={"px"}
-      size={300}
+      size={70}
       color={'rgba(244, 0, 117, 0.42)'}
       loading={true}
-      width={40}
-    />
-  </Grid>
-  </Grid>
+    /> */}
+    <BeatLoader 
+    size={70}
+    color={'rgba(244, 0, 117, 0.42)'}
+    laoading={true} />
   </div> 
 
-export default Loader
+export default Loader;

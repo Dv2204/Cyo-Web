@@ -10,7 +10,13 @@ const ProductPageCards = () => {
   const classes = useStyles();
   const {data:products, loading, error} = useQuery(ALL_PRODUCTS);
   if(loading){
-    return <Loader />
+    return (
+      <Grid container lg={12} md={12} justify="center" style={{margin: '3rem'}}>
+        <Grid item lg={3} md={3} justify="center">
+        <Loader  />
+        </Grid>
+      </Grid>
+    )
   }
 
   if(error){
