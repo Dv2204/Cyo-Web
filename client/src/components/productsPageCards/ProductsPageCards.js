@@ -12,6 +12,7 @@ import { SEARCH_PRODUCT } from "../../graphql/requests";
 
 const ProductPageCards = () => {
   const classes = useStyles();
+  const [searchText, setText] = useState(" ");
   const {data:products, loading: productsLoading, error: productsError} = useQuery(ALL_PRODUCTS);
   const {data:filteredProduct, loading: filteredProductLoading, error: filteredProductError} = useQuery(SEARCH_PRODUCT,
     {
@@ -20,10 +21,9 @@ const ProductPageCards = () => {
       },
     }
     );
-  const [searchText, setText] = useState(" ");
-
-  const handleChange = (e) => {
+    const handleChange = (e) => {
     setText(e.target.value)
+    console.log(e.target.value)
   }
   if(productsLoading || filteredProductLoading){
     return (
@@ -51,20 +51,49 @@ const ProductPageCards = () => {
                               <InputBase
                                 className={classes.input}
                                 placeholder="Search"
-                                inputProps={{ 'aria-label': 'Search' }}
                                 onChange={handleChange}
+                                value={searchText}
                               />
-                              <IconButton type="submit" onChange={event => setText(event.target.value)} className={classes.iconButton} aria-label="search">
+                              {/* <input value={searchText} type="text" className={classes.input} placeholder="Search" onChange={handleChange} /> */}
+                              <IconButton className={classes.iconButton}>
                                 <SearchIcon />
                               </IconButton>
-                             { console.log(setText)}
                             </Paper>
                         </Grid>
                         <Grid item xs={1} lg={2} md={2}>
                         <Typography variant="h5" className={classes.filter}>filter</Typography>
                         </Grid>
                     </Grid>      
-      {products.products.map((item, index) =>
+      
+      {searchText.length > 0 ?  
+           (filteredProduct.searchProduct.map((item, index) => (
+            <Grid item xs={12} lg={4} md={4} key={item.id}>
+            <Grid container justify="center">
+              <Grid item xs={12} lg={6} md={6}>
+                <Paper elevation={2} className={classes.paper}>
+                  <Grid container justify="center">
+                    <Grid item lg={12} md={12}>
+                    <img className={classes.images} src={ `${IMAGE_URL}${item.image}`} alt="Products" />
+                    </Grid>
+                  </Grid>
+                </Paper>
+                <Typography variant="h5" className={classes.title}>
+                  {item.title}
+                </Typography>
+                <Typography variant="h5" className={classes.text}>
+                  ₹{item.discountedPrice} only
+                </Typography>
+                <Typography variant="caption" className={classes.mrp}>
+                  <span style={{ textDecoration: "line-through" }}>
+                    {" "}
+                   MRP: ₹{item.basePrice}
+                  </span>
+                </Typography>
+              </Grid>
+            </Grid>
+          </Grid> ))) :
+          (
+            products.products.map((item, index) =>
           <Grid item xs={12} lg={4} md={4} key={item.id}>
             <Grid container justify="center">
               <Grid item xs={12} lg={6} md={6}>
@@ -90,7 +119,9 @@ const ProductPageCards = () => {
               </Grid>
             </Grid>
           </Grid>
-      )}
+      )
+          )
+                    }
     </>
   );
 };
