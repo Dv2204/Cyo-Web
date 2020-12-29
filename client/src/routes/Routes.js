@@ -1,17 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Gyms from '../Pages/Gyms';
-import Products from '../Pages/Products';
-import Compare from '../Pages/Compare';
-import GymDetails from '../Pages/GymDetails';
-import About from '../Pages/About';
-import LandingPage from '../Pages/LandingPage';
-import MainCompare from '../Pages/MainCompare';
-import Contact from '../components/contactUs/Contact';
-
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Gyms from "../Pages/Gyms";
+import Products from "../Pages/Products";
+import Compare from "../Pages/Compare";
+import GymDetails from "../Pages/GymDetails";
+import About from "../Pages/About";
+import LandingPage from "../Pages/LandingPage";
+import MainCompare from "../Pages/MainCompare";
+import Contact from "../components/contactUs/Contact";
 
 const Routes = () => {
-  
   return (
     <div>
       <Router>

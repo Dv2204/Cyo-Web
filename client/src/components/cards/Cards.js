@@ -8,41 +8,45 @@ import BeenhereOutlinedIcon from "@material-ui/icons/BeenhereOutlined";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import StarIcon from "@material-ui/icons/Star";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { ALL_GYMS } from "../../graphql/requests";
 // import { IMAGE_URL } from "../../graphql/requests";
 import { useQuery } from "@apollo/client";
-import Loader from '../Loader';
+import Loader from "../Loader";
 
 const Cards = () => {
   const classes = useStyles();
-  const {data:gym, loading, error} = useQuery(ALL_GYMS, 
-    {
-      variables: {
-        city: " "
-      },
-    }
-    );
-  if(loading){
+  const { data: gym, loading, error } = useQuery(ALL_GYMS, {
+    variables: {
+      city: " ",
+    },
+  });
+  if (loading) {
     return (
-      <Grid container lg={12} md={12} justify="center" style={{margin: '5rem'}}>
+      <Grid
+        container
+        lg={12}
+        md={12}
+        justify="center"
+        style={{ margin: "5rem" }}
+      >
         <Grid item lg={3} md={3} justify="center">
-        <Loader color="rgba(38, 38, 38, 0.7)" />
+          <Loader color="rgba(38, 38, 38, 0.7)" />
         </Grid>
       </Grid>
-    )
+    );
   }
 
-  if(error){
-    return <p style={{color: '#fff'}}>{error.message}</p>
+  if (error) {
+    return <p style={{ color: "#fff" }}>{error.message}</p>;
   }
-  
+
   console.log(gym);
   return (
     <>
       {gym.gym.map((item, index) =>
         index < 9 ? (
-          <Grid item lg={4} md={4} id="gym" className={classes.card} >
+          <Grid item lg={4} md={4} id="gym" className={classes.card}>
             <Paper elevation={4} className={classes.paperNormal}>
               <Grid container>
                 <Grid item lg={12} md={12}>
@@ -64,13 +68,13 @@ const Cards = () => {
                           <Grid container>
                             <Grid item lg={2} md={2}>
                               <Typography className={classes.rating}>
-                               {item.rating}
+                                {item.rating}
                                 <StarIcon className={classes.ratingIcon} />
                               </Typography>
                             </Grid>
                             <Grid item lg={10} md={10}>
                               <Typography className={classes.count}>
-                               {item.gym.counter}people
+                                {item.gym.counter}people
                               </Typography>
                             </Grid>
                           </Grid>
@@ -112,21 +116,21 @@ const Cards = () => {
                 </Grid>
                 <Grid container className={classes.row}>
                   <Grid item lg={10} md={10}>
-                  <Link to={{
-                      pathname:"/gymdetails",
-                      detailsProps: {
+                    <Link
+                      to={{
+                        pathname: "/gymdetails",
+                        detailsProps: {
                           name: "blah",
-                          rating: "3"
-                      }
-                  }}
-                  
-                  >
-                    <Typography variant="body2" className={classes.details} >
-                      View Details 
-                      <ShareIcon
-                        style={{ fontSize: "25px", marginLeft: "1rem" }}
-                      />
-                    </Typography>
+                          rating: "3",
+                        },
+                      }}
+                    >
+                      <Typography variant="body2" className={classes.details}>
+                        View Details
+                        <ShareIcon
+                          style={{ fontSize: "25px", marginLeft: "1rem" }}
+                        />
+                      </Typography>
                     </Link>
                   </Grid>
                   <Grid item lg={2} md={2}>

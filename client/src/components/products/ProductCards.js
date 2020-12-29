@@ -4,25 +4,31 @@ import { useStyles } from "./ProductCardsStyles";
 import { ALL_PRODUCTS } from "../../graphql/requests";
 import { IMAGE_URL } from "../../graphql/requests";
 import { useQuery } from "@apollo/client";
-import Loader from '../Loader';
+import Loader from "../Loader";
 
 const ProductCards = () => {
   const classes = useStyles();
-  const {data:products, loading, error} = useQuery(ALL_PRODUCTS);
-  if(loading){
+  const { data: products, loading, error } = useQuery(ALL_PRODUCTS);
+  if (loading) {
     return (
-      <Grid container lg={12} md={12} justify="center" style={{margin: '5rem'}}>
+      <Grid
+        container
+        lg={12}
+        md={12}
+        justify="center"
+        style={{ margin: "5rem" }}
+      >
         <Grid item lg={3} md={3} justify="center">
-        <Loader color="#fff" />
+          <Loader color="#fff" />
         </Grid>
       </Grid>
-    )
+    );
   }
 
-  if(error){
-    return <p style={{color: '#fff'}}>{error.message}</p>
+  if (error) {
+    return <p style={{ color: "#fff" }}>{error.message}</p>;
   }
-  
+
   console.log(products);
   return (
     <>
@@ -34,7 +40,11 @@ const ProductCards = () => {
                 <Paper elevation={2} className={classes.paper}>
                   <Grid container justify="center">
                     <Grid item lg={12} md={12}>
-                    <img className={classes.images} src={ `${IMAGE_URL}${item.image}`} alt="Products" />
+                      <img
+                        className={classes.images}
+                        src={`${IMAGE_URL}${item.image}`}
+                        alt="Products"
+                      />
                     </Grid>
                   </Grid>
                 </Paper>
@@ -47,7 +57,7 @@ const ProductCards = () => {
                 <Typography variant="caption" className={classes.mrp}>
                   <span style={{ textDecoration: "line-through" }}>
                     {" "}
-                   MRP: ₹{item.basePrice}
+                    MRP: ₹{item.basePrice}
                   </span>
                 </Typography>
               </Grid>

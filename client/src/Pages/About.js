@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import top from "../assets/about.png";
 import { useStyles } from "./PageStyles/AboutStyles";
 import AboutNavBar from "../components/Nav/AboutNav";
@@ -14,28 +14,30 @@ import Sushila from "../assets/Sushila.jpeg";
 import Saurav from "../assets/Saurav.jpg";
 import Priya from "../assets/Priya.jpeg";
 import Divyanshu from "../assets/Divyanshu.jpg";
-import Sidebar from '../components/Sidebar/Sidebar';
-
+import Sidebar from "../components/Sidebar/Sidebar";
 
 const About = () => {
   const classes = useStyles();
-  const[isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggle =() => {
-      setIsOpen(!isOpen)
-  }
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <div style={{ backgroundColor: "rgba(248, 248, 248, 1)" }}>
-      <Sidebar isOpen={isOpen} toggle={toggle}/>
-      <AboutNavBar toggle={toggle}/>
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <AboutNavBar toggle={toggle} />
         <Grid container md={12} lg={12} justify="center">
           <img src={top} alt="topBg" className={classes.top} />
           <Typography variant="h2" className={classes.head}>
             ABOUT DEVELOPERS
           </Typography>
           <Grid item lg={7} md={7} justify="center">
-            <Typography  className={classes.body} style={{ textAlign: "center", marginBottom: "10vh" }}>
+            <Typography
+              className={classes.body}
+              style={{ textAlign: "center", marginBottom: "10vh" }}
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
               risus, mattis et nec adipiscing facilisi nisl odio tincidunt.
               Sapien quis amet, neque ut rhoncus dictum nisi, ultricies nec.

@@ -53,8 +53,8 @@ const ProductPageCards = () => {
 
   console.log(products);
   const clearFilter = () => {
-    setText(" ")
-  }
+    setText(" ");
+  };
   return (
     <>
       <Grid container xs={12} lg={12} md={12} justify="center">
@@ -66,7 +66,10 @@ const ProductPageCards = () => {
               onChange={(e) => setText(e.target.value)}
             />
             {/* <input  type="text" className={classes.input} placeholder="Search" /> */}
-            <IconButton className={classes.iconButton}  onClick={() => getProducts()}>
+            <IconButton
+              className={classes.iconButton}
+              onClick={() => getProducts()}
+            >
               <SearchIcon />
             </IconButton>
           </Paper>

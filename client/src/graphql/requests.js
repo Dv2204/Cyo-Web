@@ -1,22 +1,23 @@
 import { gql } from "@apollo/client";
 
-export const IMAGE_URL = 'https://elasticbeanstalk-ap-south-1-487328506249.s3.ap-south-1.amazonaws.com/media/';
+export const IMAGE_URL =
+  "https://elasticbeanstalk-ap-south-1-487328506249.s3.ap-south-1.amazonaws.com/media/";
 
 export const ALL_PRODUCTS = gql`
-query AllProducts {
-    products{
-     id
+  query AllProducts {
+    products {
+      id
       title
       image
       description
       discountedPrice
-      basePrice 
+      basePrice
     }
   }
 `;
 
 export const LANDING_IMAGE = gql`
-query LandingImage {
+  query LandingImage {
     landingImage {
       id
       title
@@ -26,43 +27,41 @@ query LandingImage {
 `;
 
 export const GET_GYM = gql`
-query GetGym($city: String!) {
-  gym(city: $city) {
-    id
-    gym {
+  query GetGym($city: String!) {
+    gym(city: $city) {
       id
-      name
-    }
-    city
-    pincode
-    area
-    seats
-    description
-    latitude
-    longitude
-    rating
-    userfeedbackSet
-    {
-      id
-      userId
-      {
+      gym {
         id
-        firstName
-        lastName
+        name
+      }
+      city
+      pincode
+      area
+      seats
+      description
+      latitude
+      longitude
+      rating
+      userfeedbackSet {
+        id
+        userId {
+          id
+          firstName
+          lastName
+          image
+        }
+        rating
+        description
+      }
+      gymimageSet {
+        id
+        gym {
+          id
+        }
         image
       }
-      rating 
-      description
-    }
-    gymimageSet{
-      id
-      gym{
-        id
-      }
-      image
     }
   }
-}
 `;
 
 export const SEARCH_GYMS = gql`
@@ -94,14 +93,14 @@ export const GET_TOKEN_AUTH = gql`
   }
 `;
 
-export const SHOW_USER_FEEDBACKS = gql `
-query ShowUserFeedbacks($gymid : String!){
-    userFeedbacks(gymid: $gymid){
+export const SHOW_USER_FEEDBACKS = gql`
+  query ShowUserFeedbacks($gymid: String!) {
+    userFeedbacks(gymid: $gymid) {
       id
-      userId{
+      userId {
         id
       }
-      madeTo{
+      madeTo {
         id
       }
       rating
@@ -111,54 +110,52 @@ query ShowUserFeedbacks($gymid : String!){
 `;
 
 export const SEARCH_PRODUCT = gql`
-query SearchProduct($search: String!) {
-  searchProduct(search: $search){
-    id
-    title
-    image
-    description
-    discountedPrice
-    basePrice
+  query SearchProduct($search: String!) {
+    searchProduct(search: $search) {
+      id
+      title
+      image
+      description
+      discountedPrice
+      basePrice
+    }
   }
-}
 `;
 
 export const ALL_GYMS = gql`
-query AllGyms($city: String!) {
-  gym(city: $city) {
-    id
-    gym {
+  query AllGyms($city: String!) {
+    gym(city: $city) {
       id
-      name
-    }
-    city
-    pincode
-    area
-    seats
-    description
-    latitude
-    longitude
-    rating
-    userfeedbackSet
-    {
-      id
-      userId
-      {
+      gym {
         id
-        firstName
-        lastName
+        name
+      }
+      city
+      pincode
+      area
+      seats
+      description
+      latitude
+      longitude
+      rating
+      userfeedbackSet {
+        id
+        userId {
+          id
+          firstName
+          lastName
+          image
+        }
+        rating
+        description
+      }
+      gymimageSet {
+        id
+        gym {
+          id
+        }
         image
       }
-      rating 
-      description
-    }
-    gymimageSet{
-      id
-      gym{
-        id
-      }
-      image
     }
   }
-}
 `;

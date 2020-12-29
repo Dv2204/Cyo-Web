@@ -1,11 +1,10 @@
-
 /*** ACCORDION ***/
 
 /* Header */
 .accordion > div > div:first-of-type {
   padding: 1em;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #FFBE9D;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #ffbe9d;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   user-select: none;
@@ -15,10 +14,10 @@
   box-shadow: 0 -10px 30px 2px rgba(0, 0, 0, 0.1) inset;
 }
 .accordion > div > div:first-of-type:hover {
-  background-color: #F3679C;
+  background-color: #f3679c;
 }
-.accordion > div.open > div:first-of-type{
-  background-color: #F3679C;
+.accordion > div.open > div:first-of-type {
+  background-color: #f3679c;
 }
 
 /* Content */
