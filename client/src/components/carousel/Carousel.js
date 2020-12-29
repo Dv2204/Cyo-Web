@@ -1,8 +1,6 @@
 import React from "react";
-import Grid from "@material-ui/core/Grid";
-import { Typography } from "@material-ui/core";
+import { Typography, Grid } from "@material-ui/core";
 import { useStyles } from "./CarouselStyles";
-import Search from "../search/Search";
 import CarouselComp from "./CarouselComp";
 
 const Carousel = () => {
@@ -19,11 +17,6 @@ const Carousel = () => {
       <Grid container md={12} lg={12} justify="center">
         <Grid item lg={10} md={10} xs={12} sm={12} justify="center">
           <CarouselComp />
-        </Grid>
-      </Grid>
-      <Grid container md={12} lg={12} justify="center">
-        <Grid item lg={7} md={7} justify="center">
-          <Search />
         </Grid>
       </Grid>
     </Grid>

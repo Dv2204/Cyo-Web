@@ -1,6 +1,5 @@
 import React from "react";
-import { Avatar, Typography, Grid, Paper } from "@material-ui/core";
-// import pic from "../../assets/1.jpg";
+import { Avatar, Typography, Grid, Paper, Chip } from "@material-ui/core";
 import head from "../../assets/2.PNG";
 import { useStyles } from "./CardsStyles";
 import ShareIcon from "@material-ui/icons/Share";
@@ -13,6 +12,11 @@ import { ALL_GYMS } from "../../graphql/requests";
 // import { IMAGE_URL } from "../../graphql/requests";
 import { useQuery } from "@apollo/client";
 import Loader from "../Loader";
+import PinDropIcon from "@material-ui/icons/PinDrop";
+import InputBase from "@material-ui/core/InputBase";
+import IconButton from "@material-ui/core/IconButton";
+import SearchIcon from "@material-ui/icons/Search";
+import { SEARCH_GYMS } from "../../graphql/requests";
 
 const Cards = () => {
   const classes = useStyles();
@@ -44,6 +48,34 @@ const Cards = () => {
   console.log(gym);
   return (
     <>
+      <Grid container md={12} lg={12} justify="center">
+        <Grid item lg={7} md={7} justify="center">
+          <Grid container xs={12} lg={12} md={12}>
+            <Grid item xs={2} lg={1} md={1} style={{ marginBottom: "2rem" }}>
+              <PinDropIcon fontSize="large" className={classes.icon} />
+            </Grid>
+            <Grid item xs={8} lg={3} md={3}>
+              <Chip className={classes.select} label="Your Location" />
+            </Grid>
+            <Grid xs={12} lg={8} md={8}>
+              <Paper component="form" className={classes.root} elevation={2}>
+                <InputBase
+                  className={classes.input}
+                  placeholder="Search"
+                  inputProps={{ "aria-label": "Search" }}
+                />
+                <IconButton
+                  type="submit"
+                  className={classes.iconButton}
+                  aria-label="search"
+                >
+                  <SearchIcon />
+                </IconButton>
+              </Paper>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
       {gym.gym.map((item, index) =>
         index < 9 ? (
           <Grid item lg={4} md={4} id="gym" className={classes.card}>
