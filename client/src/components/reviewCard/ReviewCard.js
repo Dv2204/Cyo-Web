@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Paper, Typography, Box } from "@material-ui/core";
 import { useStyles } from "./ReviewCardStyles";
-import Rating, { IconContainerProps } from "@material-ui/lab/Rating";
+import Rating from "@material-ui/lab/Rating";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 
 const ReviewCard = ({ rating }) => {

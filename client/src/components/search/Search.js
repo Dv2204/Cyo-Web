@@ -1,6 +1,5 @@
 import React from "react";
-import Grid from "@material-ui/core/Grid";
-import { Paper } from "@material-ui/core";
+import { Paper, Chip, Grid } from "@material-ui/core";
 import { useStyles } from "./SearchStyles";
 import PinDropIcon from "@material-ui/icons/PinDrop";
 import TextField from "@material-ui/core/TextField";
@@ -34,20 +33,7 @@ const Search = () => {
         <PinDropIcon fontSize="large" className={classes.icon} />
       </Grid>
       <Grid item xs={8} lg={3} md={3}>
-        <Autocomplete
-          className={classes.select}
-          {...defaultProps}
-          id="auto-complete"
-          autoComplete
-          includeInputInList
-          renderInput={(params) => (
-            <TextField
-              {...params}
-              label="Your Location"
-              style={{ margin: "auto" }}
-            />
-          )}
-        />
+        <Chip className={classes.select} label="Your Location" />
       </Grid>
       <Grid xs={12} lg={8} md={8}>
         <Paper component="form" className={classes.root} elevation={2}>

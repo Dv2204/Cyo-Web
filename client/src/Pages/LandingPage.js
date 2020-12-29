@@ -21,12 +21,10 @@ const LandingPage = () => {
   };
   return (
     <div>
-      {/* <img src={phone} alt="phone" className="phoneview" style={{display:'none'}} /> */}
       <div
         style={{ backgroundColor: "rgba(248, 248, 248, 1)" }}
         className="bla"
       >
-        {/* <LandingPage /> */}
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <NavBar toggle={toggle} />
         <Grid container>

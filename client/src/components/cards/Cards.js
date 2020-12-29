@@ -1,6 +1,6 @@
 import React from "react";
 import { Avatar, Typography, Grid, Paper } from "@material-ui/core";
-import pic from "../../assets/1.jpg";
+// import pic from "../../assets/1.jpg";
 import head from "../../assets/2.PNG";
 import { useStyles } from "./CardsStyles";
 import ShareIcon from "@material-ui/icons/Share";
