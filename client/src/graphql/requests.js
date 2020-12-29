@@ -69,10 +69,9 @@ export const SEARCH_GYMS = gql`
     searchGym(keyword: $keyword) {
       id
       gym {
+        id
         name
       }
-      mobile
-      isMobileVerified
       city
       pincode
       area
@@ -81,6 +80,24 @@ export const SEARCH_GYMS = gql`
       latitude
       longitude
       rating
+      userfeedbackSet {
+        id
+        userId {
+          id
+          firstName
+          lastName
+          image
+        }
+        rating
+        description
+      }
+      gymimageSet {
+        id
+        gym {
+          id
+        }
+        image
+      }
     }
   }
 `;
