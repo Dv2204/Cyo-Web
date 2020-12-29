@@ -12,5 +12,5 @@ export default styled.div`
 
   @media screen and (max-width: 700px) {
     height: 30vh;
-} 
+  }
 `;

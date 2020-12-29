@@ -28,10 +28,6 @@ const ProductPageCards = () => {
   ] = useLazyQuery(SEARCH_PRODUCT, {
     variables: { search: searchText },
   });
-  //   const handleChange = (e) => {
-  //   setText(e.target.value)
-  //   console.log(e.target.value)
-  // }
   if (productsLoading || filteredProductLoading) {
     return (
       <Grid
@@ -56,6 +52,9 @@ const ProductPageCards = () => {
   }
 
   console.log(products);
+  const clearFilter = () => {
+    setText(" ");
+  };
   return (
     <>
       <Grid container xs={12} lg={12} md={12} justify="center">
@@ -67,7 +66,10 @@ const ProductPageCards = () => {
               onChange={(e) => setText(e.target.value)}
             />
             {/* <input  type="text" className={classes.input} placeholder="Search" /> */}
-            <IconButton className={classes.iconButton}>
+            <IconButton
+              className={classes.iconButton}
+              onClick={() => getProducts()}
+            >
               <SearchIcon />
             </IconButton>
           </Paper>
@@ -75,10 +77,10 @@ const ProductPageCards = () => {
         <Grid item xs={1} lg={2} md={2}>
           <Typography
             variant="h5"
-            onClick={() => getProducts()}
+            onClick={() => clearFilter()}
             className={classes.filter}
           >
-            filter
+            Clear filter
           </Typography>
         </Grid>
       </Grid>
