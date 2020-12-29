@@ -65,7 +65,6 @@ const ProductPageCards = () => {
               placeholder="Search"
               onChange={(e) => setText(e.target.value)}
             />
-            {/* <input  type="text" className={classes.input} placeholder="Search" /> */}
             <IconButton
               className={classes.iconButton}
               onClick={() => getProducts()}
