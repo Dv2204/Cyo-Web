@@ -9,10 +9,10 @@ import ReviewCard from '../components/reviewCard/ReviewCard';
 import DetailsCarousel from '../components/detailsCarousel/DetailsCarousel';
 import head from "../assets/3.png";
 
-const GymDetails = () => {
+const GymDetails = (props) => {
   const classes = useStyles();
   const[isOpen, setIsOpen] = useState(false)
-
+  console.log(props.location.detailsProps);
   const toggle =() => {
       setIsOpen(!isOpen)
   }
@@ -31,7 +31,7 @@ const GymDetails = () => {
           </Grid>
           <Grid item lg={11} md={11}>
           <Typography variant="h3" className={classes.heading}>
-              Gym 1
+                Gym 1
             </Typography>
           </Grid>
         </Grid>

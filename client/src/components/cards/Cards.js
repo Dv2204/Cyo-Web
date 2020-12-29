@@ -70,7 +70,7 @@ const Cards = () => {
                             </Grid>
                             <Grid item lg={10} md={10}>
                               <Typography className={classes.count}>
-                               {item.gym.counter}
+                               {item.gym.counter}people
                               </Typography>
                             </Grid>
                           </Grid>
@@ -112,9 +112,17 @@ const Cards = () => {
                 </Grid>
                 <Grid container className={classes.row}>
                   <Grid item lg={10} md={10}>
-                  <Link to="/gymdetails">
-                    <Typography variant="body2" className={classes.details}>
-                      View Details
+                  <Link to={{
+                      pathname:"/gymdetails",
+                      detailsProps: {
+                          name: "blah",
+                          rating: "3"
+                      }
+                  }}
+                  
+                  >
+                    <Typography variant="body2" className={classes.details} >
+                      View Details 
                       <ShareIcon
                         style={{ fontSize: "25px", marginLeft: "1rem" }}
                       />

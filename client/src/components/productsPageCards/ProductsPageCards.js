@@ -1,15 +1,31 @@
-import React from "react";
+import React, {useState} from "react";
 import { Typography, Paper, Grid } from "@material-ui/core";
 import { useStyles } from "./ProductsPageCardsStyles";
 import { ALL_PRODUCTS } from "../../graphql/requests";
 import { IMAGE_URL } from "../../graphql/requests";
 import { useQuery } from "@apollo/client";
 import Loader from '../Loader';
+import InputBase from '@material-ui/core/InputBase';
+import IconButton from '@material-ui/core/IconButton';
+import SearchIcon from '@material-ui/icons/Search';
+import { SEARCH_PRODUCT } from "../../graphql/requests";
 
 const ProductPageCards = () => {
   const classes = useStyles();
-  const {data:products, loading, error} = useQuery(ALL_PRODUCTS);
-  if(loading){
+  const {data:products, loading: productsLoading, error: productsError} = useQuery(ALL_PRODUCTS);
+  const {data:filteredProduct, loading: filteredProductLoading, error: filteredProductError} = useQuery(SEARCH_PRODUCT,
+    {
+      variables: {
+        search: searchText
+      },
+    }
+    );
+  const [searchText, setText] = useState(" ");
+
+  const handleChange = (e) => {
+    setText(e.target.value)
+  }
+  if(productsLoading || filteredProductLoading){
     return (
       <Grid container lg={12} md={12} justify="center" style={{margin: '5rem'}}>
         <Grid item lg={3} md={3} justify="center">
@@ -19,13 +35,35 @@ const ProductPageCards = () => {
     )
   }
 
-  if(error){
-    return <p style={{color: '#fff'}}>{error.message}</p>
+  if(productsError){
+    return <p style={{color: '#fff'}}>{productsError.message}</p>
+  }
+  if(filteredProductError){
+    return <p style={{color: '#fff'}}>{filteredProductError.message}</p>
   }
   
   console.log(products);
   return (
     <>
+      <Grid container xs={12} lg={12} md={12} justify="center" >
+                        <Grid xs={6} lg={8} md={8}>
+                             <Paper component="form" className={classes.root} elevation={2}>
+                              <InputBase
+                                className={classes.input}
+                                placeholder="Search"
+                                inputProps={{ 'aria-label': 'Search' }}
+                                onChange={handleChange}
+                              />
+                              <IconButton type="submit" onChange={event => setText(event.target.value)} className={classes.iconButton} aria-label="search">
+                                <SearchIcon />
+                              </IconButton>
+                             { console.log(setText)}
+                            </Paper>
+                        </Grid>
+                        <Grid item xs={1} lg={2} md={2}>
+                        <Typography variant="h5" className={classes.filter}>filter</Typography>
+                        </Grid>
+                    </Grid>      
       {products.products.map((item, index) =>
           <Grid item xs={12} lg={4} md={4} key={item.id}>
             <Grid container justify="center">
