@@ -4,20 +4,17 @@ import { useStyles } from './ReviewCardStyles';
 import Rating, { IconContainerProps } from '@material-ui/lab/Rating';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 
-const ReviewCard = () => {
+const ReviewCard = ({rating}) => {
     const classes = useStyles();
     const ReviewList = [
         {
             name:'Panda Bleh',
-            value: '2'
         },
         {
             name:'Billi Bleh',
-            value:'4'
         },
         {
             name:'Doggo Bleh',
-            value: '3'
         },
     ]
     return(
@@ -37,7 +34,7 @@ const ReviewCard = () => {
                    <Grid item lg={4} md={4}>
                    <Box mb={3}>
                             <Rating
-                            defaultValue={item.value}
+                            defaultValue={rating}
                             precision={0.5}
                             emptyIcon={<StarBorderIcon fontSize="inherit" />}
                             />

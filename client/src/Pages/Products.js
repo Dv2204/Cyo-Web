@@ -26,11 +26,11 @@ const Products = () => {
                     </Typography>
                 </Grid>
             </Grid>
-            <Grid container xs={12} md={12} lg={12} justify="center">
+            {/* <Grid container xs={12} md={12} lg={12} justify="center">
                 <Grid item lg={7} md={7} justify="center">
                     <ProductsSearch/>
                 </Grid>
-            </Grid>
+            </Grid> */}
             <Container fixed >
             <Grid container lg={12} md={12} style={{marginBottom: '5rem'}} >
                 <ProductsPageCards />
