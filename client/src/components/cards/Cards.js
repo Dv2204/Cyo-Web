@@ -8,8 +8,7 @@ import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import StarIcon from "@material-ui/icons/Star";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import { Link } from "react-router-dom";
-import { ALL_GYMS, SEARCH_GYMS } from "../../graphql/requests";
-// import { IMAGE_URL } from "../../graphql/requests";
+import { ALL_GYMS, SEARCH_GYMS, IMAGE_URL } from "../../graphql/requests";
 import { useQuery, useLazyQuery } from "@apollo/client";
 import Loader from "../Loader";
 import PinDropIcon from "@material-ui/icons/PinDrop";
@@ -24,7 +23,7 @@ const Cards = () => {
     ALL_GYMS,
     {
       variables: {
-        city: " ",
+        city: "",
       },
     }
   );
@@ -58,6 +57,10 @@ const Cards = () => {
   }
 
   console.log(gym);
+  console.log(filteredGym);
+  const clearFilter = () => {
+    setText(" ");
+  };
   return (
     <>
       <Grid container md={12} lg={12} justify="center">
@@ -67,7 +70,11 @@ const Cards = () => {
               <PinDropIcon fontSize="large" className={classes.icon} />
             </Grid>
             <Grid item xs={8} lg={3} md={3}>
-              <Chip className={classes.select} label="Your Location" />
+              <Chip
+                className={classes.select}
+                label="Your Location"
+                onClick={() => clearFilter()}
+              />
             </Grid>
             <Grid xs={12} lg={8} md={8}>
               <Paper className={classes.root} elevation={2}>
@@ -117,7 +124,7 @@ const Cards = () => {
                               </Grid>
                               <Grid item lg={10} md={10}>
                                 <Typography className={classes.count}>
-                                  {item.gym.counter}people
+                                  {item.gym.counter} people
                                 </Typography>
                               </Grid>
                             </Grid>
@@ -135,10 +142,10 @@ const Cards = () => {
                   <Grid container justify="center" spacing={0}>
                     <Grid item lg={12} md={12}>
                       <Avatar
-                        src={item.gymimageSet.image}
+                        src={`${IMAGE_URL}${item.gymimageSet.image}`}
                         alt="Profile"
                         variant="square"
-                        style={{ width: "100%", height: "20vh" }}
+                        className={classes.avatarimage}
                       />
                     </Grid>
                   </Grid>
@@ -149,7 +156,7 @@ const Cards = () => {
                         className={classes.location}
                       >
                         <LocationOnOutlinedIcon fontSize="small" />
-                        {item.address}
+                        {item.city}
                       </Typography>
                     </Grid>
                   </Grid>
@@ -223,7 +230,7 @@ const Cards = () => {
                                 </Grid>
                                 <Grid item lg={10} md={10}>
                                   <Typography className={classes.count}>
-                                    {item.gym.counter}people
+                                    {item.gym.counter} people
                                   </Typography>
                                 </Grid>
                               </Grid>
@@ -241,10 +248,10 @@ const Cards = () => {
                     <Grid container justify="center" spacing={0}>
                       <Grid item lg={12} md={12}>
                         <Avatar
-                          src={item.gymimageSet.image}
+                          src={`${IMAGE_URL}${item.gymimageSet.image}`}
                           alt="Profile"
                           variant="square"
-                          style={{ width: "100%", height: "20vh" }}
+                          className={classes.avatarimage}
                         />
                       </Grid>
                     </Grid>
@@ -255,7 +262,7 @@ const Cards = () => {
                           className={classes.location}
                         >
                           <LocationOnOutlinedIcon fontSize="small" />
-                          {item.address}
+                          {item.city}
                         </Typography>
                       </Grid>
                     </Grid>

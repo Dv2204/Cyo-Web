@@ -112,4 +112,11 @@ export const useStyles = makeStyles((theme) => ({
     height: 28,
     margin: 4,
   },
+  avatarimage: {
+    width: "100%",
+    height: "20vh",
+    [theme.breakpoints.down("xs")]: {
+      width: "80vw",
+    },
+  },
 }));
