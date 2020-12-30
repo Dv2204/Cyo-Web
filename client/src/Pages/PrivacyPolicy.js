@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Grid, Paper, Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 import NavBar from "../components/Nav/NavBarMain";
-import Contact from "../components/contactUs/Contact";
 import Sidebar from "../components/Sidebar/Sidebar";
 import { useStyles } from "./PageStyles/PrivacyPolicyStyles";
 
