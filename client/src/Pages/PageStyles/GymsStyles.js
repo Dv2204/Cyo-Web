@@ -8,5 +8,8 @@ export const useStyles = makeStyles((theme) => ({
     color: "rgba(233, 62, 127, 1)",
     letterSpacing: "0.1rem",
     textAlign: "center",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "2rem",
+    },
   },
 }));

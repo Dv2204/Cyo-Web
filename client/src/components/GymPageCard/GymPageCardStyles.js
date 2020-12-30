@@ -84,10 +84,10 @@ export const useStyles = makeStyles((theme) => ({
       cursor: "pointer",
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: "1rem",
+      fontSize: "0.8rem",
       marginLeft: "3.5rem",
       marginTop: "1rem",
-      padding: "0.6rem 1.6rem",
+      padding: "0.3rem 1.3rem",
     },
   },
   root: {
@@ -98,12 +98,6 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       width: "94vw",
     },
-  },
-  root: {
-    padding: "2px 4px",
-    display: "flex",
-    alignItems: "center",
-    marginLeft: "1rem",
   },
   input: {
     marginLeft: theme.spacing(1),

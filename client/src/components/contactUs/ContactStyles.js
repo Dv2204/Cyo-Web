@@ -51,7 +51,7 @@ export const useStyles = makeStyles((theme) => ({
     color: "#b2b2b2",
     padding: "2vh",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "0.6rem",
+      fontSize: "0.8rem",
       textAlign: "justify",
     },
   },
@@ -69,6 +69,30 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: "5vw",
     [theme.breakpoints.down("xs")]: {
       width: "24vw !important",
+    },
+  },
+  footerlink: {
+    textDecoration: "none",
+    color: "#959595",
+    cursor: "pointer",
+    "&:hover": {
+      color: "#fff",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "0.92rem",
+    },
+  },
+  privacy: {
+    padding: "2vh",
+    textDecoration: "none",
+    color: "rgba(180, 180, 180, 1)",
+    cursor: "pointer",
+    textAlign: "center",
+    "&:hover": {
+      color: "#fff",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "0.95rem",
     },
   },
 }));

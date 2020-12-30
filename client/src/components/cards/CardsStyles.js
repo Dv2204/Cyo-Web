@@ -84,10 +84,10 @@ export const useStyles = makeStyles((theme) => ({
       cursor: "pointer",
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: "1rem",
+      fontSize: "0.8rem",
       marginLeft: "3.5rem",
       marginTop: "1rem",
-      padding: "0.6rem 1.6rem",
+      padding: "0.3rem 1.3rem",
     },
   },
   root: {
