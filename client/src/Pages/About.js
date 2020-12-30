@@ -12,8 +12,8 @@ import Paritosh from "../assets/Paritosh.jpg";
 import Harmanjit from "../assets/Harmanjit.jpg";
 import Sushila from "../assets/Sushila.jpeg";
 import Saurav from "../assets/Saurav.jpg";
-import Priya from "../assets/Priya.jpeg";
-import Divyanshu from "../assets/Divyanshu.jpg";
+import Priya from "../assets/Priya.jpg";
+import Divyanshu from "../assets/Divyanshu.PNG";
 import Sidebar from "../components/Sidebar/Sidebar";
 
 const About = () => {
@@ -75,14 +75,28 @@ const About = () => {
             </Grid>
             <Grid item lg={4}>
               <Developers
+                name="Saurav Shrivastav"
+                skill="Full Stack Developer"
+                pic={Saurav}
+              />
+            </Grid>
+          </Grid>
+          <Grid container justify="center">
+            <Grid item lg={4}>
+              <Developers
+                name="Priya Aggarwal"
+                skill="FrontEnd Developer"
+                pic={Priya}
+              />
+            </Grid>
+            <Grid item lg={4}>
+              <Developers
                 name="Divanshu Agarwal"
                 skill="App Developer"
                 pic={Divanshu}
                 className={classes.dev}
               />
             </Grid>
-          </Grid>
-          <Grid container justify="center">
             <Grid item lg={4}>
               <Developers
                 name="Paritosh Arora"
@@ -90,6 +104,8 @@ const About = () => {
                 pic={Paritosh}
               />
             </Grid>
+          </Grid>
+          <Grid container justify="center">
             <Grid item lg={4}>
               <Developers
                 name="Harmanjit Singh"
@@ -99,22 +115,6 @@ const About = () => {
             </Grid>
             <Grid item lg={4}>
               <Developers name="Sushila Kaur" skill="Designer" pic={Sushila} />
-            </Grid>
-          </Grid>
-          <Grid container justify="center">
-            <Grid item lg={4}>
-              <Developers
-                name="Saurav Shrivastav"
-                skill="Backend Developer"
-                pic={Saurav}
-              />
-            </Grid>
-            <Grid item lg={4}>
-              <Developers
-                name="Priya Aggarwal"
-                skill="FrontEnd Developer"
-                pic={Priya}
-              />
             </Grid>
             <Grid item lg={4}>
               <Developers
