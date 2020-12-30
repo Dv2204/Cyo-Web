@@ -85,14 +85,14 @@ export const useStyles = makeStyles((theme) => ({
   privacy: {
     padding: "2vh",
     textDecoration: "none",
-    color: "rgba(251, 217, 203, 1)",
+    color: "rgba(180, 180, 180, 1)",
     cursor: "pointer",
     textAlign: "center",
     "&:hover": {
       color: "#fff",
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: "0.92rem",
+      fontSize: "0.95rem",
     },
   },
 }));
