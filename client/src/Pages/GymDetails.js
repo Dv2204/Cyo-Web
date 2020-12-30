@@ -20,16 +20,16 @@ const GymDetails = (props) => {
     <div style={{ backgroundColor: "rgba(248, 248, 248, 1)" }}>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <DetailsNavBar toggle={toggle} />
-      <Grid container lg={12} md={12} justify="center">
+      <Grid container xs={12} lg={12} md={12} justify="center">
         <Grid item lg={8} md={8} sm={12} xs={12}>
           <DetailsCarousel />
         </Grid>
       </Grid>
-      <Grid container lg={12} md={12}>
-        <Grid item lg={1} md={1}>
+      <Grid container xs={12} lg={12} md={12}>
+        <Grid item xs={2} lg={1} md={1}>
           <img src={head} className={classes.headingicon} alt="Profile" />
         </Grid>
-        <Grid item lg={11} md={11}>
+        <Grid item xs={7} lg={11} md={11}>
           <Typography variant="h3" className={classes.heading}>
             Gym 1
           </Typography>
@@ -38,7 +38,7 @@ const GymDetails = (props) => {
       <Grid container lg={12} md={12} justify="center">
         <Grid item lg={8} md={8}>
           <Typography
-            variant="body1"
+            variant="body1" className={classes.body}
             style={{ color: "rgba(92, 92, 92, 1)", marginTop: "0.5rem" }}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.Faucibus
@@ -60,13 +60,14 @@ const GymDetails = (props) => {
         </Grid>
       </Grid>
       <Grid
-        container
+        container 
+        xs={7}
         lg={12}
         md={12}
         justify="center"
-        style={{ marginTop: "0.5rem" }}
+        style={{ marginTop: "0.5rem" }} className={classes.circle}
       >
-        <CircleDetails />
+        <CircleDetails  />
       </Grid>
       <Grid container lg={12} md={12} justify="center">
         <Grid item lg={8} md={8}>
@@ -78,7 +79,7 @@ const GymDetails = (props) => {
       <Grid container lg={12} md={12} justify="center">
         <Grid item lg={8} md={8}>
           <Typography
-            variant="body1"
+            variant="body1" className={classes.body}
             style={{ color: "rgba(92, 92, 92, 1)", marginTop: "0.5rem" }}
           >
             Lorem ipsum dolor sit amet falana ddhamkana gym , le lo slot boook

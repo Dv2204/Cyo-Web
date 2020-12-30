@@ -5,7 +5,10 @@ export const useStyles = makeStyles((theme) => ({
     width: "15vw",
     height: "15vw",
     [theme.breakpoints.down("xs")]: {
-      marginLeft: "10vw",
+      marginLeft: "28vw !important",
+      width: "50vw !important",
+      height: "50vw !important",
+      alignSelf: "center !important",
     },
     [theme.breakpoints.down("sm")]: {
       width: "55vw",
@@ -31,7 +34,11 @@ export const useStyles = makeStyles((theme) => ({
   paper: {
     backgroundColor: "rgba(248, 248, 248, 1)",
     [theme.breakpoints.down("sm")]: {
-      height: "20vh",
+      height: "40vh",
+      width: "100vw",
+    },
+    [theme.breakpoints.down("xs")]: {
+      height: "40vh",
       width: "100vw",
     },
   },
