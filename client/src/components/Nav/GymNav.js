@@ -26,7 +26,7 @@ const GymNavBar = ({ toggle }) => {
             <NavLink to="/">
               <img className="Logo" src={Logo} alt="logo" />
             </NavLink>
-            <h2 className="LogoName">Choose Your Option</h2>
+            <h2 className="LogoName">CYO GYMS</h2>
           </NavLogo>
           <NavMenu>
             <NavLink to="/products" activeStyle>
