@@ -27,7 +27,6 @@ export const useStyles = makeStyles((theme) => ({
     paddingTop: "2.8rem",
     paddingBottom: "1.4rem",
     letterSpacing: "0.1rem",
-    //fontWeight: "bold",
     [theme.breakpoints.down("xs")]: {
       fontSize: "1.2rem",
     },
