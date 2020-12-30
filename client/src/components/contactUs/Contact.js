@@ -4,6 +4,7 @@ import { useStyles } from "./ContactStyles";
 import TextField from "@material-ui/core/TextField";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import MobileStoreButton from "react-mobile-store-button";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const classes = useStyles();
@@ -20,17 +21,22 @@ const Contact = () => {
             </Typography>
             <Grid container justify="center">
               <Grid item lg={5} md={5} justify="center">
-                <Typography className={classes.about}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
-                  ultricies accumsan et viverra. Arcu auctor maecenas lectus
-                  arcu tortor. Gravida diam sit convallis sagittis. Libero
-                  tempus phasellus fames nisl in vestibulum. Laoreet lacus
-                  volutpat, tincidunt maecenas. Scelerisque odio rutrum mi
-                  netus. Nulla non mauris, adipiscing nisi. Potenti id pretium
-                  nisl porttitor. Aenean euismod tortor fames odio amet interdum
-                  quam et, ornare. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Dui ultricies accumsan et viverra.
+                <Typography className={classes.about} variant="h6">
+                  Choose Your Option Pvt Ltd 2020-2021 / All Rights Reserved /
+                  Web Desgin and Develop by Cybersify Technologies Pvt Ltd{" "}
+                  {"  "}
+                  <a
+                    className={classes.footerlink}
+                    href="https://cybersifytech.com"
+                  >
+                    www.cybersifytech.com
+                  </a>
                 </Typography>
+                <Link to="/privacypolicy">
+                  <Typography className={classes.privacy} variant="h5">
+                    Detailed Privacy Policy
+                  </Typography>
+                </Link>
                 <Grid container>
                   <Grid item lg={4}>
                     <MobileStoreButton

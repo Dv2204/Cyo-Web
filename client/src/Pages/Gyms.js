@@ -16,8 +16,8 @@ const Gyms = () => {
     <div style={{ backgroundColor: "rgba(248, 248, 248, 1)" }}>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <GymNavBar toggle={toggle} />
-      <Grid container lg={12} md={12}>
-        <Grid item lg={12} md={12}>
+      <Grid container xs={12} lg={12} md={12}>
+        <Grid item xs={12} lg={12} md={12}>
           <Typography variant="h2" className={classes.text} justify="center">
             GYMS
           </Typography>
