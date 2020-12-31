@@ -41,6 +41,7 @@ export const GET_GYM = gql`
       description
       latitude
       longitude
+      address
       rating
       userfeedbackSet {
         id
@@ -80,6 +81,7 @@ export const SEARCH_GYMS = gql`
       latitude
       longitude
       rating
+      address
       userfeedbackSet {
         id
         userId {
@@ -155,6 +157,7 @@ export const ALL_GYMS = gql`
       latitude
       longitude
       rating
+      address
       userfeedbackSet {
         id
         userId {
@@ -193,6 +196,7 @@ export const GET_DETAIL = gql`
       latitude
       longitude
       rating
+      address
       userfeedbackSet {
         id
         userId {
