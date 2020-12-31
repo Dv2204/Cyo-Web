@@ -171,11 +171,10 @@ const Cards = () => {
                     <Grid item lg={10} md={10}>
                       <Link
                         to={{
-                          pathname: "/gymdetails",
-                          detailsProps: {
-                            name: "blah",
-                            rating: "3",
-                          },
+                          pathname: "/gymdetails/:{item.id}",
+                          // detailsProps: {
+                          //    id: {item.id}
+                          // },
                         }}
                       >
                         <Typography variant="body2" className={classes.details}>

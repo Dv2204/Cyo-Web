@@ -8,14 +8,46 @@ import CircleDetails from "../components/circle/CircleDetails";
 import ReviewCard from "../components/reviewCard/ReviewCard";
 import DetailsCarousel from "../components/detailsCarousel/DetailsCarousel";
 import head from "../assets/3.png";
+import { GET_DETAIL } from "../graphql/requests";
+import { useQuery } from "@apollo/client";
+import Loader from "../components/Loader";
 
-const GymDetails = (props) => {
+const GymDetails = ({ id }) => {
   const classes = useStyles();
   const [isOpen, setIsOpen] = useState(false);
-  console.log(props.location.detailsProps);
+  // console.log(props.location.detailsProps);
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  const {
+    data: detailData,
+    loading: detailLoading,
+    error: detailError,
+  } = useQuery(GET_DETAIL, {
+    variables: {
+      id: id,
+    },
+  });
+  if (detailLoading) {
+    return (
+      <Grid
+        container
+        lg={12}
+        md={12}
+        justify="center"
+        style={{ margin: "5rem" }}
+      >
+        <Grid item lg={3} md={3} justify="center">
+          <Loader color="rgba(38, 38, 38, 0.7)" />
+        </Grid>
+      </Grid>
+    );
+  }
+
+  if (detailError) {
+    return <p style={{ color: "#fff" }}>{detailError.message}</p>;
+  }
+  console.log(detailData);
   return (
     <div style={{ backgroundColor: "rgba(248, 248, 248, 1)" }}>
       <Sidebar isOpen={isOpen} toggle={toggle} />
@@ -38,7 +70,8 @@ const GymDetails = (props) => {
       <Grid container lg={12} md={12} justify="center">
         <Grid item lg={8} md={8}>
           <Typography
-            variant="body1" className={classes.body}
+            variant="body1"
+            className={classes.body}
             style={{ color: "rgba(92, 92, 92, 1)", marginTop: "0.5rem" }}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.Faucibus
@@ -60,14 +93,15 @@ const GymDetails = (props) => {
         </Grid>
       </Grid>
       <Grid
-        container 
+        container
         xs={7}
         lg={12}
         md={12}
         justify="center"
-        style={{ marginTop: "0.5rem" }} className={classes.circle}
+        style={{ marginTop: "0.5rem" }}
+        className={classes.circle}
       >
-        <CircleDetails  />
+        <CircleDetails />
       </Grid>
       <Grid container lg={12} md={12} justify="center">
         <Grid item lg={8} md={8}>
@@ -79,7 +113,8 @@ const GymDetails = (props) => {
       <Grid container lg={12} md={12} justify="center">
         <Grid item lg={8} md={8}>
           <Typography
-            variant="body1" className={classes.body}
+            variant="body1"
+            className={classes.body}
             style={{ color: "rgba(92, 92, 92, 1)", marginTop: "0.5rem" }}
           >
             Lorem ipsum dolor sit amet falana ddhamkana gym , le lo slot boook
