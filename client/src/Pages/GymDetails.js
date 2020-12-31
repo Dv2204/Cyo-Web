@@ -50,7 +50,6 @@ const GymDetails = (props) => {
   console.log(detailData);
   return (
     <>
-      {/* {detailData.gymDetail.map((item, index) => ( */}
       <div style={{ backgroundColor: "rgba(248, 248, 248, 1)" }}>
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <DetailsNavBar toggle={toggle} />
@@ -102,7 +101,7 @@ const GymDetails = (props) => {
         >
           <CircleDetails />
         </Grid>
-        <Grid container lg={12} md={12} justify="center">
+        {/* <Grid container lg={12} md={12} justify="center">
           <Grid item lg={8} md={8}>
             <Typography variant="h4" className={classes.detailsheading}>
               DETAILS:
@@ -119,7 +118,7 @@ const GymDetails = (props) => {
               {detailData.gymDetail.description}
             </Typography>
           </Grid>
-        </Grid>
+        </Grid> */}
         <Grid container lg={12} md={12} justify="center">
           <Grid item lg={8} md={8}>
             <Typography variant="h4" className={classes.detailsheading}>
@@ -134,7 +133,6 @@ const GymDetails = (props) => {
           <Contact />
         </Grid>
       </div>
-      {/* ))} */}
     </>
   );
 };

@@ -51,8 +51,15 @@ export const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: "75vh",
+    height: "82vh",
     marginBottom: "3rem",
+    [theme.breakpoints.down("xs")]: {
+      height: "40vh !important",
+    },
+  },
+  images: {
+    backgroundSize: "cover",
+    height: "82vh",
     [theme.breakpoints.down("xs")]: {
       height: "40vh !important",
     },

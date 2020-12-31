@@ -72,7 +72,7 @@ const Cards = () => {
             <Grid item xs={8} lg={3} md={3}>
               <Chip
                 className={classes.select}
-                label="Your Location"
+                label="Gym Name"
                 onClick={() => clearFilter()}
               />
             </Grid>
@@ -162,8 +162,8 @@ const Cards = () => {
                   </Grid>
                   <Grid container className={classes.row}>
                     <Grid item lg={12} md={12}>
-                      <Typography variant="body2" className={classes.body}>
-                        {item.description}
+                      <Typography variant="body1" className={classes.body}>
+                        {item.address}
                       </Typography>
                     </Grid>
                   </Grid>
@@ -256,8 +256,8 @@ const Cards = () => {
                   </Grid>
                   <Grid container className={classes.row}>
                     <Grid item lg={12} md={12}>
-                      <Typography variant="body2" className={classes.body}>
-                        {item.description}
+                      <Typography variant="body1" className={classes.body}>
+                        {item.address}
                       </Typography>
                     </Grid>
                   </Grid>
