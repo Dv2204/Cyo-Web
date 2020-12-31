@@ -169,7 +169,7 @@ const Cards = () => {
                   </Grid>
                   <Grid container className={classes.row}>
                     <Grid item lg={10} md={10}>
-                      <Link
+                      {/* <Link
                         to={{
                           pathname: "/gymdetails",
                           detailsProps: {
@@ -177,7 +177,8 @@ const Cards = () => {
                             rating: "3",
                           },
                         }}
-                      >
+                      > */}
+                      <Link to={`/gymdetails/${item.id}`}>
                         <Typography variant="body2" className={classes.details}>
                           View Details
                           <ShareIcon

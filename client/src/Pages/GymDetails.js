@@ -12,7 +12,7 @@ import { GET_DETAIL } from "../graphql/requests";
 import { useQuery } from "@apollo/client";
 import Loader from "../components/Loader";
 
-const GymDetails = ({ id }) => {
+const GymDetails = (props) => {
   const classes = useStyles();
   const [isOpen, setIsOpen] = useState(false);
   // console.log(props.location.detailsProps);
@@ -25,7 +25,7 @@ const GymDetails = ({ id }) => {
     error: detailError,
   } = useQuery(GET_DETAIL, {
     variables: {
-      id: id,
+      id: props.match.params.id,
     },
   });
   if (detailLoading) {
@@ -49,101 +49,89 @@ const GymDetails = ({ id }) => {
   }
   console.log(detailData);
   return (
-    <div style={{ backgroundColor: "rgba(248, 248, 248, 1)" }}>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <DetailsNavBar toggle={toggle} />
-      <Grid container xs={12} lg={12} md={12} justify="center">
-        <Grid item lg={8} md={8} sm={12} xs={12}>
-          <DetailsCarousel />
+    <>
+      {/* {detailData.gymDetail.map((item, index) => ( */}
+      <div style={{ backgroundColor: "rgba(248, 248, 248, 1)" }}>
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <DetailsNavBar toggle={toggle} />
+        <Grid container xs={12} lg={12} md={12} justify="center">
+          <Grid item lg={8} md={8} sm={12} xs={12}>
+            <DetailsCarousel />
+          </Grid>
         </Grid>
-      </Grid>
-      <Grid container xs={12} lg={12} md={12}>
-        <Grid item xs={2} lg={1} md={1}>
-          <img src={head} className={classes.headingicon} alt="Profile" />
+        <Grid container xs={12} lg={12} md={12}>
+          <Grid item xs={2} lg={1} md={1}>
+            <img src={head} className={classes.headingicon} alt="Profile" />
+          </Grid>
+          <Grid item xs={7} lg={11} md={11}>
+            <Typography variant="h3" className={classes.heading}>
+              {/* {detailData.gym.name ? detailData.gym.name : <p>Gym</p>} */}
+            </Typography>
+          </Grid>
         </Grid>
-        <Grid item xs={7} lg={11} md={11}>
-          <Typography variant="h3" className={classes.heading}>
-            Gym 1
-          </Typography>
+        <Grid container lg={12} md={12} justify="center">
+          <Grid item lg={8} md={8}>
+            <Typography
+              variant="body1"
+              className={classes.body}
+              style={{ color: "rgba(92, 92, 92, 1)", marginTop: "0.5rem" }}
+            >
+              {detailData.gymDetail.description}
+            </Typography>
+          </Grid>
         </Grid>
-      </Grid>
-      <Grid container lg={12} md={12} justify="center">
-        <Grid item lg={8} md={8}>
-          <Typography
-            variant="body1"
-            className={classes.body}
-            style={{ color: "rgba(92, 92, 92, 1)", marginTop: "0.5rem" }}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Faucibus
-            auctor eu platea dolor etiam vitae aliquam urna.Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit.Faucibus auctor eu platea
-            dolor etiam vitae aliquam urna.Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.Faucibus auctor eu platea dolor etiam
-            vitae aliquam urna.Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-            urna.
-          </Typography>
+        <Grid container lg={12} md={12}>
+          <Grid item lg={12} md={12}>
+            <Typography variant="h4" className={classes.facheading}>
+              FACILITIES:
+            </Typography>
+          </Grid>
         </Grid>
-      </Grid>
-      <Grid container lg={12} md={12}>
-        <Grid item lg={12} md={12}>
-          <Typography variant="h4" className={classes.facheading}>
-            FACILITIES:
-          </Typography>
+        <Grid
+          container
+          xs={7}
+          lg={12}
+          md={12}
+          justify="center"
+          style={{ marginTop: "0.5rem" }}
+          className={classes.circle}
+        >
+          <CircleDetails />
         </Grid>
-      </Grid>
-      <Grid
-        container
-        xs={7}
-        lg={12}
-        md={12}
-        justify="center"
-        style={{ marginTop: "0.5rem" }}
-        className={classes.circle}
-      >
-        <CircleDetails />
-      </Grid>
-      <Grid container lg={12} md={12} justify="center">
-        <Grid item lg={8} md={8}>
-          <Typography variant="h4" className={classes.detailsheading}>
-            DETAILS:
-          </Typography>
+        <Grid container lg={12} md={12} justify="center">
+          <Grid item lg={8} md={8}>
+            <Typography variant="h4" className={classes.detailsheading}>
+              DETAILS:
+            </Typography>
+          </Grid>
         </Grid>
-      </Grid>
-      <Grid container lg={12} md={12} justify="center">
-        <Grid item lg={8} md={8}>
-          <Typography
-            variant="body1"
-            className={classes.body}
-            style={{ color: "rgba(92, 92, 92, 1)", marginTop: "0.5rem" }}
-          >
-            Lorem ipsum dolor sit amet falana ddhamkana gym , le lo slot boook
-            karlo, consectetur adipiscing elit. Lorem ipsum dolor sit amet
-            falana ddhamkana gym , le lo slot boook karlo, consectetur
-            adipiscing elit. Lorem ipsum dolor sit amet falana ddhamkana gym ,
-            le lo slot boook karlo, consectetur adipiscing elit. Lorem ipsum
-            dolor sit amet falana ddhamkana gym , le lo slot boook karlo,
-            consectetur adipiscing elit. Lorem ipsum dolor sit amet falana
-            ddhamkana gym , le lo slot boook karlo, consectetur adipiscing elit.
-            Lorem ipsum dolor sit amet falana ddhamkana gym , le lo slot boook
-            karlo, consectetur adipiscing elit.
-          </Typography>
+        <Grid container lg={12} md={12} justify="center">
+          <Grid item lg={8} md={8}>
+            <Typography
+              variant="body1"
+              className={classes.body}
+              style={{ color: "rgba(92, 92, 92, 1)", marginTop: "0.5rem" }}
+            >
+              {detailData.gymDetail.description}
+            </Typography>
+          </Grid>
         </Grid>
-      </Grid>
-      <Grid container lg={12} md={12} justify="center">
-        <Grid item lg={8} md={8}>
-          <Typography variant="h4" className={classes.detailsheading}>
-            REVIEWS:
-          </Typography>
+        <Grid container lg={12} md={12} justify="center">
+          <Grid item lg={8} md={8}>
+            <Typography variant="h4" className={classes.detailsheading}>
+              REVIEWS:
+            </Typography>
+          </Grid>
         </Grid>
-      </Grid>
-      <Grid container lg={12} md={12} justify="center">
-        <ReviewCard />
-      </Grid>
-      <Grid container style={{ marginTop: "6rem" }}>
-        <Contact />
-      </Grid>
-    </div>
+        <Grid container lg={12} md={12} justify="center">
+          <ReviewCard />
+        </Grid>
+        <Grid container style={{ marginTop: "6rem" }}>
+          <Contact />
+        </Grid>
+      </div>
+      {/* ))} */}
+    </>
   );
 };
 
