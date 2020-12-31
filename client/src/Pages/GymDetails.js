@@ -8,7 +8,7 @@ import CircleDetails from "../components/circle/CircleDetails";
 import ReviewCard from "../components/reviewCard/ReviewCard";
 import DetailsCarousel from "../components/detailsCarousel/DetailsCarousel";
 import head from "../assets/3.png";
-import { GET_DETAIL } from "../graphql/requests";
+import { GET_DETAIL, IMAGE_URL } from "../graphql/requests";
 import { useQuery } from "@apollo/client";
 import Loader from "../components/Loader";
 
@@ -56,7 +56,7 @@ const GymDetails = (props) => {
         <DetailsNavBar toggle={toggle} />
         <Grid container xs={12} lg={12} md={12} justify="center">
           <Grid item lg={8} md={8} sm={12} xs={12}>
-            <DetailsCarousel />
+            <DetailsCarousel images={detailData.gymDetail.gymimageSet} />
           </Grid>
         </Grid>
         <Grid container xs={12} lg={12} md={12}>
@@ -65,7 +65,11 @@ const GymDetails = (props) => {
           </Grid>
           <Grid item xs={7} lg={11} md={11}>
             <Typography variant="h3" className={classes.heading}>
-              {/* {detailData.gym.name ? detailData.gym.name : <p>Gym</p>} */}
+              {detailData.gymDetail.gym.name.length > 0 ? (
+                detailData.gymDetail.gym.name
+              ) : (
+                <p>Gym</p>
+              )}
             </Typography>
           </Grid>
         </Grid>
