@@ -2,11 +2,16 @@ import React from "react";
 import { Paper, Grid, Typography } from "@material-ui/core";
 import { useStyles } from "./DetailsCarouselStyles";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
-import CarouselComp from "./CarouselComp";
 import StarIcon from "@material-ui/icons/Star";
+import Carousel from "react-elastic-carousel";
+import Item from "./Item";
+import { IMAGE_URL } from "../../graphql/requests";
 
-const DetailsCarousel = () => {
+const breakPoints = [{ width: 1, itemsToShow: 1 }];
+
+const DetailsCarousel = ({ images }) => {
   const classes = useStyles();
+  console.log(images);
   return (
     <Paper eevation={4} className={classes.paper}>
       <Grid container className={classes.row}>
@@ -38,7 +43,19 @@ const DetailsCarousel = () => {
       </Grid>
       <Grid container md={12} lg={12} justify="center">
         <Grid item lg={12} md={12} xs={12} sm={12} justify="center">
-          <CarouselComp />
+          <div className={classes.carousel}>
+            <Carousel breakPoints={breakPoints}>
+              {images.map((item, index) => (
+                <Item>
+                  <img
+                    className={classes.images}
+                    src={`${IMAGE_URL}${item.image}`}
+                    alt="Gym"
+                  />
+                </Item>
+              ))}
+            </Carousel>
+          </div>
         </Grid>
       </Grid>
     </Paper>

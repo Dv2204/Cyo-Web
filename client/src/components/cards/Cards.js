@@ -169,14 +169,13 @@ const Cards = () => {
                   </Grid>
                   <Grid container className={classes.row}>
                     <Grid item lg={10} md={10}>
-                      <Link
-                        to={{
-                          pathname: "/gymdetails",
-                          detailsProps: {
-                            name: "blah",
-                            rating: "3",
-                          },
-                        }}
+                      <Link to="/gymdetails/`${item.id}`"
+                        // to={{
+                        //   pathname: "/gymdetails/:{item.id}",
+                        //   // detailsProps: {
+                        //   //    id: {item.id}
+                        //   // },
+                        // }}
                       >
                         <Typography variant="body2" className={classes.details}>
                           View Details
@@ -275,14 +274,14 @@ const Cards = () => {
                     </Grid>
                     <Grid container className={classes.row}>
                       <Grid item lg={10} md={10}>
-                        <Link
-                          to={{
-                            pathname: "/gymdetails",
-                            detailsProps: {
-                              name: "blah",
-                              rating: "3",
-                            },
-                          }}
+                        <Link to={`/gymdetails/${item.id}`}
+                          // to={{
+                          //   pathname: "/gymdetails",
+                          //   detailsProps: {
+                          //     name: "blah",
+                          //     rating: "3",
+                          //   },
+                          // }}
                         >
                           <Typography
                             variant="body2"

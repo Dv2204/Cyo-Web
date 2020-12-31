@@ -176,3 +176,41 @@ export const ALL_GYMS = gql`
     }
   }
 `;
+
+export const GET_DETAIL = gql`
+  query getDetail($id: String!) {
+    gymDetail(id: $id) {
+      id
+      gym {
+        id
+        name
+      }
+      city
+      pincode
+      area
+      seats
+      description
+      latitude
+      longitude
+      rating
+      userfeedbackSet {
+        id
+        userId {
+          id
+          firstName
+          lastName
+          image
+        }
+        rating
+        description
+      }
+      gymimageSet {
+        id
+        gym {
+          id
+        }
+        image
+      }
+    }
+  }
+`;

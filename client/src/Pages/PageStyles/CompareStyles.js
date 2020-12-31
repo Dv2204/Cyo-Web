@@ -25,16 +25,13 @@ export const useStyles = makeStyles((theme) => ({
   btn: {
     backgroundColor: "rgba(255, 147, 108, 1)",
     color: "#fff",
-    padding: "1.3rem 2.2rem",
+    padding: "1.3rem 2.8rem",
     fontSize: "19px",
     letterSpacing: "0.1rem",
-    marginTop: "3rem",
+    marginTop: "1rem",
     textDecoration: "none",
     "&:hover": {
       cursor: "pointer",
     },
   },
-  // compare: {
-  //     backgroundImage: '../../assets/compare.jpg'
-  // }
 }));

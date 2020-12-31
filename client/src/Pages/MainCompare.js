@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import { useStyles } from "./PageStyles/MainCompareStyles";
 import CompareNavBar from "../components/Nav/CompareNav";
 import { Grid, Typography } from "@material-ui/core";
-// import Contact from '../components/contactUs/Contact';
 import Sidebar from "../components/Sidebar/Sidebar";
 import Accordion from "../components/dropdownCompare/Accordion";
 import "./PageStyles/compare.css";
 import CarouselComp from "../components/carousel/CarouselComp";
 
-const About = () => {
+const MainCompare = () => {
   const classes = useStyles();
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -246,15 +245,9 @@ const About = () => {
             </Accordion>
           </Grid>
         </Grid>
-
-        {/* <hr className={classes.line}/>
-                 <Chip className={classes.btn} label="Trainers"></Chip>
-                  <hr className={classes.line}/>
-                 <Chip className={classes.btn} label="Price Info"></Chip>
-                  */}
       </div>
     </>
   );
 };
 
-export default About;
+export default MainCompare;
