@@ -20,15 +20,17 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: "0.5rem",
   },
   rating: {
-    fontSize: "12px",
+    fontSize: "15px",
     color: "#fff",
     backgroundColor: "#11C62E",
-    width: "3.2vw",
+    width: "2.5vw",
+    borderRadius: "15px",
   },
   ratingIcon: {
     fontSize: "16px",
     color: "#fff",
     backgroundColor: "#11C62E",
+    marginLeft: "0.22rem",
   },
   count: {
     fontSize: "14px",

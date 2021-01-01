@@ -187,6 +187,11 @@ export const GET_DETAIL = gql`
       gym {
         id
         name
+        counter
+      }
+      machines {
+        id
+        name
       }
       city
       pincode

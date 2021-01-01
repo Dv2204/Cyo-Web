@@ -9,7 +9,7 @@ import { IMAGE_URL } from "../../graphql/requests";
 
 const breakPoints = [{ width: 1, itemsToShow: 1 }];
 
-const DetailsCarousel = ({ images }) => {
+const DetailsCarousel = ({ images, rating, address, seats }) => {
   const classes = useStyles();
   console.log(images);
   return (
@@ -23,17 +23,17 @@ const DetailsCarousel = ({ images }) => {
         </Grid>
         <Grid item lg={8} md={8} style={{ marginTop: "1rem" }}>
           <Typography variant="caption" className={classes.locationtext}>
-            Blah blah blah
+            {address}
           </Typography>
         </Grid>
         <Grid item lg={1} md={1} style={{ marginTop: "1rem" }}>
           <Typography className={classes.rating}>
-            4.3
+            {rating}
             <StarIcon className={classes.ratingIcon} />
           </Typography>
         </Grid>
         <Grid item lg={2} md={2} style={{ marginTop: "1rem" }}>
-          <Typography className={classes.count}>2.3k people</Typography>
+          <Typography className={classes.count}>{seats} people</Typography>
         </Grid>
       </Grid>
       <Grid container lg={12} md={12} justify="center">
