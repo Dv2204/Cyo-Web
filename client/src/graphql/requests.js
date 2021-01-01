@@ -187,6 +187,7 @@ export const GET_DETAIL = gql`
       gym {
         id
         name
+        counter
       }
       city
       pincode
