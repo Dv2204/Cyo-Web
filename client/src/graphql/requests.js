@@ -189,6 +189,10 @@ export const GET_DETAIL = gql`
         name
         counter
       }
+      machines {
+        id
+        name
+      }
       city
       pincode
       area

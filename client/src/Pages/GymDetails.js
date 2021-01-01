@@ -104,7 +104,7 @@ const GymDetails = (props) => {
           style={{ marginTop: "0.5rem" }}
           className={classes.circle}
         >
-          <CircleDetails />
+          <CircleDetails machines={detailData.gymDetail.machines} />
         </Grid>
         {/* <Grid container lg={12} md={12} justify="center">
           <Grid item lg={8} md={8}>
