@@ -19,6 +19,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SideLink to="/products">Products</SideLink>
           <SideLink to="/compare">Compare</SideLink>
           <SideLink to="/contact">Help Centre</SideLink>
+          <SideLink to="/aboutgyms">About-Us</SideLink>
           <SideLink to="/about">About-Developers</SideLink>
         </SideMenu>
       </SidebarContainer>

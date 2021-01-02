@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Grid, Typography } from "@material-ui/core";
-import NavBar from "../components/Nav/NavBarMain";
+import AboutGymsNav from "../components/Nav/AboutGymsNav";
 import Sidebar from "../components/Sidebar/Sidebar";
 import { useStyles } from "./PageStyles/PrivacyPolicyStyles";
 import Contact from "../components/contactUs/Contact";
@@ -16,7 +16,7 @@ const AboutGyms = () => {
     <>
       <div style={{ backgroundColor: "rgba(248, 248, 248, 1)" }}>
         <Sidebar isOpen={isOpen} toggle={toggle} />
-        <NavBar toggle={toggle} />
+        <AboutGymsNav toggle={toggle} />
         <Grid container lg={12} md={12} xs={12} sm={12}>
           <Grid item lg={12} md={12} xs={12} sm={12}>
             <Typography variant="h2" className={classes.text} justify="center">
