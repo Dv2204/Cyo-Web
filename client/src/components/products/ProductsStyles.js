@@ -7,5 +7,9 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: "7rem",
     fontWeight: "bold",
     textAlign: "center",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "2.1rem",
+      marginLeft: '1.4rem'
+    },
   },
 }));

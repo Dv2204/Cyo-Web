@@ -9,8 +9,9 @@ export const useStyles = makeStyles((theme) => ({
     letterSpacing: "0.1rem",
     textAlign: "center",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "3rem",
+      fontSize: "2.1rem",
       paddingTop: "4rem",
+      marginLeft: '1.8rem'
     },
   },
   carousel: {

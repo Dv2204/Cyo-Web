@@ -119,4 +119,11 @@ export const useStyles = makeStyles((theme) => ({
       width: "80vw",
     },
   },
+  alternateimage: {
+    width: "600%",
+    height: "5vh",
+    [theme.breakpoints.down("xs")]: {
+      width: "80vw",
+    },
+  },
 }));
