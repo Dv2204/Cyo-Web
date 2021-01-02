@@ -25,19 +25,22 @@ const ConnectWithUs = () => {
                   </Grid>
                 </Grid>
                 <Typography variant="body1" className={classes.body}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
-                  ultricies accumsan et viverra. Arcu auctor maecenas lectus
-                  arcu tortor. Gravida diam sit convallis sagittis. Libero
-                  tempus phasellus fames nisl in vestibulum. Laoreet lacus
-                  volutpat, tincidunt maecenas. Scelerisque odio rutrum mi
-                  netus. Nulla non mauris, adipiscing nisi. Potenti id pretium
-                  nisl porttitor. Aenean euismod tortor fames odio amet interdum
-                  quam et, ornare. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Dui ultricies accumsan et viverra. Arcu
-                  auctor maecenas lectus arcu tortor. Gravida diam sit convallis
-                  sagittis. Libero tempus phasellus fames nisl in vestibulum.
-                  Aenean euismod tortor fames odio amet interdum quam et,
-                  ornare.
+                  CYO GYMS introduced in 2020-2021 when Mr. Harish Saini and
+                  Vikas Malik realized that users didn’t want to or couldn’t pay
+                  yearly gym membership fees upfront. There was intent since
+                  everyone tried several fitness centers and local parks, but it
+                  wasn’t practical for long. It was then that a simple idea was
+                  worked upon – working out should work out. What started with a
+                  handful of gyms in Rewari is now offering fitness enthusiasts
+                  across India the flexibility to workout whenever, wherever,
+                  and however they please. We have successfully digitized the
+                  Fitness Industry and created an interconnected community of
+                  fitness centers / gyms and fitness enthusiasts. Our new age
+                  functions have transformed the fitness ecosystem. CYO GYMS is
+                  an alias for comprehensive fitness solutions. We are
+                  successfully removing friction and creating marketplace
+                  efficiencies through technology and bringing in the age of
+                  Fittech in India.
                 </Typography>
                 <Chip className={classes.btn} label="Get the App!"></Chip>
               </Paper>

@@ -8,6 +8,7 @@ import About from "../Pages/About";
 import LandingPage from "../Pages/LandingPage";
 import MainCompare from "../Pages/MainCompare";
 import PrivacyPolicy from "../Pages/PrivacyPolicy";
+import AboutGyms from "../Pages/AboutGyms";
 import Contact from "../components/contactUs/Contact";
 
 const Routes = () => {
@@ -24,6 +25,7 @@ const Routes = () => {
           <Route exact path="/maincompare" component={MainCompare} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/privacypolicy" component={PrivacyPolicy} />
+          <Route exact path="/aboutgyms" component={AboutGyms} />
         </Switch>
       </Router>
     </div>
