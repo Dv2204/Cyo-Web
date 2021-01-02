@@ -13,7 +13,7 @@ export const useStyles = makeStyles((theme) => ({
     paddingTop: "10vh",
     textAlign: "center",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "2.2rem",
+      fontSize: "2rem",
       paddingBottom: "1vh",
       height: "3rem",
     },
