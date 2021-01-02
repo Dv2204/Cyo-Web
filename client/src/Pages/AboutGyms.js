@@ -5,6 +5,7 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import { useStyles } from "./PageStyles/PrivacyPolicyStyles";
 import Contact from "../components/contactUs/Contact";
 
+
 const AboutGyms = () => {
   const classes = useStyles();
   const [isOpen, setIsOpen] = useState(false);
@@ -17,11 +18,11 @@ const AboutGyms = () => {
       <div style={{ backgroundColor: "rgba(248, 248, 248, 1)" }}>
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <AboutGymsNav toggle={toggle} />
-        <Grid container lg={12} md={12} xs={12} sm={12}>
+        <Grid container lg={12} md={12} xs={12} sm={12} >
           <Grid item lg={12} md={12} xs={12} sm={12}>
-            <Typography variant="h2" className={classes.text} justify="center">
-              About Us
-            </Typography>
+          <Typography variant="h2" className={classes.text} justify="center">
+            About Us
+          </Typography>
             <Typography variant="h3" className={classes.name} justify="center">
               Choose Your Option Pvt. Ltd.
             </Typography>
