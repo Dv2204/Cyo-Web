@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Avatar, Typography, Grid, Paper, Chip } from "@material-ui/core";
 import head from "../../assets/2.PNG";
+import profile from "../../assets/compare.jpg";
 import { useStyles } from "./CardsStyles";
 import ShareIcon from "@material-ui/icons/Share";
 import BeenhereOutlinedIcon from "@material-ui/icons/BeenhereOutlined";
@@ -141,12 +142,19 @@ const Cards = () => {
                   </Grid>
                   <Grid container justify="center" spacing={0}>
                     <Grid item lg={12} md={12}>
-                      <Avatar
-                        src={`${IMAGE_URL}${item.gymimageSet.image}`}
-                        alt="Profile"
-                        variant="square"
-                        className={classes.avatarimage}
-                      />
+                    {item.gymimageSet.length > 0 ? 
+                        <img
+                          src={`${IMAGE_URL}${item.gymimageSet[0].image}`}
+                          alt="Profile"
+                          index={0}
+                          className={classes.avatarimage}
+                        /> : 
+                           <img
+                          src={profile}
+                          alt="Profile"
+                          className={classes.avatarimage}
+                        />
+                      }
                     </Grid>
                   </Grid>
                   <Grid container className={classes.row}>
@@ -196,6 +204,7 @@ const Cards = () => {
                   <Grid container>
                     <Grid item lg={12} md={12}>
                       <Grid container className={classes.row}>
+                      {console.log(item)}
                         <Grid item lg={10} md={10}>
                           <Grid container className={classes.top}>
                             <Grid item lg={2} md={2}>
@@ -239,12 +248,19 @@ const Cards = () => {
                     </Grid>
                     <Grid container justify="center" spacing={0}>
                       <Grid item lg={12} md={12}>
-                        <Avatar
-                          src={`${IMAGE_URL}${item.gymimageSet.image}`}
+                      {item.gymimageSet.length > 0 ? 
+                        <img
+                          src={`${IMAGE_URL}${item.gymimageSet[0].image}`}
                           alt="Profile"
-                          variant="square"
+                          index={0}
+                          className={classes.avatarimage}
+                        /> : 
+                           <img
+                          src={profile}
+                          alt="Profile"
                           className={classes.avatarimage}
                         />
+                      }
                       </Grid>
                     </Grid>
                     <Grid container className={classes.row}>

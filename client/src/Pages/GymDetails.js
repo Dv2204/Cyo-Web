@@ -106,24 +106,6 @@ const GymDetails = (props) => {
         >
           <CircleDetails machines={detailData.gymDetail.machines} />
         </Grid>
-        {/* <Grid container lg={12} md={12} justify="center">
-          <Grid item lg={8} md={8}>
-            <Typography variant="h4" className={classes.detailsheading}>
-              DETAILS:
-            </Typography>
-          </Grid>
-        </Grid>
-        <Grid container lg={12} md={12} justify="center">
-          <Grid item lg={8} md={8}>
-            <Typography
-              variant="body1"
-              className={classes.body}
-              style={{ color: "rgba(92, 92, 92, 1)", marginTop: "0.5rem" }}
-            >
-              {detailData.gymDetail.description}
-            </Typography>
-          </Grid>
-        </Grid> */}
         <Grid container lg={12} md={12} justify="center">
           <Grid item lg={8} md={8}>
             <Typography variant="h4" className={classes.detailsheading}>
