@@ -37,6 +37,10 @@ const CompareNavBar = ({ toggle }) => {
               Products
             </NavLink>
             <Dot />
+            <NavLink to="/aboutgyms" activeStyle>
+              About-Us
+            </NavLink>
+            <Dot />
             <NavLink to="/about" activeStyle>
               About-Developers
             </NavLink>

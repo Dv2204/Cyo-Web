@@ -13,7 +13,7 @@ import Logo from "../../assets/logo-white.png";
 import "../Nav/navbar.css";
 import { Link } from "react-scroll";
 
-const AboutNavBar = ({ toggle }) => {
+const PrivacyNav = ({ toggle }) => {
   return (
     <>
       <Nav style={{ position: "relative" }}>
@@ -22,7 +22,7 @@ const AboutNavBar = ({ toggle }) => {
         </MobileIcons>
 
         <NavDiv>
-          <NavLogo className="logo-name-img">
+          <NavLogo to="/" className="logo-name-img">
             <NavLink to="/">
               <img className="Logo" src={Logo} alt="logo" />
             </NavLink>
@@ -41,12 +41,12 @@ const AboutNavBar = ({ toggle }) => {
               Compare
             </NavLink>
             <Dot />
-            <Link to="contact" smooth={true} duration={1000}>
-              <NavLink activeStyle>Help Centre</NavLink>
-            </Link>
-            <Dot />
             <NavLink to="/aboutgyms" activeStyle>
               About-Us
+            </NavLink>
+            <Dot />
+            <NavLink to="/about" activeStyle>
+              About-Developers
             </NavLink>
           </NavMenu>
         </NavDiv>
@@ -55,4 +55,4 @@ const AboutNavBar = ({ toggle }) => {
   );
 };
 
-export default AboutNavBar;
+export default PrivacyNav;

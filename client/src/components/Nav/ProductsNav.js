@@ -41,6 +41,10 @@ const ProductsNavBar = ({ toggle }) => {
               <NavLink activeStyle>Help Centre</NavLink>
             </Link>
             <Dot />
+            <NavLink to="/aboutgyms" activeStyle>
+              About-Us
+            </NavLink>
+            <Dot />
             <NavLink to="/about" activeStyle>
               About-Developers
             </NavLink>

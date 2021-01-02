@@ -4,23 +4,6 @@ import { useStyles } from "./CircleDetailsStyles";
 
 const CircleDetails = ({ machines }) => {
   const classes = useStyles();
-  const FacList = [
-    {
-      des: "Fitness Group",
-    },
-    {
-      des: "Health Spa",
-    },
-    {
-      des: "Health Spa",
-    },
-    {
-      des: "Bhangra Club",
-    },
-    {
-      des: "Zumba Classes",
-    },
-  ];
   console.log(machines);
   return (
     <>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Grid, Paper } from "@material-ui/core";
+import { Typography, Grid, Paper, Chip} from "@material-ui/core";
 import { useStyles } from "./ContactStyles";
 import TextField from "@material-ui/core/TextField";
 import AccountCircle from "@material-ui/icons/AccountCircle";
@@ -33,9 +33,7 @@ const Contact = () => {
                   </a>
                 </Typography>
                 <Link to="/privacypolicy">
-                  <Typography className={classes.privacy} variant="h5">
-                    Detailed Privacy Policy
-                  </Typography>
+                <Chip label="Privacy Policy" className={classes.privacy} />
                 </Link>
                 <Grid container>
                   <Grid item lg={4}>

@@ -83,16 +83,27 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   privacy: {
-    padding: "2vh",
     textDecoration: "none",
     color: "rgba(180, 180, 180, 1)",
     cursor: "pointer",
+    backgroundColor: '#000',
+    padding: "1rem 1.1rem",
+    fontSize: "16px",
+    letterSpacing: "0.1rem",
     textAlign: "center",
+    marginLeft: '11.4rem',
     "&:hover": {
       color: "#fff",
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: "0.95rem",
+      fontSize: "0.6rem",
+      padding: "3px 0.08rem",
+      marginLeft: '7rem'
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "0.6rem",
+      padding: "3px 0.08rem",
+      marginLeft: '7rem'
     },
   },
 }));

@@ -13,7 +13,7 @@ import Logo from "../../assets/logo-white.png";
 import "../Nav/navbar.css";
 import { Link } from "react-scroll";
 
-const AboutNavBar = ({ toggle }) => {
+const AboutGymsNav = ({ toggle }) => {
   return (
     <>
       <Nav style={{ position: "relative" }}>
@@ -22,31 +22,31 @@ const AboutNavBar = ({ toggle }) => {
         </MobileIcons>
 
         <NavDiv>
-          <NavLogo className="logo-name-img">
+          <NavLogo to="/" className="logo-name-img">
             <NavLink to="/">
               <img className="Logo" src={Logo} alt="logo" />
             </NavLink>
             <h2 className="LogoName">CYO GYMS</h2>
           </NavLogo>
           <NavMenu>
-            <NavLink to="/gyms" activeStyle>
-              Gyms
-            </NavLink>
+            <Link to="gym" smooth={true} duration={1000}>
+              <NavLink activeStyle>Gyms</NavLink>
+            </Link>
             <Dot />
-            <NavLink to="/products" activeStyle>
-              Products
-            </NavLink>
+            <Link to="products" smooth={true} duration={2000}>
+              <NavLink activeStyle>Products</NavLink>
+            </Link>
             <Dot />
             <NavLink to="/compare" activeStyle>
               Compare
             </NavLink>
             <Dot />
-            <Link to="contact" smooth={true} duration={1000}>
+            <Link to="contact" smooth={true} duration={1500}>
               <NavLink activeStyle>Help Centre</NavLink>
             </Link>
             <Dot />
-            <NavLink to="/aboutgyms" activeStyle>
-              About-Us
+            <NavLink to="/about" activeStyle>
+              About-Developers
             </NavLink>
           </NavMenu>
         </NavDiv>
@@ -55,4 +55,4 @@ const AboutNavBar = ({ toggle }) => {
   );
 };
 
-export default AboutNavBar;
+export default AboutGymsNav;
