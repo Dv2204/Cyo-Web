@@ -3,7 +3,6 @@ import { Avatar, Typography, Grid, Paper, Chip } from "@material-ui/core";
 import head from "../../assets/2.PNG";
 import profile from "../../assets/compare.jpg";
 import { useStyles } from "./GymPageCardStyles";
-import ShareIcon from "@material-ui/icons/Share";
 import BeenhereOutlinedIcon from "@material-ui/icons/BeenhereOutlined";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import StarIcon from "@material-ui/icons/Star";
@@ -70,13 +69,6 @@ const Cards = () => {
             <Grid item xs={2} lg={1} md={1} style={{ marginBottom: "2rem" }}>
               <PinDropIcon fontSize="large" className={classes.icon} />
             </Grid>
-            <Grid item xs={8} lg={3} md={3}>
-              <Chip
-                className={classes.select}
-                label="Gym Name"
-                onClick={() => clearFilter()}
-              />
-            </Grid>
             <Grid xs={12} lg={8} md={8}>
               <Paper className={classes.root} elevation={2}>
                 <InputBase
@@ -91,6 +83,13 @@ const Cards = () => {
                   <SearchIcon />
                 </IconButton>
               </Paper>
+            </Grid>
+            <Grid item xs={8} lg={3} md={3}>
+              <Chip
+                className={classes.select}
+                label="Clear Filter"
+                onClick={() => clearFilter()}
+              />
             </Grid>
           </Grid>
         </Grid>
@@ -181,9 +180,6 @@ const Cards = () => {
                       <Link to={`/gymdetails/${item.id}`}>
                         <Typography variant="body2" className={classes.details}>
                           View Details
-                          <ShareIcon
-                            style={{ fontSize: "25px", marginLeft: "1rem" }}
-                          />
                         </Typography>
                       </Link>
                     </Grid>
@@ -283,9 +279,6 @@ const Cards = () => {
                       <Link to={`/gymdetails/${item.id}`}>
                         <Typography variant="body2" className={classes.details}>
                           View Details
-                          <ShareIcon
-                            style={{ fontSize: "25px", marginLeft: "1rem" }}
-                          />
                         </Typography>
                       </Link>
                     </Grid>
