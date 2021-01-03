@@ -223,3 +223,42 @@ export const GET_DETAIL = gql`
     }
   }
 `;
+
+export const CITY_GYMS = gql`
+  query CityGyms($city: String!) {
+    gym(city: $city) {
+      id
+      gym {
+        id
+        name
+      }
+      city
+      pincode
+      area
+      seats
+      description
+      latitude
+      longitude
+      rating
+      address
+      userfeedbackSet {
+        id
+        userId {
+          id
+          firstName
+          lastName
+          image
+        }
+        rating
+        description
+      }
+      gymimageSet {
+        id
+        gym {
+          id
+        }
+        image
+      }
+    }
+  }
+`;

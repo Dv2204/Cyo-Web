@@ -21,7 +21,7 @@ export const useStyles = makeStyles((theme) => ({
     paddingTop: "0.2rem",
   },
   location: {
-    fontSize: "11px",
+    fontSize: "13px",
     color: "grey",
     padding: "10px",
   },
@@ -29,7 +29,7 @@ export const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
   },
   body: {
-    fontSize: "12px",
+    fontSize: "14px",
     paddingLeft: "19px",
     paddingRight: "19px",
   },
@@ -39,10 +39,11 @@ export const useStyles = makeStyles((theme) => ({
     paddingLeft: "10px",
   },
   rating: {
-    fontSize: "8px",
+    fontSize: "10px",
     color: "#fff",
     backgroundColor: "#11C62E",
     marginLeft: "0.7rem",
+    width: "1.6vw",
   },
   ratingIcon: {
     fontSize: "10px",
@@ -75,11 +76,11 @@ export const useStyles = makeStyles((theme) => ({
   select: {
     backgroundColor: "#909090",
     color: "#fff",
-    marginTop: "0.6rem",
+    marginTop: "0.2rem",
     padding: "1.3rem 1.2rem",
     fontSize: "19px",
     letterSpacing: "0.1rem",
-    marginLeft: "-0.5rem",
+    marginLeft: "1rem",
     "&:hover": {
       cursor: "pointer",
     },
@@ -94,7 +95,7 @@ export const useStyles = makeStyles((theme) => ({
     padding: "2px 4px",
     display: "flex",
     alignItems: "center",
-    marginLeft: "1rem",
+    marginLeft: "0.3rem",
     [theme.breakpoints.down("xs")]: {
       width: "94vw",
     },
@@ -115,6 +116,13 @@ export const useStyles = makeStyles((theme) => ({
   avatarimage: {
     width: "100%",
     height: "20vh",
+    [theme.breakpoints.down("xs")]: {
+      width: "80vw",
+    },
+  },
+  alternateimage: {
+    width: "600%",
+    height: "5vh",
     [theme.breakpoints.down("xs")]: {
       width: "80vw",
     },
