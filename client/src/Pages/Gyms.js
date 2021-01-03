@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GymPageCard from "../components/GymPageCard/GymPageCard";
+import GymPageCardCity from "../components/GymPageCard/GymPageCardCity";
 import { Grid, Container, Typography } from "@material-ui/core";
 import GymNavBar from "../components/Nav/GymNav";
 import { useStyles } from "./PageStyles/GymsStyles";
@@ -29,7 +29,7 @@ const Gyms = () => {
           spacing={8}
           style={{ marginTop: "1rem", paddingBottom: "6rem" }}
         >
-          <GymPageCard />
+          <GymPageCardCity />
         </Grid>
       </Container>
       <Grid container>

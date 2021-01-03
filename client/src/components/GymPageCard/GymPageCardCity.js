@@ -9,7 +9,7 @@ import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import StarIcon from "@material-ui/icons/Star";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import { Link } from "react-router-dom";
-import { ALL_GYMS, SEARCH_GYMS, IMAGE_URL } from "../../graphql/requests";
+import { ALL_GYMS, CITY_GYMS, IMAGE_URL } from "../../graphql/requests";
 import { useQuery, useLazyQuery } from "@apollo/client";
 import Loader from "../Loader";
 import PinDropIcon from "@material-ui/icons/PinDrop";
@@ -31,8 +31,8 @@ const Cards = () => {
   const [
     getGyms,
     { data: filteredGym, loading: filteredGymLoading, error: filteredGymError },
-  ] = useLazyQuery(SEARCH_GYMS, {
-    variables: { keyword: searchText },
+  ] = useLazyQuery(CITY_GYMS, {
+    variables: { city: searchText },
   });
   if (gymLoading || filteredGymLoading) {
     return (
@@ -95,8 +95,8 @@ const Cards = () => {
           </Grid>
         </Grid>
       </Grid>
-      {filteredGym?.searchGym?.length > 0
-        ? filteredGym.searchGym.map((item, index) => (
+      {filteredGym?.gym?.length > 0
+        ? filteredGym.gym.map((item, index) => (
             <Grid item lg={4} md={4} id="gym" className={classes.card}>
               <Paper elevation={4} className={classes.paperNormal}>
                 <Grid container>
@@ -142,19 +142,20 @@ const Cards = () => {
                   </Grid>
                   <Grid container justify="center" spacing={0}>
                     <Grid item lg={12} md={12}>
-                    {item.gymimageSet.length > 0 ? 
+                      {item.gymimageSet.length > 0 ? (
                         <img
                           src={`${IMAGE_URL}${item.gymimageSet[0].image}`}
                           alt="Profile"
                           index={0}
                           className={classes.avatarimage}
-                        /> : 
-                           <img
+                        />
+                      ) : (
+                        <img
                           src={profile}
                           alt="Profile"
                           className={classes.avatarimage}
                         />
-                      }
+                      )}
                     </Grid>
                   </Grid>
                   <Grid container className={classes.row}>
@@ -243,19 +244,20 @@ const Cards = () => {
                   </Grid>
                   <Grid container justify="center" spacing={0}>
                     <Grid item lg={12} md={12}>
-                    {item.gymimageSet.length > 0 ? 
+                      {item.gymimageSet.length > 0 ? (
                         <img
                           src={`${IMAGE_URL}${item.gymimageSet[0].image}`}
                           alt="Profile"
                           index={0}
                           className={classes.avatarimage}
-                        /> : 
-                           <img
+                        />
+                      ) : (
+                        <img
                           src={profile}
                           alt="Profile"
                           className={classes.avatarimage}
                         />
-                      }
+                      )}
                     </Grid>
                   </Grid>
                   <Grid container className={classes.row}>
