@@ -6,15 +6,59 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import Accordion from "../components/dropdownCompare/Accordion";
 import "./PageStyles/compare.css";
 import CarouselComp from "../components/carousel/CarouselComp";
+import { GET_DETAIL } from "../graphql/requests";
+import { useQuery } from "@apollo/client";
+import Loader from "../components/Loader";
 
-const MainCompare = () => {
+const MainCompare = (props) => {
   const classes = useStyles();
   const [isOpen, setIsOpen] = useState(false);
+  const [selectedIndex, SetSelectedIndex] = useState(0);
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  const {
+    data: detailDataOne,
+    loading: detailLoadingOne,
+    error: detailErrorOne,
+  } = useQuery(GET_DETAIL, {
+    variables: {
+      id: props.match.params.idone,
+    },
+  });
+  const {
+    data: detailDataTwo,
+    loading: detailLoadingTwo,
+    error: detailErrorTwo,
+  } = useQuery(GET_DETAIL, {
+    variables: {
+      id: props.match.params.idtwo,
+    },
+  });
+  if (detailLoadingOne || detailLoadingTwo) {
+    return (
+      <Grid
+        container
+        lg={12}
+        md={12}
+        justify="center"
+        style={{ margin: "5rem" }}
+      >
+        <Grid item lg={3} md={3} justify="center">
+          <Loader color="rgba(38, 38, 38, 0.7)" />
+        </Grid>
+      </Grid>
+    );
+  }
 
-  const [selectedIndex, SetSelectedIndex] = useState(0);
+  if (detailErrorOne) {
+    return <p style={{ color: "#fff" }}>{detailErrorOne.message}</p>;
+  }
+  if (detailErrorTwo) {
+    return <p style={{ color: "#fff" }}>{detailErrorTwo.message}</p>;
+  }
+  console.log(detailDataOne);
+  console.log(detailDataTwo);
   return (
     <>
       <div style={{ backgroundColor: "rgba(248, 248, 248, 1)" }}>
@@ -40,12 +84,20 @@ const MainCompare = () => {
           </Grid>
           <Grid item lg={4} md={4}>
             <Typography variant="h4" justify="center">
-              Gym 1
+              {detailDataOne.gymDetail.gym.name.length > 0 ? (
+                detailDataOne.gymDetail.gym.name
+              ) : (
+                <p>Gym 1</p>
+              )}
             </Typography>
           </Grid>
           <Grid item lg={4} md={4}>
             <Typography variant="h4" justify="center">
-              Gym 2
+              {detailDataTwo.gymDetail.gym.name.length > 0 ? (
+                detailDataTwo.gymDetail.gym.name
+              ) : (
+                <p>Gym 2</p>
+              )}
             </Typography>
           </Grid>
 
@@ -64,28 +116,12 @@ const MainCompare = () => {
                 <Grid container lg={12} md={12} justify="space-around">
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit. Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.
+                      {detailDataOne.gymDetail.description}
                     </Typography>
                   </Grid>
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit .Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.
+                      {detailDataTwo.gymDetail.description}
                     </Typography>
                   </Grid>
                 </Grid>
@@ -170,44 +206,20 @@ const MainCompare = () => {
                 <Grid container lg={12} md={12} justify="space-around">
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit. Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna. Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit. Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.
+                      {detailDataOne.gymDetail.machines.length > 0 ? (
+                        detailDataOne.gymDetail.machines.name
+                      ) : (
+                        <p>No Machines</p>
+                      )}
                     </Typography>
                   </Grid>
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit .Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna. Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit .Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.
+                      {detailDataTwo.gymDetail.machines.length > 0 ? (
+                        detailDataTwo.gymDetail.machines.name
+                      ) : (
+                        <p>No Machines</p>
+                      )}
                     </Typography>
                   </Grid>
                 </Grid>
