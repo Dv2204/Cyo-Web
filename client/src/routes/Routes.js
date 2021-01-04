@@ -22,7 +22,7 @@ const Routes = () => {
           <Route exact path="/compare" component={Compare} />
           <Route exact path="/gymdetails/:id" component={GymDetails} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/maincompare" component={MainCompare} />
+          <Route exact path="/maincompare/:id/:id" component={MainCompare} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/privacypolicy" component={PrivacyPolicy} />
           <Route exact path="/aboutgyms" component={AboutGyms} />
