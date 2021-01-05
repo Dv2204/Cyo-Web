@@ -23,7 +23,7 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "15px",
     color: "#fff",
     backgroundColor: "#11C62E",
-    width: "2.5vw",
+    width: "3vw",
     borderRadius: "15px",
   },
   ratingIcon: {

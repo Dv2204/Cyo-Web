@@ -5,7 +5,7 @@ import { Grid, Typography } from "@material-ui/core";
 import Sidebar from "../components/Sidebar/Sidebar";
 import Accordion from "../components/dropdownCompare/Accordion";
 import "./PageStyles/compare.css";
-import CarouselComp from "../components/carousel/CarouselComp";
+import MainCompareCarousel from "../components/carousel/MainCompareCarousel";
 import { GET_DETAIL } from "../graphql/requests";
 import { useQuery } from "@apollo/client";
 import Loader from "../components/Loader";
@@ -94,7 +94,7 @@ const MainCompare = (props) => {
           </Grid>
           <Grid item lg={4} md={4}>
             <Typography variant="h4" justify="center">
-              {detailDataTwo.gymDetail.gym.name.length > 0 ? (
+              {detailDataTwo.gymDetail.gym.name?.length > 0 ? (
                 detailDataTwo.gymDetail.gym.name
               ) : (
                 <p>Gym 2</p>
@@ -104,10 +104,14 @@ const MainCompare = (props) => {
 
           <Grid container lg={12} md={12} justify="space-around">
             <Grid item lg={5} md={5}>
-              <CarouselComp />
+              <MainCompareCarousel
+                images={detailDataOne.gymDetail.gymimageSet}
+              />
             </Grid>
             <Grid item lg={5} md={5}>
-              <CarouselComp />
+              <MainCompareCarousel
+                images={detailDataTwo.gymDetail.gymimageSet}
+              />
             </Grid>
           </Grid>
 
@@ -117,12 +121,24 @@ const MainCompare = (props) => {
                 <Grid container lg={12} md={12} justify="space-around">
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
-                      {detailDataOne.gymDetail.description}
+                      {detailDataOne.gymDetail.description?.length > 0 ? (
+                        detailDataOne.gymDetail.description
+                      ) : (
+                        <Typography variant="body1" justify="center">
+                          No Description Found
+                        </Typography>
+                      )}
                     </Typography>
                   </Grid>
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
-                      {detailDataTwo.gymDetail.description}
+                      {detailDataTwo.gymDetail.description?.length > 0 ? (
+                        detailDataTwo.gymDetail.description
+                      ) : (
+                        <Typography variant="body1" justify="center">
+                          No Description Found
+                        </Typography>
+                      )}
                     </Typography>
                   </Grid>
                 </Grid>
@@ -139,7 +155,7 @@ const MainCompare = (props) => {
                       <br />
                     </Typography>
                     <br />
-                    {detailDataOne.gymDetail.discountSet.length > 0 ? (
+                    {detailDataOne.gymDetail.discountSet?.length > 0 ? (
                       detailDataOne.gymDetail.discountSet.map((item, image) => (
                         <>
                           <Typography variant="body1" justify="center">
@@ -173,7 +189,7 @@ const MainCompare = (props) => {
                       <br />
                     </Typography>
                     <br />
-                    {detailDataTwo.gymDetail.discountSet.length > 0 ? (
+                    {detailDataTwo.gymDetail.discountSet?.length > 0 ? (
                       detailDataTwo.gymDetail.discountSet.map((item, image) => (
                         <>
                           <Typography variant="body1" justify="center">
@@ -202,7 +218,7 @@ const MainCompare = (props) => {
               <div data-header="Trainers" className="accordion-item">
                 <Grid container lg={12} md={12} justify="space-around">
                   <Grid item lg={5} md={5}>
-                    {detailDataOne.gymDetail.trainers.length > 0 ? (
+                    {detailDataOne.gymDetail.trainers?.length > 0 ? (
                       detailDataOne.gymDetail.trainers.map((item, index) => (
                         <>
                           <Typography variant="body1">
@@ -223,7 +239,7 @@ const MainCompare = (props) => {
                   </Grid>
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
-                      {detailDataTwo.gymDetail.trainers.length > 0 ? (
+                      {detailDataTwo.gymDetail.trainers?.length > 0 ? (
                         detailDataTwo.gymDetail.trainers.map((item, index) => (
                           <>
                             <Typography variant="body1">
@@ -249,7 +265,7 @@ const MainCompare = (props) => {
                 <Grid container lg={12} md={12} justify="space-around">
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
-                      {detailDataOne.gymDetail.machines.length > 0 ? (
+                      {detailDataOne.gymDetail.machines?.length > 0 ? (
                         detailDataOne.gymDetail.machines.map((item, index) => (
                           <>
                             <Typography variant="body1">
@@ -260,18 +276,20 @@ const MainCompare = (props) => {
                           </>
                         ))
                       ) : (
-                        <Typography variant="h4">No Machines Found</Typography>
+                        <Typography variant="body1">
+                          No Machines Found
+                        </Typography>
                       )}
                     </Typography>
                   </Grid>
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
-                      {detailDataTwo.gymDetail.machines.length > 0 ? (
+                      {detailDataTwo.gymDetail.machines?.length > 0 ? (
                         detailDataTwo.gymDetail.machines.map((item, index) => (
                           <>
                             <Typography variant="body1">
                               Name:
-                              <br /> {index + 1}. {item.name}
+                              <br /> {item.name}
                             </Typography>
                             <br />
                           </>
@@ -288,10 +306,10 @@ const MainCompare = (props) => {
               <div data-header="Time Slots" className="accordion-item">
                 <Grid container lg={12} md={12} justify="space-around">
                   <Grid item lg={5} md={5}>
-                    {detailDataOne.gymDetail.timeslotSet.length > 0 ? (
+                    {detailDataOne.gymDetail.timeslotSet?.length > 0 ? (
                       detailDataOne.gymDetail.timeslotSet.map((item, index) => (
                         <>
-                          <Typography variant="h4" justify="center">
+                          <Typography variant="body1" justify="center">
                             Slot for:
                             {item.slotFor}
                             <br />
@@ -306,16 +324,16 @@ const MainCompare = (props) => {
                         </>
                       ))
                     ) : (
-                      <Typography variant="h4" justify="center">
+                      <Typography variant="body1" justify="center">
                         No Slots Found
                       </Typography>
                     )}
                   </Grid>
                   <Grid item lg={5} md={5}>
-                    {detailDataTwo.gymDetail.timeslotSet.length > 0 ? (
+                    {detailDataTwo.gymDetail.timeslotSet?.length > 0 ? (
                       detailDataTwo.gymDetail.timeslotSet.map((item, index) => (
                         <>
-                          <Typography variant="h4" justify="center">
+                          <Typography variant="body1" justify="center">
                             Slot for:
                             {item.slotFor}
                             <br />
@@ -330,7 +348,7 @@ const MainCompare = (props) => {
                         </>
                       ))
                     ) : (
-                      <Typography variant="h4" justify="center">
+                      <Typography variant="body1" justify="center">
                         No Slots Found
                       </Typography>
                     )}
