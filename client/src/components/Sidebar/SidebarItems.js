@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const SidebarContainer = styled.aside`
   width: 100%;
   height: 100%;
-  z-index: 10;
+  z-index: 100 !important;
   background: #000;
   left: 0;
   display: grid;
@@ -35,6 +35,7 @@ export const Icons = styled.div`
 
 export const SideLink = styled(Link)`
   display: flex;
+  z-index: 100 !important;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -45,6 +46,7 @@ export const SideLink = styled(Link)`
 
 export const SideMenu = styled.ul`
   display: grid;
+  z-index: 100 !important;
   margin-top: 10vh;
   justify-content: centre;
   grid-template-columns: 1;

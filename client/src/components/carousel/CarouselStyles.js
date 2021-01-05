@@ -21,7 +21,7 @@ export const useStyles = makeStyles((theme) => ({
     height: "82vh",
     marginBottom: "3rem",
     [theme.breakpoints.down("xs")]: {
-      height: "40vh !important",
+      height: "30vh !important",
     },
   },
   images: {

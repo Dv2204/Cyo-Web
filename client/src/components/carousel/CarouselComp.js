@@ -7,6 +7,7 @@ import { IMAGE_URL } from "../../graphql/requests";
 import { useQuery } from "@apollo/client";
 import { Grid } from "@material-ui/core";
 import Loader from "../Loader";
+import "./carousel.css";
 
 const breakPoints = [{ width: 1, itemsToShow: 1 }];
 

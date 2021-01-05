@@ -73,7 +73,7 @@ const ProductPageCards = () => {
             </IconButton>
           </Paper>
         </Grid>
-        <Grid item xs={1} lg={2} md={2}>
+        <Grid item xs={3} lg={2} md={2}>
           <Typography
             variant="h5"
             onClick={() => clearFilter()}

@@ -84,7 +84,7 @@ const MainCompare = (props) => {
             </Typography>
           </Grid>
           <Grid item lg={4} md={4}>
-            <Typography variant="h4" justify="center">
+            <Typography variant="h4" justify="center" className={classes.gymname}>
               {detailDataOne.gymDetail.gym.name.length > 0 ? (
                 detailDataOne.gymDetail.gym.name
               ) : (
@@ -93,8 +93,8 @@ const MainCompare = (props) => {
             </Typography>
           </Grid>
           <Grid item lg={4} md={4}>
-            <Typography variant="h4" justify="center">
-              {detailDataTwo.gymDetail.gym.name?.length > 0 ? (
+            <Typography variant="h4" justify="center" className={classes.gymname}>
+              {detailDataTwo.gymDetail.gym.name.length > 0 ? (
                 detailDataTwo.gymDetail.gym.name
               ) : (
                 <p>Gym 2</p>

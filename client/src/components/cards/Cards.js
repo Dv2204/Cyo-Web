@@ -66,10 +66,10 @@ const Cards = () => {
       <Grid container md={12} lg={12} justify="center">
         <Grid item lg={7} md={7} justify="center">
           <Grid container xs={12} lg={12} md={12}>
-            <Grid item xs={2} lg={1} md={1} style={{ marginBottom: "2rem" }}>
+            <Grid item xs={3} lg={1} md={1} >
               <PinDropIcon fontSize="large" className={classes.icon} />
             </Grid>
-            <Grid xs={12} lg={8} md={8}>
+            <Grid xs={8} lg={8} md={8}>
               <Paper className={classes.root} elevation={2}>
                 <InputBase
                   className={classes.input}
@@ -84,7 +84,7 @@ const Cards = () => {
                 </IconButton>
               </Paper>
             </Grid>
-            <Grid item xs={8} lg={3} md={3}>
+            <Grid item xs={12} lg={3} md={3}>
               <Chip
                 className={classes.select}
                 label="Clear Filter"
@@ -99,30 +99,30 @@ const Cards = () => {
             <Grid item lg={4} md={4} id="gym" className={classes.card}>
               <Paper elevation={4} className={classes.paperNormal}>
                 <Grid container>
-                  <Grid item lg={12} md={12}>
+                  <Grid item  xs={12} lg={12} md={12}>
                     <Grid container className={classes.row}>
-                      <Grid item lg={10} md={10}>
+                      <Grid item xs={12} lg={10} md={10}>
                         <Grid container className={classes.top}>
-                          <Grid item lg={2} md={2}>
+                          <Grid item  xs={12} lg={2} md={2}>
                             <Avatar
                               src={head}
                               alt="Profile"
                               className={classes.small}
                             />
                           </Grid>
-                          <Grid item lg={10} md={10}>
+                          <Grid item xs={12} lg={10} md={10}>
                             <Typography variant="h6" className={classes.title}>
                               {" "}
                               {item.gym.name}{" "}
                             </Typography>
                             <Grid container>
-                              <Grid item lg={2} md={2}>
+                              <Grid item xs={5} lg={2} md={2}>
                                 <Typography className={classes.rating}>
                                   {item.rating}
                                   <StarIcon className={classes.ratingIcon} />
                                 </Typography>
                               </Grid>
-                              <Grid item lg={10} md={10}>
+                              <Grid item xs={5} lg={10} md={10}>
                                 <Typography className={classes.count}>
                                   {item.gym.counter} people
                                 </Typography>
@@ -134,7 +134,7 @@ const Cards = () => {
                       <Grid item lg={2} md={2}>
                         <BeenhereOutlinedIcon
                           fontSize="small"
-                          style={{ color: "#11C62E", float: "right" }}
+                          style={{ color: "#11C62E", float: "right"}}
                         />
                       </Grid>
                     </Grid>

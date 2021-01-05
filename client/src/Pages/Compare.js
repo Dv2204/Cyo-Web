@@ -103,7 +103,7 @@ const Compare = () => {
   };
   return (
     <>
-      <div
+      <div className={classes.mainDiv}
         style={{
           height: "100vh",
           backgroundImage: `url(${compare})`,
@@ -163,7 +163,7 @@ const Compare = () => {
                     onClick={() => clearFirstFilter()}
                   />
                 </Grid>
-                <Grid xs={12} lg={8} md={8}>
+                <Grid xs={12} lg={8} md={8} justify="center">
                   <Paper className={classes.root} elevation={2}>
                     <InputBase
                       className={classes.input}
@@ -203,7 +203,7 @@ const Compare = () => {
                     onClick={() => clearSecondFilter()}
                   />
                 </Grid>
-                <Grid xs={12} lg={8} md={8}>
+                <Grid xs={12} lg={8} md={8} justify="center">
                   <Paper className={classes.root} elevation={2}>
                     <InputBase
                       className={classes.input}
