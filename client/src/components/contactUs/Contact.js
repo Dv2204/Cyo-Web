@@ -1,16 +1,52 @@
-import React from "react";
-import { Typography, Grid, Paper, Chip, Button} from "@material-ui/core";
+import React, { useState } from "react";
+import { Typography, Grid, Paper, Chip, Button } from "@material-ui/core";
 import { useStyles } from "./ContactStyles";
 import TextField from "@material-ui/core/TextField";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import MobileStoreButton from "react-mobile-store-button";
 import { Link } from "react-router-dom";
+import { ADD_MAIL } from "../../graphql/requests";
+import { useLazyQuery } from "@apollo/client";
+import Loader from "../Loader";
 
 const Contact = () => {
   const classes = useStyles();
   const iOSUrl =
     "https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8";
   const androidUrl = "https://play.google.com";
+  const [inputName, setInputName] = useState("");
+  const [inputEmail, setInputEmail] = useState("");
+  const [inputMessage, setInputMessage] = useState("");
+
+  const [
+    getMail,
+    { data, loading: mailLoading, error: mailError },
+  ] = useLazyQuery(ADD_MAIL, {
+    variables: {
+      name: inputName,
+      email: inputEmail,
+      message: inputMessage,
+    },
+  });
+  if (mailLoading) {
+    return (
+      <Grid
+        container
+        lg={12}
+        md={12}
+        justify="center"
+        style={{ margin: "5rem" }}
+      >
+        <Grid item lg={3} md={3} justify="center">
+          <Loader color="rgba(38, 38, 38, 0.7)" />
+        </Grid>
+      </Grid>
+    );
+  }
+
+  if (mailError) {
+    return <p style={{ color: "#fff" }}>{mailError.message}</p>;
+  }
   return (
     <>
       <Grid item md={12} style={{ backgroundColor: "#3F3F3F" }}>
@@ -33,7 +69,7 @@ const Contact = () => {
                   </a>
                 </Typography>
                 <Link to="/privacypolicy">
-                <Chip label="Privacy Policy" className={classes.privacy} />
+                  <Chip label="Privacy Policy" className={classes.privacy} />
                 </Link>
                 <Grid container>
                   <Grid item lg={4}>
@@ -76,8 +112,17 @@ const Contact = () => {
                       </Grid>
                       <Grid item>
                         <Grid container justify="center">
-                        <TextField id="input-with-icon-grid" label="Name" />
-                        <TextField id="input-with-icon-grid" label="Mail" style={{marginLeft:'1rem'}}/>
+                          <TextField
+                            id="input-with-icon-grid"
+                            label="Name"
+                            onChange={(e) => setInputName(e.target.value)}
+                          />
+                          <TextField
+                            id="input-with-icon-grid"
+                            label="Mail"
+                            onChange={(e) => setInputEmail(e.target.value)}
+                            style={{ marginLeft: "1rem" }}
+                          />
                         </Grid>
                       </Grid>
                     </Grid>
@@ -85,11 +130,12 @@ const Contact = () => {
                       id="outlined-basic"
                       label="Your Message"
                       variant="outlined"
+                      onChange={(e) => setInputMessage(e.target.value)}
                       style={{ margin: "4vh 0", width: "30rem" }}
                       className={classes.body}
                     />
                     <Grid container justify="flex-end">
-                    <Button>Send Message!</Button>
+                      <Button>Send Message!</Button>
                     </Grid>
                   </div>
                 </Paper>
