@@ -283,16 +283,24 @@ export const ADD_MAIL = gql`
   mutation MailUs(
     $email: String!
     $message: String!
-    $mobile: String!
     $name: String!
     $title: String!
+    $mobile: String!
   ) {
-    addMail(email: $email, message: $message, mobile: $mobile, name: $name) {
+    addMail(
+      email: $email
+      message: $message
+      name: $name
+      title: $title
+      mobile: $mobile
+    ) {
       myMail {
         id
         name
         email
         message
+        title
+        mobile
       }
     }
   }

@@ -37,7 +37,6 @@ const Compare = () => {
   ] = useLazyQuery(SEARCH_GYMS, {
     variables: { keyword: searchFirstText },
     onCompleted: (data) => {
-      // After query complete, set the details of first gym
       setFirstGym(data);
     },
   });
@@ -51,7 +50,6 @@ const Compare = () => {
   ] = useLazyQuery(SEARCH_GYMS, {
     variables: { keyword: searchSecondText },
     onCompleted: (data) => {
-      // After query complete, set the details of second gym
       setSecondGym(data);
     },
   });
@@ -103,7 +101,8 @@ const Compare = () => {
   };
   return (
     <>
-      <div className={classes.mainDiv}
+      <div
+        className={classes.mainDiv}
         style={{
           height: "100vh",
           backgroundImage: `url(${compare})`,

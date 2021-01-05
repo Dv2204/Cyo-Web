@@ -6,7 +6,7 @@ import AccountCircle from "@material-ui/icons/AccountCircle";
 import MobileStoreButton from "react-mobile-store-button";
 import { Link } from "react-router-dom";
 import { ADD_MAIL } from "../../graphql/requests";
-import { useLazyQuery } from "@apollo/client";
+import { useMutation } from "@apollo/client";
 import Loader from "../Loader";
 
 const Contact = () => {
@@ -14,20 +14,17 @@ const Contact = () => {
   const iOSUrl =
     "https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8";
   const androidUrl = "https://play.google.com";
-  const [inputName, setInputName] = useState("");
-  const [inputEmail, setInputEmail] = useState("");
-  const [inputMessage, setInputMessage] = useState("");
-
-  const [
-    getMail,
-    { data, loading: mailLoading, error: mailError },
-  ] = useLazyQuery(ADD_MAIL, {
-    variables: {
-      name: inputName,
-      email: inputEmail,
-      message: inputMessage,
-    },
+  const [mail, setMail] = useState({
+    name: "",
+    email: "",
+    message: "",
+    title: "",
+    mobile: "",
   });
+  const { name, email, message, title, mobile } = mail;
+  const [sendMail, { loading: mailLoading, error: mailError }] = useMutation(
+    ADD_MAIL
+  );
   if (mailLoading) {
     return (
       <Grid
@@ -47,6 +44,24 @@ const Contact = () => {
   if (mailError) {
     return <p style={{ color: "#fff" }}>{mailError.message}</p>;
   }
+  const onChange = (e) => {
+    setMail({ ...mail, [e.target.id]: e.target.value });
+  };
+  const onSubmit = (e) => {
+    e.preventDefault();
+    sendMail({
+      variables: {
+        name: name,
+        email: email,
+        message: message,
+        title: title,
+        mobile: mobile,
+      },
+    });
+    console.log(mail);
+    setMail("");
+  };
+
   return (
     <>
       <Grid item md={12} style={{ backgroundColor: "#3F3F3F" }}>
@@ -115,12 +130,32 @@ const Contact = () => {
                           <TextField
                             id="input-with-icon-grid"
                             label="Name"
-                            onChange={(e) => setInputName(e.target.value)}
+                            id="name"
+                            value={name}
+                            onChange={onChange}
                           />
                           <TextField
                             id="input-with-icon-grid"
                             label="Mail"
-                            onChange={(e) => setInputEmail(e.target.value)}
+                            id="email"
+                            value={email}
+                            onChange={onChange}
+                            style={{ marginLeft: "1rem" }}
+                          />
+                          <TextField
+                            id="input-with-icon-grid"
+                            label="Mobile Number"
+                            id="mobile"
+                            value={mobile}
+                            onChange={onChange}
+                            style={{ marginLeft: "1rem" }}
+                          />
+                          <TextField
+                            id="input-with-icon-grid"
+                            label="Title"
+                            id="title"
+                            value={title}
+                            onChange={onChange}
                             style={{ marginLeft: "1rem" }}
                           />
                         </Grid>
@@ -130,12 +165,14 @@ const Contact = () => {
                       id="outlined-basic"
                       label="Your Message"
                       variant="outlined"
-                      onChange={(e) => setInputMessage(e.target.value)}
+                      id="message"
+                      value={message}
+                      onChange={onChange}
                       style={{ margin: "4vh 0", width: "30rem" }}
                       className={classes.body}
                     />
                     <Grid container justify="flex-end">
-                      <Button>Send Message!</Button>
+                      <Button onClick={onSubmit}>Send Message!</Button>
                     </Grid>
                   </div>
                 </Paper>
