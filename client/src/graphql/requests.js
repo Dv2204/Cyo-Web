@@ -189,9 +189,25 @@ export const GET_DETAIL = gql`
         name
         counter
       }
+      trainers {
+        id
+        name
+        experience
+        certified
+      }
       machines {
         id
         name
+      }
+      monthlyPrice
+      quarterlyPrice
+      discountSet {
+        id
+        discType
+        discPer
+        conspetype
+        noOfBookings
+        leftbookings
       }
       city
       pincode

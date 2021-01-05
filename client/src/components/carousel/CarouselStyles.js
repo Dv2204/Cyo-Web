@@ -11,7 +11,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "2.1rem",
       paddingTop: "4rem",
-      marginLeft: '1.8rem'
+      marginLeft: "1.8rem",
     },
   },
   carousel: {
@@ -27,6 +27,7 @@ export const useStyles = makeStyles((theme) => ({
   images: {
     backgroundSize: "cover",
     height: "82vh",
+    width: "100%",
     [theme.breakpoints.down("xs")]: {
       height: "40vh !important",
     },

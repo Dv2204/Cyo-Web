@@ -73,7 +73,7 @@ const Cards = () => {
               <Paper className={classes.root} elevation={2}>
                 <InputBase
                   className={classes.input}
-                  placeholder="Search"
+                  placeholder="Enter City"
                   onChange={(e) => setText(e.target.value)}
                 />
                 <IconButton
