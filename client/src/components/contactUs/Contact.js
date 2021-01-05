@@ -1,16 +1,67 @@
-import React from "react";
-import { Typography, Grid, Paper, Chip, Button} from "@material-ui/core";
+import React, { useState } from "react";
+import { Typography, Grid, Paper, Chip, Button } from "@material-ui/core";
 import { useStyles } from "./ContactStyles";
 import TextField from "@material-ui/core/TextField";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import MobileStoreButton from "react-mobile-store-button";
 import { Link } from "react-router-dom";
+import { ADD_MAIL } from "../../graphql/requests";
+import { useMutation } from "@apollo/client";
+import Loader from "../Loader";
 
 const Contact = () => {
   const classes = useStyles();
   const iOSUrl =
     "https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8";
   const androidUrl = "https://play.google.com";
+  const [mail, setMail] = useState({
+    name: "",
+    email: "",
+    message: "",
+    title: "",
+    mobile: "",
+  });
+  const { name, email, message, title, mobile } = mail;
+  const [sendMail, { loading: mailLoading, error: mailError }] = useMutation(
+    ADD_MAIL
+  );
+  if (mailLoading) {
+    return (
+      <Grid
+        container
+        lg={12}
+        md={12}
+        justify="center"
+        style={{ margin: "5rem" }}
+      >
+        <Grid item lg={3} md={3} justify="center">
+          <Loader color="rgba(38, 38, 38, 0.7)" />
+        </Grid>
+      </Grid>
+    );
+  }
+
+  if (mailError) {
+    return <p style={{ color: "#fff" }}>{mailError.message}</p>;
+  }
+  const onChange = (e) => {
+    setMail({ ...mail, [e.target.id]: e.target.value });
+  };
+  const onSubmit = (e) => {
+    e.preventDefault();
+    sendMail({
+      variables: {
+        name: name,
+        email: email,
+        message: message,
+        title: title,
+        mobile: mobile,
+      },
+    });
+    console.log(mail);
+    setMail("");
+  };
+
   return (
     <>
       <Grid item md={12} style={{ backgroundColor: "#3F3F3F" }}>
@@ -33,7 +84,7 @@ const Contact = () => {
                   </a>
                 </Typography>
                 <Link to="/privacypolicy">
-                <Chip label="Privacy Policy" className={classes.privacy} />
+                  <Chip label="Privacy Policy" className={classes.privacy} />
                 </Link>
                 <Grid container>
                   <Grid item lg={4}>
@@ -76,8 +127,37 @@ const Contact = () => {
                       </Grid>
                       <Grid item>
                         <Grid container justify="center">
-                        <TextField id="input-with-icon-grid" label="Name" />
-                        <TextField id="input-with-icon-grid" label="Mail" style={{marginLeft:'1rem'}}/>
+                          <TextField
+                            id="input-with-icon-grid"
+                            label="Name"
+                            id="name"
+                            value={name}
+                            onChange={onChange}
+                          />
+                          <TextField
+                            id="input-with-icon-grid"
+                            label="Mail"
+                            id="email"
+                            value={email}
+                            onChange={onChange}
+                            style={{ marginLeft: "1rem" }}
+                          />
+                          <TextField
+                            id="input-with-icon-grid"
+                            label="Mobile Number"
+                            id="mobile"
+                            value={mobile}
+                            onChange={onChange}
+                            style={{ marginLeft: "1rem" }}
+                          />
+                          <TextField
+                            id="input-with-icon-grid"
+                            label="Title"
+                            id="title"
+                            value={title}
+                            onChange={onChange}
+                            style={{ marginLeft: "1rem" }}
+                          />
                         </Grid>
                       </Grid>
                     </Grid>
@@ -85,11 +165,14 @@ const Contact = () => {
                       id="outlined-basic"
                       label="Your Message"
                       variant="outlined"
+                      id="message"
+                      value={message}
+                      onChange={onChange}
                       style={{ margin: "4vh 0", width: "30rem" }}
                       className={classes.body}
                     />
                     <Grid container justify="flex-end">
-                    <Button>Send Message!</Button>
+                      <Button onClick={onSubmit}>Send Message!</Button>
                     </Grid>
                   </div>
                 </Paper>

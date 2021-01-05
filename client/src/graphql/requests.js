@@ -278,3 +278,30 @@ export const CITY_GYMS = gql`
     }
   }
 `;
+
+export const ADD_MAIL = gql`
+  mutation MailUs(
+    $email: String!
+    $message: String!
+    $name: String!
+    $title: String!
+    $mobile: String!
+  ) {
+    addMail(
+      email: $email
+      message: $message
+      name: $name
+      title: $title
+      mobile: $mobile
+    ) {
+      myMail {
+        id
+        name
+        email
+        message
+        title
+        mobile
+      }
+    }
+  }
+`;
