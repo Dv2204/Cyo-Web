@@ -176,28 +176,48 @@ const MainCompare = (props) => {
                 <Grid container lg={12} md={12} justify="space-around">
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit. Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.
+                      {detailDataOne.gymDetail.trainers.length > 0 ? (
+                        detailDataOne.gymDetail.trainers.map((item, index) => {
+                          <>
+                            <Typography variant="h4">
+                              Name: {item.name}
+                            </Typography>
+                            <br />
+                            <Typography variant="h5">
+                              Experience: {item.experience}
+                            </Typography>
+                            <br />
+                            <Typography variant="h5">
+                              Certified: {item.certified}
+                            </Typography>
+                          </>;
+                        })
+                      ) : (
+                        <Typography variant="h4">No Trainers Found</Typography>
+                      )}
                     </Typography>
                   </Grid>
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit .Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.
+                      {detailDataTwo.gymDetail.trainers.length > 0 ? (
+                        detailDataTwo.gymDetail.trainers.map((item, index) => {
+                          <>
+                            <Typography variant="h4">
+                              Name: {item.name}
+                            </Typography>
+                            <br />
+                            <Typography variant="h5">
+                              Experience: {item.experience}
+                            </Typography>
+                            <br />
+                            <Typography variant="h5">
+                              Certified: {item.certified}
+                            </Typography>
+                          </>;
+                        })
+                      ) : (
+                        <Typography variant="h4">No Trainers Found</Typography>
+                      )}
                     </Typography>
                   </Grid>
                 </Grid>
@@ -207,18 +227,34 @@ const MainCompare = (props) => {
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
                       {detailDataOne.gymDetail.machines.length > 0 ? (
-                        detailDataOne.gymDetail.machines.name
+                        detailDataOne.gymDetail.machines.map((item, index) => {
+                          <>
+                            <Typography variant="h4">
+                              Name:
+                              <br /> {index + 1}. {item.name}
+                            </Typography>
+                            <br />
+                          </>;
+                        })
                       ) : (
-                        <p>No Machines</p>
+                        <Typography variant="h4">No Machines Found</Typography>
                       )}
                     </Typography>
                   </Grid>
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
                       {detailDataTwo.gymDetail.machines.length > 0 ? (
-                        detailDataTwo.gymDetail.machines.name
+                        detailDataTwo.gymDetail.machines.map((item, index) => {
+                          <>
+                            <Typography variant="h4">
+                              Name:
+                              <br /> {index + 1}. {item.name}
+                            </Typography>
+                            <br />
+                          </>;
+                        })
                       ) : (
-                        <p>No Machines</p>
+                        <Typography variant="h4">No Machines Found</Typography>
                       )}
                     </Typography>
                   </Grid>
