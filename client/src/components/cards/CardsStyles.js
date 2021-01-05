@@ -86,7 +86,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: "0.8rem",
-      marginLeft: "3.5rem",
+      marginLeft: "6.5rem",
       marginTop: "1rem",
       padding: "0.3rem 1.3rem",
     },
@@ -97,7 +97,7 @@ export const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     marginLeft: "0.3rem",
     [theme.breakpoints.down("xs")]: {
-      width: "94vw",
+      width: "60vw",
     },
   },
   input: {

@@ -1,6 +1,12 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
+  mainDiv:{
+    [theme.breakpoints.down("xs")]: {
+      height:'100%',
+      paddingBottom:'20vh'
+    },
+  },
   text: {
     paddingTop: "5rem",
     paddingBottom: "1.7rem",
@@ -10,10 +16,10 @@ export const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     textShadow: "1px 3px 3px rgba(255, 255, 255, 1)",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "2rem",
+      fontSize: "1.5rem",
     },
     [theme.breakpoints.down("sm")]: {
-      fontSize: "3rem",
+      fontSize: "2rem",
       textAlign: "center",
     },
   },
@@ -57,12 +63,12 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   root: {
-    padding: "2px 4px",
+    padding: "1px 4px",
     display: "flex",
     alignItems: "center",
     marginLeft: "1rem",
     [theme.breakpoints.down("xs")]: {
-      width: "94vw",
+      width: "85vw",
     },
   },
   input: {

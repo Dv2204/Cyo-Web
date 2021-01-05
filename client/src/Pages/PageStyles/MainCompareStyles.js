@@ -12,7 +12,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   text: {
     paddingTop: "5rem",
-    paddingBottom: "1.7rem",
+    paddingBottom: "2.7rem",
     fontWeight: "bold",
     color: "#F3679C",
     letterSpacing: "0.1rem",
@@ -22,8 +22,13 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "2rem",
     },
     [theme.breakpoints.down("sm")]: {
-      fontSize: "3rem",
+      fontSize: "2.5rem",
       textAlign: "center",
     },
   },
+  gymname:{
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1.2rem",
+    },
+  }
 }));

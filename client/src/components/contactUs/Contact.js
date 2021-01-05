@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Grid, Paper, Chip} from "@material-ui/core";
+import { Typography, Grid, Paper, Chip, Button} from "@material-ui/core";
 import { useStyles } from "./ContactStyles";
 import TextField from "@material-ui/core/TextField";
 import AccountCircle from "@material-ui/icons/AccountCircle";
@@ -70,12 +70,15 @@ const Contact = () => {
                     Mail Us at <b>support@cyogyms.com</b>
                   </Typography>
                   <div className={classes.margin}>
-                    <Grid container spacing={1} alignItems="flex-end">
+                    <Grid container spacing={1} alignItems="center">
                       <Grid item>
                         <AccountCircle />
                       </Grid>
                       <Grid item>
+                        <Grid container justify="center">
                         <TextField id="input-with-icon-grid" label="Name" />
+                        <TextField id="input-with-icon-grid" label="Mail" style={{marginLeft:'1rem'}}/>
+                        </Grid>
                       </Grid>
                     </Grid>
                     <TextField
@@ -85,6 +88,9 @@ const Contact = () => {
                       style={{ margin: "4vh 0", width: "30rem" }}
                       className={classes.body}
                     />
+                    <Grid container justify="flex-end">
+                    <Button>Send Message!</Button>
+                    </Grid>
                   </div>
                 </Paper>
               </Grid>

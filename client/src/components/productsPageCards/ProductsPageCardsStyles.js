@@ -78,5 +78,9 @@ export const useStyles = makeStyles((theme) => ({
     "&:hover": {
       cursor: "pointer",
     },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "4vw",
+      marginBottom:'2rem'
+    },
   },
 }));
