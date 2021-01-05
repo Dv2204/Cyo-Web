@@ -62,8 +62,7 @@ const Compare = () => {
       console.log(secondGym);
       {
         firstGym.searchGym.length > 0 || secondGym.searchGym.length > 0
-          ? // Send the ids below in the link
-            history.push(
+          ? history.push(
               `/maincompare/${firstGym.searchGym[0].id}/${secondGym.searchGym[0].id}`
             )
           : history.push("/maincompare");
@@ -101,14 +100,6 @@ const Compare = () => {
   const getGyms = () => {
     getFirstGym();
     getSecondGym();
-    // console.log(filteredFirstGym);
-    // console.log(filteredSecondGym);
-    // if (filteredFirstGym && filteredSecondGym) {
-    //   console.log(filteredFirstGym);
-    //   console.log(filteredSecondGym);
-    //   // Send the ids below in the link
-    //   history.push("/maincompare");
-    // }
   };
   return (
     <>
@@ -176,13 +167,10 @@ const Compare = () => {
                   <Paper className={classes.root} elevation={2}>
                     <InputBase
                       className={classes.input}
-                      placeholder="Search"
+                      placeholder="Gym Name 1"
                       onChange={(e) => setFirstText(e.target.value)}
                     />
-                    <IconButton
-                      className={classes.iconButton}
-                      // onClick={() => getFirstGym()}
-                    >
+                    <IconButton className={classes.iconButton}>
                       <SearchIcon />
                     </IconButton>
                   </Paper>
@@ -219,13 +207,10 @@ const Compare = () => {
                   <Paper className={classes.root} elevation={2}>
                     <InputBase
                       className={classes.input}
-                      placeholder="Search"
+                      placeholder="Gym Name 2"
                       onChange={(e) => setSecondText(e.target.value)}
                     />
-                    <IconButton
-                      className={classes.iconButton}
-                      // onClick={() => getSecondGym()}
-                    >
+                    <IconButton className={classes.iconButton}>
                       <SearchIcon />
                     </IconButton>
                   </Paper>
@@ -235,20 +220,11 @@ const Compare = () => {
           </Grid>
           <Grid container md={12} lg={12} justify="center">
             <Grid item lg={2} md={2} justify="center">
-              {/* <Link to="/maincompare"> */}
               <Chip
                 onClick={() => getGyms()}
                 className={classes.btn}
                 label="Compare"
               ></Chip>
-              {/* </Link> */}
-              {/* <Link to={`/maincompare/${filteredFirstGym.searchGym.id}`}>
-                  <Chip
-                    onClick={() => getGyms()}
-                    className={classes.btn}
-                    label="Compare"
-                  ></Chip>
-                </Link> */}
             </Grid>
           </Grid>
         </div>
