@@ -199,6 +199,16 @@ export const GET_DETAIL = gql`
         id
         name
       }
+      monthlyPrice
+      quarterlyPrice
+      discountSet {
+        id
+        discType
+        discPer
+        conspetype
+        noOfBookings
+        leftbookings
+      }
       city
       pincode
       area

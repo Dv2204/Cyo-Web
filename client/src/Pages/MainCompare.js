@@ -13,6 +13,7 @@ import Loader from "../components/Loader";
 const MainCompare = (props) => {
   const classes = useStyles();
   const [isOpen, setIsOpen] = useState(false);
+  // eslint-disable-next-line
   const [selectedIndex, SetSelectedIndex] = useState(0);
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -130,93 +131,115 @@ const MainCompare = (props) => {
                 <Grid container lg={12} md={12} justify="space-around">
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit. Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna. Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit. Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.
+                      Weekly Price : {detailDataOne.gymDetail.weeklyPrice}
+                      <br />
+                      Monthly Price : {detailDataOne.gymDetail.monthlyPrice}
+                      <br />
+                      Quarterly Price : {detailDataOne.gymDetail.quaterlyPrice}
+                      <br />
                     </Typography>
+                    <br />
+                    {detailDataOne.gymDetail.discountSet.length > 0 ? (
+                      detailDataOne.gymDetail.discountSet.map((item, image) => (
+                        <>
+                          <Typography variant="body1" justify="center">
+                            Discount Type : {item.discType}
+                            <br />
+                            Discount Per : {item.discPer}
+                            <br />
+                            conspetype : {item.conspetype}
+                            <br />
+                            No of bookings : {item.noOfBookings}
+                            <br />
+                            Left Bookings : {item.leftbookings}
+                            <br />
+                          </Typography>
+                          <br />
+                        </>
+                      ))
+                    ) : (
+                      <Typography variant="body1" justify="center">
+                        No Discount Price Found
+                      </Typography>
+                    )}
                   </Grid>
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit .Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna. Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit .Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.
+                      Weekly Price : {detailDataTwo.gymDetail.weeklyPrice}
+                      <br />
+                      Monthly Price : {detailDataTwo.gymDetail.monthlyPrice}
+                      <br />
+                      Quarterly Price : {detailDataTwo.gymDetail.quaterlyPrice}
+                      <br />
                     </Typography>
+                    <br />
+                    {detailDataTwo.gymDetail.discountSet.length > 0 ? (
+                      detailDataTwo.gymDetail.discountSet.map((item, image) => (
+                        <>
+                          <Typography variant="body1" justify="center">
+                            Discount Type : {item.discType}
+                            <br />
+                            Discount Per : {item.discPer}
+                            <br />
+                            conspetype : {item.conspetype}
+                            <br />
+                            No of bookings : {item.noOfBookings}
+                            <br />
+                            Left Bookings : {item.leftbookings}
+                            <br />
+                          </Typography>
+                          <br />
+                        </>
+                      ))
+                    ) : (
+                      <Typography variant="body1" justify="center">
+                        No Discount Price Found
+                      </Typography>
+                    )}
                   </Grid>
                 </Grid>
               </div>
               <div data-header="Trainers" className="accordion-item">
                 <Grid container lg={12} md={12} justify="space-around">
                   <Grid item lg={5} md={5}>
-                    <Typography variant="body1" justify="center">
-                      {detailDataOne.gymDetail.trainers.length > 0 ? (
-                        detailDataOne.gymDetail.trainers.map((item, index) => {
-                          <>
-                            <Typography variant="h4">
-                              Name: {item.name}
-                            </Typography>
+                    {detailDataOne.gymDetail.trainers.length > 0 ? (
+                      detailDataOne.gymDetail.trainers.map((item, index) => (
+                        <>
+                          <Typography variant="body1">
+                            Name: {item.name}
                             <br />
-                            <Typography variant="h5">
-                              Experience: {item.experience}
-                            </Typography>
+                            Experience: {item.experience}
                             <br />
-                            <Typography variant="h5">
-                              Certified: {item.certified}
-                            </Typography>
-                          </>;
-                        })
-                      ) : (
-                        <Typography variant="h4">No Trainers Found</Typography>
-                      )}
-                    </Typography>
+                            Certified: {item.certified}
+                          </Typography>
+                          <br />
+                        </>
+                      ))
+                    ) : (
+                      <Typography justify="center" variant="body1">
+                        No Trainers Found
+                      </Typography>
+                    )}
                   </Grid>
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
                       {detailDataTwo.gymDetail.trainers.length > 0 ? (
-                        detailDataTwo.gymDetail.trainers.map((item, index) => {
+                        detailDataTwo.gymDetail.trainers.map((item, index) => (
                           <>
-                            <Typography variant="h4">
+                            <Typography variant="body1">
                               Name: {item.name}
-                            </Typography>
-                            <br />
-                            <Typography variant="h5">
+                              <br />
                               Experience: {item.experience}
-                            </Typography>
-                            <br />
-                            <Typography variant="h5">
+                              <br />
                               Certified: {item.certified}
                             </Typography>
-                          </>;
-                        })
+                            <br />
+                          </>
+                        ))
                       ) : (
-                        <Typography variant="h4">No Trainers Found</Typography>
+                        <Typography variant="body1">
+                          No Trainers Found
+                        </Typography>
                       )}
                     </Typography>
                   </Grid>
@@ -227,15 +250,15 @@ const MainCompare = (props) => {
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
                       {detailDataOne.gymDetail.machines.length > 0 ? (
-                        detailDataOne.gymDetail.machines.map((item, index) => {
+                        detailDataOne.gymDetail.machines.map((item, index) => (
                           <>
-                            <Typography variant="h4">
+                            <Typography variant="body1">
                               Name:
                               <br /> {index + 1}. {item.name}
                             </Typography>
                             <br />
-                          </>;
-                        })
+                          </>
+                        ))
                       ) : (
                         <Typography variant="h4">No Machines Found</Typography>
                       )}
@@ -244,17 +267,19 @@ const MainCompare = (props) => {
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
                       {detailDataTwo.gymDetail.machines.length > 0 ? (
-                        detailDataTwo.gymDetail.machines.map((item, index) => {
+                        detailDataTwo.gymDetail.machines.map((item, index) => (
                           <>
-                            <Typography variant="h4">
+                            <Typography variant="body1">
                               Name:
                               <br /> {index + 1}. {item.name}
                             </Typography>
                             <br />
-                          </>;
-                        })
+                          </>
+                        ))
                       ) : (
-                        <Typography variant="h4">No Machines Found</Typography>
+                        <Typography variant="body1">
+                          No Machines Found
+                        </Typography>
                       )}
                     </Typography>
                   </Grid>
@@ -263,30 +288,52 @@ const MainCompare = (props) => {
               <div data-header="Time Slots" className="accordion-item">
                 <Grid container lg={12} md={12} justify="space-around">
                   <Grid item lg={5} md={5}>
-                    <Typography variant="body1" justify="center">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit. Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.
-                    </Typography>
+                    {detailDataOne.gymDetail.timeslotSet.length > 0 ? (
+                      detailDataOne.gymDetail.timeslotSet.map((item, index) => (
+                        <>
+                          <Typography variant="h4" justify="center">
+                            Slot for:
+                            {item.slotFor}
+                            <br />
+                            Start Time:
+                            {item.startTime}
+                            <br />
+                            End Time:
+                            {item.endTime}
+                            <br />
+                          </Typography>
+                          <br />
+                        </>
+                      ))
+                    ) : (
+                      <Typography variant="h4" justify="center">
+                        No Slots Found
+                      </Typography>
+                    )}
                   </Grid>
                   <Grid item lg={5} md={5}>
-                    <Typography variant="body1" justify="center">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit .Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.Faucibus auctor eu platea dolor etiam vitae aliquam
-                      urna.
-                    </Typography>
+                    {detailDataTwo.gymDetail.timeslotSet.length > 0 ? (
+                      detailDataTwo.gymDetail.timeslotSet.map((item, index) => (
+                        <>
+                          <Typography variant="h4" justify="center">
+                            Slot for:
+                            {item.slotFor}
+                            <br />
+                            Start Time:
+                            {item.startTime}
+                            <br />
+                            End Time:
+                            {item.endTime}
+                            <br />
+                          </Typography>
+                          <br />
+                        </>
+                      ))
+                    ) : (
+                      <Typography variant="h4" justify="center">
+                        No Slots Found
+                      </Typography>
+                    )}
                   </Grid>
                 </Grid>
               </div>
