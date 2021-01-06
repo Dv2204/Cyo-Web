@@ -4,8 +4,6 @@ import compare from "../assets/compare.jpg";
 import { useStyles } from "./PageStyles/CompareStyles";
 import CompareNavBar from "../components/Nav/CompareNav";
 import { Grid, Typography, Chip, Paper } from "@material-ui/core";
-import CompareSearch from "../components/compareSearch/CompareSearch";
-import { Link } from "react-router-dom";
 import Sidebar from "../components/Sidebar/Sidebar";
 import { SEARCH_GYMS } from "../graphql/requests";
 import { useLazyQuery } from "@apollo/client";
