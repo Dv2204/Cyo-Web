@@ -4,12 +4,15 @@ export const useStyles = makeStyles((theme) => ({
   paper: {
     marginTop: "2rem",
     backgroundColor: "rgba(240, 240, 240, 1)",
-    height: "20vh",
+    // height: "20vh",
     borderRadius: "20px",
     [theme.breakpoints.down("xs")]: {
       margin: "4rem 1rem",
     },
   },
+  // text: {
+  //   height: "5vh",
+  // },
   cirpaper: {
     height: "13vh",
     width: "13vh",
