@@ -121,13 +121,19 @@ const Contact = () => {
                     Mail Us at <b>support@cyogyms.com</b>
                   </Typography>
                   <div className={classes.margin}>
-                    <Grid container spacing={1} alignItems="center" justify="center">
+                    <Grid
+                      container
+                      spacing={1}
+                      alignItems="center"
+                      justify="center"
+                    >
                       <Grid item>
                         <Grid container justify="center">
                           <TextField
                             id="input-with-icon-grid"
                             label="Name"
                             id="name"
+                            required
                             value={name}
                             onChange={onChange}
                             style={{ marginLeft: "1rem" }}
@@ -136,6 +142,7 @@ const Contact = () => {
                             id="input-with-icon-grid"
                             label="Mail"
                             id="email"
+                            required
                             value={email}
                             onChange={onChange}
                             style={{ marginLeft: "1rem" }}
@@ -144,6 +151,7 @@ const Contact = () => {
                             id="input-with-icon-grid"
                             label="Mobile Number"
                             id="mobile"
+                            required
                             value={mobile}
                             onChange={onChange}
                             style={{ marginLeft: "1rem" }}
@@ -152,6 +160,7 @@ const Contact = () => {
                             id="input-with-icon-grid"
                             label="Title"
                             id="title"
+                            required
                             value={title}
                             onChange={onChange}
                             style={{ marginLeft: "1rem" }}
@@ -160,16 +169,33 @@ const Contact = () => {
                       </Grid>
                     </Grid>
                     <Grid container xs={12} justify="center">
-                    <TextField
-                      id="outlined-basic"
-                      label="Your Message"
-                      variant="outlined"
-                      id="message"
-                      value={message}
-                      onChange={onChange}
-                      style={{ margin: "4vh 0", width: "30rem" }}
-                      className={classes.body}
-                    />
+                      <TextField
+                        id="outlined-basic"
+                        label="Your Message"
+                        variant="outlined"
+                        id="message"
+                        required
+                        value={message}
+                        onChange={onChange}
+                        style={{ margin: "4vh 0", width: "30rem" }}
+                        className={classes.body}
+                      />
+                    </Grid>
+                    <Grid
+                      container
+                      lg={12}
+                      md={12}
+                      justify="flex-end"
+                      style={{ marginTop: "-1rem" }}
+                    >
+                      <Grid item lg={12} md={12}>
+                        <Typography
+                          variant="caption"
+                          className={classes.required}
+                        >
+                          *All fields required
+                        </Typography>
+                      </Grid>
                     </Grid>
                     <Grid container justify="flex-end">
                       <Button onClick={onSubmit}>Send Message!</Button>

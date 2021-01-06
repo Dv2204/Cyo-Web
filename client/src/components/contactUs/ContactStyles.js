@@ -52,7 +52,7 @@ export const useStyles = makeStyles((theme) => ({
   about: {
     color: "#b2b2b2",
     padding: "2vh",
-    marginTop:"3rem",
+    marginTop: "3rem",
     [theme.breakpoints.down("xs")]: {
       fontSize: "0.8rem",
       textAlign: "justify",
@@ -89,24 +89,29 @@ export const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     color: "rgba(180, 180, 180, 1)",
     cursor: "pointer",
-    backgroundColor: '#000',
+    backgroundColor: "#000",
     padding: "1rem 1.1rem",
     fontSize: "16px",
     letterSpacing: "0.1rem",
     textAlign: "center",
-    marginLeft: '11.4rem',
+    marginLeft: "11.4rem",
     "&:hover": {
       color: "#fff",
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: "0.6rem",
       padding: "3px 0.08rem",
-      marginLeft: '7rem'
+      marginLeft: "7rem",
     },
     [theme.breakpoints.down("sm")]: {
       fontSize: "0.6rem",
       padding: "3px 0.08rem",
-      marginLeft: '7rem'
+      marginLeft: "7rem",
     },
+  },
+  required: {
+    color: "red",
+    letterSpacing: "0.09rem",
+    marginLeft: "2rem",
   },
 }));
