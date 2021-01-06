@@ -30,7 +30,7 @@ const PageNotFound = () => {
         </Grid>
       </Grid>
       <Grid container lg={12} md={12} justify="center">
-        <Grid item lg={4} md={4}>
+        <Grid item lg={2} md={2}>
           <Link to="/">
             <Chip label="Go to Home" className={classes.btn} />
           </Link>

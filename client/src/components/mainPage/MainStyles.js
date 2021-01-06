@@ -3,13 +3,10 @@ import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme) => ({
   row: {
     background: "linear-gradient(to right bottom, #FED469, #ED0891)",
-    // height: '100vh',
     width: "100vw",
     overflowX: "hidden",
   },
   image: {
-    // width: theme.spacing(40),
-    //  height: theme.spacing(70),
     height: "90vh",
     width: "auto",
     paddingTop: "3.2rem",
@@ -28,7 +25,7 @@ export const useStyles = makeStyles((theme) => ({
       marginLeft: "1.8rem",
       height: "30vh ",
       marginTop: "3rem",
-      marginBottom: "2rem"
+      marginBottom: "2rem",
     },
   },
   text: {
@@ -37,7 +34,6 @@ export const useStyles = makeStyles((theme) => ({
     paddingTop: "2.7rem",
     letterSpacing: "0.1rem",
     fontSize: "4.2rem",
-    //textAlign: 'center'
     [theme.breakpoints.down("xs")]: {
       fontSize: "1.4rem",
       padding: "1.8rem 1rem 0rem 1rem",

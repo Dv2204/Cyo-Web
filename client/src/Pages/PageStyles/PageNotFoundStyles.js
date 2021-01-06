@@ -4,10 +4,36 @@ export const useStyles = makeStyles((theme) => ({
   error: {
     width: "100vw",
     height: "60vh ",
+    [theme.breakpoints.down("xs")]: {
+      width: "100vw",
+      height: "68vh ",
+    },
   },
   notfound: {
     color: "red",
     textAlign: "center",
     fontWeight: "bold",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1.5rem",
+    },
+  },
+  btn: {
+    backgroundColor: "#fff",
+    color: "#000",
+    border: "2px solid #000",
+    marginTop: "0.6rem",
+    padding: "1.1rem 2rem",
+    fontSize: "19px",
+    letterSpacing: "0.1rem",
+    textDecoration: "none",
+    "&:hover": {
+      cursor: "pointer",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "0.8rem",
+      margin: "0.8rem 1.3rem",
+      padding: "0rem 1rem",
+      border: "1px solid #000",
+    },
   },
 }));
