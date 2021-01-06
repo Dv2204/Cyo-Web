@@ -29,6 +29,7 @@ export const useStyles = makeStyles((theme) => ({
     color: "rgba(145, 145, 145, 1)",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "5rem",
+      fontSize:"1.2rem"
     },
   },
   mrp: {

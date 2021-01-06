@@ -14,9 +14,9 @@ export const useStyles = makeStyles((theme) => ({
     width: "auto",
     paddingTop: "3.2rem",
     [theme.breakpoints.down("xs")]: {
-      height: "40vh",
+      height: "30vh",
       width: "auto",
-      paddingLeft: "1rem",
+      paddingLeft: "0.5rem",
     },
   },
   paper: {
@@ -26,8 +26,9 @@ export const useStyles = makeStyles((theme) => ({
     borderRadius: "6%",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "1.8rem",
-      height: "33vh ",
+      height: "30vh ",
       marginTop: "3rem",
+      marginBottom: "2rem"
     },
   },
   text: {
@@ -54,9 +55,9 @@ export const useStyles = makeStyles((theme) => ({
       cursor: "pointer",
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: "0.6rem",
+      fontSize: "0.5rem",
       margin: "1rem 1.5rem",
-      padding: "0.2rem 1rem",
+      padding: "0rem 1rem",
     },
   },
 }));

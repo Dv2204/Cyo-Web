@@ -27,7 +27,7 @@ const Gyms = () => {
         <Grid
           container
           spacing={8}
-          style={{ marginTop: "1rem", paddingBottom: "6rem" }}
+          style={{ marginTop: "1rem", paddingBottom: "6rem", width:"100%"}}
         >
           <GymPageCardCity />
         </Grid>

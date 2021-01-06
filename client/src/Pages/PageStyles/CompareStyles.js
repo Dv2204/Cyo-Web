@@ -39,6 +39,12 @@ export const useStyles = makeStyles((theme) => ({
     "&:hover": {
       cursor: "pointer",
     },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1rem",
+      textAlign: "center",
+      padding: "1rem 2rem",
+      marginTop: "2rem",
+    },
   },
   icon: {
     color: "rgba(255, 190, 157, 1)",
@@ -57,7 +63,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: "0.8rem",
-      marginLeft: "3.5rem",
+      marginLeft: "1rem",
       marginTop: "1rem",
       padding: "0.3rem 1.3rem",
     },

@@ -34,7 +34,7 @@ const LandingPage = () => {
           <Carousel />
         </Grid>
         <Container fixed>
-          <Grid container spacing={8} style={{ marginTop: "0.2rem" }}>
+          <Grid container spacing={8} style={{ marginTop: "0.2rem", width: "100%" }}>
             <Cards />
           </Grid>
           <ViewMore />

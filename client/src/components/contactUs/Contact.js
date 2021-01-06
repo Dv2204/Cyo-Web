@@ -121,10 +121,7 @@ const Contact = () => {
                     Mail Us at <b>support@cyogyms.com</b>
                   </Typography>
                   <div className={classes.margin}>
-                    <Grid container spacing={1} alignItems="center">
-                      <Grid item>
-                        <AccountCircle />
-                      </Grid>
+                    <Grid container spacing={1} alignItems="center" justify="center">
                       <Grid item>
                         <Grid container justify="center">
                           <TextField
@@ -133,6 +130,7 @@ const Contact = () => {
                             id="name"
                             value={name}
                             onChange={onChange}
+                            style={{ marginLeft: "1rem" }}
                           />
                           <TextField
                             id="input-with-icon-grid"
@@ -161,6 +159,7 @@ const Contact = () => {
                         </Grid>
                       </Grid>
                     </Grid>
+                    <Grid container xs={12} justify="center">
                     <TextField
                       id="outlined-basic"
                       label="Your Message"
@@ -171,6 +170,7 @@ const Contact = () => {
                       style={{ margin: "4vh 0", width: "30rem" }}
                       className={classes.body}
                     />
+                    </Grid>
                     <Grid container justify="flex-end">
                       <Button onClick={onSubmit}>Send Message!</Button>
                     </Grid>

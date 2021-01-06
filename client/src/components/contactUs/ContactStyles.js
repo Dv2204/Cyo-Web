@@ -2,10 +2,10 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
   row: {
-    height: "70vh",
+    height: "80vh",
     width: "100vw",
     [theme.breakpoints.down("xs")]: {
-      height: "100vh",
+      height: "100%",
     },
   },
   heading: {
@@ -31,7 +31,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       padding: "1rem 2rem",
       width: "70vw",
-      height: "30vh",
+      height: "60vh",
       marginBottom: "10vh",
       fontSize: "0.5rem",
     },
@@ -39,9 +39,11 @@ export const useStyles = makeStyles((theme) => ({
   mailus: {
     [theme.breakpoints.down("xs")]: {
       fontSize: "0.8rem",
+      paddingTop: "1rem",
     },
   },
   body: {
+    width: "100vw",
     [theme.breakpoints.down("xs")]: {
       fontSize: "0.5rem !important",
       width: "15rem !important",
@@ -50,6 +52,7 @@ export const useStyles = makeStyles((theme) => ({
   about: {
     color: "#b2b2b2",
     padding: "2vh",
+    marginTop:"3rem",
     [theme.breakpoints.down("xs")]: {
       fontSize: "0.8rem",
       textAlign: "justify",

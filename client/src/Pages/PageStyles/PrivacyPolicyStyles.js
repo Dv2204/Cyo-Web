@@ -3,13 +3,13 @@ import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme) => ({
   text: {
     paddingTop: "5rem",
-    paddingBottom: "1.7rem",
+    paddingBottom: "1.4rem",
     fontWeight: "bold",
     color: "rgba(233, 62, 127, 1)",
     letterSpacing: "0.1rem",
     textAlign: "center",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "2rem",
+      fontSize: "3rem",
     },
   },
   name: {
@@ -20,7 +20,8 @@ export const useStyles = makeStyles((theme) => ({
     letterSpacing: "0.1rem",
     textAlign: "center",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "1.8rem",
+      fontSize: "1.2rem",
+      padding: "1rem 2rem"
     },
   },
   textheading: {

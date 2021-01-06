@@ -69,7 +69,7 @@ const Cards = () => {
             <Grid item xs={3} lg={1} md={1} >
               <PinDropIcon fontSize="large" className={classes.icon} />
             </Grid>
-            <Grid xs={8} lg={8} md={8}>
+            <Grid xs={8} lg={8} md={8} >
               <Paper className={classes.root} elevation={2}>
                 <InputBase
                   className={classes.input}

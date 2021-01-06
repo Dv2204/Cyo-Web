@@ -36,7 +36,6 @@ export const Icons = styled.div`
 export const SideLink = styled(Link)`
   display: flex;
   z-index: 100 !important;
-  align-items: center;
   justify-content: center;
   text-decoration: none;
   transition: 0.3s ease-in-out;
@@ -47,7 +46,7 @@ export const SideLink = styled(Link)`
 export const SideMenu = styled.ul`
   display: grid;
   z-index: 100 !important;
-  margin-top: 10vh;
+  margin-top: 20vh;
   justify-content: centre;
   grid-template-columns: 1;
   grid-template-rows: repeat(5, 10vh);
