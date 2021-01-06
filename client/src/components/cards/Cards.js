@@ -66,10 +66,10 @@ const Cards = () => {
       <Grid container md={12} lg={12} justify="center">
         <Grid item lg={7} md={7} justify="center">
           <Grid container xs={12} lg={12} md={12}>
-            <Grid item xs={3} lg={1} md={1} >
+            <Grid item xs={3} lg={1} md={1}>
               <PinDropIcon fontSize="large" className={classes.icon} />
             </Grid>
-            <Grid xs={8} lg={8} md={8} >
+            <Grid xs={8} lg={8} md={8}>
               <Paper className={classes.root} elevation={2}>
                 <InputBase
                   className={classes.input}
@@ -99,11 +99,11 @@ const Cards = () => {
             <Grid item lg={4} md={4} id="gym" className={classes.card}>
               <Paper elevation={4} className={classes.paperNormal}>
                 <Grid container>
-                  <Grid item  xs={12} lg={12} md={12}>
-                    <Grid container className={classes.row}>
+                  <Grid item xs={12} lg={12} md={12}>
+                    <Grid container item xs={12} className={classes.row}>
                       <Grid item xs={12} lg={10} md={10}>
                         <Grid container className={classes.top}>
-                          <Grid item  xs={12} lg={2} md={2}>
+                          <Grid item xs={12} lg={2} md={2}>
                             <Avatar
                               src={head}
                               alt="Profile"
@@ -131,10 +131,15 @@ const Cards = () => {
                           </Grid>
                         </Grid>
                       </Grid>
-                      <Grid item lg={2} md={2}>
+                      <Grid item lg={2} md={2} xs={12}>
                         <BeenhereOutlinedIcon
                           fontSize="small"
-                          style={{ color: "#11C62E", float: "right"}}
+                          style={{
+                            color: "#11C62E",
+                            float: "right",
+                            justifyContent: "flex-end",
+                          }}
+                          className={classes.TickStyle}
                         />
                       </Grid>
                     </Grid>

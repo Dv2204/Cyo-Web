@@ -38,22 +38,33 @@ const About = () => {
               className={classes.body}
               style={{ textAlign: "center", marginBottom: "10vh" }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
-              risus, mattis et nec adipiscing facilisi nisl odio tincidunt.
-              Sapien quis amet, neque ut rhoncus dictum nisi, ultricies nec.
-              Senectus rhoncus sed accumsan varius nunc faucibus tempor nulla.
-              Neque et tortor velit, hendrerit faucibus. Lorem morbi curabitur
-              ac faucibus ac. Pellentesque vitae dolor ipsum varius at sodales
-              scelerisque nibh. Mauris elit leo nunc sit semper et. Amet
-              dignissim neque morbi ipsum felis justo, nibh nunc neque. Aliquet
-              libero accumsan proin arcu faucibus amet. Neque et tortor velit,
-              hendrerit faucibus. Lorem morbi curabitur ac faucibus ac.
-              Pellentesque vitae dolor ipsum varius at sodales scelerisque nibh.
-              Mauris elit leo nunc sit semper et. Amet dignissim neque morbi
-              ipsum felis justo, nibh nunc neque. Aliquet libero accumsan proin
-              arcu faucibus amet. elit leo nunc sit semper et. Aliquet libero
-              accumsan proin arcu faucibus amet. Neque et tortor velit,
-              hendrerit faucibus.
+              <b>WHO WE ARE</b> <br /> We are a team of Passionate designer,
+              Developers and Programmers brought together by their love for
+              design and development. We are innovators and creators, creating
+              coolest of stuffs for you. Our work speaks our philosophy. With
+              quality being our top most priority, we design your requirement.
+              Each of our projects is special and so are our clients! <br />
+              <b>OUR MISSION</b> <br />
+              Our mission is to develop elegant and affordable solutions that
+              enables small to large businesses to establish visibility online,
+              increases sales and improve productivity. We strive to build and
+              maintain an effective relationship with our clients by providing
+              web solutions that include all of the most powerful tools that web
+              development and digital marketing have to offer. <br />
+              <b>TEAMWORK</b> <br />
+              Our expert designers, developers and project managers will guide
+              you through the process of customizing an online user experience
+              that meets your unique business needs and scales your company. We
+              are here to serve you with a vision to become a prime performer,
+              in providing you the solution for competing at the global market.{" "}
+              <br />
+              <b>HOW WE WORK</b>
+              <br /> Our developers work on your project with a view to attain
+              perfect planned development methodologies with seamless
+              communication among other designer team. We believe in hand-code
+              accelerated development with daily reporting of projects through
+              online meetings and others communication mode. With us, achieve
+              accomplishment and ongoing business growth.
             </Typography>
           </Grid>
           <Grid container md={12} lg={12} justify="center">
