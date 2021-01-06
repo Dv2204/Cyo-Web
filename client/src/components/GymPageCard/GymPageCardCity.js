@@ -42,8 +42,8 @@ const Cards = () => {
         justify="center"
         style={{ margin: "5rem" }}
       >
-        <Grid item lg={3} md={3} justify="center">
-          <Loader color="rgba(38, 38, 38, 0.7)" />
+        <Grid item lg={3} md={3} justify="center" >
+          <Loader color="rgba(38, 38, 38, 0.7)" className={classes.loader}/>
         </Grid>
       </Grid>
     );

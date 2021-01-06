@@ -127,4 +127,9 @@ export const useStyles = makeStyles((theme) => ({
       width: "80vw",
     },
   },
+  loader: {
+    [theme.breakpoints.down("xs")]: {
+      width: "20px",
+    },
+  },
 }));
