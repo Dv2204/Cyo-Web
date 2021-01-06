@@ -42,8 +42,17 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "10px",
     color: "#fff",
     backgroundColor: "#11C62E",
-    marginLeft: "0.7rem",
+    // marginLeft: "0.7rem",
     width: "1.6vw",
+    [theme.breakpoints.down("xs")]: {
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      width: "10vw",
+      padding: "3px 0 3px 0",
+      marginBottom: "5px",
+    },
   },
   ratingIcon: {
     fontSize: "10px",
@@ -56,7 +65,11 @@ export const useStyles = makeStyles((theme) => ({
     color: "grey",
     backgroundColor: "#fff",
     paddingLeft: "0.3rem",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "13px",
+    },
   },
+  TickStyle: {},
   details: {
     fontSize: "18px",
     color: "grey",
@@ -123,6 +136,14 @@ export const useStyles = makeStyles((theme) => ({
   alternateimage: {
     width: "600%",
     height: "5vh",
+    [theme.breakpoints.down("xs")]: {
+      width: "80vw",
+    },
+  },
+  row: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
     [theme.breakpoints.down("xs")]: {
       width: "80vw",
     },
