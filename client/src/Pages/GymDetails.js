@@ -114,7 +114,7 @@ const GymDetails = (props) => {
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} justify="center">
-          <ReviewCard rating={detailData.gymDetail.gymimageSet} />
+          <ReviewCard rating={detailData.gymDetail.userfeedbackSet} />
         </Grid>
         <Grid container style={{ marginTop: "6rem" }}>
           <Contact />
