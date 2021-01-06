@@ -10,6 +10,7 @@ import MainCompare from "../Pages/MainCompare";
 import PrivacyPolicy from "../Pages/PrivacyPolicy";
 import AboutGyms from "../Pages/AboutGyms";
 import Contact from "../components/contactUs/Contact";
+import PageNotFound from "../Pages/PageNotFound";
 
 const Routes = () => {
   return (
@@ -30,6 +31,7 @@ const Routes = () => {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/privacypolicy" component={PrivacyPolicy} />
           <Route exact path="/aboutgyms" component={AboutGyms} />
+          <Route component={PageNotFound} />
         </Switch>
       </Router>
     </div>
