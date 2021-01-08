@@ -5,7 +5,6 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import { useStyles } from "./PageStyles/PrivacyPolicyStyles";
 import Contact from "../components/contactUs/Contact";
 
-
 const AboutGyms = () => {
   const classes = useStyles();
   const [isOpen, setIsOpen] = useState(false);
@@ -18,18 +17,18 @@ const AboutGyms = () => {
       <div style={{ backgroundColor: "rgba(248, 248, 248, 1)" }}>
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <AboutGymsNav toggle={toggle} />
-        <Grid container lg={12} md={12} xs={12} sm={12} >
+        <Grid container lg={12} md={12} xs={12} sm={12}>
           <Grid item lg={12} md={12} xs={12} sm={12}>
-          <Typography variant="h2" className={classes.text} justify="center">
-            About Us
-          </Typography>
+            <Typography variant="h2" className={classes.text} justify="center">
+              About Us
+            </Typography>
             <Typography variant="h3" className={classes.name} justify="center">
               Choose Your Option Pvt. Ltd.
             </Typography>
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
-          <Grid item lg={8} sm={10} xs={10} md={8} justify="center">
+          <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
             <Typography
               variant="h6"
               className={classes.textbody}
@@ -54,7 +53,7 @@ const AboutGyms = () => {
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
-          <Grid item lg={8} sm={10} xs={10} md={8} justify="center">
+          <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
             <Typography variant="h4" className={classes.textheading}>
               Our Motto
             </Typography>
@@ -70,7 +69,7 @@ const AboutGyms = () => {
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
-          <Grid item lg={8} sm={10} xs={10} md={8} justify="center">
+          <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
             <Typography variant="h4" className={classes.textheading}>
               Our Vision
             </Typography>
@@ -85,7 +84,7 @@ const AboutGyms = () => {
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
-          <Grid item lg={8} sm={10} xs={10} md={8} justify="center">
+          <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
             <Typography variant="h4" className={classes.textheading}>
               For our Users
             </Typography>

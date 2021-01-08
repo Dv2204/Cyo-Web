@@ -27,7 +27,7 @@ const PrivacyPolicy = () => {
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
-          <Grid item lg={8} sm={10} xs={10} md={8} justify="center">
+          <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
             <Typography variant="h4" className={classes.textheading}>
               Personal Information -
             </Typography>
@@ -45,7 +45,7 @@ const PrivacyPolicy = () => {
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
-          <Grid item lg={8} sm={10} xs={10} md={8} justify="center">
+          <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
             <Typography variant="h4" className={classes.textheading}>
               What information is, or may be, collected form you?
             </Typography>
@@ -62,7 +62,7 @@ const PrivacyPolicy = () => {
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
-          <Grid item lg={8} sm={10} xs={10} md={8} justify="center">
+          <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
             <Typography variant="h4" className={classes.textheading}>
               How do we Collect the Information ?
             </Typography>
@@ -81,7 +81,7 @@ const PrivacyPolicy = () => {
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
-          <Grid item lg={8} sm={10} xs={10} md={8} justify="center">
+          <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
             <Typography variant="h4" className={classes.textheading}>
               How is information used ?
             </Typography>
@@ -114,7 +114,7 @@ const PrivacyPolicy = () => {
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
-          <Grid item lg={8} sm={10} xs={10} md={8} justify="center">
+          <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
             <Typography variant="h4" className={classes.textheading}>
               With whom your information will be shared -
             </Typography>
@@ -141,7 +141,7 @@ const PrivacyPolicy = () => {
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
-          <Grid item lg={8} sm={10} xs={10} md={8} justify="center">
+          <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
             <Typography variant="h4" className={classes.textheading}>
               What Choice are available to you regarding collection, use and
               distribution of your information ?
@@ -170,7 +170,7 @@ const PrivacyPolicy = () => {
           justify="center"
           style={{ backgroundColor: "#282828", height: "8vh" }}
         >
-          <Grid item lg={8} md={8} sm={10} xs={10} justify="center">
+          <Grid item lg={10} md={10} sm={10} xs={10} justify="center">
             <Typography variant="h6" className={classes.link}>
               Choose Your Option &copy; 2020
             </Typography>

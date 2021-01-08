@@ -33,37 +33,63 @@ const About = () => {
           <Typography variant="h2" className={classes.head}>
             ABOUT DEVELOPERS
           </Typography>
-          <Grid item lg={7} md={7} justify="center">
+          <Grid item lg={8} md={8} justify="center">
             <Typography
               className={classes.body}
               style={{ textAlign: "center", marginBottom: "10vh" }}
             >
-              <b>WHO WE ARE</b> <br /> We are a team of Passionate designer,
-              Developers and Programmers brought together by their love for
-              design and development. We are innovators and creators, creating
-              coolest of stuffs for you. Our work speaks our philosophy. With
-              quality being our top most priority, we design your requirement.
-              Each of our projects is special and so are our clients! <br />
-              <b>OUR MISSION</b> <br />
+              <Typography style={{ fontSize: "2.5vh", fontWeight: "bold" }}>
+                WHO ARE WE
+              </Typography>{" "}
+              We are a team of Passionate designer, Developers and Programmers
+              brought together by their love for design and development. We are
+              innovators and creators, creating coolest of stuffs for you. Our
+              work speaks our philosophy. With quality being our top most
+              priority, we design your requirement. Each of our projects is
+              special and so are our clients!
+              <Typography
+                style={{
+                  fontSize: "2.5h",
+                  fontWeight: "bold",
+                  marginTop: "0.9rem",
+                }}
+              >
+                OUR MISSION
+              </Typography>{" "}
               Our mission is to develop elegant and affordable solutions that
               enables small to large businesses to establish visibility online,
               increases sales and improve productivity. We strive to build and
               maintain an effective relationship with our clients by providing
               web solutions that include all of the most powerful tools that web
               development and digital marketing have to offer. <br />
-              <b>TEAMWORK</b> <br />
+              <Typography
+                style={{
+                  fontSize: "2.5vh",
+                  fontWeight: "bold",
+                  marginTop: "0.9rem",
+                }}
+              >
+                TEAMWORK
+              </Typography>{" "}
               Our expert designers, developers and project managers will guide
               you through the process of customizing an online user experience
               that meets your unique business needs and scales your company. We
               are here to serve you with a vision to become a prime performer,
               in providing you the solution for competing at the global market.{" "}
-              <br />
-              <b>HOW WE WORK</b>
-              <br /> Our developers work on your project with a view to attain
-              perfect planned development methodologies with seamless
-              communication among other designer team. We believe in hand-code
-              accelerated development with daily reporting of projects through
-              online meetings and others communication mode. With us, achieve
+              <Typography
+                style={{
+                  fontSize: "2.5vh",
+                  fontWeight: "bold",
+                  marginTop: "0.9rem",
+                }}
+              >
+                HOW WE WORK
+              </Typography>
+              Our developers work on your project with a view to attain perfect
+              planned development methodologies with seamless communication
+              among other designer team. We believe in hand-code accelerated
+              development with daily reporting of projects through online
+              meetings and others communication mode. With us, achieve
               accomplishment and ongoing business growth.
             </Typography>
           </Grid>

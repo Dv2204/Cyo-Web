@@ -12,6 +12,7 @@ export const useStyles = makeStyles((theme) => ({
     color: "#fff",
     paddingTop: "10vh",
     textAlign: "center",
+    letterSpacing: "0.1rem",
     [theme.breakpoints.down("xs")]: {
       fontSize: "2rem",
       paddingBottom: "1vh",

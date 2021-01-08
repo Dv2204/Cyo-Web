@@ -26,7 +26,9 @@ const AboutGymsNav = ({ toggle }) => {
             <NavLink to="/">
               <img className="Logo" src={Logo} alt="logo" />
             </NavLink>
-            <h2 className="LogoName">CYO GYMS</h2>
+            <NavLink to="/">
+              <h2 className="LogoName">CYO GYMS</h2>
+            </NavLink>
           </NavLogo>
           <NavMenu>
             <Link to="gym" smooth={true} duration={1000}>

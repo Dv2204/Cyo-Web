@@ -33,7 +33,7 @@ export const useStyles = makeStyles((theme) => ({
     paddingLeft: "4.8rem",
     paddingTop: "2.7rem",
     letterSpacing: "0.1rem",
-    fontSize: "4.2rem",
+    fontSize: "4rem",
     [theme.breakpoints.down("xs")]: {
       fontSize: "1.4rem",
       padding: "1.8rem 1rem 0rem 1rem",
@@ -42,7 +42,7 @@ export const useStyles = makeStyles((theme) => ({
   btn: {
     backgroundColor: "#000",
     color: "#fff",
-    marginTop: "0.6rem",
+    marginTop: "1rem",
     padding: "1.1rem 2rem",
     fontSize: "19px",
     letterSpacing: "0.1rem",

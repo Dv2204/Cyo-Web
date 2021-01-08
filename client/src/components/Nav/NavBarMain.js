@@ -12,8 +12,26 @@ import {
 import Logo from "../../assets/logo-white.png";
 import "../Nav/navbar.css";
 import { Link } from "react-scroll";
+import { Chip } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  chipStyle: {
+    padding: "1rem 1.3rem",
+    backgroundColor: "#fff",
+    color: "#000",
+    fontSize: "1rem",
+    marginLeft: "1.5rem",
+    letterSpacing: "0.1rem",
+    fontFamily: "Bauman",
+    "&:hover": {
+      cursor: "pointer",
+    },
+  },
+}));
 
 const NavBar = ({ toggle }) => {
+  const classes = useStyles();
   return (
     <>
       <Nav style={{ position: "relative" }}>
@@ -26,7 +44,9 @@ const NavBar = ({ toggle }) => {
             <NavLink to="/">
               <img className="Logo" src={Logo} alt="logo" />
             </NavLink>
-            <h2 className="LogoName">CYO GYMS</h2>
+            <NavLink to="/">
+              <h2 className="LogoName">CYO GYMS</h2>
+            </NavLink>
           </NavLogo>
           <NavMenu>
             <Link to="gym" smooth={true} duration={1000}>
@@ -44,14 +64,15 @@ const NavBar = ({ toggle }) => {
             <Link to="connect" smooth={true} duration={2500}>
               <NavLink activeStyle>Help Centre</NavLink>
             </Link>
-            <Dot />
-            <NavLink to="/aboutgyms" activeStyle>
+            {/* <Dot /> */}
+            {/* <NavLink to="/aboutgyms" activeStyle>
               About-Us
             </NavLink>
             <Dot />
             <NavLink to="/about" activeStyle>
               About-Developers
-            </NavLink>
+            </NavLink> */}
+            <Chip label="Register Your Gym" className={classes.chipStyle} />
           </NavMenu>
         </NavDiv>
       </Nav>

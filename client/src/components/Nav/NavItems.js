@@ -5,7 +5,7 @@ import { BsCircleFill } from "react-icons/bs";
 
 export const Nav = styled.nav`
   background: #000;
-  height: 6vh;
+  height: 7.5vh;
   ${"" /* width: 100vw; */}
   position: fixed;
   z-index: 2;
