@@ -38,7 +38,7 @@ const ProductPageCards = () => {
         style={{ margin: "5rem" }}
       >
         <Grid item lg={3} md={3} justify="center">
-          <Loader color="rgba(244, 0, 117, 0.42)" />
+          <Loader color="#FB5B21" />
         </Grid>
       </Grid>
     );

@@ -26,7 +26,9 @@ const CompareNavBar = ({ toggle }) => {
             <Link to="/">
               <img className="Logo" src={Logo} alt="logo" />
             </Link>
-            <h2 className="LogoName">CYO GYMS</h2>
+            <NavLink to="/">
+              <h2 className="LogoName">CYO GYMS</h2>
+            </NavLink>
           </NavLogo>
           <NavMenu>
             <NavLink to="/gyms" activeStyle>

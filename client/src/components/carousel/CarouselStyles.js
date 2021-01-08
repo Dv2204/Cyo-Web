@@ -5,7 +5,7 @@ export const useStyles = makeStyles((theme) => ({
     paddingTop: "8rem",
     paddingBottom: "4rem",
     fontWeight: "bold",
-    color: "rgba(233, 62, 127, 1)",
+    color: "#FB5B21",
     letterSpacing: "0.1rem",
     textAlign: "center",
     [theme.breakpoints.down("xs")]: {

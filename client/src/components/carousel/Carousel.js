@@ -8,8 +8,13 @@ const Carousel = () => {
   return (
     <Grid item lg={12} md={12}>
       <Grid container lg={12} md={12}>
-        <Grid item xs={12} lg={12} md={12} >
-          <Typography variant="h2" className={classes.text} justify="center">
+        <Grid item xs={12} lg={12} md={12}>
+          <Typography
+            variant="h2"
+            className={classes.text}
+            justify="center"
+            id="gym"
+          >
             TRENDING GYMS
           </Typography>
         </Grid>

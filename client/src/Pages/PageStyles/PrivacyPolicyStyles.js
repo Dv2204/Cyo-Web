@@ -6,7 +6,6 @@ export const useStyles = makeStyles((theme) => ({
     paddingBottom: "1.4rem",
     fontWeight: "bold",
     color: "#FB5B21",
-    // textGradient: "linear-gradient(to right bottom, #FB5B21, #000)",
     letterSpacing: "0.1rem",
     textAlign: "center",
     [theme.breakpoints.down("xs")]: {
