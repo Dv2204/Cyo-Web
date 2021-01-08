@@ -67,8 +67,9 @@ const Contact = () => {
       <Grid item md={12} style={{ backgroundColor: "#3F3F3F" }}>
         <Grid container lg={12} md={12} className={classes.row}>
           <Grid container lg={12} md={12} justify="center" id="contact">
-            <Typography variant="h3" className={classes.heading}>
-              CONTACT US
+            <Typography variant="h5" className={classes.heading}>
+              The World's Fastest Growing Hotel Chain {"  "}&nbsp;&nbsp; Join
+              our network and grow your business!
             </Typography>
             <Grid container justify="center">
               <Grid item lg={5} md={5} justify="center">

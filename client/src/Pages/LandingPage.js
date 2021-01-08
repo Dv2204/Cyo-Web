@@ -8,7 +8,7 @@ import ViewMoreProducts from "../components/products/ViewMoreProducts";
 import ViewMore from "../components/more/More";
 import ConnectWithUs from "../components/connect/ConnectWithUs";
 import NavBar from "../components/Nav/NavBarMain";
-import Contact from "../components/contactUs/Contact";
+import ContactUsNew from "../components/contactUs/ContactUsNew";
 import "../components/Nav/navbar.css";
 import "./PageStyles/landingpage.css";
 import Sidebar from "../components/Sidebar/Sidebar";
@@ -34,7 +34,11 @@ const LandingPage = () => {
           <Carousel />
         </Grid>
         <Container fixed>
-          <Grid container spacing={8} style={{ marginTop: "0.2rem", width: "100%" }}>
+          <Grid
+            container
+            spacing={8}
+            style={{ marginTop: "0.2rem", width: "100%" }}
+          >
             <Cards />
           </Grid>
           <ViewMore />
@@ -50,7 +54,7 @@ const LandingPage = () => {
           <ConnectWithUs />
         </Grid>
         <Grid container>
-          <Contact />
+          <ContactUsNew />
         </Grid>
       </div>
     </div>
