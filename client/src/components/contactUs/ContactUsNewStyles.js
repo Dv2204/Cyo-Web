@@ -96,7 +96,7 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: "2.5rem",
     marginLeft: "1rem",
     backgroundColor: "#fff",
-    height: "41vh",
+    height: "54vh",
     marginBottom: "2.5rem",
   },
   icons: {
@@ -107,10 +107,28 @@ export const useStyles = makeStyles((theme) => ({
   },
   footerPaper: {
     backgroundColor: "#3F3F3F",
+    paddingTop: "2vh",
+    paddingBottom: "2vh",
   },
   required: {
     color: "red",
     letterSpacing: "0.09rem",
-    marginLeft: "2rem",
+  },
+  btn: {
+    padding: "0.5rem 2.5rem",
+    border: "1px solid #000",
+    marginBottom: "2rem",
+    "&:hover": {
+      cursor: "pointer",
+    },
+  },
+  textfooter: {
+    color: "#fff",
+    textAlign: "center",
+  },
+  footerlink: {
+    textDecoration: "none",
+    color: "#fff",
+    cursor: "pointer",
   },
 }));

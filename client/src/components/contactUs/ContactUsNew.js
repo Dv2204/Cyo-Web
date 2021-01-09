@@ -194,8 +194,8 @@ const ContactUsNew = () => {
                       />
                     </Grid>
                   </Grid>
-                  <Grid container lg={12} md={12}>
-                    <Grid item lg={12} md={12}>
+                  <Grid container lg={12} md={12} justify="flex-end">
+                    <Grid item lg={4} md={4}>
                       <Typography
                         variant="caption"
                         className={classes.required}
@@ -205,8 +205,8 @@ const ContactUsNew = () => {
                     </Grid>
                   </Grid>
                   <Grid container lg={12} md={12} justify="center">
-                    <Grid item lg={3} md={3}>
-                      <Button>Submit</Button>
+                    <Grid item lg={5} md={5}>
+                      <Button className={classes.btn}>Submit Message</Button>
                     </Grid>
                   </Grid>
                 </Paper>
@@ -218,7 +218,7 @@ const ContactUsNew = () => {
             className={classes.dividersec}
             flexItem
           />
-          <Grid item lg={4} md={4} style={{ marginTop: "4.4rem" }}>
+          <Grid item lg={4} md={4} style={{ marginTop: "5.4rem" }}>
             <InstagramIcon className={classes.icons} />
             <FacebookIcon className={classes.icons} />
             <TwitterIcon className={classes.icons} />
@@ -235,8 +235,16 @@ const ContactUsNew = () => {
         </Grid>
         <Grid container lg={12} md={12}>
           <Grid item lg={12} md={12}>
-            <Paper className={classes.footerPaper}>
-              <Typography variant="h6"></Typography>
+            <Paper className={classes.footerPaper} elevation={5}>
+              <Typography variant="h6" className={classes.textfooter}>
+                All Rights Reserved&nbsp;&copy; | CYO GYMS |{" "}
+                <a
+                  className={classes.footerlink}
+                  href="https://cybersifytech.com"
+                >
+                  cybersifytech.com
+                </a>
+              </Typography>
             </Paper>
           </Grid>
         </Grid>
