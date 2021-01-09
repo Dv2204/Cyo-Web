@@ -83,4 +83,52 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: "1.5rem",
     marginBottom: "0.4rem",
   },
+  paper: {
+    borderRadius: "20px",
+    marginTop: "3rem",
+    marginBottom: "3rem",
+  },
+  paperhead: {
+    marginTop: "1.5rem",
+    textAlign: "center",
+  },
+  dividersec: {
+    marginTop: "2.5rem",
+    marginLeft: "1rem",
+    backgroundColor: "#fff",
+    height: "54vh",
+    marginBottom: "2.5rem",
+  },
+  icons: {
+    color: "#fff",
+    fontSize: "3rem",
+    marginLeft: "3rem",
+    marginTop: "1rem",
+  },
+  footerPaper: {
+    backgroundColor: "#3F3F3F",
+    paddingTop: "2vh",
+    paddingBottom: "2vh",
+  },
+  required: {
+    color: "red",
+    letterSpacing: "0.09rem",
+  },
+  btn: {
+    padding: "0.5rem 2.5rem",
+    border: "1px solid #000",
+    marginBottom: "2rem",
+    "&:hover": {
+      cursor: "pointer",
+    },
+  },
+  textfooter: {
+    color: "#fff",
+    textAlign: "center",
+  },
+  footerlink: {
+    textDecoration: "none",
+    color: "#fff",
+    cursor: "pointer",
+  },
 }));

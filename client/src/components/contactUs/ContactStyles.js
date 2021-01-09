@@ -114,5 +114,6 @@ export const useStyles = makeStyles((theme) => ({
     color: "red",
     letterSpacing: "0.09rem",
     marginLeft: "2rem",
+    marginTop: "-1rem",
   },
 }));

@@ -1,7 +1,19 @@
 import React from "react";
-import { Grid, Paper, Typography, Button, Divider } from "@material-ui/core";
+import {
+  Grid,
+  Paper,
+  Typography,
+  Button,
+  Divider,
+  TextField,
+} from "@material-ui/core";
 import { useStyles } from "./ContactUsNewStyles";
 import MobileStoreButton from "react-mobile-store-button";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import YouTubeIcon from "@material-ui/icons/YouTube";
+import PinterestIcon from "@material-ui/icons/Pinterest";
+import TwitterIcon from "@material-ui/icons/Twitter";
 
 const ContactUsNew = () => {
   const classes = useStyles();
@@ -110,6 +122,130 @@ const ContactUsNew = () => {
             <Typography variant="h6" className={classes.pagesthree}>
               Support
             </Typography>
+          </Grid>
+        </Grid>
+        <Grid container lg={12} md={12} justify="center">
+          <Grid item lg={10} md={10}>
+            <hr />
+          </Grid>
+        </Grid>
+        <Grid container lg={12} md={12} justify="center">
+          <Grid item lg={7} md={7}>
+            <Grid container justify="center">
+              <Grid item lg={9} md={9}>
+                <Paper
+                  elevation={5}
+                  variant="outlined"
+                  className={classes.paper}
+                >
+                  <Typography variant="h6" className={classes.paperhead}>
+                    Mail Us at <b>support@cyogyms.com</b>
+                  </Typography>
+                  <Grid container lg={12} md={12} justify="center">
+                    <Grid item lg={5} md={5}>
+                      <TextField
+                        id="input-with-icon-grid"
+                        label="Name"
+                        id="name"
+                        required
+                        style={{ marginLeft: "1rem" }}
+                      />
+                    </Grid>
+                    <Grid item lg={5} md={5}>
+                      <TextField
+                        id="input-with-icon-grid"
+                        label="Mobile"
+                        id="mobile"
+                        required
+                        style={{ marginLeft: "1rem" }}
+                      />
+                    </Grid>
+                  </Grid>
+                  <Grid container lg={12} md={12} justify="center">
+                    <Grid item lg={5} md={5}>
+                      <TextField
+                        id="input-with-icon-grid"
+                        label="Email"
+                        id="email"
+                        required
+                        style={{ marginLeft: "1rem" }}
+                      />
+                    </Grid>
+                    <Grid item lg={5} md={5}>
+                      <TextField
+                        id="input-with-icon-grid"
+                        label="Title"
+                        id="title"
+                        required
+                        style={{ marginLeft: "1rem" }}
+                      />
+                    </Grid>
+                  </Grid>
+                  <Grid container lg={12} md={12} justify="center">
+                    <Grid item lg={10} md={10}>
+                      <TextField
+                        id="outlined-basic"
+                        label="Your Message"
+                        variant="outlined"
+                        id="message"
+                        required
+                        style={{ margin: "4vh 0", width: "34vw" }}
+                        className={classes.body}
+                      />
+                    </Grid>
+                  </Grid>
+                  <Grid container lg={12} md={12} justify="flex-end">
+                    <Grid item lg={4} md={4}>
+                      <Typography
+                        variant="caption"
+                        className={classes.required}
+                      >
+                        *All fields required
+                      </Typography>
+                    </Grid>
+                  </Grid>
+                  <Grid container lg={12} md={12} justify="center">
+                    <Grid item lg={5} md={5}>
+                      <Button className={classes.btn}>Submit Message</Button>
+                    </Grid>
+                  </Grid>
+                </Paper>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Divider
+            orientation="vertical"
+            className={classes.dividersec}
+            flexItem
+          />
+          <Grid item lg={4} md={4} style={{ marginTop: "5.4rem" }}>
+            <InstagramIcon className={classes.icons} />
+            <FacebookIcon className={classes.icons} />
+            <TwitterIcon className={classes.icons} />
+            <br />
+            <br />
+            <YouTubeIcon className={classes.icons} />
+            <PinterestIcon className={classes.icons} />
+          </Grid>
+        </Grid>
+        <Grid container lg={12} md={12}>
+          <Grid item lg={12} md={12}>
+            <hr />
+          </Grid>
+        </Grid>
+        <Grid container lg={12} md={12}>
+          <Grid item lg={12} md={12}>
+            <Paper className={classes.footerPaper} elevation={5}>
+              <Typography variant="h6" className={classes.textfooter}>
+                All Rights Reserved&nbsp;&copy; | CYO GYMS |{" "}
+                <a
+                  className={classes.footerlink}
+                  href="https://cybersifytech.com"
+                >
+                  cybersifytech.com
+                </a>
+              </Typography>
+            </Paper>
           </Grid>
         </Grid>
       </Grid>
