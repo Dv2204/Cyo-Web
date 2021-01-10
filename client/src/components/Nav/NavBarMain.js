@@ -64,14 +64,6 @@ const NavBar = ({ toggle }) => {
             <Link to="connect" smooth={true} duration={2500}>
               <NavLink activeStyle>Help Centre</NavLink>
             </Link>
-            {/* <Dot /> */}
-            {/* <NavLink to="/aboutgyms" activeStyle>
-              About-Us
-            </NavLink>
-            <Dot />
-            <NavLink to="/about" activeStyle>
-              About-Developers
-            </NavLink> */}
             <Chip label="Register Your Gym" className={classes.chipStyle} />
           </NavMenu>
         </NavDiv>
