@@ -13,7 +13,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       height: "30vh",
       width: "auto",
-      paddingLeft: "0.5rem",
+      paddingLeft: "0.1rem",
     },
   },
   paper: {

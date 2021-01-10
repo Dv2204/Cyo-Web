@@ -106,7 +106,7 @@ const Compare = () => {
   return (
     <>
     <div className={classes.slideshow}>
-       <BackgroundSlideshow images={[ image1, image2, image3 ]} animationDelay="3000" style={{zIndex:'-1000 important'}} />
+       <BackgroundSlideshow images={[ image1, image2, image3 ]} animationDelay="2000" style={{zIndex:'-1000 important'}} />
      </div>
       <div
         className={classes.mainDiv}
@@ -148,7 +148,7 @@ const Compare = () => {
           </Grid>
           <Grid container md={12} lg={12} justify="space-around" style={{ marginTop: "1rem" }} >
 
-                  <Grid item lg={5.5} md={5} justify="flex-end" style={{zIndex:'1000'}}>
+                  <Grid item lg={5.5} md={5} xs={12} justify="flex-end" style={{zIndex:'1000'}}>
                     <Grid container md={12} lg={12} justify="flex-end">
                       <Grid xs={12} lg={8} md={8} justify="center">
                         <Paper className={classes.root} elevation={2} style={{zIndex:'1000'}}>
@@ -165,13 +165,13 @@ const Compare = () => {
                     </Grid>
                   </Grid>
 
-                  <Grid item lg={1} md={1} >
+                  <Grid item lg={1} md={1} xs={5} >
                   <Grid container justify="center">
                   <img src={vs} alt="vs" className={classes.vs}/>
                   </Grid>
                   </Grid>
 
-                  <Grid item lg={5.5} md={5} justify="flex-start" style={{zIndex:'1000'}}>
+                  <Grid item lg={5.5} md={5} xs={12} justify="flex-start" style={{zIndex:'1000'}}>
                     <Grid container md={12} lg={12} justify="flex-start">
                     <Grid xs={12} lg={8} md={8} justify="center">
                         <Paper className={classes.root} elevation={2} style={{zIndex:'1000'}}>

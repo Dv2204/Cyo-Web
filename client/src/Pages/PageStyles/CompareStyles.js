@@ -71,8 +71,13 @@ export const useStyles = makeStyles((theme) => ({
     height: "4rem", 
     width: "auto",  
      zIndex:'90',
-     marginTop:'-1rem'
-
+     marginTop:'-1rem',
+     [theme.breakpoints.down("xs")]: {
+      height: "3rem", 
+    width: "auto", 
+      marginTop: "1rem",
+      marginBottom: "1rem",
+    },
   },
   select: {
     backgroundColor: "rgba(255, 190, 157, 1)",
@@ -100,7 +105,7 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: "1rem",
     zIndex:'90',
     [theme.breakpoints.down("xs")]: {
-      width: "85vw",
+      width: "89vw",
     },
   },
   input: {

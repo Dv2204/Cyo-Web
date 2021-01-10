@@ -26,7 +26,7 @@ const ContactUsNew = () => {
       container
       lg={12}
       md={12}
-      style={{ backgroundColor: "#3F3F3F", marginTop: "1.7rem" }}
+      style={{ backgroundColor: "#3F3F3F", marginTop: "1.7rem", zIndex:'10' }}
     >
       <Grid item lg={12} md={12}>
         <Grid
