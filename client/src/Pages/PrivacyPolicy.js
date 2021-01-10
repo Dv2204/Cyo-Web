@@ -172,7 +172,13 @@ const PrivacyPolicy = () => {
         >
           <Grid item lg={10} md={10} sm={10} xs={10} justify="center">
             <Typography variant="h6" className={classes.link}>
-              Choose Your Option &copy; 2020
+                All Rights Reserved&nbsp;&copy; | CYO GYMS |{" "}
+                <a
+                  className={classes.footerlink}
+                  href="https://cybersifytech.com"
+                >
+                  cybersifytech.com
+                </a>
             </Typography>
           </Grid>
         </Grid>

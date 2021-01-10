@@ -3,7 +3,7 @@ import top from "../assets/about.png";
 import { useStyles } from "./PageStyles/AboutStyles";
 import AboutNavBar from "../components/Nav/AboutNav";
 import { Grid, Typography } from "@material-ui/core";
-import Contact from "../components/contactUs/Contact";
+import ContactUsNew from "../components/contactUs/ContactUsNew";
 import Developers from "../components/developers/Developers";
 import Parth from "../assets/parth.jpg";
 import Akriti from "../assets/Akriti.jpg";
@@ -162,7 +162,9 @@ const About = () => {
             </Grid>
           </Grid>
         </Grid>
-        <Contact />
+       <Grid container>
+          <ContactUsNew />
+       </Grid>
       </div>
     </>
   );

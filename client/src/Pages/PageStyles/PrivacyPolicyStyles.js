@@ -48,8 +48,14 @@ export const useStyles = makeStyles((theme) => ({
     color: "#959595",
     cursor: "pointer",
     textAlign: "center",
+    color: '#fff',
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
     },
+  },
+    footerlink: {
+    textDecoration: "none",
+    color: "#fff",
+    cursor: "pointer",
   },
 }));

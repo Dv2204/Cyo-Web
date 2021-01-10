@@ -14,6 +14,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import PinterestIcon from "@material-ui/icons/Pinterest";
 import TwitterIcon from "@material-ui/icons/Twitter";
+import { Link } from "react-router-dom";
 
 const ContactUsNew = () => {
   const classes = useStyles();
@@ -40,8 +41,8 @@ const ContactUsNew = () => {
           </Grid>
           <Grid item lg={8} md={8}>
             <Typography variant="h5" className={classes.headingtwo}>
-              The World's Fastest Growing Hotel Chain {"  "}&nbsp;&nbsp; Join
-              our network and grow your business!
+              The World's Fastest Growing Gym Chain {"  "}&nbsp;&nbsp; Join our
+              network and grow your business!
             </Typography>
           </Grid>
           <Grid item lg={2} md={2}>
@@ -93,17 +94,21 @@ const ContactUsNew = () => {
           <Grid item lg={4} md={4}>
             <Grid container>
               <Grid item lg={6} md={6}>
-                <Typography variant="h6" className={classes.pagestop}>
-                  About Us
-                </Typography>
+                <Link to="/aboutgyms">
+                  <Typography variant="h6" className={classes.pagestop}>
+                    About Us
+                  </Typography>
+                </Link>
                 <Typography variant="h6" className={classes.pages}>
                   Support
                 </Typography>
               </Grid>
               <Grid item lg={6} md={6}>
-                <Typography variant="h6" className={classes.pagestwotop}>
-                  About Developers
-                </Typography>
+                <Link to="/about">
+                  <Typography variant="h6" className={classes.pagestwotop}>
+                    About Developers
+                  </Typography>
+                </Link>
                 <Typography variant="h6" className={classes.pagestwo}>
                   Support
                 </Typography>
@@ -116,16 +121,18 @@ const ContactUsNew = () => {
             flexItem
           />
           <Grid item lg={2} md={2}>
-            <Typography variant="h6" className={classes.pagesthreetop}>
-              Privacy policy
-            </Typography>
+            <Link to="/privacypolicy">
+              <Typography variant="h6" className={classes.pagesthreetop}>
+                Privacy policy
+              </Typography>
+            </Link>
             <Typography variant="h6" className={classes.pagesthree}>
               Support
             </Typography>
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} justify="center">
-          <Grid item lg={10} md={10}>
+          <Grid item lg={11} md={11}>
             <hr />
           </Grid>
         </Grid>
@@ -218,7 +225,7 @@ const ContactUsNew = () => {
             className={classes.dividersec}
             flexItem
           />
-          <Grid item lg={4} md={4} style={{ marginTop: "5.4rem" }}>
+          <Grid item lg={4} md={4} style={{ marginTop: "5.9rem" }}>
             <InstagramIcon className={classes.icons} />
             <FacebookIcon className={classes.icons} />
             <TwitterIcon className={classes.icons} />

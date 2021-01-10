@@ -104,6 +104,9 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "3rem",
     marginLeft: "3rem",
     marginTop: "1rem",
+    "&:hover": {
+      cursor: "pointer",
+    },
   },
   footerPaper: {
     backgroundColor: "#3F3F3F",
