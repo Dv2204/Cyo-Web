@@ -2,15 +2,15 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
   error: {
-    width: "100vw",
-    height: "60vh ",
+    width: "90vw",
+    marginTop: "-20vh",
     [theme.breakpoints.down("xs")]: {
       width: "100vw",
       height: "68vh ",
     },
   },
   notfound: {
-    color: "red",
+    color: "#FB5B21",
     textAlign: "center",
     fontWeight: "bold",
     [theme.breakpoints.down("xs")]: {
@@ -18,8 +18,8 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   btn: {
-    backgroundColor: "#fff",
-    color: "#000",
+    background: "linear-gradient(to right bottom, #FB5B21, #000)",
+    color: "#fff",
     border: "2px solid #000",
     marginTop: "0.6rem",
     padding: "1.1rem 2rem",
