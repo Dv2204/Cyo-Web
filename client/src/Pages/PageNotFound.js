@@ -4,13 +4,14 @@ import { Link } from "react-router-dom";
 import Lottie from "react-lottie";
 import animation from "../components/pageNotFound/PageNotFound.json";
 import { useStyles } from "./PageStyles/PageNotFoundStyles";
+import dumbbell from "../components/pageNotFound/dumbbell.json";
 
 const PageNotFound = () => {
   const classes = useStyles();
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: animation,
+    animationData: dumbbell,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
