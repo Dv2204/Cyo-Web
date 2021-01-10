@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Grid, Typography } from "@material-ui/core";
 import DetailsNavBar from "../components/Nav/GymDetailsNav";
 import { useStyles } from "./PageStyles/GymDetailsStyles";
-import Contact from "../components/contactUs/Contact";
+import ContactUsNew from "../components/contactUs/ContactUsNew";
 import Sidebar from "../components/Sidebar/Sidebar";
 import CircleDetails from "../components/circle/CircleDetails";
 import ReviewCard from "../components/reviewCard/ReviewCard";
@@ -117,7 +117,7 @@ const GymDetails = (props) => {
           <ReviewCard rating={detailData.gymDetail.userfeedbackSet} />
         </Grid>
         <Grid container style={{ marginTop: "6rem" }}>
-          <Contact />
+          <ContactUsNew />
         </Grid>
       </div>
     </>

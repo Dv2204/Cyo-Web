@@ -3,7 +3,7 @@ import { Grid, Typography } from "@material-ui/core";
 import AboutGymsNav from "../components/Nav/AboutGymsNav";
 import Sidebar from "../components/Sidebar/Sidebar";
 import { useStyles } from "./PageStyles/PrivacyPolicyStyles";
-import Contact from "../components/contactUs/Contact";
+import ContactUsNew from "../components/contactUs/ContactUsNew";
 
 const AboutGyms = () => {
   const classes = useStyles();
@@ -114,7 +114,7 @@ const AboutGyms = () => {
           </Grid>
         </Grid>
         <Grid container>
-          <Contact />
+          <ContactUsNew />
         </Grid>
       </div>
     </>

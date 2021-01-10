@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Grid, Container, Typography } from "@material-ui/core";
 import ProductsNavBar from "../components/Nav/ProductsNav";
 import { useStyles } from "./PageStyles/ProductsStyles";
-import Contact from "../components/contactUs/Contact";
+import ContactUsNew from "../components/contactUs/ContactUsNew";
 import ProductsPageCards from "../components/productsPageCards/ProductsPageCards";
 import Sidebar from "../components/Sidebar/Sidebar";
 
@@ -30,7 +30,7 @@ const Products = () => {
         </Grid>
       </Container>
       <Grid container>
-        <Contact />
+        <ContactUsNew />
       </Grid>
     </div>
   );

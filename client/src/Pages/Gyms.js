@@ -3,7 +3,7 @@ import GymPageCardCity from "../components/GymPageCard/GymPageCardCity";
 import { Grid, Container, Typography } from "@material-ui/core";
 import GymNavBar from "../components/Nav/GymNav";
 import { useStyles } from "./PageStyles/GymsStyles";
-import Contact from "../components/contactUs/Contact";
+import ContactUsNew from "../components/contactUs/ContactUsNew";
 import Sidebar from "../components/Sidebar/Sidebar";
 
 const Gyms = () => {
@@ -33,7 +33,7 @@ const Gyms = () => {
         </Grid>
       </Container>
       <Grid container>
-        <Contact />
+        <ContactUsNew />
       </Grid>
     </div>
   );

@@ -55,6 +55,10 @@ const CompareNavBar = ({ toggle }) => {
             <NavLink to="/products" activeStyle>
               Products
             </NavLink>
+            <Dot />
+            <Link to="connect" smooth={true} duration={2500}>
+              <NavLink activeStyle>Help Centre</NavLink>
+            </Link>
             <Chip label="Register Your Gym" className={classes.chipStyle} />
           </NavMenu>
         </NavDiv>
