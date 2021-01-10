@@ -38,7 +38,7 @@ export const useStyles = makeStyles((theme) => ({
     zIndex: "100",
     position: "relative",
     [theme.breakpoints.down("xs")]: {
-      height: "30vh",
+      height: "40vh",
       paddingTop: "0rem",
     },
   },
