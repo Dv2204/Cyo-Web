@@ -4,8 +4,14 @@ export const useStyles = makeStyles((theme) => ({
   mainDiv:{
     [theme.breakpoints.down("xs")]: {
       height:'100%',
-      paddingBottom:'20vh'
+      paddingBottom:'20vh',
+      backgroundBlendMode: 'multiply',
+      backgroundColor: '#666666',
     },
+  },
+  compare:{
+    zIndex:'90',
+
   },
   text: {
     paddingTop: "5rem",
@@ -14,6 +20,7 @@ export const useStyles = makeStyles((theme) => ({
     color: "rgba(251, 91, 33, 1)",
     letterSpacing: "0.1rem",
     textAlign: "center",
+    zIndex:'900',
     textShadow: "1px 3px 3px rgba(255, 255, 255, 1)",
     [theme.breakpoints.down("xs")]: {
       fontSize: "1.5rem",
@@ -25,19 +32,27 @@ export const useStyles = makeStyles((theme) => ({
   },
   selection: {
     textAlign: "center",
-    color: "#ffffff",
-    marginBottom: "10px",
+    color: "#000",
+    zIndex:'90',
+    marginBottom: "4rem",
   },
   btn: {
-    backgroundColor: "rgba(255, 147, 108, 1)",
+    backgroundColor: "#FD5A1F",
     color: "#fff",
-    padding: "1.3rem 2.8rem",
+    padding: "1.3rem 3.6rem",
     fontSize: "19px",
     letterSpacing: "0.1rem",
-    marginTop: "1rem",
+    marginTop: "5rem",
+    zIndex:'90',
     textDecoration: "none",
     "&:hover": {
       cursor: "pointer",
+      backgroundColor: "#000",
+      color:"#FD5A1F",
+      transition:"all 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0s",
+      transition: "all 0.2s ease-out",
+      boxShadow: "0px 5px 12px rgba(38, 38, 38, 0.5)",
+      bottom: "-0.1rem",
     },
     [theme.breakpoints.down("sm")]: {
       fontSize: "1rem",
@@ -48,7 +63,16 @@ export const useStyles = makeStyles((theme) => ({
   },
   icon: {
     color: "rgba(255, 190, 157, 1)",
-    marginTop: "1rem",
+    marginTop: "1rem",   
+     zIndex:'90',
+
+  },
+  vs: {
+    height: "4rem", 
+    width: "auto",  
+     zIndex:'90',
+     marginTop:'-1rem'
+
   },
   select: {
     backgroundColor: "rgba(255, 190, 157, 1)",
@@ -58,6 +82,7 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "19px",
     letterSpacing: "0.1rem",
     marginLeft: "-0.5rem",
+    zIndex:'100',
     "&:hover": {
       cursor: "pointer",
     },
@@ -73,6 +98,7 @@ export const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     marginLeft: "1rem",
+    zIndex:'90',
     [theme.breakpoints.down("xs")]: {
       width: "85vw",
     },
@@ -80,14 +106,20 @@ export const useStyles = makeStyles((theme) => ({
   input: {
     marginLeft: theme.spacing(1),
     flex: 1,
+    zIndex:'90',
     color: "rgba(0, 0, 0, 0.98)",
   },
   iconButton: {
     padding: 10,
+    zIndex:'90',
     color: "rgba(0, 0, 0, 1)",
   },
   divider: {
     height: 28,
     margin: 4,
+    zIndex:'90',
   },
+  slideshow:{
+      zIndex:'-10',
+  }
 }));

@@ -12,12 +12,6 @@ import PinDropIcon from "@material-ui/icons/PinDrop";
 import InputBase from "@material-ui/core/InputBase";
 import IconButton from "@material-ui/core/IconButton";
 import SearchIcon from "@material-ui/icons/Search";
-import vs from '../assets/vs.png'
-import BackgroundSlideshow from 'react-background-slideshow'
-import image1 from '../assets/001 1.jpg'
-import image2 from '../assets/002 1.jpg'
-import image3 from '../assets/003 1.jpg'
-
 
 const Compare = () => {
   const classes = useStyles();
@@ -105,9 +99,6 @@ const Compare = () => {
   };
   return (
     <>
-    <div className={classes.slideshow}>
-       <BackgroundSlideshow images={[ image1, image2, image3 ]} animationDelay="3000" style={{zIndex:'-1000 important'}} />
-     </div>
       <div
         className={classes.mainDiv}
         style={{
@@ -118,78 +109,114 @@ const Compare = () => {
           backgroundAttachment: "fixed",
         }}
       >
-      
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <CompareNavBar toggle={toggle} />
-        <div className={classes.compare} >
-          <Grid container lg={12} md={12} style={{zIndex:'1000'}}>
-            <Grid item xs={12} lg={12} md={12} style={{zIndex:'1000'}}>
+        <div className={classes.compare}>
+          <Grid container lg={12} md={12}>
+            <Grid item xs={12} lg={12} md={12}>
               <Typography
                 variant="h2"
                 className={classes.text}
                 style={{ textAlign: "center" }}
                 justify="center"
-                style={{zIndex:'90'}}
               >
                 COMPARE THE GYMS
               </Typography>
             </Grid>
           </Grid>
-          <Grid container lg={12} md={12} style={{zIndex:'1000'}}>
-            <Grid item xs={12} lg={12} md={12} style={{zIndex:'1000'}}>
+          <Grid container lg={12} md={12}>
+            <Grid item xs={12} lg={12} md={12}>
               <Typography
                 variant="h6"
                 className={classes.selection}
-                justify="center" style={{zIndex:'1000'}}
+                justify="center"
               >
                 Select the two gyms
               </Typography>
             </Grid>
           </Grid>
-          <Grid container md={12} lg={12} justify="space-around" style={{ marginTop: "1rem" }} >
-
-                  <Grid item lg={5.5} md={5} justify="flex-end" style={{zIndex:'1000'}}>
-                    <Grid container md={12} lg={12} justify="flex-end">
-                      <Grid xs={12} lg={8} md={8} justify="center">
-                        <Paper className={classes.root} elevation={2} style={{zIndex:'1000'}}>
-                          <InputBase
-                            className={classes.input}
-                            placeholder="Gym Name 1"
-                            onChange={(e) => setFirstText(e.target.value)}
-                          />
-                          <IconButton className={classes.iconButton}>
-                            <SearchIcon />
-                          </IconButton>
-                        </Paper>
-                      </Grid>
-                    </Grid>
-                  </Grid>
-
-                  <Grid item lg={1} md={1} >
-                  <Grid container justify="center">
-                  <img src={vs} alt="vs" className={classes.vs}/>
-                  </Grid>
-                  </Grid>
-
-                  <Grid item lg={5.5} md={5} justify="flex-start" style={{zIndex:'1000'}}>
-                    <Grid container md={12} lg={12} justify="flex-start">
-                    <Grid xs={12} lg={8} md={8} justify="center">
-                        <Paper className={classes.root} elevation={2} style={{zIndex:'1000'}}>
-                          <InputBase
-                            className={classes.input}
-                            placeholder="Gym Name 2"
-                            onChange={(e) => setSecondText(e.target.value)}
-                          />
-                          <IconButton className={classes.iconButton}>
-                            <SearchIcon />
-                          </IconButton>
-                        </Paper>
-                      </Grid>
-                    </Grid>
-                  </Grid>
+          <Grid
+            container
+            md={12}
+            lg={12}
+            justify="center"
+            style={{ marginTop: "1rem" }}
+          >
+            <Grid item lg={7} md={7} justify="center">
+              <Grid container md={12} lg={12} justify="center">
+                <Grid
+                  item
+                  xs={2}
+                  lg={1}
+                  md={1}
+                  style={{ marginBottom: "2rem" }}
+                >
+                  <PinDropIcon fontSize="large" className={classes.icon} />
+                </Grid>
+                <Grid item xs={6} lg={3} md={3}>
+                  <Chip
+                    className={classes.select}
+                    label="Gym Name"
+                    onClick={() => clearFirstFilter()}
+                  />
+                </Grid>
+                <Grid xs={12} lg={8} md={8} justify="center">
+                  <Paper className={classes.root} elevation={2}>
+                    <InputBase
+                      className={classes.input}
+                      placeholder="Gym Name 1"
+                      onChange={(e) => setFirstText(e.target.value)}
+                    />
+                    <IconButton className={classes.iconButton}>
+                      <SearchIcon />
+                    </IconButton>
+                  </Paper>
+                </Grid>
+              </Grid>
+            </Grid>
           </Grid>
-          <Grid container justify="center">
-            <Grid item lg={12} md={12} style={{display:"flex", justifyContent: "center"}}>
+          <Grid
+            container
+            md={12}
+            lg={12}
+            justify="center"
+            style={{ marginTop: "1rem" }}
+          >
+            <Grid item lg={7} md={7} justify="center">
+              <Grid container md={12} lg={12} justify="center">
+                <Grid
+                  item
+                  xs={2}
+                  lg={1}
+                  md={1}
+                  style={{ marginBottom: "2rem" }}
+                >
+                  <PinDropIcon fontSize="large" className={classes.icon} />
+                </Grid>
+                <Grid item xs={6} lg={3} md={3}>
+                  <Chip
+                    className={classes.select}
+                    label="Gym Name"
+                    onClick={() => clearSecondFilter()}
+                  />
+                </Grid>
+                <Grid xs={12} lg={8} md={8} justify="center">
+                  <Paper className={classes.root} elevation={2}>
+                    <InputBase
+                      className={classes.input}
+                      placeholder="Gym Name 2"
+                      onChange={(e) => setSecondText(e.target.value)}
+                    />
+                    <IconButton className={classes.iconButton}>
+                      <SearchIcon />
+                    </IconButton>
+                  </Paper>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid container md={12} lg={12} justify="center">
+            <Grid item lg={2} md={2} justify="center">
               <Chip
                 onClick={() => getGyms()}
                 className={classes.btn}
