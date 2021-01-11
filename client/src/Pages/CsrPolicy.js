@@ -34,134 +34,111 @@ const CsrPolicy = () => {
               I.CyoGyms’s philosophy and Vision
             </Typography>
             <Typography variant="h6" className={classes.textbody}>
-              Choose Your Option Pvt. Ltd. is the licensed owner of the brand
-              CYOGYMS and the website cyogyms.com (”The Site”) from Choose Your
-              Option Pvt. Ltd. respects your privacy. This Privacy Policy
-              provides succinctly the manner your data is collected and used by
-              cyogyms.com on the Site. As a visitor to the Site/ Customer you
-              are advised to please read the Privacy Policy carefully. By
-              accessing the services provided by the Site you agree to the
-              collection and use of your data by Choose Your Option Pvt. Ltd. in
-              the manner provided in this Privacy Policy.
+              Choose Your Private Limited (“Company”) is a responsible
+              corporate, which strives for the overall betterment of the society
+              at large. To this end, the Company seeks to undertake Corporate
+              Social Responsibility (“CSR”) activities, which extend beyond the
+              ambit of the business and focuses on human, environmental and
+              social assets, with a special focus on addressing hunger,
+              malnutrition, education and health.
             </Typography>
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
           <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
             <Typography variant="h4" className={classes.textheading}>
-              What information is, or may be, collected form you?
+              II. Objectives and Scope of the CSR Policy
             </Typography>
             <Typography variant="h6" className={classes.textbody}>
-              As part of the registration process on the Site, cyogyms.com may
-              collect the following personally identifiable information about
-              you: Name including first and last name, alternate email address,
-              mobile phone number and contact details, Postal code, Demographic
-              profile (like your age, gender, occupation, education, address
-              etc.) and information about the pages on the site you
-              visit/access, the links you click on the site, the number of times
-              you access the page and any such browsing information.
+              The CSR Policy lays down guidelines for the Company to undertake
+              CSR activities, which are directed towards positively contributing
+              to society through various sustainable and social welfare
+              initiatives. The CSR Policy of the Company shall be governed by
+              the various provisions of the Companies Act, 2013 (the “Act”),
+              Companies (CSR Policy) Rules, 2014 (“CSR Rules”) and any other
+              rules made thereunder, or that may apply from time to time.
+              <br />
+              <br />
+              The Company proposes to undertake the CSR activities in the
+              following areas:
+              <br />
+              <br />
+              1. Eradicating hunger, poverty and malnutrition, promoting health
+              care including preventive health care and sanitation including
+              contribution to the Swach Bharat Kosh set-up by the Central
+              Government for the promotion of sanitation and making available
+              safe drinking water;
+              <br />
+              2. Promoting education, including special education and employment
+              enhancing vocation skills especially among children, women,
+              elderly and the differently abled and livelihood enhancement
+              projects;
+              <br />
+              3. promoting gender equality, empowering women, operate or manage
+              day care centres and such other facilities for senior citizens and
+              measures for reducing inequalities faced by socially and
+              economically backward groups;
+              <br />
+              4. ensuring environmental sustainability, ecological balance,
+              protection of flora and fauna, animal welfare, agroforestry,
+              conservation of natural resources;
+              <br />
+              5. contribution to the Prime Minister's National Relief Fund
+              (PMNRF) or any other fund set up by the Central Government for
+              socio economic development and relief and welfare of the schedule
+              caste, tribes, other backward classes, minorities and women;
+              <br />
+              6. any other activity as specified under the Act, as amended from
+              time to time.
+              <br />
+              For the purpose of the CSR Policy, the CSR activities shall
+              exclude activities undertaken in pursuance of the normal course of
+              business of the Company.
             </Typography>
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
           <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
             <Typography variant="h4" className={classes.textheading}>
-              How do we Collect the Information ?
+              III. Implementation of the CSR Activities
             </Typography>
             <Typography variant="h6" className={classes.textbody}>
-              cyogyms.com will collect personally identifiable information about
-              you only as part of a voluntary registration process, on-line
-              survey or any combination thereof. The Site may contain links to
-              other Web sites. cyogyms.com is not responsible for the privacy
-              practices of such Web sites which it does not own, manage or
-              control. The Site and third-party vendors, including Google, use
-              first-party cookies (such as the Google Analytics cookie) and
-              third-party cookies (such as the DoubleClick cookie) together to
-              inform, optimize, and serve ads based on someone’s past visits to
-              the Site.
+              The CSR Committee is tasked with identifying new social welfare
+              initiatives that the Company can undertake as CSR activities under
+              the CSR Policy. To this end, the CSR Committee shall explore the
+              feasibility of various initiatives, and evaluate these initiatives
+              in view of the objectives and scope of the CSR Policy and update
+              the same in the policy, if required.
+              <br />
+              <br />
+              Upon identifying a suitable social welfare initiative, the CSR
+              Committee shall formulate a detailed plan, which specifies, inter
+              alia, the end-goal of the initiative; expected expenditure; the
+              time expected to be spent by the employees of the Company, if any;
+              the modus operandi; timelines for various phases of the
+              initiative; tie-ups or arrangements with third party entities, if
+              any; and any other material factor that the CSR Committee may deem
+              fit to be included (“CSR Plan”).
+              <br />
+              <br />
+              The CSR Committee shall place the CSR Plan before the Board, for
+              the Board’s approval. The Board reserves the right to make
+              suitable modifications to the CSR Plan. The Company shall execute
+              the CSR Plan in line with the modifications suggested by the
+              Board.
             </Typography>
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
           <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
             <Typography variant="h4" className={classes.textheading}>
-              How is information used ?
-            </Typography>
-            <Typography variant="h6" className={classes.textbody}>
-              cyogyms.com will use your personal information to provide
-              personalized features to you on the Site and to provide for
-              promotional offers to you through the Site and other channels.
-              cyogyms.com will also provide this information to its business
-              associates and partners to get in touch with you when necessary to
-              provide the services requested by you. cyogyms.com will use this
-              information to preserve transaction history as governed by
-              existing law or policy. cyogyms.com may also use contact
-              information internally to direct its efforts for product
-              improvement, to contact you as a survey respondent, to notify you
-              if you win any contest; and to send you promotional materials from
-              its contest sponsors or advertisers. cyogyms.com will also use
-              this information to serve various promotional and advertising
-              materials to you via display advertisements through the Google Ad
-              network on third party websites. You can opt out of Google
-              Analytics for Display Advertising and customize Google Display
-              network ads using the Ads Preferences Manager. Information about
-              Customers on an aggregate (exlcuding any information that may
-              identify you specifically) covering Customer transaction data and
-              Customer demographic and location data may be provided to partners
-              of cyogyms.com for the purpose of creating additional features on
-              the website, creating appropriate merchandising or creating new
-              products and services and conducting marketing research and
-              statistical analysis of customer behaviour and transactions.
-            </Typography>
-          </Grid>
-        </Grid>
-        <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
-          <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
-            <Typography variant="h4" className={classes.textheading}>
-              With whom your information will be shared -
-            </Typography>
-            <Typography variant="h6" className={classes.textbody}>
-              cyogyms.com will not use your financial information for any
-              purpose other than to complete a transaction with you. cyogyms.com
-              does not rent, sell or share your personal information and will
-              not disclose any of your personally identifiable information to
-              third parties. In cases where it has your permission to provide
-              products or services you’ve requested and such information is
-              necessary to provide these products or services the information
-              may be shared with cyogyms.com business associates and partners.
-              cyogyms.com may, however, share consumer information on an
-              aggregate with its partners or third parties where it deems
-              necessary. In addition cyogyms.com may use this information for
-              promotional offers, to help investigate, prevent or take action
-              regarding unlawful and illegal activities, suspected fraud,
-              potential threat to the safety or security of any person,
-              violations of the Site’s terms of use or to defend against legal
-              claims; special circumstances such as compliance with subpoenas,
-              court orders, requests/order from legal authorities or law
-              enforcement agencies requiring such disclosure.
-            </Typography>
-          </Grid>
-        </Grid>
-        <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
-          <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
-            <Typography variant="h4" className={classes.textheading}>
-              What Choice are available to you regarding collection, use and
-              distribution of your information ?
+              IV. CSR Expenditure
             </Typography>
             <Typography variant="h6" className={classes.textbodylast}>
-              To protect against the loss, misuse and alteration of the
-              information under its control, cyogyms.com has in place
-              appropriate physical, electronic and managerial procedures. For
-              example, cyogyms.com servers are accessible only to authorized
-              personnel and your information is shared with employees and
-              authorised personnel on a need to know basis to complete the
-              transaction and to provide the services requested by you. Although
-              cyogyms.com will endeavour to safeguard the confidentiality of
-              your personally identifiable information, transmissions made by
-              means of the Internet cannot be made absolutely secure. By using
-              this site, you agree that cyogyms.com will have no liability for
-              disclosure of your information due to errors in transmission or
-              unauthorized acts of third parties.
+              The Board shall ensure that the Company spends, in every financial
+              year, a minimum of 1% of the average net profits of the Company
+              made during the three immediately preceding financial years, on
+              the CSR activities of the Company.
             </Typography>
           </Grid>
         </Grid>
