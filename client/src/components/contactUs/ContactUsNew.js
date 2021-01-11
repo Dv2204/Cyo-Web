@@ -149,19 +149,21 @@ const ContactUsNew = () => {
                     About Us
                   </Typography>
                 </Link>
+                <Link to="/about">
+                  <Typography variant="h6" className={classes.pages}>
+                    About Developers
+                  </Typography>
+                </Link>
                 <Typography variant="h6" className={classes.pages}>
                   Support
                 </Typography>
               </Grid>
               <Grid item lg={6} md={6}>
-                <Link to="/about">
+                <Link to="/licensesregistration">
                   <Typography variant="h6" className={classes.pagestwotop}>
-                    About Developers
+                    Licenses & Registration
                   </Typography>
                 </Link>
-                <Typography variant="h6" className={classes.pagestwo}>
-                  Support
-                </Typography>
               </Grid>
             </Grid>
           </Grid>
@@ -173,12 +175,17 @@ const ContactUsNew = () => {
           <Grid item lg={2} md={2}>
             <Link to="/privacypolicy">
               <Typography variant="h6" className={classes.pagesthreetop}>
-                Privacy policy
+                Privacy Policy
               </Typography>
             </Link>
             <Link to="/apipolicy">
               <Typography variant="h6" className={classes.pagesthree}>
-                Api policy
+                Api Policy
+              </Typography>
+            </Link>
+            <Link to="/csrpolicy">
+              <Typography variant="h6" className={classes.pagesthree}>
+                Csr Policy
               </Typography>
             </Link>
           </Grid>
@@ -308,12 +315,13 @@ const ContactUsNew = () => {
           <Grid item lg={12} md={12}>
             <Paper className={classes.footerPaper} elevation={5}>
               <Typography variant="h6" className={classes.textfooter}>
-                All Rights Reserved&nbsp;&copy; | CYO GYMS |{" "}
+                © 2021 | Choose Your Option Pvt Ltd | All Rights Reserved |
+                Webdesign & Develop by : {" "}
                 <a
                   className={classes.footerlink}
                   href="https://cybersifytech.com"
                 >
-                  cybersifytech.com
+                  CyberSify Technologies Pvt Ltd
                 </a>
               </Typography>
             </Paper>

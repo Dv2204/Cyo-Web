@@ -22,7 +22,7 @@ const ApiPolicy = () => {
             <Typography variant="h2" className={classes.text} justify="center">
               API POLICY
             </Typography>
-            <Typography variant="h2" className={classes.name} justify="center">
+            <Typography variant="h3" className={classes.name} justify="center">
               Choose Your Option Pvt. Ltd.
             </Typography>
           </Grid>
@@ -430,7 +430,7 @@ const ApiPolicy = () => {
               suspend or terminate your rights under this Licensed Agreement to
               access, use and/or display (as applicable) the API, and/or any
               Licensed Content.
-              <br/>
+              <br />
               <br />
               1. Any termination of this License Agreement shall also terminate
               the licenses granted hereunder. Upon termination of this License

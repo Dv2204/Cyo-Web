@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
             <Typography variant="h2" className={classes.text} justify="center">
               PRIVACY POLICY
             </Typography>
-            <Typography variant="h2" className={classes.name} justify="center">
+            <Typography variant="h3" className={classes.name} justify="center">
               Choose Your Option Pvt. Ltd.
             </Typography>
           </Grid>
