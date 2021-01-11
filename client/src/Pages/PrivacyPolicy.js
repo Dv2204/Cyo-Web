@@ -3,6 +3,7 @@ import { Grid, Typography } from "@material-ui/core";
 import PrivacyNav from "../components/Nav/PrivacyNav";
 import Sidebar from "../components/Sidebar/Sidebar";
 import { useStyles } from "./PageStyles/PrivacyPolicyStyles";
+import ContactUsNew from "../components/contactUs/ContactUsNew";
 
 const PrivacyPolicy = () => {
   const classes = useStyles();
@@ -31,7 +32,7 @@ const PrivacyPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               Personal Information -
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               Choose Your Option Pvt. Ltd. is the licensed owner of the brand
               CYOGYMS and the website cyogyms.com (”The Site”) from Choose Your
               Option Pvt. Ltd. respects your privacy. This Privacy Policy
@@ -49,7 +50,7 @@ const PrivacyPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               What information is, or may be, collected form you?
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               As part of the registration process on the Site, cyogyms.com may
               collect the following personally identifiable information about
               you: Name including first and last name, alternate email address,
@@ -66,7 +67,7 @@ const PrivacyPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               How do we Collect the Information ?
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               cyogyms.com will collect personally identifiable information about
               you only as part of a voluntary registration process, on-line
               survey or any combination thereof. The Site may contain links to
@@ -85,7 +86,7 @@ const PrivacyPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               How is information used ?
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               cyogyms.com will use your personal information to provide
               personalized features to you on the Site and to provide for
               promotional offers to you through the Site and other channels.
@@ -118,7 +119,7 @@ const PrivacyPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               With whom your information will be shared -
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               cyogyms.com will not use your financial information for any
               purpose other than to complete a transaction with you. cyogyms.com
               does not rent, sell or share your personal information and will
@@ -146,7 +147,7 @@ const PrivacyPolicy = () => {
               What Choice are available to you regarding collection, use and
               distribution of your information ?
             </Typography>
-            <Typography variant="body1" className={classes.textbodylast}>
+            <Typography variant="h6" className={classes.textbodylast}>
               To protect against the loss, misuse and alteration of the
               information under its control, cyogyms.com has in place
               appropriate physical, electronic and managerial procedures. For
@@ -163,24 +164,8 @@ const PrivacyPolicy = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Grid
-          container
-          lg={12}
-          md={12}
-          justify="center"
-          style={{ backgroundColor: "#282828", height: "8vh" }}
-        >
-          <Grid item lg={10} md={10} sm={10} xs={10} justify="center">
-            <Typography variant="h6" className={classes.link}>
-                All Rights Reserved&nbsp;&copy; | CYO GYMS |{" "}
-                <a
-                  className={classes.footerlink}
-                  href="https://cybersifytech.com"
-                >
-                  cybersifytech.com
-                </a>
-            </Typography>
-          </Grid>
+        <Grid container>
+          <ContactUsNew />
         </Grid>
       </div>
     </>

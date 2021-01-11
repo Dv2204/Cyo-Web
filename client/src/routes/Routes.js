@@ -8,6 +8,7 @@ import About from "../Pages/About";
 import LandingPage from "../Pages/LandingPage";
 import MainCompare from "../Pages/MainCompare";
 import PrivacyPolicy from "../Pages/PrivacyPolicy";
+import ApiPolicy from "../Pages/ApiPolicy";
 import AboutGyms from "../Pages/AboutGyms";
 import Contact from "../components/contactUs/Contact";
 import PageNotFound from "../Pages/PageNotFound";
@@ -30,6 +31,7 @@ const Routes = () => {
           />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/privacypolicy" component={PrivacyPolicy} />
+          <Route exact path="/apipolicy" component={ApiPolicy} />
           <Route exact path="/aboutgyms" component={AboutGyms} />
           <Route component={PageNotFound} />
         </Switch>

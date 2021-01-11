@@ -9,7 +9,7 @@ export const useStyles = makeStyles((theme) => ({
     letterSpacing: "0.1rem",
     textAlign: "center",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "3rem",
+      fontSize: "1.8rem",
     },
   },
   name: {
@@ -33,11 +33,13 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   textbody: {
+    color: "#494848",
     [theme.breakpoints.down("xs")]: {
       fontSize: "0.8rem",
     },
   },
   textbodylast: {
+    color: "#494848",
     paddingBottom: "5rem",
     [theme.breakpoints.down("xs")]: {
       fontSize: "0.8rem",
@@ -48,12 +50,12 @@ export const useStyles = makeStyles((theme) => ({
     color: "#959595",
     cursor: "pointer",
     textAlign: "center",
-    color: '#fff',
+    color: "#fff",
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
     },
   },
-    footerlink: {
+  footerlink: {
     textDecoration: "none",
     color: "#fff",
     cursor: "pointer",
