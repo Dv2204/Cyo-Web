@@ -9,7 +9,7 @@ export const useStyles = makeStyles((theme) => ({
     letterSpacing: "0.1rem",
     textAlign: "center",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "3rem",
+      fontSize: "1.8rem",
     },
   },
   name: {

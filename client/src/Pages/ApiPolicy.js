@@ -430,6 +430,7 @@ const ApiPolicy = () => {
               suspend or terminate your rights under this Licensed Agreement to
               access, use and/or display (as applicable) the API, and/or any
               Licensed Content.
+              <br/>
               <br />
               1. Any termination of this License Agreement shall also terminate
               the licenses granted hereunder. Upon termination of this License
