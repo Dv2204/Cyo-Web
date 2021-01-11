@@ -3,6 +3,7 @@ import { Grid, Typography } from "@material-ui/core";
 import PrivacyNav from "../components/Nav/PrivacyNav";
 import Sidebar from "../components/Sidebar/Sidebar";
 import { useStyles } from "./PageStyles/PrivacyPolicyStyles";
+import ContactUsNew from "../components/contactUs/ContactUsNew";
 
 const PrivacyPolicy = () => {
   const classes = useStyles();
@@ -163,24 +164,8 @@ const PrivacyPolicy = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Grid
-          container
-          lg={12}
-          md={12}
-          justify="center"
-          style={{ backgroundColor: "#282828", height: "8vh" }}
-        >
-          <Grid item lg={10} md={10} sm={10} xs={10} justify="center">
-            <Typography variant="h6" className={classes.link}>
-                All Rights Reserved&nbsp;&copy; | CYO GYMS |{" "}
-                <a
-                  className={classes.footerlink}
-                  href="https://cybersifytech.com"
-                >
-                  cybersifytech.com
-                </a>
-            </Typography>
-          </Grid>
+        <Grid container>
+          <ContactUsNew />
         </Grid>
       </div>
     </>

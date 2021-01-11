@@ -15,18 +15,69 @@ import YouTubeIcon from "@material-ui/icons/YouTube";
 import PinterestIcon from "@material-ui/icons/Pinterest";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { ADD_MAIL } from "../../graphql/requests";
+import { useMutation } from "@apollo/client";
+import Loader from "../Loader";
 
 const ContactUsNew = () => {
   const classes = useStyles();
   const iOSUrl =
     "https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8";
   const androidUrl = "https://play.google.com";
+  const [mail, setMail] = useState({
+    name: "",
+    email: "",
+    message: "",
+    title: "",
+    mobile: "",
+  });
+  const { name, email, message, title, mobile } = mail;
+  const [sendMail, { loading: mailLoading, error: mailError }] = useMutation(
+    ADD_MAIL
+  );
+  if (mailLoading) {
+    return (
+      <Grid
+        container
+        lg={12}
+        md={12}
+        justify="center"
+        style={{ margin: "5rem" }}
+      >
+        <Grid item lg={3} md={3} justify="center">
+          <Loader color="rgba(38, 38, 38, 0.7)" />
+        </Grid>
+      </Grid>
+    );
+  }
+
+  if (mailError) {
+    return <p style={{ color: "#fff" }}>{mailError.message}</p>;
+  }
+  const onChange = (e) => {
+    setMail({ ...mail, [e.target.id]: e.target.value });
+  };
+  const onSubmit = (e) => {
+    e.preventDefault();
+    sendMail({
+      variables: {
+        name: name,
+        email: email,
+        message: message,
+        title: title,
+        mobile: mobile,
+      },
+    });
+    console.log(mail);
+    setMail("");
+  };
   return (
     <Grid
       container
       lg={12}
       md={12}
-      style={{ backgroundColor: "#3F3F3F", marginTop: "1.7rem", zIndex:'10' }}
+      style={{ backgroundColor: "#3F3F3F", marginTop: "1.7rem", zIndex: "10" }}
     >
       <Grid item lg={12} md={12}>
         <Grid
@@ -155,6 +206,8 @@ const ContactUsNew = () => {
                         label="Name"
                         id="name"
                         required
+                        value={name}
+                        onChange={onChange}
                         style={{ marginLeft: "1rem" }}
                       />
                     </Grid>
@@ -164,6 +217,8 @@ const ContactUsNew = () => {
                         label="Mobile"
                         id="mobile"
                         required
+                        value={mobile}
+                        onChange={onChange}
                         style={{ marginLeft: "1rem" }}
                       />
                     </Grid>
@@ -175,6 +230,8 @@ const ContactUsNew = () => {
                         label="Email"
                         id="email"
                         required
+                        value={email}
+                        onChange={onChange}
                         style={{ marginLeft: "1rem" }}
                       />
                     </Grid>
@@ -184,6 +241,8 @@ const ContactUsNew = () => {
                         label="Title"
                         id="title"
                         required
+                        value={title}
+                        onChange={onChange}
                         style={{ marginLeft: "1rem" }}
                       />
                     </Grid>
@@ -196,6 +255,8 @@ const ContactUsNew = () => {
                         variant="outlined"
                         id="message"
                         required
+                        value={message}
+                        onChange={onChange}
                         style={{ margin: "4vh 0", width: "34vw" }}
                         className={classes.body}
                       />
@@ -213,7 +274,9 @@ const ContactUsNew = () => {
                   </Grid>
                   <Grid container lg={12} md={12} justify="center">
                     <Grid item lg={5} md={5}>
-                      <Button className={classes.btn}>Submit Message</Button>
+                      <Button onClick={onSubmit} className={classes.btn}>
+                        Submit Message
+                      </Button>
                     </Grid>
                   </Grid>
                 </Paper>
