@@ -29,7 +29,7 @@ const ApiPolicy = () => {
         </Grid>
         <Grid container lg={12} md={12} sm={12} xs={12} justify="center">
           <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
-            <Typography variant="body1" style={{ color: "#494848" }}>
+            <Typography variant="h6" className={classes.textbody}>
               By accepting these License Agreement Terms of Use{" "}
               <b>(“License Agreement”)</b> you and your controlled affiliates,
               where applicable, agree to enter into a legally binding agreement{" "}
@@ -46,7 +46,7 @@ const ApiPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               Account Creation
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               You must create an account in order to use CyoGyms Licensed
               Content, Marks and API. To create an account, you will be asked to
               provide certain basic information. This information may include
@@ -62,7 +62,7 @@ const ApiPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               Purpose
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               This License Agreement governs your use of Licensed Content and
               Marks, API licensed to you pursuant to the terms hereto, and any
               accompanying or related documentation, source code, executable
@@ -77,7 +77,7 @@ const ApiPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               Grant of License
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               1. <b>License to Content:</b> Subject to the terms and conditions
               of this License Agreement and the License Content Usage
               Guidelines, CyoGyms hereby grants you a non-transferable,
@@ -135,7 +135,7 @@ const ApiPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               Obligations of Developer
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               1. <b>Developer Platform:</b> You are responsible for all costs
               and expenses related to the Developer Application, the Developer
               Platform, and the integration of the API and/ or the Licensed
@@ -188,59 +188,58 @@ const ApiPolicy = () => {
               <br />
               <br />
               8. <b>Data received from CyoGyms:</b> <br />
-              &nbsp;&nbsp; i. Under this License Agreement, you will receive the
-              Licensed Content through the API key provided by CyoGyms.
+              i. Under this License Agreement, you will receive the Licensed
+              Content through the API key provided by CyoGyms.
               <br />
-              &nbsp;&nbsp; ii. You cannot cache or store, record, pre-fetch or
-              otherwise store any portion of the Licensed Content or undertake
-              any bulk download operations.
+              ii. You cannot cache or store, record, pre-fetch or otherwise
+              store any portion of the Licensed Content or undertake any bulk
+              download operations.
               <br />
-              &nbsp;&nbsp; iii. You will not directly or indirectly transfer any
-              data received from CyoGyms to any third party and shall limit
-              access to your employees and contractors with a need to know such
+              iii. You will not directly or indirectly transfer any data
+              received from CyoGyms to any third party and shall limit access to
+              your employees and contractors with a need to know such
               information in performance of their duties.
               <br />
-              &nbsp;&nbsp; iv. You shall not create or disclose metrics about,
-              or perform any statistical analysis of, the Licensed Content. You
-              shall not disclose any such metrics or analyses related to or
-              connected with the Licensed Content to any third party, during the
-              validity of this Licensed Agreement and for a further period of 3
-              years following termination of this API Agreement.
+              iv. You shall not create or disclose metrics about, or perform any
+              statistical analysis of, the Licensed Content. You shall not
+              disclose any such metrics or analyses related to or connected with
+              the Licensed Content to any third party, during the validity of
+              this Licensed Agreement and for a further period of 3 years
+              following termination of this API Agreement.
               <br />
-              &nbsp;&nbsp; v. You shall not use the Licensed Content on your
-              Developer Platform and/or Developer Application to (i) create/
-              generate additional data or (ii) provide any functionality whereby
-              you or any third party is able to generate additional data using
-              the Licensed Content.
-              <br />
-              &nbsp;&nbsp; vi. You shall not, directly or indirectly, sell,
-              misuse or abuse the Licensed Content received by you through the
-              API key.
-              <br />
-              &nbsp;&nbsp; vii. You shall not, directly or indirectly, create
-              enhancements, derivatives, teaser content in all media, mediums,
-              and formats (including, without limitation, all languages), to the
+              v. You shall not use the Licensed Content on your Developer
+              Platform and/or Developer Application to (i) create/ generate
+              additional data or (ii) provide any functionality whereby you or
+              any third party is able to generate additional data using the
               Licensed Content.
               <br />
-              &nbsp;&nbsp; viii. You shall not comingle the Licensed Content
-              with third party content. Further, you shall not display Licensed
-              Content and Marks along with content that under law are considered
-              to be unlawful, blasphemous, derogatory, objectionable, against
-              public policy and derogatory or detrimental to CyoGyms reputation.
+              vi. You shall not, directly or indirectly, sell, misuse or abuse
+              the Licensed Content received by you through the API key.
               <br />
-              &nbsp;&nbsp; ix. In the event that you stop using the Licensed
-              Content or if this License Agreement is terminated, you must
-              delete all Licensed Content you have received from CyoGyms or
-              through use of the API and CyoGyms reserves the right to
-              deactivate the API key provided to you.
+              vii. You shall not, directly or indirectly, create enhancements,
+              derivatives, teaser content in all media, mediums, and formats
+              (including, without limitation, all languages), to the Licensed
+              Content.
               <br />
-              &nbsp;&nbsp; x. CyoGyms may require you to inter alia promptly
-              delete and remove all calls to the API made by you including but
-              not limited to any data received from the API and cease all use of
-              the Marks if you violate the terms and conditions of this License
-              Agreement or any other conditions that CyoGyms may in the future
-              make applicable to you with regard to the API, the Licensed
-              Content or the Marks.
+              viii. You shall not comingle the Licensed Content with third party
+              content. Further, you shall not display Licensed Content and Marks
+              along with content that under law are considered to be unlawful,
+              blasphemous, derogatory, objectionable, against public policy and
+              derogatory or detrimental to CyoGyms reputation.
+              <br />
+              ix. In the event that you stop using the Licensed Content or if
+              this License Agreement is terminated, you must delete all Licensed
+              Content you have received from CyoGyms or through use of the API
+              and CyoGyms reserves the right to deactivate the API key provided
+              to you.
+              <br />
+              x. CyoGyms may require you to inter alia promptly delete and
+              remove all calls to the API made by you including but not limited
+              to any data received from the API and cease all use of the Marks
+              if you violate the terms and conditions of this License Agreement
+              or any other conditions that CyoGyms may in the future make
+              applicable to you with regard to the API, the Licensed Content or
+              the Marks.
             </Typography>
           </Grid>
         </Grid>
@@ -249,7 +248,7 @@ const ApiPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               Recognition of Absolute Ownership
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               CyoGyms shall own and retain all right, title and interest to all
               the Licensed Content and enhancement thereof, the Marks, the API,
               and all content displayed on CyoGyms’s website (except the
@@ -282,7 +281,7 @@ const ApiPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               Developer Obligations and Protection of Information and Access Key
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               In the event of any breach of this License Agreement (including
               without limitation the confidentiality provisions herein) or
               unauthorized use of the API and/ or Licensed Content is committed
@@ -297,7 +296,7 @@ const ApiPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               Confidentiality
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               1. “Confidential Information” means any confidential and/or
               proprietary information of CyoGyms or any of its affiliates
               disclosed to you, and/or obtained by you through CyoGyms under
@@ -349,7 +348,7 @@ const ApiPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               CyoGyms Use of Developers Trademarks
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               You hereby grant to CyoGyms a nonexclusive, royalty-free, license
               during the validity of this License Agreement, to use your name
               and trademarks solely to promote and advertise the relationship
@@ -364,7 +363,7 @@ const ApiPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               Independent Parties
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               This License Agreement is on a “principal to principal” basis and
               the Parties are independent of each other and nothing contained
               herein is intended to or shall be deemed to create any
@@ -383,7 +382,7 @@ const ApiPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               Indemnity
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               1. You will indemnify and hold harmless CyoGyms, its affiliates
               and network partners, and any of their respective officers,
               directors, employees and agents from and against any claims,
@@ -424,7 +423,7 @@ const ApiPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               Termination
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               CyoGyms reserves the right, in its sole discretion (for any reason
               or for no reason) and at any time without notice or liability, to
               change, suspend or discontinue the API, Licensed Content and/or
@@ -455,7 +454,7 @@ const ApiPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               Governing Law and Jurisdiction
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               The validity, construction and performance of this License
               Agreement shall be governed by, and construed and enforced in
               accordance with, the laws of India. Any dispute or difference
@@ -477,7 +476,7 @@ const ApiPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               WARRANTY DISCLAIMER
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               CYOGYMS MAKES NO REPRESENTATION OR WARRANTY WITH RESPECT TO THE
               CYOGYMS SITE, THE API, THE LICENSED CONTENT AND CYOGYMS EXPRESSLY
               DISCLAIMS ANY AND ALL WARRANTIES, WHETHER EXPRESS, IMPLIED OR
@@ -495,7 +494,7 @@ const ApiPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               Force Majeure
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               Any delay in or failure of performance by CyoGyms under this
               License Agreement will not be considered a breach of this License
               Agreement and will be excused to the extent caused by any
@@ -510,7 +509,7 @@ const ApiPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               Legal Compliance
             </Typography>
-            <Typography variant="body1" className={classes.textbody}>
+            <Typography variant="h6" className={classes.textbody}>
               You and CyoGyms will each comply with all laws, rules and
               regulations, if any, applicable in connection the performance of
               their respective obligations under this License Agreement.
@@ -522,7 +521,7 @@ const ApiPolicy = () => {
             <Typography variant="h4" className={classes.textheading}>
               Miscellaneous
             </Typography>
-            <Typography variant="body1" className={classes.textbodylast}>
+            <Typography variant="h6" className={classes.textbodylast}>
               The parties agree that CyoGyms may assign any of its rights or
               transfer by novation any of its rights and obligations under this
               License Agreement to any of its affiliates or to any acquirer of
