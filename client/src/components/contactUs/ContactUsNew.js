@@ -181,6 +181,11 @@ const ContactUsNew = () => {
                 Api policy
               </Typography>
             </Link>
+            <Link to="/licensesregistration">
+              <Typography variant="h6" className={classes.pagesthree}>
+                Licenses and Registration
+              </Typography>
+            </Link>
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} justify="center">
