@@ -22,7 +22,7 @@ const LicenseRegistrations = () => {
             <Typography variant="h2" className={classes.text} justify="center">
               Licenses and Registration
             </Typography>
-            <Typography variant="h2" className={classes.name} justify="center">
+            <Typography variant="h3" className={classes.name} justify="center">
               Certificate of Incorporation
             </Typography>
           </Grid>

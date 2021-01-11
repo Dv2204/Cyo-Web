@@ -5,7 +5,7 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import { useStyles } from "./PageStyles/PrivacyPolicyStyles";
 import ContactUsNew from "../components/contactUs/ContactUsNew";
 
-const PrivacyPolicy = () => {
+const CsrPolicy = () => {
   const classes = useStyles();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -20,17 +20,18 @@ const PrivacyPolicy = () => {
         <Grid container lg={12} md={12} xs={12} sm={12}>
           <Grid item lg={12} md={12} xs={12} sm={12}>
             <Typography variant="h2" className={classes.text} justify="center">
-              PRIVACY POLICY
+              Corporate Social Responsibility Policy <br />
+              (CSR Policy)
             </Typography>
             <Typography variant="h3" className={classes.name} justify="center">
-              Choose Your Option Pvt. Ltd.
+              Corporate Social Responsibility Policy
             </Typography>
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
           <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
             <Typography variant="h4" className={classes.textheading}>
-              Personal Information -
+              I.CyoGyms’s philosophy and Vision
             </Typography>
             <Typography variant="h6" className={classes.textbody}>
               Choose Your Option Pvt. Ltd. is the licensed owner of the brand
@@ -172,4 +173,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default CsrPolicy;
