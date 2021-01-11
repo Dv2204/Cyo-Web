@@ -315,12 +315,13 @@ const ContactUsNew = () => {
           <Grid item lg={12} md={12}>
             <Paper className={classes.footerPaper} elevation={5}>
               <Typography variant="h6" className={classes.textfooter}>
-                All Rights Reserved&nbsp;&copy; | CYO GYMS |{" "}
+                © 2021 | Choose Your Option Pvt Ltd | All Rights Reserved |
+                Webdesign & Develop by : {" "}
                 <a
                   className={classes.footerlink}
                   href="https://cybersifytech.com"
                 >
-                  cybersifytech.com
+                  CyberSify Technologies Pvt Ltd
                 </a>
               </Typography>
             </Paper>
