@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Grid,
   Paper,
@@ -14,7 +14,6 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import PinterestIcon from "@material-ui/icons/Pinterest";
 import TwitterIcon from "@material-ui/icons/Twitter";
-import { Link } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { ADD_MAIL } from "../../graphql/requests";
 import { useMutation } from "@apollo/client";
