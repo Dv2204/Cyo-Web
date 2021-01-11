@@ -86,7 +86,7 @@ const ContactUsNew = () => {
         >
           <Grid item lg={2} md={2}>
             <Typography variant="h4" className={classes.headingone}>
-              CYO GYM
+              CYO GYMS
             </Typography>
           </Grid>
           <Grid item lg={8} md={8}>
@@ -176,9 +176,11 @@ const ContactUsNew = () => {
                 Privacy policy
               </Typography>
             </Link>
-            <Typography variant="h6" className={classes.pagesthree}>
-              Support
-            </Typography>
+            <Link to="/apipolicy">
+              <Typography variant="h6" className={classes.pagesthree}>
+                Api policy
+              </Typography>
+            </Link>
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} justify="center">
