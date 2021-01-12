@@ -8,7 +8,7 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: "5rem",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "5rem",
-      fontSize:"2.5rem"
+      fontSize: "1.4rem",
     },
   },
   headingicon: {
@@ -17,26 +17,31 @@ export const useStyles = makeStyles((theme) => ({
     marginBottom: "0.5rem",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "5rem",
+      height: "6vh",
     },
   },
   facheading: {
     textAlign: "center",
     marginTop: "5.4rem",
     [theme.breakpoints.down("xs")]: {
-      marginLeft: "5rem",
+      marginLeft: "7rem",
+      fontSize: "1.3rem",
     },
   },
   detailsheading: {
     marginTop: "5.4rem",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1.3rem",
+    },
   },
-  body:{
+  body: {
     [theme.breakpoints.down("xs")]: {
       margin: "1rem 2rem !important",
     },
   },
-  circle:{
+  circle: {
     [theme.breakpoints.down("xs")]: {
       marginLeft: "10vh !important",
     },
-  }
+  },
 }));

@@ -14,6 +14,9 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "16px",
     color: "grey",
     marginLeft: "-1rem",
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: "0.7rem",
+    },
   },
   line: {
     color: "grey",
@@ -25,6 +28,10 @@ export const useStyles = makeStyles((theme) => ({
     backgroundColor: "#11C62E",
     width: "3vw",
     borderRadius: "15px",
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: "7rem",
+      width: "10vw",
+    },
   },
   ratingIcon: {
     fontSize: "16px",
