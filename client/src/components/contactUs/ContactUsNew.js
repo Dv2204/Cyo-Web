@@ -154,9 +154,11 @@ const ContactUsNew = () => {
                     About Developers
                   </Typography>
                 </Link>
-                <Typography variant="h6" className={classes.pages}>
-                  Support
-                </Typography>
+                <Link to="/support">
+                  <Typography variant="h6" className={classes.pages}>
+                    Support
+                  </Typography>
+                </Link>
               </Grid>
               <Grid item lg={6} md={6}>
                 <Link to="/licensesregistration">

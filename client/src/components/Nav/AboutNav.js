@@ -11,7 +11,6 @@ import {
 } from "./NavItems";
 import Logo from "../../assets/logo-white.png";
 import "../Nav/navbar.css";
-import { Link } from "react-scroll";
 import { Chip } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -61,9 +60,9 @@ const AboutNavBar = ({ toggle }) => {
               Compare
             </NavLink>
             <Dot />
-            <Link to="contact" smooth={true} duration={1000}>
-              <NavLink activeStyle>Help Centre</NavLink>
-            </Link>
+            <NavLink to="/support" activeStyle>
+              Support
+            </NavLink>
             <Chip label="Register Your Gym" className={classes.chipStyle} />
           </NavMenu>
         </NavDiv>

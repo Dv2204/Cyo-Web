@@ -475,18 +475,18 @@ const ApiPolicy = () => {
         <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
           <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
             <Typography variant="h4" className={classes.textheading}>
-              WARRANTY DISCLAIMER
+              Warranty Disclaimer
             </Typography>
             <Typography variant="h6" className={classes.textbody}>
-              CYOGYMS MAKES NO REPRESENTATION OR WARRANTY WITH RESPECT TO THE
-              CYOGYMS SITE, THE API, THE LICENSED CONTENT AND CYOGYMS EXPRESSLY
-              DISCLAIMS ANY AND ALL WARRANTIES, WHETHER EXPRESS, IMPLIED OR
-              STATUTORY, WITH RESPECT TO CYOGYMS, THE CYOGYMS SITE, THE API, THE
-              LICENSED CONTENT, AND THE MARKS, INCLUDING WITHOUT LIMITATION ANY
-              IMPLIED WARRANTY OF MERCHANTABILITY, INFRINGEMENT OR FITNESS FOR A
-              PARTICULAR PURPOSE, OR ANY IMPLIED WARRANTY ARISING FROM COURSE OF
-              PERFORMANCE, COURSE OF DEALING OR USAGE OF TRADE. CYOGYMS DOES NOT
-              WARRANT THAT USE OF THE API WILL BE UNINTERRUPTED OR ERROR-FREE.
+              Cyogyms makes no representation or warranty with respect to the
+              cyogyms site, the API, the licensed content and cyogyms expressly
+              disclaims any and all warranties, whether express, implied or
+              statutory, with respect to cyogyms, the cyogyms site, the API, the
+              licensed content, and the marks, including without limitation any
+              implied warranty of merchantability, infringement or fitness for a
+              particular purpose, or any implied warranty arising from course of
+              performance, course of dealing or usage of trade. Cyogyms does not
+              warrant that use of the api will be uninterrupted or error-free.
             </Typography>
           </Grid>
         </Grid>

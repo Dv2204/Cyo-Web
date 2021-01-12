@@ -61,9 +61,9 @@ const AboutGymsNav = ({ toggle }) => {
               Compare
             </NavLink>
             <Dot />
-            <Link to="contact" smooth={true} duration={1500}>
-              <NavLink activeStyle>Help Centre</NavLink>
-            </Link>
+            <NavLink to="/support" activeStyle>
+              Support
+            </NavLink>
             <Chip label="Register Your Gym" className={classes.chipStyle} />
           </NavMenu>
         </NavDiv>
