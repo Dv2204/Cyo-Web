@@ -15,7 +15,6 @@ import Loader from "../components/Loader";
 const GymDetails = (props) => {
   const classes = useStyles();
   const [isOpen, setIsOpen] = useState(false);
-  // console.log(props.location.detailsProps);
   const toggle = () => {
     setIsOpen(!isOpen);
   };

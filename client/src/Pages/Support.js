@@ -73,23 +73,23 @@ const Support = () => {
           lg={12}
           md={12}
           style={{
-            backgroundImage: `url(${background})`,
             backgroundSize: "100%",
           }}
           className={classes.bgimage}
         >
-          <Grid item lg={5} md={5}>
+          <Grid item lg={12} md={12}>
+            <img src={background} alt="p" className={classes.image} />
             <Typography variant="h2" className={classes.heading}>
               Support Centre
             </Typography>
             <Typography variant="h6" className={classes.headingbody}>
-              Need help? Submit a support request and we'll get back to you
-              ASAP!
+              Need help? Submit a support request and <br /> we'll get back to
+              you ASAP!
             </Typography>
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} justify="center">
-          <Grid item lg={9} md={9}>
+          <Grid item lg={9} md={9} sm={10} xs={10}>
             <Paper elevation={5} variant="outlined" className={classes.paper}>
               <Typography variant="h6" className={classes.paperhead}>
                 Mail Us at <b>support@cyogyms.com</b>
@@ -101,7 +101,7 @@ const Support = () => {
                 justify="center"
                 style={{ marginTop: "2.5rem" }}
               >
-                <Grid item lg={4} md={4}>
+                <Grid item lg={4} md={4} sm={10} xs={10}>
                   <TextField
                     id="input-with-icon-grid"
                     label="Name"
@@ -110,13 +110,9 @@ const Support = () => {
                     value={name}
                     onChange={onChange}
                     className={classes.textfield}
-                    style={{
-                      marginLeft: "2rem",
-                      width: "20vw",
-                    }}
                   />
                 </Grid>
-                <Grid item lg={4} md={4}>
+                <Grid item lg={4} md={4} sm={10} xs={10}>
                   <TextField
                     id="input-with-icon-grid"
                     label="Mobile"
@@ -124,10 +120,10 @@ const Support = () => {
                     required
                     value={mobile}
                     onChange={onChange}
-                    style={{ marginLeft: "0.5rem", width: "20vw" }}
+                    className={classes.textfieldtwo}
                   />
                 </Grid>
-                <Grid item lg={4} md={4}>
+                <Grid item lg={4} md={4} xs={10} sm={10}>
                   <TextField
                     id="input-with-icon-grid"
                     label="Email"
@@ -135,7 +131,7 @@ const Support = () => {
                     required
                     value={email}
                     onChange={onChange}
-                    style={{ marginLeft: "0.5rem", width: "20vw" }}
+                    className={classes.textfieldtwo}
                   />
                 </Grid>
               </Grid>
@@ -148,11 +144,7 @@ const Support = () => {
                     required
                     value={title}
                     onChange={onChange}
-                    style={{
-                      marginLeft: "1rem",
-                      width: "40vw",
-                      marginTop: "2rem",
-                    }}
+                    className={classes.textfieldtitle}
                   />
                 </Grid>
               </Grid>
@@ -166,13 +158,7 @@ const Support = () => {
                     required
                     value={message}
                     onChange={onChange}
-                    style={{
-                      paddingBottom: "5vh",
-                      width: "40vw",
-                      marginTop: "4rem",
-                      marginLeft: "1rem",
-                    }}
-                    className={classes.body}
+                    className={classes.textfieldmsg}
                   />
                 </Grid>
               </Grid>

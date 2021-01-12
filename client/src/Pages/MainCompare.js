@@ -84,7 +84,11 @@ const MainCompare = (props) => {
             </Typography>
           </Grid>
           <Grid item lg={4} md={4}>
-            <Typography variant="h4" justify="center" className={classes.gymname}>
+            <Typography
+              variant="h4"
+              justify="center"
+              className={classes.gymname}
+            >
               {detailDataOne.gymDetail.gym.name.length > 0 ? (
                 detailDataOne.gymDetail.gym.name
               ) : (
@@ -93,7 +97,11 @@ const MainCompare = (props) => {
             </Typography>
           </Grid>
           <Grid item lg={4} md={4}>
-            <Typography variant="h4" justify="center" className={classes.gymname}>
+            <Typography
+              variant="h4"
+              justify="center"
+              className={classes.gymname}
+            >
               {detailDataTwo.gymDetail.gym.name.length > 0 ? (
                 detailDataTwo.gymDetail.gym.name
               ) : (
@@ -180,7 +188,11 @@ const MainCompare = (props) => {
                     )}
                   </Grid>
                   <Grid item lg={5} md={5}>
-                    <Typography variant="body1" justify="center">
+                    <Typography
+                      variant="body1"
+                      justify="center"
+                      className={classes.texthead}
+                    >
                       Weekly Price : {detailDataTwo.gymDetail.weeklyPrice}
                       <br />
                       Monthly Price : {detailDataTwo.gymDetail.monthlyPrice}
@@ -238,7 +250,11 @@ const MainCompare = (props) => {
                     )}
                   </Grid>
                   <Grid item lg={5} md={5}>
-                    <Typography variant="body1" justify="center">
+                    <Typography
+                      variant="body1"
+                      justify="center"
+                      className={classes.texthead}
+                    >
                       {detailDataTwo.gymDetail.trainers?.length > 0 ? (
                         detailDataTwo.gymDetail.trainers.map((item, index) => (
                           <>

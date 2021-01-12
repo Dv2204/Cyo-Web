@@ -26,9 +26,14 @@ export const useStyles = makeStyles((theme) => ({
       textAlign: "center",
     },
   },
-  gymname:{
+  gymname: {
     [theme.breakpoints.down("xs")]: {
       fontSize: "1.2rem",
     },
-  }
+  },
+  texthead: {
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "3.5rem",
+    },
+  },
 }));
