@@ -22,11 +22,26 @@ export const useStyles = makeStyles((theme) => ({
   paper: {
     borderRadius: "20px",
     marginTop: "5.4rem",
-    marginBottom: "3rem",
+    marginBottom: "5rem",
     border: "1.4px #FB5B21 solid",
   },
   paperhead: {
     marginTop: "2.4rem",
     textAlign: "center",
+  },
+  btn: {
+    padding: "0.7rem 2.9rem",
+    backgroundColor: "#FB5B21",
+    color: "#fff",
+    marginBottom: "2rem",
+    marginTop: "3.4rem",
+    "&:hover": {
+      cursor: "pointer",
+      backgroundColor: "#FB5B21",
+    },
+  },
+  required: {
+    color: "red",
+    letterSpacing: "0.09rem",
   },
 }));

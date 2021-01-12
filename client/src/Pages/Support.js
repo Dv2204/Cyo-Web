@@ -140,7 +140,7 @@ const Support = () => {
                 </Grid>
               </Grid>
               <Grid container lg={12} md={12} justify="center">
-                <Grid item lg={5} md={5}>
+                <Grid item lg={7} md={7}>
                   <TextField
                     id="input-with-icon-grid"
                     label="Title"
@@ -148,12 +148,16 @@ const Support = () => {
                     required
                     value={title}
                     onChange={onChange}
-                    style={{ marginLeft: "1rem" }}
+                    style={{
+                      marginLeft: "1rem",
+                      width: "40vw",
+                      marginTop: "2rem",
+                    }}
                   />
                 </Grid>
               </Grid>
               <Grid container lg={12} md={12} justify="center">
-                <Grid item lg={10} md={10}>
+                <Grid item lg={7} md={7}>
                   <TextField
                     id="outlined-basic"
                     label="Your Message"
@@ -162,7 +166,12 @@ const Support = () => {
                     required
                     value={message}
                     onChange={onChange}
-                    style={{ margin: "4vh 0", width: "34vw" }}
+                    style={{
+                      paddingBottom: "5vh",
+                      width: "40vw",
+                      marginTop: "4rem",
+                      marginLeft: "1rem",
+                    }}
                     className={classes.body}
                   />
                 </Grid>
@@ -175,7 +184,7 @@ const Support = () => {
                 </Grid>
               </Grid>
               <Grid container lg={12} md={12} justify="center">
-                <Grid item lg={5} md={5}>
+                <Grid item lg={3} md={3}>
                   <Button onClick={onSubmit} className={classes.btn}>
                     Submit Message
                   </Button>
