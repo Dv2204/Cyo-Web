@@ -73,18 +73,18 @@ const Support = () => {
           lg={12}
           md={12}
           style={{
-            backgroundImage: `url(${background})`,
             backgroundSize: "100%",
           }}
           className={classes.bgimage}
         >
-          <Grid item lg={5} md={5}>
+          <Grid item lg={12} md={12}>
+            <img src={background} alt="p" className={classes.image} />
             <Typography variant="h2" className={classes.heading}>
               Support Centre
             </Typography>
             <Typography variant="h6" className={classes.headingbody}>
-              Need help? Submit a support request and we'll get back to you
-              ASAP!
+              Need help? Submit a support request and <br /> we'll get back to
+              you ASAP!
             </Typography>
           </Grid>
         </Grid>

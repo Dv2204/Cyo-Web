@@ -2,22 +2,39 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
   bgimage: {
-    height: "43vh",
-    backgroundRepeat: "no-repeat",
+    height: "30vh",
+    [theme.breakpoints.down("xs")]: {
+      paddingBottom: "5vh",
+      backgroundColor: "rgba(0,0,0,1)",
+    },
+  },
+  image: {
+    height: "70vh",
     backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
     backgroundAttachment: "fixed",
+    width: "100%",
   },
   heading: {
     color: "#fff",
-    marginTop: "3rem",
+    marginTop: "-23rem",
     marginLeft: "6rem",
     fontWeight: "bold",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1.6rem",
+      marginLeft: "1rem",
+    },
   },
   headingbody: {
     color: "#fff",
     marginLeft: "6rem",
     marginTop: "1rem",
     fontWeight: "bold",
+    paddingBottom: "2rem",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1rem",
+      marginLeft: "1rem",
+    },
   },
   paper: {
     borderRadius: "20px",
