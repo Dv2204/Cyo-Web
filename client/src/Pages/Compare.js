@@ -92,12 +92,6 @@ const Compare = () => {
   if (filteredSecondGymError) {
     return <p style={{ color: "#fff" }}>{filteredSecondGymError.message}</p>;
   }
-  const clearFirstFilter = () => {
-    setFirstText(" ");
-  };
-  const clearSecondFilter = () => {
-    setSecondText(" ");
-  };
   const getGyms = () => {
     getFirstGym();
     getSecondGym();
@@ -169,7 +163,11 @@ const Compare = () => {
                   <Paper
                     className={classes.root}
                     elevation={2}
-                    style={{ zIndex: "1000" }}
+                    style={{
+                      zIndex: "1000",
+                      backgroundColor: "rgba(0,0,0,0.35)",
+                      borderRadius: "20px",
+                    }}
                   >
                     <InputBase
                       className={classes.input}
@@ -203,7 +201,11 @@ const Compare = () => {
                   <Paper
                     className={classes.root}
                     elevation={2}
-                    style={{ zIndex: "1000" }}
+                    style={{
+                      zIndex: "1000",
+                      backgroundColor: "rgba(0,0,0,0.35)",
+                      borderRadius: "20px",
+                    }}
                   >
                     <InputBase
                       className={classes.input}

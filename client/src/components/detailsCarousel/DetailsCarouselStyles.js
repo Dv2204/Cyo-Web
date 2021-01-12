@@ -29,8 +29,8 @@ export const useStyles = makeStyles((theme) => ({
     width: "3vw",
     borderRadius: "15px",
     [theme.breakpoints.down("xs")]: {
-      marginLeft: "7rem",
-      width: "10vw",
+      marginLeft: "5rem",
+      width: "11vw",
     },
   },
   ratingIcon: {
