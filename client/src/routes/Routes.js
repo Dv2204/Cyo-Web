@@ -14,6 +14,7 @@ import Contact from "../components/contactUs/Contact";
 import PageNotFound from "../Pages/PageNotFound";
 import LicenseRegistrations from "../Pages/LicenseRegistrations";
 import CsrPolicy from "../Pages/CsrPolicy";
+import Support from "../Pages/Support";
 
 const Routes = () => {
   return (
@@ -35,6 +36,7 @@ const Routes = () => {
           <Route exact path="/privacypolicy" component={PrivacyPolicy} />
           <Route exact path="/apipolicy" component={ApiPolicy} />
           <Route exact path="/csrpolicy" component={CsrPolicy} />
+          <Route exact path="/support" component={Support} />
           <Route
             exact
             path="/licensesregistration"
