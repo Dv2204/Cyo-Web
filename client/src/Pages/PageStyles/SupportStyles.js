@@ -19,4 +19,14 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: "1rem",
     fontWeight: "bold",
   },
+  paper: {
+    borderRadius: "20px",
+    marginTop: "5.4rem",
+    marginBottom: "3rem",
+    border: "1.4px #FB5B21 solid",
+  },
+  paperhead: {
+    marginTop: "2.4rem",
+    textAlign: "center",
+  },
 }));
