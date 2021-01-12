@@ -11,7 +11,6 @@ import {
 } from "./NavItems";
 import Logo from "../../assets/logo-white.png";
 import "../Nav/navbar.css";
-import { Link } from "react-scroll";
 import { Chip } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
