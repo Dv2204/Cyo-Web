@@ -21,7 +21,7 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: "6rem",
     fontWeight: "bold",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "1.6rem",
+      fontSize: "1.7rem",
       marginLeft: "1rem",
     },
   },
@@ -38,13 +38,19 @@ export const useStyles = makeStyles((theme) => ({
   },
   paper: {
     borderRadius: "20px",
-    marginTop: "5.4rem",
+    marginTop: "6rem",
     marginBottom: "5rem",
-    border: "1.4px #FB5B21 solid",
+    border: "1.4px #000 solid",
+    [theme.breakpoints.down("xs")]: {
+      padding: "0 1.5rem",
+    },
   },
   paperhead: {
     marginTop: "2.4rem",
     textAlign: "center",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1rem",
+    },
   },
   btn: {
     padding: "0.7rem 2.9rem",
@@ -56,9 +62,54 @@ export const useStyles = makeStyles((theme) => ({
       cursor: "pointer",
       backgroundColor: "#FB5B21",
     },
+    [theme.breakpoints.down("xs")]: {
+      padding: "0.4rem 1.7rem",
+      fontSize: "0.7rem",
+      marginLeft: "0.4rem",
+    },
   },
   required: {
     color: "red",
     letterSpacing: "0.09rem",
+  },
+  textfield: {
+    marginLeft: "2rem",
+    width: "20vw",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1rem",
+      marginLeft: "0.4rem",
+      width: "100%",
+    },
+  },
+  textfieldtwo: {
+    marginLeft: "0.5rem",
+    width: "20vw",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1rem",
+      marginLeft: "0.4rem",
+      width: "100%",
+    },
+  },
+  textfieldtitle: {
+    marginLeft: "1rem",
+    width: "40vw",
+    marginTop: "2rem",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1rem",
+      marginLeft: "0.4rem",
+      width: "100%",
+      marginTop: "0.2rem",
+    },
+  },
+  textfieldmsg: {
+    paddingBottom: "5vh",
+    width: "40vw",
+    marginTop: "4rem",
+    marginLeft: "1rem",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1rem",
+      marginLeft: "0.4rem",
+      width: "100%",
+    },
   },
 }));
