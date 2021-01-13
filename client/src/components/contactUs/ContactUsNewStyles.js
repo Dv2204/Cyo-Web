@@ -44,8 +44,8 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: "12rem",
     marginBottom: "1rem",
     [theme.breakpoints.down("xs")]: {
-      marginLeft: "1rem",
-      fontSize: "1.2rem",
+      marginLeft: "2.5rem",
+      fontSize: "1rem",
     },
   },
   mac: {
@@ -54,7 +54,6 @@ export const useStyles = makeStyles((theme) => ({
     padding: "12px !important",
     [theme.breakpoints.down("xs")]: {
       width: "24vw !important",
-      marginLeft: "-3rem",
     },
   },
   google: {
@@ -63,6 +62,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       width: "25vw !important",
       marginTop: "0.4rem",
+      marginLeft: "2rem",
     },
   },
   divider: {
@@ -99,7 +99,7 @@ export const useStyles = makeStyles((theme) => ({
     marginBottom: "0.4rem",
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
-      marginLeft: "9rem",
+      marginLeft: "9.35rem",
     },
   },
   pagestwotop: {
@@ -201,7 +201,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "1.9rem",
       marginTop: "-4rem",
-      marginLeft: "0.9rem",
+      marginLeft: "0.75rem",
     },
   },
   iconstwo: {
