@@ -26,6 +26,10 @@ export const useStyles = makeStyles((theme) => ({
     backgroundColor: "#fff",
     padding: "0.5rem 2.3rem",
     textAlign: "center",
+    "&:hover": {
+      backgroundColor: "#fff",
+      cursor: "pointer",
+    },
     [theme.breakpoints.down("xs")]: {
       padding: "0.2rem 1.5rem",
       marginTop: "1.3rem",
