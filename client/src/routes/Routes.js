@@ -10,7 +10,6 @@ import MainCompare from "../Pages/MainCompare";
 import PrivacyPolicy from "../Pages/PrivacyPolicy";
 import ApiPolicy from "../Pages/ApiPolicy";
 import AboutGyms from "../Pages/AboutGyms";
-import Contact from "../components/contactUs/Contact";
 import PageNotFound from "../Pages/PageNotFound";
 import LicenseRegistrations from "../Pages/LicenseRegistrations";
 import CsrPolicy from "../Pages/CsrPolicy";
@@ -32,7 +31,6 @@ const Routes = () => {
             path="/maincompare/:idone/:idtwo"
             component={MainCompare}
           />
-          <Route exact path="/contact" component={Contact} />
           <Route exact path="/privacypolicy" component={PrivacyPolicy} />
           <Route exact path="/apipolicy" component={ApiPolicy} />
           <Route exact path="/csrpolicy" component={CsrPolicy} />
