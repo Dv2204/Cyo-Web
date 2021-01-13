@@ -149,12 +149,22 @@ export const useStyles = makeStyles((theme) => ({
     borderRadius: "20px",
     marginTop: "3rem",
     marginBottom: "3rem",
+    [theme.breakpoints.down("xs")]: {
+      marginBottom: "1rem",
+    },
   },
   paperhead: {
     marginTop: "1.5rem",
     textAlign: "center",
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
+    },
+  },
+  body: {
+    margin: "4vh 0",
+    width: "34vw",
+    [theme.breakpoints.down("xs")]: {
+      width: "100%",
     },
   },
   dividersec: {
@@ -164,7 +174,7 @@ export const useStyles = makeStyles((theme) => ({
     height: "54vh",
     marginBottom: "2.5rem",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "none",
+      display: "none",
     },
   },
   icons: {
@@ -175,6 +185,37 @@ export const useStyles = makeStyles((theme) => ({
     "&:hover": {
       cursor: "pointer",
     },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1.9rem",
+      marginTop: "-4rem",
+    },
+  },
+  iconsone: {
+    color: "#fff",
+    fontSize: "3rem",
+    marginLeft: "3rem",
+    marginTop: "1rem",
+    "&:hover": {
+      cursor: "pointer",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1.9rem",
+      marginTop: "-4rem",
+      marginLeft: "0.9rem",
+    },
+  },
+  iconstwo: {
+    color: "#fff",
+    fontSize: "3rem",
+    marginLeft: "3rem",
+    marginTop: "1rem",
+    "&:hover": {
+      cursor: "pointer",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "2rem",
+      marginBottom: "1.5rem",
+    },
   },
   footerPaper: {
     backgroundColor: "#3F3F3F",
@@ -184,6 +225,9 @@ export const useStyles = makeStyles((theme) => ({
   required: {
     color: "red",
     letterSpacing: "0.09rem",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "0.7rem",
+    },
   },
   btn: {
     padding: "0.5rem 2.5rem",
@@ -192,10 +236,18 @@ export const useStyles = makeStyles((theme) => ({
     "&:hover": {
       cursor: "pointer",
     },
+    [theme.breakpoints.down("xs")]: {
+      padding: "0.2rem 0.4rem",
+      marginTop: "1rem",
+      fontSize: "0.8rem",
+    },
   },
   textfooter: {
     color: "#fff",
     textAlign: "center",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "0.95rem",
+    },
   },
   footerlink: {
     textDecoration: "none",

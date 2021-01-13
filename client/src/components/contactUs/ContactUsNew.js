@@ -267,7 +267,6 @@ const ContactUsNew = () => {
                         required
                         value={message}
                         onChange={onChange}
-                        style={{ margin: "4vh 0", width: "34vw" }}
                         className={classes.body}
                       />
                     </Grid>
@@ -299,13 +298,13 @@ const ContactUsNew = () => {
             flexItem
           />
           <Grid item lg={4} md={4} style={{ marginTop: "5.9rem" }}>
-            <InstagramIcon className={classes.icons} />
+            <InstagramIcon className={classes.iconsone} />
             <FacebookIcon className={classes.icons} />
             <TwitterIcon className={classes.icons} />
             <br />
             <br />
-            <YouTubeIcon className={classes.icons} />
-            <PinterestIcon className={classes.icons} />
+            <YouTubeIcon className={classes.iconstwo} />
+            <PinterestIcon className={classes.iconstwo} />
           </Grid>
         </Grid>
         <Grid container lg={12} md={12}>
