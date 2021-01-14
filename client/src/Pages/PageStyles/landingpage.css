@@ -19,7 +19,7 @@ img .phoneview {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ff0080;
+  background-color: #ffa600;
 }
 
 @media only screen and (max-width: 1000px) {

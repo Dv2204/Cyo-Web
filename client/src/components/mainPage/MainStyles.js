@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
   row: {
-    background: "linear-gradient(to right bottom, #FED469, #ED0891)",
+    background: "linear-gradient(295.19deg, #FFCE4F -6.02%, #FF0099 113.53%)",
     width: "100vw",
     overflowX: "hidden",
   },
@@ -11,9 +11,9 @@ export const useStyles = makeStyles((theme) => ({
     width: "auto",
     paddingTop: "3.2rem",
     [theme.breakpoints.down("xs")]: {
-      height: "30vh",
+      height: "29vh",
       width: "auto",
-      paddingLeft: "0.1rem",
+      paddingLeft: "0.2rem ",
     },
   },
   paper: {

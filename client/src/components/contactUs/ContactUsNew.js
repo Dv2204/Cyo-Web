@@ -74,6 +74,7 @@ const ContactUsNew = () => {
   return (
     <Grid
       container
+      xs={12}
       lg={12}
       md={12}
       style={{ backgroundColor: "#3F3F3F", marginTop: "1.7rem", zIndex: "10" }}
@@ -84,12 +85,12 @@ const ContactUsNew = () => {
           justify="center"
           style={{ marginTop: "2rem", marginBottom: "2rem" }}
         >
-          <Grid item lg={2} md={2}>
+          <Grid item xs={12} lg={2} md={2}>
             <Typography variant="h4" className={classes.headingone}>
               CYO GYMS
             </Typography>
           </Grid>
-          <Grid item lg={8} md={8}>
+          <Grid item xs={12} lg={8} md={8}>
             <Typography variant="h5" className={classes.headingtwo}>
               The World's Fastest Growing Gym Chain {"  "}&nbsp;&nbsp; Join our
               network and grow your business!
@@ -103,22 +104,22 @@ const ContactUsNew = () => {
             </Button>
           </Grid>
         </Grid>
-        <Grid container lg={12} md={12}>
-          <Grid item lg={12} md={12}>
+        <Grid container xs={12} lg={12} md={12}>
+          <Grid item xs={12} lg={12} md={12}>
             <hr />
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} style={{ marginBottom: "2.5rem" }}>
-          <Grid item lg={5} md={5}>
-            <Grid container lg={12} md={12}>
-              <Grid item lg={12} md={12}>
+          <Grid item xs={12} lg={5} md={5}>
+            <Grid container xs={12} lg={12} md={12}>
+              <Grid item xs={12}  lg={12} md={12}>
                 <Typography variant="h6" className={classes.download}>
                   Download CYO app for exciting offers.
                 </Typography>
               </Grid>
             </Grid>
             <Grid container lg={12} md={12} justify="center">
-              <Grid item lg={4}>
+              <Grid item xs={5} lg={4}>
                 <MobileStoreButton
                   store="ios"
                   url={iOSUrl}
@@ -126,7 +127,7 @@ const ContactUsNew = () => {
                   className={classes.mac}
                 />
               </Grid>
-              <Grid item lg={4}>
+              <Grid item xs={6} lg={4}>
                 <MobileStoreButton
                   store="android"
                   url={androidUrl}
@@ -138,7 +139,7 @@ const ContactUsNew = () => {
           </Grid>
           <Divider
             orientation="vertical"
-            className={classes.divider}
+            className={classes.divider1}
             flexItem
           />
           <Grid item lg={4} md={4} xs={12} sm={12}>
@@ -198,7 +199,7 @@ const ContactUsNew = () => {
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} justify="center">
-          <Grid item lg={7} md={7}>
+          <Grid item xs={12} lg={7} md={7}>
             <Grid container justify="center">
               <Grid item lg={9} md={9} sm={10} xs={10}>
                 <Paper
