@@ -102,42 +102,39 @@ const Compare = () => {
         <BackgroundSlideshow
           images={[image1, image2, image3]}
           animationDelay="2000"
-          style={{ zIndex: "-1000 important" }}
+          style={{ zIndex: "1 important" }}
         />
       </div>
       <div
         className={classes.mainDiv}
         style={{
-          height: "100vh",
-          backgroundImage: `url(${compare})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundAttachment: "fixed",
+          height: "120vh !important",
+          backgroundColor: "#3F3F3F"
         }}
       >
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <CompareNavBar toggle={toggle} />
         <div className={classes.compare}>
-          <Grid container lg={12} md={12} style={{ zIndex: "1000" }}>
-            <Grid item xs={12} lg={12} md={12} style={{ zIndex: "1000" }}>
+          <Grid container lg={12} md={12} style={{ zIndex: "10" }}>
+            <Grid item xs={12} lg={12} md={12} style={{ zIndex: "10" }}>
               <Typography
                 variant="h2"
                 className={classes.text}
                 style={{ textAlign: "center" }}
                 justify="center"
-                style={{ zIndex: "90" }}
+                style={{ zIndex: "2" }}
               >
                 COMPARE THE GYMS
               </Typography>
             </Grid>
           </Grid>
-          <Grid container lg={12} md={12} style={{ zIndex: "1000" }}>
-            <Grid item xs={12} lg={12} md={12} style={{ zIndex: "1000" }}>
+          <Grid container lg={12} md={12} style={{ zIndex: "10" }}>
+            <Grid item xs={12} lg={12} md={12} style={{ zIndex: "10" }}>
               <Typography
                 variant="h6"
                 className={classes.selection}
                 justify="center"
-                style={{ zIndex: "1000" }}
+                style={{ zIndex: "10" }}
               >
                 Select the two gyms
               </Typography>
@@ -156,7 +153,7 @@ const Compare = () => {
               md={5}
               xs={12}
               justify="flex-end"
-              style={{ zIndex: "1000" }}
+              style={{ zIndex: "10" }}
             >
               <Grid container md={12} lg={12} justify="flex-end">
                 <Grid xs={12} lg={8} md={8} justify="center">
@@ -194,7 +191,7 @@ const Compare = () => {
               md={5}
               xs={12}
               justify="flex-start"
-              style={{ zIndex: "1000" }}
+              style={{ zIndex: "10" }}
             >
               <Grid container md={12} lg={12} justify="flex-start">
                 <Grid xs={12} lg={8} md={8} justify="center">
@@ -202,7 +199,7 @@ const Compare = () => {
                     className={classes.root}
                     elevation={2}
                     style={{
-                      zIndex: "1000",
+                      zIndex: "10",
                       backgroundColor: "rgba(0,0,0,0.35)",
                       borderRadius: "20px",
                     }}

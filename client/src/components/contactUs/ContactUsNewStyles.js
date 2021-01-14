@@ -90,6 +90,7 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: "2.5rem",
     marginLeft: "4rem",
     marginBottom: "0.4rem",
+    textDecoration:"none !important",
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
       marginTop: "1.2rem",
@@ -120,6 +121,8 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: "2rem",
     marginRight: "3rem",
     marginBottom: "0.4rem",
+    textDecoration:"none !important",
+    textDecorationColor:"transparent",
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
       marginTop: "0.1rem",
