@@ -23,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1rem",
     marginLeft: "1.5rem",
     letterSpacing: "0.1rem",
-    fontFamily: "Bauman",
     "&:hover": {
       cursor: "pointer",
     },
@@ -45,7 +44,7 @@ const AboutGymsNav = ({ toggle }) => {
               <img className="Logo" src={Logo} alt="logo" />
             </NavLink>
             <NavLink to="/">
-              <h2 className="LogoName">CYO GYMS</h2>
+              <h2 className="LogoName" style={{fontFamily: "Bauman",}}>CYO GYMS</h2>
             </NavLink>
           </NavLogo>
           <NavMenu>

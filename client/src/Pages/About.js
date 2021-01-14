@@ -38,7 +38,7 @@ const About = () => {
               className={classes.body}
               style={{ textAlign: "center", marginBottom: "10vh" }}
             >
-              <Typography style={{ fontSize: "2.5vh", fontWeight: "bold" }}>
+              <Typography style={{ fontSize: "3vh", fontWeight: "bold" }}>
                 WHO ARE WE
               </Typography>{" "}
               We are a team of Passionate designer, Developers and Programmers
@@ -49,7 +49,7 @@ const About = () => {
               special and so are our clients!
               <Typography
                 style={{
-                  fontSize: "2.5h",
+                  fontSize: "3vh",
                   fontWeight: "bold",
                   marginTop: "0.9rem",
                 }}
@@ -64,7 +64,7 @@ const About = () => {
               development and digital marketing have to offer. <br />
               <Typography
                 style={{
-                  fontSize: "2.5vh",
+                  fontSize: "3vh",
                   fontWeight: "bold",
                   marginTop: "0.9rem",
                 }}
@@ -78,7 +78,7 @@ const About = () => {
               in providing you the solution for competing at the global market.{" "}
               <Typography
                 style={{
-                  fontSize: "2.5vh",
+                  fontSize: "3vh",
                   fontWeight: "bold",
                   marginTop: "0.9rem",
                 }}
