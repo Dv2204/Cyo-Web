@@ -6,6 +6,7 @@ import {
   SideLink,
   SideMenu,
 } from "../Sidebar/SidebarItems";
+import { Chip } from "@material-ui/core";
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -18,9 +19,10 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SideLink to="/gyms">Gyms</SideLink>
           <SideLink to="/products">Products</SideLink>
           <SideLink to="/compare">Compare</SideLink>
-          <SideLink to="/contact">Help Centre</SideLink>
-          <SideLink to="/aboutgyms">About-Us</SideLink>
-          <SideLink to="/about">About-Developers</SideLink>
+          <SideLink to="/support">Support</SideLink>
+          <SideLink>
+            <Chip label="Register Your Gym" />
+          </SideLink>
         </SideMenu>
       </SidebarContainer>
     </>

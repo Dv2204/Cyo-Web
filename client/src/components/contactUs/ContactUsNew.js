@@ -142,9 +142,9 @@ const ContactUsNew = () => {
             className={classes.divider1}
             flexItem
           />
-          <Grid item xs={6} lg={4} md={4}>
+          <Grid item lg={4} md={4} xs={12} sm={12}>
             <Grid container>
-              <Grid item xs={12} lg={6} md={6}>
+              <Grid item lg={6} md={6} xs={12} sm={12}>
                 <Link to="/aboutgyms">
                   <Typography variant="h6" className={classes.pagestop}>
                     About Us
@@ -156,12 +156,12 @@ const ContactUsNew = () => {
                   </Typography>
                 </Link>
                 <Link to="/support">
-                  <Typography variant="h6" className={classes.pages}>
+                  <Typography variant="h6" className={classes.pagessupport}>
                     Support
                   </Typography>
                 </Link>
               </Grid>
-              <Grid item xs={12} lg={6} md={6}>
+              <Grid item lg={6} md={6} xs={12} sm={12}>
                 <Link to="/licensesregistration">
                   <Typography variant="h6" className={classes.pagestwotop}>
                     Licenses & Registration
@@ -175,7 +175,7 @@ const ContactUsNew = () => {
             className={classes.divider}
             flexItem
           />
-          <Grid item xs={5} lg={2} md={2}>
+          <Grid item lg={2} md={2} xs={12} sm={12}>
             <Link to="/privacypolicy">
               <Typography variant="h6" className={classes.pagesthreetop}>
                 Privacy Policy
@@ -201,7 +201,7 @@ const ContactUsNew = () => {
         <Grid container lg={12} md={12} justify="center">
           <Grid item xs={12} lg={7} md={7}>
             <Grid container justify="center">
-              <Grid item lg={9} md={9}>
+              <Grid item lg={9} md={9} sm={10} xs={10}>
                 <Paper
                   elevation={5}
                   variant="outlined"
@@ -268,7 +268,6 @@ const ContactUsNew = () => {
                         required
                         value={message}
                         onChange={onChange}
-                        style={{ margin: "4vh 0", width: "34vw" }}
                         className={classes.body}
                       />
                     </Grid>
@@ -299,14 +298,14 @@ const ContactUsNew = () => {
             className={classes.dividersec}
             flexItem
           />
-          <Grid item lg={4} md={4} style={{ marginTop: "5.9rem" }} className={classes.iconsbox}>
-            <InstagramIcon className={classes.icons} />
+          <Grid item lg={4} md={4} style={{ marginTop: "5.9rem" }}>
+            <InstagramIcon className={classes.iconsone} />
             <FacebookIcon className={classes.icons} />
             <TwitterIcon className={classes.icons} />
             <br />
             <br />
-            <YouTubeIcon className={classes.icons} />
-            <PinterestIcon className={classes.icons} />
+            <YouTubeIcon className={classes.iconstwo} />
+            <PinterestIcon className={classes.iconstwo} />
           </Grid>
         </Grid>
         <Grid container lg={12} md={12}>

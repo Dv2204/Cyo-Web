@@ -7,7 +7,8 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: "2rem",
     fontSize: "2.4rem",
     [theme.breakpoints.down("xs")]: {
-      fontSize:'1.8rem',
+      fontSize: "1.7rem",
+      textAlign: "center",
     },
   },
   headingtwo: {
@@ -15,23 +16,31 @@ export const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     marginTop: "0.5rem",
     [theme.breakpoints.down("xs")]: {
-      fontSize:'0.9rem',
-      paddingLeft:'2rem',
-      paddingRight:'2rem',
+      fontSize: "1rem",
+      fontWeight: "normal",
+      textAlign: "center",
+      marginTop: "1rem",
     },
   },
   headingbutton: {
     backgroundColor: "#fff",
     padding: "0.5rem 2.3rem",
     textAlign: "center",
+    "&:hover": {
+      backgroundColor: "#fff",
+      cursor: "pointer",
+    },
     [theme.breakpoints.down("xs")]: {
-      padding:"0.1rem 1.5rem",
-      marginTop:'1rem',
+      padding: "0.2rem 1.5rem",
+      marginTop: "1.3rem",
     },
   },
   headingbuttontext: {
     textAlign: "center",
     color: "#000",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "0.5rem",
+    },
   },
   download: {
     color: "#fff",
@@ -39,8 +48,8 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: "12rem",
     marginBottom: "1rem",
     [theme.breakpoints.down("xs")]: {
-      marginLeft: "2rem",
-      fontSize:'1rem',
+      marginLeft: "2.5rem",
+      fontSize: "1rem",
     },
   },
   mac: {
@@ -48,15 +57,16 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: "5vw",
     padding: "12px !important",
     [theme.breakpoints.down("xs")]: {
-      width: "20vw !important",
-      padding: "8px 12vw !important",
+      width: "24vw !important",
     },
   },
   google: {
     width: "12vw !important",
     marginLeft: "5vw",
     [theme.breakpoints.down("xs")]: {
-      width: "24vw !important",
+      width: "25vw !important",
+      marginTop: "0.4rem",
+      marginLeft: "2rem",
     },
   },
   divider1: {
@@ -72,9 +82,8 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: "1.5rem",
     height: "29vh",
     [theme.breakpoints.down("xs")]: {
-      marginTop: '-2rem',
-      height: "12vh",
-     },
+      display: "none",
+    },
   },
   pagestop: {
     color: "#fff",
@@ -82,17 +91,28 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: "4rem",
     marginBottom: "0.4rem",
     [theme.breakpoints.down("xs")]: {
-      fontSize:'0.8rem',
-      marginTop: '-2rem'
-     },
+      fontSize: "1rem",
+      marginTop: "1.2rem",
+      marginLeft: "9rem",
+    },
   },
   pages: {
     color: "#fff",
     marginLeft: "4rem",
     marginBottom: "0.4rem",
     [theme.breakpoints.down("xs")]: {
-      fontSize:'0.8rem',
-     },
+      fontSize: "1rem",
+      marginLeft: "6.96rem",
+    },
+  },
+  pagessupport: {
+    color: "#fff",
+    marginLeft: "4rem",
+    marginBottom: "0.4rem",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1rem",
+      marginLeft: "9.35rem",
+    },
   },
   pagestwotop: {
     color: "#fff",
@@ -101,16 +121,21 @@ export const useStyles = makeStyles((theme) => ({
     marginRight: "3rem",
     marginBottom: "0.4rem",
     [theme.breakpoints.down("xs")]: {
-      fontSize:'0.8rem',
-      marginTop: '-0.2rem',
-      marginLeft:"8rem"
-     },
+      fontSize: "1rem",
+      marginTop: "0.1rem",
+      marginLeft: "6rem",
+    },
   },
   pagestwo: {
     color: "#fff",
     marginLeft: "2rem",
     marginRight: "3rem",
     marginBottom: "0.4rem",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1rem",
+      marginTop: "0.1rem",
+      marginLeft: "6rem",
+    },
   },
   pagesthreetop: {
     color: "#fff",
@@ -118,26 +143,41 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: "1.5rem",
     marginBottom: "0.4rem",
     [theme.breakpoints.down("xs")]: {
-      fontSize:'0.8rem',
-      marginTop: '-2rem'
-     },
+      fontSize: "1rem",
+      marginTop: "0.1rem",
+      marginLeft: "8rem",
+    },
   },
   pagesthree: {
     color: "#fff",
     marginLeft: "1.5rem",
     marginBottom: "0.4rem",
     [theme.breakpoints.down("xs")]: {
-      fontSize:'0.8rem',
-     },
+      fontSize: "1rem",
+      marginLeft: "8.9rem",
+    },
   },
   paper: {
     borderRadius: "20px",
     marginTop: "3rem",
     marginBottom: "3rem",
+    [theme.breakpoints.down("xs")]: {
+      marginBottom: "1rem",
+    },
   },
   paperhead: {
     marginTop: "1.5rem",
     textAlign: "center",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1rem",
+    },
+  },
+  body: {
+    margin: "4vh 0",
+    width: "34vw",
+    [theme.breakpoints.down("xs")]: {
+      width: "100%",
+    },
   },
   dividersec: {
     marginTop: "2.5rem",
@@ -146,13 +186,8 @@ export const useStyles = makeStyles((theme) => ({
     height: "54vh",
     marginBottom: "2.5rem",
     [theme.breakpoints.down("xs")]: {
-      display: 'none',
-     },
-  },
-  iconsbox:{
-    [theme.breakpoints.down("xs")]: {
-      marginTop: "3rem"
-     },
+      display: "none",
+    },
   },
   icons: {
     color: "#fff",
@@ -161,6 +196,37 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: "1rem",
     "&:hover": {
       cursor: "pointer",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1.9rem",
+      marginTop: "-4rem",
+    },
+  },
+  iconsone: {
+    color: "#fff",
+    fontSize: "3rem",
+    marginLeft: "3rem",
+    marginTop: "1rem",
+    "&:hover": {
+      cursor: "pointer",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1.9rem",
+      marginTop: "-4rem",
+      marginLeft: "0.75rem",
+    },
+  },
+  iconstwo: {
+    color: "#fff",
+    fontSize: "3rem",
+    marginLeft: "3rem",
+    marginTop: "1rem",
+    "&:hover": {
+      cursor: "pointer",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "2rem",
+      marginBottom: "1.5rem",
     },
   },
   footerPaper: {
@@ -171,6 +237,9 @@ export const useStyles = makeStyles((theme) => ({
   required: {
     color: "red",
     letterSpacing: "0.09rem",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "0.7rem",
+    },
   },
   btn: {
     padding: "0.5rem 2.5rem",
@@ -179,10 +248,18 @@ export const useStyles = makeStyles((theme) => ({
     "&:hover": {
       cursor: "pointer",
     },
+    [theme.breakpoints.down("xs")]: {
+      padding: "0.2rem 0.4rem",
+      marginTop: "1rem",
+      fontSize: "0.8rem",
+    },
   },
   textfooter: {
     color: "#fff",
     textAlign: "center",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "0.95rem",
+    },
   },
   footerlink: {
     textDecoration: "none",
