@@ -1,6 +1,16 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
+  item:{
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 'auto',
+    width: '100vw',
+    color: '#fff',
+    margin: '0 5px',
+    fontSize: '4em',
+  },
   text: {
     paddingTop: "8rem",
     paddingBottom: "4rem",
@@ -18,15 +28,16 @@ export const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: "82vh",
-    marginBottom: "3rem",
+    height: "70vh",
+    width:'99vw',
+    marginBottom: "1rem",
     [theme.breakpoints.down("xs")]: {
       height: "32vh !important",
-      marginLeft: "1.4rem",
+      marginTop: "3rem",
     },
   },
   images: {
-    backgroundSize: "cover",
+    backgroundSize: "cover !important",
     height: "82vh",
     width: "100%",
     [theme.breakpoints.down("xs")]: {

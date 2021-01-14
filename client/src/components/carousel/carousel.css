@@ -20,3 +20,10 @@
     background-color: black !important;
     box-shadow: 0 0 1px 3px rgb(50, 50, 50)!important;
 }
+
+
+@media only screen and (max-width: 600px){
+.slider a.previousButton, .slider a.nextButton{
+    top: 30% !important;
+}
+}
