@@ -13,6 +13,7 @@ import Harmanjit from "../assets/Harmanjit.jpg";
 import Sushila from "../assets/Sushila.jpeg";
 import Saurav from "../assets/Saurav.jpg";
 import Priya from "../assets/Priya.jpg";
+import Rupesh from "../assets/rupesh.jfif";
 import Divyanshu from "../assets/Divyanshu.PNG";
 import Sidebar from "../components/Sidebar/Sidebar";
 
@@ -92,6 +93,22 @@ const About = () => {
               meetings and others communication mode. With us, achieve
               accomplishment and ongoing business growth.
             </Typography>
+          </Grid>
+          <Grid container md={12} lg={12} justify="center">
+            <Grid item lg={4} md={4} sm={12} xs={12}>
+              
+            </Grid>
+            <Grid item lg={4}>
+              <Developers
+                name="Rupesh Gaur"
+                skill="Full Stack Developer"
+                pic={Rupesh}
+                className={classes.dev}
+              />
+            </Grid>
+            <Grid item lg={4}>
+              
+            </Grid>
           </Grid>
           <Grid container md={12} lg={12} justify="center">
             <Grid item lg={4} md={4} sm={12} xs={12}>

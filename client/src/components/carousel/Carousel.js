@@ -20,7 +20,7 @@ const Carousel = () => {
         </Grid>
       </Grid>
       <Grid container xs={12} md={12} lg={12} justify="center">
-        <Grid item lg={10} md={10} xs={12} sm={12} justify="center">
+        <Grid item lg={12} md={12} xs={12} sm={12} justify="center">
           <CarouselComp />
         </Grid>
       </Grid>
