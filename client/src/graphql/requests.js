@@ -197,7 +197,10 @@ export const GET_DETAIL = gql`
       }
       machines {
         id
-        name
+        machine {
+          id
+          name
+        }
       }
       monthlyPrice
       quarterlyPrice
