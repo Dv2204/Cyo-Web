@@ -139,7 +139,11 @@ const MainCompare = (props) => {
                     </Typography>
                   </Grid>
                   <Grid item lg={5} md={5}>
-                    <Typography variant="body1" justify="center">
+                    <Typography
+                      variant="body1"
+                      justify="center"
+                      className={classes.texthead}
+                    >
                       {detailDataTwo.gymDetail.description?.length > 0 ? (
                         detailDataTwo.gymDetail.description
                       ) : (
