@@ -25,8 +25,8 @@ const ConnectWithUs = () => {
                   </Grid>
                 </Grid>
                 <Typography variant="body1" className={classes.body}>
-                  CYO GYMS introduced in 2020-2021 when Mr. Harish Saini and
-                  Vikas Malik realized that users didn’t want to or couldn’t pay
+                  CYO GYMS introduced in 2020-2021 when our team
+                  realized that users didn’t want to or couldn’t pay
                   yearly gym membership fees upfront. There was intent since
                   everyone tried several fitness centers and local parks, but it
                   wasn’t practical for long. It was then that a simple idea was
