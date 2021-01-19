@@ -63,10 +63,10 @@ const Cards = () => {
   };
   return (
     <>
-      <Grid container md={12} lg={12} justify="center">
+      <Grid container md={12} lg={12} justify="center" style={{marginLeft:"4rem"}} className={classes.searchdiv}>
         <Grid item lg={7} md={7} justify="center">
-          <Grid container xs={12} lg={12} md={12}>
-            <Grid item xs={3} lg={1} md={1}>
+          <Grid container xs={12} lg={12} md={12} >
+            <Grid item xs={4} lg={1} md={1} >
               <PinDropIcon fontSize="large" className={classes.icon} />
             </Grid>
             <Grid xs={8} lg={8} md={8}>

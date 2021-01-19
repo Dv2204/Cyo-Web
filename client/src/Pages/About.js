@@ -163,12 +163,14 @@ const About = () => {
             <Grid item lg={4}>
               <Developers
                 name="Harmanjit Singh"
-                skill="Designer"
+                skill="Designer and Developer"
                 pic={Harmanjit}
               />
             </Grid>
             <Grid item lg={4}>
-              <Developers name="Sushila Kaur" skill="Designer" pic={Sushila} />
+              <Developers 
+              name="Sushila Kaur" 
+              skill="Designer" pic={Sushila} />
             </Grid>
             <Grid item lg={4}>
               <Developers

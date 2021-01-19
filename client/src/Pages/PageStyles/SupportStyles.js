@@ -30,19 +30,21 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: "6rem",
     marginTop: "1rem",
     fontWeight: "bold",
-    paddingBottom: "2rem",
+    marginBottom: "18rem",
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
       marginLeft: "1rem",
+      paddingBottom: "1rem",
     },
   },
   paper: {
     borderRadius: "20px",
-    marginTop: "6rem",
+    marginTop: "10rem",
     marginBottom: "5rem",
     border: "1.4px #000 solid",
     [theme.breakpoints.down("xs")]: {
       padding: "0 1.5rem",
+      marginTop: "4rem",
     },
   },
   paperhead: {

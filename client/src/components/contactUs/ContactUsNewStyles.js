@@ -257,8 +257,16 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "0.8rem",
     },
   },
+  follow:{
+    marginTop:"2rem",
+    marginLeft: "3rem",
+    color:"white",
+    [theme.breakpoints.down("xs")]: {
+      marginBottom:"2rem"
+    },
+  },
   textfooter: {
-    color: "#fff",
+    color: "#c4c4c4",
     textAlign: "center",
     [theme.breakpoints.down("xs")]: {
       fontSize: "0.95rem",
@@ -266,7 +274,10 @@ export const useStyles = makeStyles((theme) => ({
   },
   footerlink: {
     textDecoration: "none",
-    color: "#fff",
+    color: "#c4c4c4",
     cursor: "pointer",
+    "&hover":{
+      color:"#fff"
+    }
   },
 }));

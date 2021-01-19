@@ -16,7 +16,13 @@ import BackgroundSlideshow from "react-background-slideshow";
 import image1 from "../assets/001 1.jpg";
 import image2 from "../assets/002 1.jpg";
 import image3 from "../assets/003 1.jpg";
+import img1 from "../assets/1.jfif";
+import img2 from "../assets/2.jfif";
+import img3 from "../assets/3.jfif";
+import img4 from "../assets/4.jfif";
 import ContactUsNew from "../components/contactUs/ContactUsNew";
+
+
 
 const Compare = () => {
   const classes = useStyles();

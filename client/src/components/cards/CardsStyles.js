@@ -7,6 +7,11 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "20px",
     },
   },
+  searchdiv:{
+    [theme.breakpoints.down("xs")]: {
+      margin: "0px !important"
+    },
+  },
   paperNormal: {
     marginBottom: "0.5rem",
     "&:hover": {

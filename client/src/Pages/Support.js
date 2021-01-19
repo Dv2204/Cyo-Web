@@ -4,7 +4,7 @@ import PrivacyNav from "../components/Nav/PrivacyNav";
 import Sidebar from "../components/Sidebar/Sidebar";
 import { useStyles } from "./PageStyles/SupportStyles";
 import ContactUsNew from "../components/contactUs/ContactUsNew";
-import background from "../assets/comparecroptwo.PNG";
+import background from "../assets/7.jfif";
 import { ADD_MAIL } from "../graphql/requests";
 import { useMutation } from "@apollo/client";
 import Loader from "../components/Loader";
@@ -65,7 +65,7 @@ const Support = () => {
   };
   return (
     <>
-      <div style={{ backgroundColor: "rgba(248, 248, 248, 1)" }}>
+      <div style={{ backgroundColor: "rgba(248, 248, 248, 1)", backgroundSize: "cover"}}>
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <PrivacyNav toggle={toggle} />
         <Grid

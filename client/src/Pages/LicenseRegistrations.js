@@ -129,26 +129,6 @@ const LicenseRegistrations = () => {
         </Grid>
         <br />
         <br />
-        <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
-          <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
-            <Typography variant="h6" className={classes.textbody}>
-              1 Name HARISH SAINI <br />
-              &nbsp;&nbsp;&nbsp;&nbsp; Designation/Status DIRECTOR <br />
-              &nbsp;&nbsp;&nbsp;&nbsp; Resident of State Haryana
-            </Typography>
-          </Grid>
-        </Grid>
-        <br />
-        <br />
-        <Grid container lg={12} md={12} xs={12} sm={12} justify="center">
-          <Grid item lg={10} sm={10} xs={10} md={10} justify="center">
-            <Typography variant="h6" className={classes.textbodylast}>
-              2 Name VIKAS MALIK <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;Designation/Status Director <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;Resident of State Haryana
-            </Typography>
-          </Grid>
-        </Grid>
 
         <Grid container>
           <ContactUsNew />
