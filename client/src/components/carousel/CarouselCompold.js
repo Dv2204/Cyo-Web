@@ -42,7 +42,7 @@ const CarouselComp = () => {
           {landingImage.landingImage.map((item, index) => (
             <Item>
               <img
-                className={classes.images}
+                className={classes.imagesmaincompare}
                 src={`${IMAGE_URL}${item.image}`}
                 alt="Gym"
               />

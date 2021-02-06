@@ -1,6 +1,6 @@
 import React from "react";
-import Slider from 'react-animated-slider';
-import 'react-animated-slider/build/horizontal.css';
+import Slider from "react-animated-slider";
+import "react-animated-slider/build/horizontal.css";
 import { useStyles } from "./CarouselStyles";
 import { LANDING_IMAGE } from "../../graphql/requests";
 import { IMAGE_URL } from "../../graphql/requests";
@@ -38,19 +38,23 @@ const CarouselComp = () => {
   return (
     <>
       <div className={classes.carousel}>
-     
-        <Slider autoplay={3000} breakPoints={breakPoints}>
-        {landingImage.landingImage.map((item, index) => (
-          <div className={classes.item}>
-          <div
-            key={index}
-            style={{ background: `url('${IMAGE_URL}${item.image}') ` }}
-            className={classes.images}
-          >
-          </div>
-          </div>
-        ))}
-      </Slider>
+        <Slider autoplay={2500} breakPoints={breakPoints}>
+          {landingImage.landingImage.map((item, index) => (
+            <div>
+              <div
+                key={index}
+                style={{
+                  background: `url('${IMAGE_URL}${item.image}') `,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundAttachment: "fixed",
+                  height: "93vh",
+                }}
+                className={classes.images}
+              ></div>
+            </div>
+          ))}
+        </Slider>
       </div>
     </>
   );
