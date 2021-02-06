@@ -19,6 +19,7 @@ import SearchIcon from "@material-ui/icons/Search";
 const Cards = () => {
   const classes = useStyles();
   const [searchText, setText] = useState(" ");
+  const [isShown, setIsShown] = useState(false);
   const { data: gym, loading: gymLoading, error: gymError } = useQuery(
     ALL_GYMS,
     {
@@ -42,8 +43,8 @@ const Cards = () => {
         justify="center"
         style={{ margin: "5rem" }}
       >
-        <Grid item lg={3} md={3} justify="center" >
-          <Loader color="rgba(38, 38, 38, 0.7)" className={classes.loader}/>
+        <Grid item lg={3} md={3} justify="center">
+          <Loader color="rgba(38, 38, 38, 0.7)" className={classes.loader} />
         </Grid>
       </Grid>
     );
@@ -64,12 +65,12 @@ const Cards = () => {
   return (
     <>
       <Grid container md={12} lg={12} justify="center">
-        <Grid item lg={7} md={7} justify="center" style={{width:"100%"}}>
+        <Grid item lg={7} md={7} justify="center" style={{ width: "100%" }}>
           <Grid container xs={12} lg={12} md={12}>
-            <Grid item xs={4} lg={1} md={1} style={{ marginBottom: "2rem"}}>
+            <Grid item xs={4} lg={1} md={1}>
               <PinDropIcon fontSize="large" className={classes.icon} />
             </Grid>
-            <Grid xs={8} lg={8} md={8} >
+            <Grid xs={8} lg={8} md={8}>
               <Paper className={classes.root} elevation={2}>
                 <InputBase
                   className={classes.input}
@@ -77,6 +78,8 @@ const Cards = () => {
                   onChange={(e) => setText(e.target.value)}
                 />
                 <IconButton
+                  onMouseEnter={() => setIsShown(true)}
+                  onMouseLeave={() => setIsShown(false)}
                   className={classes.iconButton}
                   onClick={() => getGyms()}
                 >
@@ -90,6 +93,11 @@ const Cards = () => {
                 label="Clear Filter"
                 onClick={() => clearFilter()}
               />
+            </Grid>
+          </Grid>
+          <Grid container lg={9} md={9} justify="flex-end">
+            <Grid item lg={1} md={1} justify="flex-end">
+              {isShown && <div className={classes.hover}> Search</div>}
             </Grid>
           </Grid>
         </Grid>
