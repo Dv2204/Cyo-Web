@@ -197,7 +197,10 @@ const Cards = () => {
                   </Grid>
                   <Grid container className={classes.row}>
                     <Grid item lg={10} md={10}>
-                      <Link to={`/gymdetails/${item.id}`}>
+                      <Link
+                        to={`/gymdetails/${item.id}`}
+                        className={classes.nonunderlinelink}
+                      >
                         <Chip
                           label="View Details"
                           className={classes.detailschip}
@@ -301,7 +304,10 @@ const Cards = () => {
                     </Grid>
                     <Grid container className={classes.row}>
                       <Grid item lg={10} md={10}>
-                        <Link to={`/gymdetails/${item.id}`}>
+                        <Link
+                          to={`/gymdetails/${item.id}`}
+                          className={classes.nonunderlinelink}
+                        >
                           <Chip
                             label="View Details"
                             className={classes.detailschip}

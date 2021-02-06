@@ -160,19 +160,22 @@ const ContactUsNew = () => {
                     About Us
                   </Typography>
                 </Link>
-                <Link to="/about">
+                <Link to="/about" className={classes.nonunderlinelink}>
                   <Typography variant="h6" className={classes.pages}>
                     About Developers
                   </Typography>
                 </Link>
-                <Link to="/support">
+                <Link to="/support" className={classes.nonunderlinelink}>
                   <Typography variant="h6" className={classes.pagessupport}>
                     Support
                   </Typography>
                 </Link>
               </Grid>
               <Grid item lg={6} md={6} xs={12} sm={12}>
-                <Link to="/licensesregistration">
+                <Link
+                  to="/licensesregistration"
+                  className={classes.nonunderlinelink}
+                >
                   <Typography
                     variant="h6"
                     className={classes.pagestwotop}
@@ -190,12 +193,12 @@ const ContactUsNew = () => {
             flexItem
           />
           <Grid item lg={2} md={2} xs={12} sm={12}>
-            <Link to="/privacypolicy">
+            <Link to="/privacypolicy" className={classes.nonunderlinelink}>
               <Typography variant="h6" className={classes.pagesthreetop}>
                 Privacy Policy
               </Typography>
             </Link>
-            <Link to="/apipolicy" style={{ textDecoration: "none !important" }}>
+            <Link to="/apipolicy" className={classes.nonunderlinelink}>
               <Typography
                 variant="h6"
                 className={classes.pagesthree}
@@ -204,7 +207,7 @@ const ContactUsNew = () => {
                 API Policy
               </Typography>
             </Link>
-            <Link to="/csrpolicy">
+            <Link to="/csrpolicy" className={classes.nonunderlinelink}>
               <Typography variant="h6" className={classes.pagesthree}>
                 CSR Policy
               </Typography>
