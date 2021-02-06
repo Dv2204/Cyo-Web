@@ -47,7 +47,6 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "10px",
     color: "#fff",
     backgroundColor: "#11C62E",
-    // marginLeft: "0.7rem",
     width: "1.6vw",
     [theme.breakpoints.down("xs")]: {
       display: "flex",
@@ -82,6 +81,21 @@ export const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     "&:hover": {
       color: "#000",
+    },
+  },
+  detailschip: {
+    color: "#fff",
+    backgroundColor: "#3D3D3D",
+    padding: "0 0.17rem",
+    marginLeft: "0.6rem",
+    textDecoration: "none",
+    fontSize: "12px",
+    "&:hover": {
+      cursor: "pointer",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "10px",
+      padding: "0 0.13rem",
     },
   },
   icon: {
@@ -165,4 +179,29 @@ export const useStyles = makeStyles((theme) => ({
       display: "none",
     },
   },
+  searchimage: {
+    height: "30vh",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed",
+    width: "100%",
+  },
+  nonunderlinelink:{
+    textDecoration: "none",
+    "&:focus": {
+      textDecoration: "none",
+    },
+    "&:hover": {
+      textDecoration: "none",
+    },
+    "&:visited": {
+      textDecoration: "none",
+    },
+    "&:link": {
+      textDecoration: "none",
+    },
+    "&:active": {
+      textDecoration: "none",
+    },
+  }
 }));

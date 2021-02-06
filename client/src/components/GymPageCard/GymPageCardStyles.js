@@ -78,6 +78,21 @@ export const useStyles = makeStyles((theme) => ({
       color: "#000",
     },
   },
+  detailschip: {
+    color: "#fff",
+    backgroundColor: "#3D3D3D",
+    padding: "0 0.17rem",
+    marginLeft: "0.6rem",
+    textDecoration: "none",
+    fontSize: "12px",
+    "&:hover": {
+      cursor: "pointer",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "10px",
+      padding: "0 0.13rem",
+    },
+  },
   icon: {
     color: "rgba(233, 62, 127, 1)",
     marginTop: "1rem",
@@ -162,6 +177,24 @@ export const useStyles = makeStyles((theme) => ({
     letterSpacing: "0.05rem",
     [theme.breakpoints.down("xs")]: {
       display: "none",
+    },
+  },
+  nonunderlinelink: {
+    textDecoration: "none",
+    "&:focus": {
+      textDecoration: "none",
+    },
+    "&:hover": {
+      textDecoration: "none",
+    },
+    "&:visited": {
+      textDecoration: "none",
+    },
+    "&:link": {
+      textDecoration: "none",
+    },
+    "&:active": {
+      textDecoration: "none",
     },
   },
 }));

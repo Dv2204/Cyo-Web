@@ -197,10 +197,14 @@ const Cards = () => {
                   </Grid>
                   <Grid container className={classes.row}>
                     <Grid item lg={10} md={10}>
-                      <Link to={`/gymdetails/${item.id}`}>
-                        <Typography variant="body2" className={classes.details}>
-                          View Details
-                        </Typography>
+                      <Link
+                        to={`/gymdetails/${item.id}`}
+                        className={classes.nonunderlinelink}
+                      >
+                        <Chip
+                          label="View Details"
+                          className={classes.detailschip}
+                        />
                       </Link>
                     </Grid>
                     <Grid item lg={2} md={2}>
@@ -300,13 +304,14 @@ const Cards = () => {
                     </Grid>
                     <Grid container className={classes.row}>
                       <Grid item lg={10} md={10}>
-                        <Link to={`/gymdetails/${item.id}`}>
-                          <Typography
-                            variant="body2"
-                            className={classes.details}
-                          >
-                            View Details
-                          </Typography>
+                        <Link
+                          to={`/gymdetails/${item.id}`}
+                          className={classes.nonunderlinelink}
+                        >
+                          <Chip
+                            label="View Details"
+                            className={classes.detailschip}
+                          />
                         </Link>
                       </Grid>
                       <Grid item lg={2} md={2}>
