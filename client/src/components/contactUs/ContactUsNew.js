@@ -24,9 +24,9 @@ const ContactUsNew = () => {
   const iOSUrl =
     "https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8";
   const androidUrl = "https://play.google.com";
-  const fb ="https://www.facebook.com/CYO-GYMS-103120781756195";
-  const insta ="https://www.instagram.com/cyogyms/";
-  const twitter = "https://twitter.com/CyoGyms?s=08"
+  const fb = "https://www.facebook.com/CYO-GYMS-103120781756195";
+  const insta = "https://www.instagram.com/cyogyms/";
+  const twitter = "https://twitter.com/CyoGyms?s=08";
   const [mail, setMail] = useState({
     name: "",
     email: "",
@@ -95,8 +95,8 @@ const ContactUsNew = () => {
           </Grid>
           <Grid item xs={12} lg={8} md={8}>
             <Typography variant="h5" className={classes.headingtwo}>
-              Fastest Growing Gym Chain. {"  "}&nbsp;&nbsp; Join our
-              network and grow your business!
+              Fastest Growing Gym Chain. {"  "}&nbsp;&nbsp; Join our network and
+              grow your business!
             </Typography>
           </Grid>
           <Grid item lg={2} md={2}>
@@ -112,10 +112,17 @@ const ContactUsNew = () => {
             <hr />
           </Grid>
         </Grid>
-        <Grid container lg={12} md={12} style={{ marginBottom: "2.5rem" }} >
+        <Grid container lg={12} md={12} style={{ marginBottom: "2.5rem" }}>
           <Grid item xs={12} lg={5} md={5}>
             <Grid container xs={12} lg={12} md={12} justify="center">
-              <Grid item xs={12}  lg={12} md={12} justify="center" style={{ marginLeft: "2.5rem" }}>
+              <Grid
+                item
+                xs={12}
+                lg={12}
+                md={12}
+                justify="center"
+                style={{ marginLeft: "2.5rem" }}
+              >
                 <Typography variant="h6" className={classes.download}>
                   Download the CYO GYMS app.
                 </Typography>
@@ -148,7 +155,7 @@ const ContactUsNew = () => {
           <Grid item lg={4} md={4} xs={12} sm={12}>
             <Grid container>
               <Grid item lg={6} md={6} xs={12} sm={12}>
-                <Link to="/aboutgyms">
+                <Link to="/aboutgyms" className={classes.nonunderlinelink}>
                   <Typography variant="h6" className={classes.pagestop}>
                     About Us
                   </Typography>
@@ -166,7 +173,11 @@ const ContactUsNew = () => {
               </Grid>
               <Grid item lg={6} md={6} xs={12} sm={12}>
                 <Link to="/licensesregistration">
-                  <Typography variant="h6" className={classes.pagestwotop} style={{textDecoration:"none"}}>
+                  <Typography
+                    variant="h6"
+                    className={classes.pagestwotop}
+                    style={{ textDecoration: "none" }}
+                  >
                     Licenses & Registration
                   </Typography>
                 </Link>
@@ -184,8 +195,12 @@ const ContactUsNew = () => {
                 Privacy Policy
               </Typography>
             </Link>
-            <Link to="/apipolicy" style={{textDecoration:"none !important"}}>
-              <Typography variant="h6" className={classes.pagesthree} style={{textDecoration:"none !important"}}>
+            <Link to="/apipolicy" style={{ textDecoration: "none !important" }}>
+              <Typography
+                variant="h6"
+                className={classes.pagesthree}
+                style={{ textDecoration: "none !important" }}
+              >
                 API Policy
               </Typography>
             </Link>
@@ -302,23 +317,26 @@ const ContactUsNew = () => {
             flexItem
           />
           <Grid item lg={4} md={4} style={{ marginTop: " 1.9rem" }}>
-          <Typography variant="h6" className={classes.follow}> Follow us on:</Typography>
+            <Typography variant="h6" className={classes.follow}>
+              {" "}
+              Follow us on:
+            </Typography>
             <a href={insta} target="_blank">
-            <InstagramIcon className={classes.iconsone}/>
+              <InstagramIcon className={classes.iconsone} />
             </a>
             <a href={fb} target="_blank">
-            <FacebookIcon className={classes.icons} />
+              <FacebookIcon className={classes.icons} />
             </a>
             <a href={twitter} target="_blank">
-            <TwitterIcon className={classes.icons} />
+              <TwitterIcon className={classes.icons} />
             </a>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <a target="_blank">
-            <YouTubeIcon className={classes.iconstwo} />
+              <YouTubeIcon className={classes.iconstwo} />
             </a>
             <a target="_blank">
-            <PinterestIcon className={classes.iconstwo} />
+              <PinterestIcon className={classes.iconstwo} />
             </a>
           </Grid>
         </Grid>

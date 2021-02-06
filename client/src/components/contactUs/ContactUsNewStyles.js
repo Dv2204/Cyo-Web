@@ -257,12 +257,12 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "0.8rem",
     },
   },
-  follow:{
-    marginTop:"2rem",
+  follow: {
+    marginTop: "2rem",
     marginLeft: "3rem",
-    color:"white",
+    color: "white",
     [theme.breakpoints.down("xs")]: {
-      marginBottom:"2rem"
+      marginBottom: "2rem",
     },
   },
   textfooter: {
@@ -276,8 +276,26 @@ export const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     color: "#c4c4c4",
     cursor: "pointer",
-    "&hover":{
-      color:"#fff"
-    }
+    "&hover": {
+      color: "#fff",
+    },
+  },
+  nonunderlinelink: {
+    textDecoration: "none",
+    "&:focus": {
+      textDecoration: "none",
+    },
+    "&:hover": {
+      textDecoration: "none",
+    },
+    "&:visited": {
+      textDecoration: "none",
+    },
+    "&:link": {
+      textDecoration: "none",
+    },
+    "&:active": {
+      textDecoration: "none",
+    },
   },
 }));

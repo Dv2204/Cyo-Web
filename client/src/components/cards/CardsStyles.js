@@ -47,7 +47,6 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "10px",
     color: "#fff",
     backgroundColor: "#11C62E",
-    // marginLeft: "0.7rem",
     width: "1.6vw",
     [theme.breakpoints.down("xs")]: {
       display: "flex",
@@ -179,5 +178,12 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       display: "none",
     },
+  },
+  searchimage: {
+    height: "30vh",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed",
+    width: "100%",
   },
 }));
