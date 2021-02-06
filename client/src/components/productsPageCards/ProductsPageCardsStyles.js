@@ -58,9 +58,7 @@ export const useStyles = makeStyles((theme) => ({
     padding: "2px 4px",
     display: "flex",
     alignItems: "center",
-    //width: 400,
     marginLeft: "1rem",
-    //  borderRadius: '10%'
   },
   input: {
     marginLeft: theme.spacing(1),
