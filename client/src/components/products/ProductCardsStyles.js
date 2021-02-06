@@ -2,7 +2,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
   paper: {
-    backgroundColor: "rgba(251, 217, 203, 1)",
+    // backgroundColor: "rgba(251, 217, 203, 1)",
+    backgroundColor: "#3F3F3F",
     height: "38vh",
     marginTop: "6rem",
     borderRadius: "13px",
@@ -46,7 +47,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   images: {
     height: "38vh",
-    width: "13.52vw",
+    width: "100%",
     borderRadius: "13px",
     BackgroundSize: "cover",
     [theme.breakpoints.down("xs")]: {
