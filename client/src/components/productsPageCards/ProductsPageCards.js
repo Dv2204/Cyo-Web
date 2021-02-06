@@ -13,6 +13,7 @@ import { SEARCH_PRODUCT } from "../../graphql/requests";
 const ProductPageCards = () => {
   const classes = useStyles();
   const [searchText, setText] = useState(" ");
+  const [isShown, setIsShown] = useState(false);
   const {
     data: products,
     loading: productsLoading,
@@ -66,6 +67,8 @@ const ProductPageCards = () => {
               onChange={(e) => setText(e.target.value)}
             />
             <IconButton
+              onMouseEnter={() => setIsShown(true)}
+              onMouseLeave={() => setIsShown(false)}
               className={classes.iconButton}
               onClick={() => getProducts()}
             >
@@ -81,6 +84,11 @@ const ProductPageCards = () => {
           >
             Clear filter
           </Typography>
+        </Grid>
+      </Grid>
+      <Grid container lg={9} md={9} justify="flex-end">
+        <Grid item lg={1} md={1} justify="flex-end">
+          {isShown && <div className={classes.hover}> Search Products</div>}
         </Grid>
       </Grid>
 

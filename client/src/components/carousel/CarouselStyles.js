@@ -12,7 +12,7 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "4em",
   },
   text: {
-    paddingTop: "8rem",
+    paddingTop: "9rem",
     paddingBottom: "4rem",
     fontWeight: "bold",
     color: "#FB5B21",
@@ -28,9 +28,9 @@ export const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: "70vh",
-    marginTop: "5rem",
-    marginBottom: "2rem",
+    // height: "90vh",
+    marginTop: "1.5rem",
+    marginBottom: "8rem",
     [theme.breakpoints.down("xs")]: {
       height: "32vh !important",
       marginTop: "3rem",
@@ -38,7 +38,16 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   images: {
+    [theme.breakpoints.down("xs")]: {
+      height: "40vh !important",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundAttachment: "fixed",
+    },
+  },
+  imagesmaincompare: {
     backgroundSize: "cover !important",
+    backgroundRepeat: "no-repeat",
     height: "82vh",
     width: "100%",
     [theme.breakpoints.down("xs")]: {

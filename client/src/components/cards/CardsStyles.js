@@ -7,9 +7,9 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "20px",
     },
   },
-  searchdiv:{
+  searchdiv: {
     [theme.breakpoints.down("xs")]: {
-      margin: "0px !important"
+      margin: "0px !important",
     },
   },
   paperNormal: {
@@ -151,6 +151,18 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     [theme.breakpoints.down("xs")]: {
       width: "80vw",
+    },
+  },
+  hover: {
+    fontSize: "13px",
+    color: "#fff",
+    padding: "0.2rem 0.5rem",
+    backgroundColor: "#aaaaaa",
+    position: "absolute",
+    justify: "flex-end",
+    letterSpacing: "0.05rem",
+    [theme.breakpoints.down("xs")]: {
+      display: "none",
     },
   },
 }));

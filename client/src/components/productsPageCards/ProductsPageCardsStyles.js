@@ -29,7 +29,7 @@ export const useStyles = makeStyles((theme) => ({
     color: "rgba(145, 145, 145, 1)",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "5rem",
-      fontSize:"1.2rem"
+      fontSize: "1.2rem",
     },
   },
   mrp: {
@@ -58,9 +58,7 @@ export const useStyles = makeStyles((theme) => ({
     padding: "2px 4px",
     display: "flex",
     alignItems: "center",
-    //width: 400,
     marginLeft: "1rem",
-    //  borderRadius: '10%'
   },
   input: {
     marginLeft: theme.spacing(1),
@@ -81,7 +79,19 @@ export const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: "4vw",
-      marginBottom:'2rem'
+      marginBottom: "2rem",
+    },
+  },
+  hover: {
+    fontSize: "13px",
+    color: "#fff",
+    padding: "0.2rem 0.5rem",
+    backgroundColor: "#aaaaaa",
+    position: "absolute",
+    justify: "flex-end",
+    letterSpacing: "0.05rem",
+    [theme.breakpoints.down("xs")]: {
+      display: "none",
     },
   },
 }));

@@ -152,4 +152,16 @@ export const useStyles = makeStyles((theme) => ({
       width: "80vw",
     },
   },
+  hover: {
+    fontSize: "13px",
+    color: "#fff",
+    padding: "0.2rem 0.5rem",
+    backgroundColor: "#aaaaaa",
+    position: "absolute",
+    justify: "flex-end",
+    letterSpacing: "0.05rem",
+    [theme.breakpoints.down("xs")]: {
+      display: "none",
+    },
+  },
 }));
