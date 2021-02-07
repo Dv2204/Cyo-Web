@@ -125,6 +125,12 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "1.2rem",
       marginLeft: "9rem",
     },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1.4rem",
+      marginTop: "1.4rem",
+      // marginLeft: "9rem",
+      textAlign: "center",
+    },
   },
   pages: {
     color: "#fff",
@@ -220,6 +226,9 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       display: "none",
     },
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
+    },
   },
   icons: {
     color: "#fff",
@@ -231,6 +240,10 @@ export const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: "1.9rem",
+      marginTop: "-4rem",
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "2.3rem",
       marginTop: "-4rem",
     },
   },
