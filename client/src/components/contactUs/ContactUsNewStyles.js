@@ -10,6 +10,10 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "1.7rem",
       textAlign: "center",
     },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "2.4rem",
+      textAlign: "center",
+    },
   },
   headingtwo: {
     color: "#fff",
@@ -17,6 +21,12 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: "0.5rem",
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
+      fontWeight: "normal",
+      textAlign: "center",
+      marginTop: "1rem",
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1.4rem",
       fontWeight: "normal",
       textAlign: "center",
       marginTop: "1rem",
@@ -33,6 +43,10 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       padding: "0.2rem 1.5rem",
       marginTop: "1.3rem",
+    },
+    [theme.breakpoints.down("sm")]: {
+      padding: "0.2rem 1.5rem",
+      marginTop: "2rem",
     },
   },
   headingbuttontext: {
@@ -51,6 +65,10 @@ export const useStyles = makeStyles((theme) => ({
       marginLeft: "2.5rem",
       fontSize: "1rem",
     },
+    [theme.breakpoints.down("xs")]: {
+      textAlign: "center",
+      fontSize: "1.4rem",
+    },
   },
   mac: {
     width: "10vw !important",
@@ -59,6 +77,10 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       width: "24vw !important",
     },
+    [theme.breakpoints.down("sm")]: {
+      width: "22vw !important",
+      marginTop: "0.2rem",
+    },
   },
   google: {
     width: "12vw !important",
@@ -66,6 +88,10 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       width: "25vw !important",
       marginTop: "0.4rem",
+      marginLeft: "2rem",
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "28vw !important",
       marginLeft: "2rem",
     },
   },
@@ -82,6 +108,9 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: "1.5rem",
     height: "29vh",
     [theme.breakpoints.down("xs")]: {
+      display: "none",
+    },
+    [theme.breakpoints.down("sm")]: {
       display: "none",
     },
   },
