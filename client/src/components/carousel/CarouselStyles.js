@@ -28,7 +28,6 @@ export const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    // height: "90vh",
     marginTop: "1.5rem",
     marginBottom: "8rem",
     [theme.breakpoints.down("xs")]: {

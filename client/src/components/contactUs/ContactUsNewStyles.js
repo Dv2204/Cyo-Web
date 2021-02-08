@@ -10,6 +10,10 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "1.7rem",
       textAlign: "center",
     },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "2.4rem",
+      textAlign: "center",
+    },
   },
   headingtwo: {
     color: "#fff",
@@ -17,6 +21,12 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: "0.5rem",
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
+      fontWeight: "normal",
+      textAlign: "center",
+      marginTop: "1rem",
+    },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.4rem",
       fontWeight: "normal",
       textAlign: "center",
       marginTop: "1rem",
@@ -33,6 +43,10 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       padding: "0.2rem 1.5rem",
       marginTop: "1.3rem",
+    },
+    [theme.breakpoints.only("sm")]: {
+      padding: "0.2rem 1.5rem",
+      marginTop: "2rem",
     },
   },
   headingbuttontext: {
@@ -51,6 +65,10 @@ export const useStyles = makeStyles((theme) => ({
       marginLeft: "2.5rem",
       fontSize: "1rem",
     },
+    [theme.breakpoints.only("sm")]: {
+      textAlign: "center",
+      fontSize: "1.4rem",
+    },
   },
   mac: {
     width: "10vw !important",
@@ -58,6 +76,10 @@ export const useStyles = makeStyles((theme) => ({
     padding: "12px !important",
     [theme.breakpoints.down("xs")]: {
       width: "24vw !important",
+    },
+    [theme.breakpoints.only("sm")]: {
+      width: "22vw !important",
+      marginTop: "0.2rem",
     },
   },
   google: {
@@ -68,6 +90,10 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "0.4rem",
       marginLeft: "2rem",
     },
+    [theme.breakpoints.only("sm")]: {
+      width: "28vw !important",
+      marginLeft: "2rem",
+    },
   },
   divider1: {
     backgroundColor: "#fff",
@@ -76,12 +102,18 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       display: "none",
     },
+    [theme.breakpoints.only("sm")]: {
+      display: "none",
+    },
   },
   divider: {
     backgroundColor: "#fff",
     marginTop: "1.5rem",
     height: "29vh",
     [theme.breakpoints.down("xs")]: {
+      display: "none",
+    },
+    [theme.breakpoints.only("sm")]: {
       display: "none",
     },
   },
@@ -96,6 +128,11 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "1.2rem",
       marginLeft: "9rem",
     },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.4rem",
+      textAlign: "center",
+      justifyContent: "center",
+    },
   },
   pages: {
     color: "#fff",
@@ -105,6 +142,11 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "1rem",
       marginLeft: "6.96rem",
     },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.4rem",
+      textAlign: "center",
+      justifyContent: "center",
+    },
   },
   pagessupport: {
     color: "#fff",
@@ -113,6 +155,11 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
       marginLeft: "9.35rem",
+    },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.4rem",
+      textAlign: "center",
+      justifyContent: "center",
     },
   },
   pagestwotop: {
@@ -128,6 +175,12 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "0.1rem",
       marginLeft: "6rem",
     },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.4rem",
+      textAlign: "center",
+      marginTop: "0.4rem",
+      justifyContent: "center",
+    },
   },
   pagestwo: {
     color: "#fff",
@@ -138,6 +191,11 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "1rem",
       marginTop: "0.1rem",
       marginLeft: "6rem",
+    },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.4rem",
+      textAlign: "center",
+      justifyContent: "center",
     },
   },
   pagesthreetop: {
@@ -150,6 +208,12 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "0.1rem",
       marginLeft: "8rem",
     },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.4rem",
+      textAlign: "center",
+      marginTop: "0.4rem",
+      justifyContent: "center",
+    },
   },
   pagesthree: {
     color: "#fff",
@@ -158,6 +222,11 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
       marginLeft: "8.9rem",
+    },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.4rem",
+      textAlign: "center",
+      justifyContent: "center",
     },
   },
   paper: {
@@ -191,6 +260,9 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       display: "none",
     },
+    [theme.breakpoints.only("sm")]: {
+      display: "none",
+    },
   },
   icons: {
     color: "#fff",
@@ -202,6 +274,10 @@ export const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: "1.9rem",
+      marginTop: "-4rem",
+    },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "2.3rem",
       marginTop: "-4rem",
     },
   },
@@ -218,6 +294,11 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "-4rem",
       marginLeft: "0.75rem",
     },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "2.3rem",
+      marginTop: "-4rem",
+      marginLeft: "0.75rem",
+    },
   },
   iconstwo: {
     color: "#fff",
@@ -229,6 +310,10 @@ export const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: "2rem",
+      marginBottom: "1.5rem",
+    },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "2.3rem",
       marginBottom: "1.5rem",
     },
   },
@@ -264,12 +349,19 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       marginBottom: "2rem",
     },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.5rem",
+      marginBottom: "2rem",
+    },
   },
   textfooter: {
     color: "#c4c4c4",
     textAlign: "center",
     [theme.breakpoints.down("xs")]: {
       fontSize: "0.95rem",
+    },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.1rem",
     },
   },
   footerlink: {
