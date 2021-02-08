@@ -118,7 +118,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: "0.8rem",
-      marginLeft: "6.5rem",
+      marginLeft: "7.85rem",
       marginTop: "1rem",
       padding: "0.3rem 1.3rem",
     },
@@ -186,7 +186,7 @@ export const useStyles = makeStyles((theme) => ({
     backgroundAttachment: "fixed",
     width: "100%",
   },
-  nonunderlinelink:{
+  nonunderlinelink: {
     textDecoration: "none",
     "&:focus": {
       textDecoration: "none",
@@ -203,5 +203,5 @@ export const useStyles = makeStyles((theme) => ({
     "&:active": {
       textDecoration: "none",
     },
-  }
+  },
 }));
