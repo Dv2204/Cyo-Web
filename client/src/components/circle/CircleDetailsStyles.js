@@ -9,6 +9,5 @@ export const useStyles = makeStyles((theme) => ({
   },
   text: {
     textAlign: 'center',
-    letterSpacing: "0.1rem",
   },
 }));
