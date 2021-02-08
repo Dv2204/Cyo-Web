@@ -34,12 +34,12 @@ const ProductCards = () => {
     <>
       {products.products.map((item, index) =>
         index < 9 ? (
-          <Grid item xs={12} lg={4} md={4} sm={12} key={item.id}>
+          <Grid item xs={12} lg={4} md={4} sm={4} key={item.id}>
             <Grid container justify="center">
-              <Grid item xs={12} lg={6} md={6} sm={5}>
+              <Grid item xs={12} lg={6} md={6} sm={10}>
                 <Paper elevation={2} className={classes.paper}>
                   <Grid container justify="center">
-                    <Grid item lg={12} md={12}>
+                    <Grid item lg={12} md={12} sm={12}>
                       <img
                         className={classes.images}
                         src={`${IMAGE_URL}${item.image}`}
