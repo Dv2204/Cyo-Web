@@ -128,11 +128,11 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "1.2rem",
       marginLeft: "9rem",
     },
-    // [theme.breakpoints.down("sm")]: {
-    //   fontSize: "1.4rem",
-    //   textAlign: "center",
-    //   justifyContent: "center",
-    // },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.4rem",
+      textAlign: "center",
+      justifyContent: "center",
+    },
   },
   pages: {
     color: "#fff",
@@ -142,11 +142,11 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "1rem",
       marginLeft: "6.96rem",
     },
-    // [theme.breakpoints.down("sm")]: {
-    //   fontSize: "1.4rem",
-    //   textAlign: "center",
-    //   justifyContent: "center",
-    // },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.4rem",
+      textAlign: "center",
+      justifyContent: "center",
+    },
   },
   pagessupport: {
     color: "#fff",
@@ -156,11 +156,11 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "1rem",
       marginLeft: "9.35rem",
     },
-    // [theme.breakpoints.down("sm")]: {
-    //   fontSize: "1.4rem",
-    //   textAlign: "center",
-    //   justifyContent: "center",
-    // },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.4rem",
+      textAlign: "center",
+      justifyContent: "center",
+    },
   },
   pagestwotop: {
     color: "#fff",
@@ -175,12 +175,12 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "0.1rem",
       marginLeft: "6rem",
     },
-    // [theme.breakpoints.down("sm")]: {
-    //   fontSize: "1.4rem",
-    //   textAlign: "center",
-    //   marginTop: "0.4rem",
-    //   justifyContent: "center",
-    // },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.4rem",
+      textAlign: "center",
+      marginTop: "0.4rem",
+      justifyContent: "center",
+    },
   },
   pagestwo: {
     color: "#fff",
@@ -192,11 +192,11 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "0.1rem",
       marginLeft: "6rem",
     },
-    // [theme.breakpoints.down("sm")]: {
-    //   fontSize: "1.4rem",
-    //   textAlign: "center",
-    //   justifyContent: "center",
-    // },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.4rem",
+      textAlign: "center",
+      justifyContent: "center",
+    },
   },
   pagesthreetop: {
     color: "#fff",
@@ -208,12 +208,12 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "0.1rem",
       marginLeft: "8rem",
     },
-    // [theme.breakpoints.down("sm")]: {
-    //   fontSize: "1.4rem",
-    //   textAlign: "center",
-    //   marginTop: "0.4rem",
-    //   justifyContent: "center",
-    // },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.4rem",
+      textAlign: "center",
+      marginTop: "0.4rem",
+      justifyContent: "center",
+    },
   },
   pagesthree: {
     color: "#fff",
@@ -223,11 +223,11 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "1rem",
       marginLeft: "8.9rem",
     },
-    // [theme.breakpoints.down("sm")]: {
-    //   fontSize: "1.4rem",
-    //   textAlign: "center",
-    //   justifyContent: "center",
-    // },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.4rem",
+      textAlign: "center",
+      justifyContent: "center",
+    },
   },
   paper: {
     borderRadius: "20px",
@@ -260,9 +260,9 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       display: "none",
     },
-    // [theme.breakpoints.down("sm")]: {
-    //   display: "none",
-    // },
+    [theme.breakpoints.only("sm")]: {
+      display: "none",
+    },
   },
   icons: {
     color: "#fff",
@@ -276,10 +276,10 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "1.9rem",
       marginTop: "-4rem",
     },
-    // [theme.breakpoints.down("sm")]: {
-    //   fontSize: "2.3rem",
-    //   marginTop: "-4rem",
-    // },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "2.3rem",
+      marginTop: "-4rem",
+    },
   },
   iconsone: {
     color: "#fff",
@@ -294,11 +294,11 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "-4rem",
       marginLeft: "0.75rem",
     },
-    // [theme.breakpoints.down("sm")]: {
-    //   fontSize: "2.3rem",
-    //   marginTop: "-4rem",
-    //   marginLeft: "0.75rem",
-    // },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "2.3rem",
+      marginTop: "-4rem",
+      marginLeft: "0.75rem",
+    },
   },
   iconstwo: {
     color: "#fff",
@@ -312,10 +312,10 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "2rem",
       marginBottom: "1.5rem",
     },
-    // [theme.breakpoints.down("sm")]: {
-    //   fontSize: "2.3rem",
-    //   marginBottom: "1.5rem",
-    // },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "2.3rem",
+      marginBottom: "1.5rem",
+    },
   },
   footerPaper: {
     backgroundColor: "#3F3F3F",
@@ -349,10 +349,10 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       marginBottom: "2rem",
     },
-    // [theme.breakpoints.down("sm")]: {
-    //   fontSize: "1.5rem",
-    //   marginBottom: "2rem",
-    // },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.5rem",
+      marginBottom: "2rem",
+    },
   },
   textfooter: {
     color: "#c4c4c4",
@@ -360,9 +360,9 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "0.95rem",
     },
-    // [theme.breakpoints.down("sm")]: {
-    //   fontSize: "1.1rem",
-    // },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.1rem",
+    },
   },
   footerlink: {
     textDecoration: "none",
