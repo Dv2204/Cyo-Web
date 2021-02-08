@@ -8,7 +8,7 @@ import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import StarIcon from "@material-ui/icons/Star";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import { Link } from "react-router-dom";
-import { ALL_GYMS, CITY_GYMS, IMAGE_URL } from "../../graphql/requests";
+import { ALL_GYMS, CITY_GYMS, IMAGE_URL, SEARCH_GYMS } from "../../graphql/requests";
 import { useQuery, useLazyQuery } from "@apollo/client";
 import Loader from "../Loader";
 import PinDropIcon from "@material-ui/icons/PinDrop";
@@ -19,6 +19,7 @@ import SearchIcon from "@material-ui/icons/Search";
 const Cards = () => {
   const classes = useStyles();
   const [searchText, setText] = useState(" ");
+  const [searchNameText, setNameText] = useState(" ");
   const [isShown, setIsShown] = useState(false);
   const { data: gym, loading: gymLoading, error: gymError } = useQuery(
     ALL_GYMS,
@@ -34,7 +35,13 @@ const Cards = () => {
   ] = useLazyQuery(CITY_GYMS, {
     variables: { city: searchText },
   });
-  if (gymLoading || filteredGymLoading) {
+  const [
+    getNameGyms,
+    { data: filteredNameGym, loading: filteredNameGymLoading, error: filteredNameGymError },
+  ] = useLazyQuery(SEARCH_GYMS, {
+    variables: { keyword: searchNameText },
+  });
+  if (gymLoading || filteredGymLoading || filteredNameGymLoading) {
     return (
       <Grid
         container
@@ -56,11 +63,16 @@ const Cards = () => {
   if (filteredGymError) {
     return <p style={{ color: "#fff" }}>{filteredGymError.message}</p>;
   }
+  if (filteredNameGymError) {
+    return <p style={{ color: "#fff" }}>{filteredNameGymError.message}</p>;
+  }
 
   console.log(gym);
   console.log(filteredGym);
+  console.log(filteredNameGym);
   const clearFilter = () => {
     setText(" ");
+    setNameText(" ");
   };
   return (
     <>
@@ -74,14 +86,14 @@ const Cards = () => {
               <Paper className={classes.root} elevation={2}>
                 <InputBase
                   className={classes.input}
-                  placeholder="Enter City"
-                  onChange={(e) => setText(e.target.value)}
+                  placeholder="Search by city or name"
+                  onChange={(e) => {searchText ? setText(e.target.value) :  setNameText(e.target.value)}}
                 />
                 <IconButton
                   onMouseEnter={() => setIsShown(true)}
                   onMouseLeave={() => setIsShown(false)}
                   className={classes.iconButton}
-                  onClick={() => getGyms()}
+                  onClick={() => {setText ? getGyms() : getNameGyms()}}
                 >
                   <SearchIcon />
                 </IconButton>
