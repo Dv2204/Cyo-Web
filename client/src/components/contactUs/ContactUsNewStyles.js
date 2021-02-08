@@ -66,7 +66,8 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "1rem",
     },
     [theme.breakpoints.only("sm")]: {
-      textAlign: "center",
+      // textAlign: "center",
+      marginLeft: "14rem",
       fontSize: "1.4rem",
     },
   },
@@ -78,7 +79,7 @@ export const useStyles = makeStyles((theme) => ({
       width: "24vw !important",
     },
     [theme.breakpoints.only("sm")]: {
-      width: "22vw !important",
+      width: "20vw !important",
       marginTop: "0.2rem",
     },
   },
@@ -91,8 +92,8 @@ export const useStyles = makeStyles((theme) => ({
       marginLeft: "2rem",
     },
     [theme.breakpoints.only("sm")]: {
-      width: "28vw !important",
-      marginLeft: "2rem",
+      width: "29vw !important",
+      marginLeft: "8rem",
     },
   },
   divider1: {
