@@ -12,8 +12,8 @@ const CircleDetails = ({ machines }) => {
           {machines?.map((item, index) => (
             <Grid item lg={2} md={2}>
               <Paper elevation={2} className={classes.paper}></Paper>
-              <Typography variant="h6" className={classes.text}>
-                {item.name}
+              <Typography className={classes.text}>
+                {item.machine.name}
               </Typography>
             </Grid>
           ))}

@@ -23,6 +23,10 @@ export const useStyles = makeStyles((theme) => ({
       paddingTop: "4rem",
       marginLeft: "1.8rem",
     },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "2.65rem",
+      paddingTop: "4rem",
+    },
   },
   carousel: {
     display: "flex",
@@ -33,6 +37,11 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       height: "32vh !important",
       marginTop: "3rem",
+      width: "99vw",
+    },
+    [theme.breakpoints.only("sm")]: {
+      height: "34vh !important",
+      marginTop: "5rem",
       width: "99vw",
     },
   },
