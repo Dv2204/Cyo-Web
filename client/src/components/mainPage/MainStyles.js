@@ -36,7 +36,6 @@ export const useStyles = makeStyles((theme) => ({
       height: "60vh ",
       marginBottom: "5rem",
     },
-
   },
   text: {
     fontWeight: "bold",
