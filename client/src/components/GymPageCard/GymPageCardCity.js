@@ -78,11 +78,6 @@ const Cards = () => {
   }
 
   const onChangeHandler = (e) => {
-    //  if(searchText.length > 0){
-    //    setText(e.target.value);
-    //  }else{
-    //    setNameText(e.target.value)
-    //  }
     setNameText(e.target.value);
     setText(e.target.value);
   };
@@ -95,8 +90,8 @@ const Cards = () => {
   console.log(filteredGym);
   console.log(filteredNameGym);
   const clearFilter = () => {
-    setText(" ");
-    setNameText(" ");
+    setText("");
+    setNameText("");
   };
 
   const renderComponent = () => {
@@ -104,8 +99,8 @@ const Cards = () => {
       return filteredGym.gym.map((item, index) => (
         <GymData item={item} key={index} />
       ));
-    } else if (filteredNameGym?.gym?.length > 0) {
-      return filteredNameGym.gym.map((item, index) => (
+    } else if (filteredNameGym?.searchGym?.length > 0) {
+      return filteredNameGym.searchGym.map((item, index) => (
         <GymData item={item} key={index} />
       ));
     } else {
