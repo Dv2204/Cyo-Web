@@ -11,6 +11,9 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "1.8rem",
     },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "3rem",
+    },
   },
   name: {
     paddingTop: "2.5rem",
@@ -23,6 +26,9 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "1.2rem",
       padding: "1rem 2rem",
     },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "2.6rem",
+    },
   },
   textheading: {
     paddingTop: "2.8rem",
@@ -31,11 +37,17 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "1.2rem",
     },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.74rem",
+    },
   },
   textbody: {
     color: "#494848",
     [theme.breakpoints.down("xs")]: {
       fontSize: "0.8rem",
+    },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.13rem",
     },
   },
   textbodylast: {

@@ -23,7 +23,7 @@ const ReviewCard = ({ rating }) => {
                 </Paper>
               </Grid>
               <Grid item lg={3} md={3}>
-                <Typography variant="h5" className={classes.name}>
+                <Typography variant="h6" className={classes.name}>
                   {item.userId.firstName} {item.userId.lastName}
                 </Typography>
               </Grid>
@@ -39,7 +39,7 @@ const ReviewCard = ({ rating }) => {
             </Grid>
             <Grid container lg={12} md={12} justify="center">
               <Grid item lg={10} md={10}>
-                <Typography variant="body1" className={classes.text}>
+                <Typography variant="body2" className={classes.text}>
                   {item.description}
                 </Typography>
               </Grid>

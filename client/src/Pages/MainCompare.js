@@ -285,14 +285,13 @@ const MainCompare = (props) => {
                 <Grid container lg={12} md={12} justify="space-around">
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
+                      Name: <br />
                       {detailDataOne.gymDetail.machines?.length > 0 ? (
                         detailDataOne.gymDetail.machines.map((item, index) => (
                           <>
                             <Typography variant="body1">
-                              Name:
-                              <br /> {index + 1}. {item.name}
+                              {index + 1}. {item.machine.name}
                             </Typography>
-                            <br />
                           </>
                         ))
                       ) : (
@@ -304,14 +303,14 @@ const MainCompare = (props) => {
                   </Grid>
                   <Grid item lg={5} md={5}>
                     <Typography variant="body1" justify="center">
+                      Name:
+                      <br />
                       {detailDataTwo.gymDetail.machines?.length > 0 ? (
                         detailDataTwo.gymDetail.machines.map((item, index) => (
                           <>
                             <Typography variant="body1">
-                              Name:
-                              <br /> {item.name}
+                              {index + 1}. {item.machine.name}
                             </Typography>
-                            <br />
                           </>
                         ))
                       ) : (

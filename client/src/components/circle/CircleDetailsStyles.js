@@ -8,7 +8,6 @@ export const useStyles = makeStyles((theme) => ({
     borderRadius: "50%",
   },
   text: {
-    textAlign: "center",
-    letterSpacing: "0.1rem",
+    textAlign: 'center',
   },
 }));
