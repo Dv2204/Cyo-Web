@@ -13,7 +13,7 @@ const Main = () => {
         <Grid container xs={12} md={12} className={classes.row}>
           <Grid item xs={7} md={8}>
             <Grid container xs={12} lg={12} md={12} justify="center">
-              <Grid item xs={12} lg={9} md={9}>
+              <Grid item xs={12} lg={9} md={9} sm={10}>
                 <Paper elevation={3} className={classes.paper} justify="center">
                   <Typography variant="h2" className={classes.text}>
                     Starve your <br />

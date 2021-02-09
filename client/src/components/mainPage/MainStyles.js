@@ -15,6 +15,11 @@ export const useStyles = makeStyles((theme) => ({
       width: "auto",
       paddingLeft: "0.2rem ",
     },
+    [theme.breakpoints.only("sm")]: {
+      height: "70vh",
+      width: "auto",
+      paddingLeft: "0.2rem ",
+    },
   },
   paper: {
     backgroundColor: "rgba(255, 255, 255, 0.13)",
@@ -27,6 +32,11 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "3rem",
       marginBottom: "2rem",
     },
+    [theme.breakpoints.only("sm")]: {
+      height: "60vh ",
+      marginBottom: "5rem",
+    },
+
   },
   text: {
     fontWeight: "bold",
@@ -35,7 +45,11 @@ export const useStyles = makeStyles((theme) => ({
     letterSpacing: "0.1rem",
     fontSize: "4rem",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "1.4rem",
+      fontSize: "1.3rem",
+      padding: "1.8rem 1rem 0rem 1rem",
+    },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "2.8rem",
       padding: "1.8rem 1rem 0rem 1rem",
     },
   },
@@ -53,6 +67,11 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "0.5rem",
       margin: "1rem 1.5rem",
+      padding: "0rem 1rem",
+    },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "0.9rem",
+      margin: "1rem 1rem",
       padding: "0rem 1rem",
     },
   },
