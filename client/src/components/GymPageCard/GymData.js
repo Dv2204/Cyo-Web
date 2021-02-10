@@ -15,21 +15,21 @@ import {
 const GymData = ({ item }) => {
     const classes = useStyles();
     return (
-      <Grid item lg={4} md={4} id="gym" className={classes.card}>
+      <Grid item lg={4} sm={6} md={4} id="gym" className={classes.card}>
         <Paper elevation={4} className={classes.paperNormal}>
           <Grid container>
-            <Grid item lg={12} md={12}>
+            <Grid item lg={12} sm={12} md={12}>
               <Grid container className={classes.row}>
-                <Grid item lg={10} md={10}>
+                <Grid item lg={10} sm={12} md={10}>
                   <Grid container className={classes.top}>
-                    <Grid item lg={2} md={2}>
+                    <Grid item lg={2} sm={3} md={2}>
                       <Avatar
                         src={head}
                         alt="Profile"
                         className={classes.small}
                       />
                     </Grid>
-                    <Grid item lg={10} md={10}>
+                    <Grid item lg={10} sm={8} md={10}>
                       <Typography variant="h6" className={classes.title}>
                         {" "}
                         {item.gym.name}{" "}

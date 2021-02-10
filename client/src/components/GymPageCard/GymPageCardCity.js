@@ -112,13 +112,13 @@ const Cards = () => {
 
   return (
     <>
-      <Grid container md={12} lg={12} justify="center">
+      <Grid container sm={12} md={12} lg={12} justify="center">
         <Grid item lg={7} md={7} justify="center" style={{ width: "100%" }}>
-          <Grid container xs={12} lg={12} md={12}>
-            <Grid item xs={4} lg={1} md={1}>
+          <Grid container xs={12}  sm={12} lg={12} md={12}>
+            <Grid item xs={4} sm={2} lg={1} md={1}>
               <PinDropIcon fontSize="large" className={classes.icon} />
             </Grid>
-            <Grid xs={8} lg={8} md={8}>
+            <Grid xs={8} sm={7} lg={8} md={8}>
               <Paper className={classes.root} elevation={2}>
                 <InputBase
                   className={classes.input}
@@ -145,7 +145,7 @@ const Cards = () => {
               />
             </Grid>
           </Grid>
-          <Grid container lg={9} md={9} justify="flex-end">
+          <Grid container sm={3} lg={9} md={9} justify="flex-end">
             <Grid item lg={1} md={1} justify="flex-end">
               {isShown && <div className={classes.hover}> Search</div>}
             </Grid>

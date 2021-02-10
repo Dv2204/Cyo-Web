@@ -67,7 +67,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.only("sm")]: {
       // textAlign: "center",
-      marginLeft: "14rem",
+      marginLeft: "7rem",
       fontSize: "1.4rem",
     },
   },
@@ -133,6 +133,7 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "1.3rem",
       textAlign: "center",
       justifyContent: "center",
+      marginLeft:'0'
     },
   },
   pages: {
@@ -147,6 +148,7 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "1.3rem",
       textAlign: "center",
       justifyContent: "center",
+      marginLeft:'0'
     },
   },
   pagessupport: {
@@ -161,6 +163,7 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "1.3rem",
       textAlign: "center",
       justifyContent: "center",
+      marginLeft:'0'
     },
   },
   pagestwotop: {
@@ -181,6 +184,7 @@ export const useStyles = makeStyles((theme) => ({
       textAlign: "center",
       marginTop: "0.4rem",
       justifyContent: "center",
+      marginLeft:'2.5rem'
     },
   },
   pagestwo: {
@@ -197,6 +201,7 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "1.3rem",
       textAlign: "center",
       justifyContent: "center",
+      marginLeft:'0'
     },
   },
   pagesthreetop: {
@@ -214,6 +219,7 @@ export const useStyles = makeStyles((theme) => ({
       textAlign: "center",
       marginTop: "0.4rem",
       justifyContent: "center",
+      marginLeft:'0'
     },
   },
   pagesthree: {
@@ -228,6 +234,7 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "1.3rem",
       textAlign: "center",
       justifyContent: "center",
+      marginLeft:'0'
     },
   },
   paper: {
