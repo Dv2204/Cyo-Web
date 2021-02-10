@@ -54,6 +54,7 @@ const GymData = ({ item }) => {
                   <BeenhereOutlinedIcon
                     fontSize="small"
                     style={{ color: "#11C62E", float: "right" }}
+                    className={classes.tick}
                   />
                 </Grid>
               </Grid>
