@@ -16,6 +16,10 @@ export const useStyles = makeStyles((theme) => ({
       border: "1.4px solid #cccccc",
       cursor: "pointer",
     },
+    
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "20px",
+    },
   },
   top: {
     paddingTop: "0.2rem",
@@ -37,13 +41,19 @@ export const useStyles = makeStyles((theme) => ({
     width: theme.spacing(5),
     height: theme.spacing(5),
     paddingLeft: "10px",
+    [theme.breakpoints.down("sm")]: {
+      width:"2rem",
+      height:"2rem"
+    },
   },
   rating: {
     fontSize: "10px",
     color: "#fff",
+    padding: "2px",
     backgroundColor: "#11C62E",
     marginLeft: "0.7rem",
-    width: "1.6vw",
+    width: "1.8vw",
+    marginBottom: "5px",
     [theme.breakpoints.down("xs")]: {
       display: "flex",
       flexDirection: "row",
@@ -52,6 +62,20 @@ export const useStyles = makeStyles((theme) => ({
       width: "10vw",
       padding: "3px 0 3px 0",
       marginBottom: "5px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      width: "6vw",
+      padding: "2px 0 2px 0",
+      marginBottom: "15px",
+    },
+  },
+  tick:{
+    [theme.breakpoints.down("sm")]: {
+      display: "none !important"
     },
   },
   ratingIcon: {

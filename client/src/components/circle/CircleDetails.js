@@ -8,12 +8,12 @@ const CircleDetails = ({ machines }) => {
   return (
     <>
       <Grid item lg={8} md={8}>
-        <Grid container lg={12} md={12} justify="space-around">
+        <Grid container lg={12} sm={12} md={12} justify="space-around">
           {machines?.map((item, index) => (
-            <Grid item lg={2} md={2}>
+            <Grid item lg={2} sm={4} md={2}>
               <Paper elevation={2} className={classes.paper}></Paper>
               <Typography className={classes.text}>
-                {item.machine.name}
+                {item.machine.name} 
               </Typography>
             </Grid>
           ))}

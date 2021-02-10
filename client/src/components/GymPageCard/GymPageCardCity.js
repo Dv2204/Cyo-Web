@@ -113,7 +113,7 @@ const Cards = () => {
   return (
     <>
       <Grid container sm={12} md={12} lg={12} justify="center">
-        <Grid item lg={7} md={7} justify="center" style={{ width: "100%" }}>
+        <Grid item sm={12} lg={7} md={7} justify="center" style={{ width: "100%" }}>
           <Grid container xs={12}  sm={12} lg={12} md={12}>
             <Grid item xs={4} sm={2} lg={1} md={1}>
               <PinDropIcon fontSize="large" className={classes.icon} />
@@ -137,7 +137,7 @@ const Cards = () => {
                 </IconButton>
               </Paper>
             </Grid>
-            <Grid item xs={12} lg={3} md={3}>
+            <Grid item xs={12} lg={3} md={3} sm={3}>
               <Chip
                 className={classes.select}
                 label="Clear Filter"

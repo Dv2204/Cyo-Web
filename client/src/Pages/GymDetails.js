@@ -78,7 +78,7 @@ const GymDetails = (props) => {
           </Grid>
         </Grid>
         <Grid container lg={12} md={12} sm={12} justify="center">
-          <Grid item lg={8} md={8}>
+          <Grid item lg={8} sm={12} md={8}>
             <Typography
               variant="body1"
               className={classes.body}

@@ -27,13 +27,18 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       fontSize: "2rem",
       textAlign: "center",
+      paddingTop: "2rem",
+      paddingBottom: "0.4rem",
     },
   },
   selection: {
     textAlign: "center",
     color: "#000",
     zIndex: "90",
-    marginBottom: "4rem",
+    marginBottom: "4rem",    
+    [theme.breakpoints.down("sm")]: {
+      marginBottom: "1rem",  
+    },
   },
   btn: {
     backgroundColor: "#FD5A1F",
@@ -76,6 +81,12 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "1rem",
       marginBottom: "1rem",
     },
+    [theme.breakpoints.down("sm")]: {
+      height: "2rem",
+      width: "auto",
+      marginTop: "1rem",
+      marginBottom: "1rem",
+    },
   },
   select: {
     backgroundColor: "rgba(255, 190, 157, 1)",
@@ -95,6 +106,10 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "1rem",
       padding: "0.3rem 1.3rem",
     },
+    [theme.breakpoints.down("sm")]: {
+      padding: "0.1rem 1.3rem",
+      fontSize: "10px",
+    },
   },
   root: {
     padding: "1px 4px",
@@ -105,12 +120,20 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       width: "89vw",
     },
+    [theme.breakpoints.down("sm")]: {
+      width: "59vw",
+      marginTop:"0rem",
+      marginLeft: "8rem",
+    },
   },
   input: {
     marginLeft: theme.spacing(1),
     flex: 1,
     zIndex: "90",
     color: "#fff",
+    [theme.breakpoints.down("sm")]: {
+      padding:"0rem !important"
+    },
   },
   iconButton: {
     padding: 10,
