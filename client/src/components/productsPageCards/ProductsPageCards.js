@@ -59,7 +59,7 @@ const ProductPageCards = () => {
   return (
     <>
       <Grid container xs={12} lg={12} md={12} justify="center">
-        <Grid xs={6} lg={8} md={8}>
+        <Grid xs={6} sm={6} lg={8} md={8}>
           <Paper className={classes.root} elevation={2}>
             <InputBase
               className={classes.input}
@@ -76,7 +76,7 @@ const ProductPageCards = () => {
             </IconButton>
           </Paper>
         </Grid>
-        <Grid item xs={3} lg={2} md={2}>
+        <Grid item xs={3} lg={2} sm={4} md={2}>
           <Typography
             variant="h5"
             onClick={() => clearFilter()}
@@ -94,12 +94,12 @@ const ProductPageCards = () => {
 
       {filteredProduct?.searchProduct?.length > 0
         ? filteredProduct.searchProduct.map((item, index) => (
-            <Grid item xs={12} lg={4} md={4} key={item.id}>
+            <Grid item xs={12} lg={4} md={4} sm={4} key={item.id}>
               <Grid container justify="center">
-                <Grid item xs={12} lg={6} md={6}>
+                <Grid item xs={12} lg={6} md={6} sm={12}>
                   <Paper elevation={2} className={classes.paper}>
                     <Grid container justify="center">
-                      <Grid item lg={12} md={12}>
+                      <Grid item lg={12} md={12} sm={12}>
                         <img
                           className={classes.images}
                           src={`${IMAGE_URL}${item.image}`}
@@ -125,12 +125,12 @@ const ProductPageCards = () => {
             </Grid>
           ))
         : products.products.map((item, index) => (
-            <Grid item xs={12} lg={4} md={4} key={item.id}>
+            <Grid item xs={12} lg={4} md={4} sm={4} key={item.id}>
               <Grid container justify="center">
-                <Grid item xs={12} lg={6} md={6}>
+                <Grid item xs={12} lg={6} md={6} sm={12}>
                   <Paper elevation={2} className={classes.paper}>
                     <Grid container justify="center">
-                      <Grid item lg={12} md={12}>
+                      <Grid item lg={12} sm={12} md={12}>
                         <img
                           className={classes.images}
                           src={`${IMAGE_URL}${item.image}`}

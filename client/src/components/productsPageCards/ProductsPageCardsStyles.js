@@ -11,6 +11,10 @@ export const useStyles = makeStyles((theme) => ({
       margin: "0px 50px",
       marginTop: "20px",
     },
+    [theme.breakpoints.down("sm")]: {
+      margin: "0px 20px",
+      marginTop: "20px",
+    },
     "&:hover": {
       transition: "all 0.2s ease-out",
       boxShadow: "0px 10px 12px rgba(38, 38, 38, 0.7)",
@@ -22,23 +26,39 @@ export const useStyles = makeStyles((theme) => ({
   title: {
     color: "rgba(145, 145, 145, 1)",
     letterSpacing: "0.2rem",
+    marginLeft: "1rem",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "5rem",
+    },
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "2rem",
+      fontSize:"1.3rem"
     },
   },
   text: {
     color: "rgba(145, 145, 145, 1)",
+    marginLeft: "1.1rem",
+      fontSize: "1.3rem",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "5rem",
       fontSize: "1.2rem",
     },
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "2rem",
+      fontSize: "0.8rem",
+    },
   },
   mrp: {
     color: "rgba(145, 145, 145, 1)",
-    marginLeft: "2rem",
+    marginLeft: "1.2rem",
+      fontSize: "0.8rem",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "6rem",
       marginBottom: "2rem",
+    },
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "2.1rem",
+      fontSize: "0.6rem",
     },
   },
   icon: {

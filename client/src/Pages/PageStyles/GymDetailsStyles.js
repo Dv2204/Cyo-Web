@@ -19,6 +19,11 @@ export const useStyles = makeStyles((theme) => ({
       marginLeft: "5rem",
       height: "6vh",
     },
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "5rem",
+      height: "10vh",
+      marginLeft:"5rem"
+    },
   },
   facheading: {
     textAlign: "center",

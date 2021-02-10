@@ -32,6 +32,7 @@ const GymDetails = (props) => {
       <Grid
         container
         lg={12}
+        sm={12}
         md={12}
         justify="center"
         style={{ margin: "5rem" }}
@@ -52,7 +53,7 @@ const GymDetails = (props) => {
       <div style={{ backgroundColor: "rgba(248, 248, 248, 1)" }}>
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <DetailsNavBar toggle={toggle} />
-        <Grid container xs={12} lg={12} md={12} justify="center">
+        <Grid container xs={12} sm={12} lg={12} md={12} justify="center">
           <Grid item lg={8} md={8} sm={12} xs={12}>
             <DetailsCarousel
               images={detailData.gymDetail.gymimageSet}
@@ -62,11 +63,11 @@ const GymDetails = (props) => {
             />
           </Grid>
         </Grid>
-        <Grid container xs={12} lg={12} md={12}>
-          <Grid item xs={2} lg={1} md={1}>
+        <Grid container xs={12} lg={12} sm={12} md={12} >
+          <Grid item xs={2} sm={2} lg={1} md={1}>
             <img src={head} className={classes.headingicon} alt="Profile" />
           </Grid>
-          <Grid item xs={7} lg={11} md={11}>
+          <Grid item xs={7} sm={10} lg={11} md={11}>
             <Typography variant="h3" className={classes.heading}>
               {detailData.gymDetail.gym.name.length > 0 ? (
                 detailData.gymDetail.gym.name
@@ -76,7 +77,7 @@ const GymDetails = (props) => {
             </Typography>
           </Grid>
         </Grid>
-        <Grid container lg={12} md={12} justify="center">
+        <Grid container lg={12} md={12} sm={12} justify="center">
           <Grid item lg={8} md={8}>
             <Typography
               variant="body1"
