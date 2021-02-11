@@ -156,6 +156,7 @@ export const useStyles = makeStyles((theme) => ({
     height: "20vh",
     [theme.breakpoints.down("xs")]: {
       width: "80vw",
+      height: '15vh'
     },
   },
   alternateimage: {

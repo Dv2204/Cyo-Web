@@ -96,7 +96,7 @@ const ProductPageCards = () => {
         ? filteredProduct.searchProduct.map((item, index) => (
             <Grid item xs={12} lg={4} md={4} sm={4} key={item.id}>
               <Grid container justify="center">
-                <Grid item xs={12} lg={6} md={6} sm={12}>
+                <Grid item xs={10} lg={6} md={6} sm={12}>
                   <Paper elevation={2} className={classes.paper}>
                     <Grid container justify="center">
                       <Grid item lg={12} md={12} sm={12}>
@@ -127,7 +127,7 @@ const ProductPageCards = () => {
         : products.products.map((item, index) => (
             <Grid item xs={12} lg={4} md={4} sm={4} key={item.id}>
               <Grid container justify="center">
-                <Grid item xs={12} lg={6} md={6} sm={12}>
+                <Grid item xs={10} lg={6} md={6} sm={12}>
                   <Paper elevation={2} className={classes.paper}>
                     <Grid container justify="center">
                       <Grid item lg={12} sm={12} md={12}>

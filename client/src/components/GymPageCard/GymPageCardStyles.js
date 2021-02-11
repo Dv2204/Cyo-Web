@@ -16,8 +16,7 @@ export const useStyles = makeStyles((theme) => ({
       border: "1.4px solid #cccccc",
       cursor: "pointer",
     },
-    
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.only("sm")]: {
       marginLeft: "20px",
     },
   },
@@ -41,7 +40,7 @@ export const useStyles = makeStyles((theme) => ({
     width: theme.spacing(5),
     height: theme.spacing(5),
     paddingLeft: "10px",
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.only("sm")]: {
       width:"2rem",
       height:"2rem"
     },
@@ -63,7 +62,7 @@ export const useStyles = makeStyles((theme) => ({
       padding: "3px 0 3px 0",
       marginBottom: "5px",
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.only("sm")]: {
       display: "flex",
       flexDirection: "row",
       justifyContent: "center",
@@ -74,7 +73,7 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   tick:{
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.only("sm")]: {
       display: "none !important"
     },
   },
@@ -169,6 +168,7 @@ export const useStyles = makeStyles((theme) => ({
     height: "20vh",
     [theme.breakpoints.down("xs")]: {
       width: "80vw",
+      height: '15vh'
     },
   },
   alternateimage: {
