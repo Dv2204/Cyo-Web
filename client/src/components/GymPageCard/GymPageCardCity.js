@@ -1,17 +1,9 @@
 import React, { useState } from "react";
-import { Avatar, Typography, Grid, Paper, Chip } from "@material-ui/core";
-import head from "../../assets/2.PNG";
-import profile from "../../assets/compare.jpg";
+import { Grid, Paper, Chip } from "@material-ui/core";
 import { useStyles } from "./GymPageCardStyles";
-import BeenhereOutlinedIcon from "@material-ui/icons/BeenhereOutlined";
-import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
-import StarIcon from "@material-ui/icons/Star";
-import LocationOnIcon from "@material-ui/icons/LocationOn";
-import { Link } from "react-router-dom";
 import {
   ALL_GYMS,
   CITY_GYMS,
-  IMAGE_URL,
   SEARCH_GYMS,
 } from "../../graphql/requests";
 import { useQuery, useLazyQuery } from "@apollo/client";
@@ -122,15 +114,13 @@ const Cards = () => {
               <Paper className={classes.root} elevation={2}>
                 <InputBase
                   className={classes.input}
-                  placeholder="Search by city or name"
-                  // onChange={(e) => {searchText ? setText(e.target.value) :  setNameText(e.target.value)}}
+                  placeholder="Search by name o city"
                   onChange={onChangeHandler}
                 />
                 <IconButton
                   onMouseEnter={() => setIsShown(true)}
                   onMouseLeave={() => setIsShown(false)}
                   className={classes.iconButton}
-                  // onClick={() => {setText ? getGyms() : getNameGyms()}}
                   onClick={onClickHandler}
                 >
                   <SearchIcon />
