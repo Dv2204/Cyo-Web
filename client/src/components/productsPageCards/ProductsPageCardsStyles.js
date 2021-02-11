@@ -2,7 +2,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
   paper: {
-    // backgroundColor: "rgba(244, 0, 117, 0.42)",
     backgroundColor: "rgba(248, 248, 248, 1)",
     height: "38vh",
     marginTop: "6rem",
@@ -10,8 +9,9 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       margin: "0px 50px",
       marginTop: "20px",
+      height: '28vh'
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.only("sm")]: {
       margin: "0px 20px",
       marginTop: "20px",
     },
@@ -30,7 +30,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       marginLeft: "5rem",
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.only("sm")]: {
       marginLeft: "2rem",
       fontSize:"1.3rem"
     },
@@ -41,9 +41,9 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "1.3rem",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "5rem",
-      fontSize: "1.2rem",
+      fontSize: "1rem",
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.only("sm")]: {
       marginLeft: "2rem",
       fontSize: "0.8rem",
     },
@@ -56,7 +56,7 @@ export const useStyles = makeStyles((theme) => ({
       marginLeft: "6rem",
       marginBottom: "2rem",
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.only("sm")]: {
       marginLeft: "2.1rem",
       fontSize: "0.6rem",
     },
@@ -72,7 +72,7 @@ export const useStyles = makeStyles((theme) => ({
     borderRadius: "13px",
     BackgroundSize: "cover",
     [theme.breakpoints.down("xs")]: {
-      width: "63.2vw",
+      height: '28vh'
     },
   },
   root: {

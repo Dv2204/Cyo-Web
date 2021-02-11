@@ -24,14 +24,14 @@ export const useStyles = makeStyles((theme) => ({
     letterSpacing: "0.2rem",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "5rem",
-      fontSize: '24px'
+      fontSize: '1.3rem'
     },
   },
   text: {
     color: "#FFF",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "5rem",
-      fontSize: '17px'
+      fontSize: '1rem'
     },
   },
   mrp: {
