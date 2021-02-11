@@ -2,7 +2,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
   paper: {
-    // backgroundColor: "rgba(251, 217, 203, 1)",
     backgroundColor: "#3F3F3F",
     height: "38vh",
     marginTop: "6rem",
@@ -10,6 +9,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       margin: "0px 50px",
       marginTop: "20px",
+      height: '28vh'
     },
     "&:hover": {
       transition: "all 0.2s ease-out",
@@ -24,12 +24,14 @@ export const useStyles = makeStyles((theme) => ({
     letterSpacing: "0.2rem",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "5rem",
+      fontSize: '24px'
     },
   },
   text: {
     color: "#FFF",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "5rem",
+      fontSize: '17px'
     },
   },
   mrp: {
@@ -51,7 +53,7 @@ export const useStyles = makeStyles((theme) => ({
     borderRadius: "13px",
     BackgroundSize: "cover",
     [theme.breakpoints.down("xs")]: {
-      width: "63.2vw",
+      height: '28vh'
     },
   },
 }));
