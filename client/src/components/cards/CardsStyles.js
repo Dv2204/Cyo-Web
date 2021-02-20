@@ -122,9 +122,9 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "1rem",
       padding: "0.3rem 1.3rem",
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.only("sm")]: {
       fontSize: "0.8rem",
-      marginLeft: "7.85rem",
+      marginLeft: "1.85rem",
       marginTop: "1rem",
       padding: "0.3rem 1.3rem",
     },
