@@ -8,11 +8,10 @@ export const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     textAlign: "center",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "2.1rem",
-      marginLeft: '1.4rem'
+      fontSize: "2rem",
     },
     [theme.breakpoints.only("sm")]: {
-      fontSize: "2.3rem",
+      fontSize: "2.5rem",
       textAlign:"center"
     },
   },

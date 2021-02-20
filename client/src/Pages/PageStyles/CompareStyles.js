@@ -147,6 +147,6 @@ export const useStyles = makeStyles((theme) => ({
     zIndex: "90",
   },
   slideshow: {
-    zIndex: "-10",
+    zIndex: "-10"
   },
 }));
