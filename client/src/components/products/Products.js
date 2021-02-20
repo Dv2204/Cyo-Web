@@ -13,17 +13,15 @@ const Products = () => {
       style={{ backgroundColor: "#3F3F3F", paddingBottom: "5vh" }}
     >
       <Grid container lg={12} md={12} sm={12} justify="center">
-        <Grid item lg={6} md={6} sm={12}>
+        <Grid item lg={12} md={12} sm={12}>
           <Typography variant="h3" className={classes.heading} id="products">
             EXPLORE OUR PRODUCTS
           </Typography>
         </Grid>
       </Grid>
-      <Container fixed>
         <Grid container lg={12} md={12}>
           <ProductCards />
         </Grid>
-      </Container>
     </Grid>
   );
 };

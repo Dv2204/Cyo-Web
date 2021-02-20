@@ -43,13 +43,17 @@ const LandingPage = () => {
           </Grid>
           <ViewMore />
         </Container>
-        <Grid
+        <div style={{backgroundColor: "#3F3F3F"}}>
+        <Container fixed>
+      <Grid
           container
-          style={{ marginTop: "8rem", backgroundColor: "#3F3F3F" }}
+          style={{ marginTop: "8rem" }}
         >
           <Products />
           <ViewMoreProducts />
         </Grid>
+      </Container>
+        </div>
         <Grid container>
           <ConnectWithUs />
         </Grid>

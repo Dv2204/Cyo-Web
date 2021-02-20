@@ -30,12 +30,20 @@ export const useStyles = makeStyles((theme) => ({
       marginLeft: "5rem",
       fontSize: '1.3rem'
     },
+    [theme.breakpoints.only("sm")]: {
+      marginLeft: "2rem",
+      fontSize:"1.3rem"
+    },
   },
   text: {
     color: "#FFF",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "5rem",
       fontSize: '1rem'
+    },
+    [theme.breakpoints.only("sm")]: {
+      marginLeft: "2rem",
+      fontSize: "0.8rem",
     },
   },
   mrp: {
@@ -44,6 +52,10 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       marginLeft: "6rem",
       marginBottom: "2rem",
+    },
+    [theme.breakpoints.only("sm")]: {
+      marginLeft: "2.1rem",
+      fontSize: "0.6rem",
     },
   },
   icon: {
