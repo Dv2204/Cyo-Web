@@ -11,6 +11,10 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "20px",
       height: '28vh'
     },
+    [theme.breakpoints.only("sm")]: {
+      margin: "0px 20px",
+      marginTop: "20px",
+    },
     "&:hover": {
       transition: "all 0.2s ease-out",
       boxShadow: "0px 10px 12px rgba(38, 38, 38, 0.7)",
