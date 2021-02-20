@@ -32,8 +32,11 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   texthead: {
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("xs")]: {
       marginTop: "3.5rem",
+    },
+    [theme.breakpoints.only("sm")]: {
+      marginTop: 0,
     },
   },
 }));
