@@ -74,10 +74,10 @@ const Cards = () => {
       >
         <Grid item lg={7} md={7} justify="center">
           <Grid container xs={12} lg={12} md={12}>
-            <Grid item xs={4} lg={1} md={1}>
+            <Grid item sm={1} xs={4} lg={1} md={1}>
               <PinDropIcon fontSize="large" className={classes.icon} />
             </Grid>
-            <Grid xs={8} lg={8} md={8}>
+            <Grid sm={7} xs={8} lg={8} md={8}>
               <Paper className={classes.root} elevation={2}>
                 <InputBase
                   className={classes.input}
@@ -94,7 +94,7 @@ const Cards = () => {
                 </IconButton>
               </Paper>
             </Grid>
-            <Grid item xs={12} lg={3} md={3}>
+            <Grid item sm={4} xs={12} lg={3} md={3}>
               <Chip
                 className={classes.select}
                 label="Clear Filter"
@@ -193,6 +193,7 @@ const Cards = () => {
                       <Typography variant="body1" className={classes.body}>
                         {item.address}
                       </Typography>
+                     
                     </Grid>
                   </Grid>
                   <Grid container className={classes.row}>

@@ -35,6 +35,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("sm")]: {
       height: "60vh ",
       marginBottom: "5rem",
+      marginTop: "2rem",
     },
   },
   text: {
@@ -48,8 +49,8 @@ export const useStyles = makeStyles((theme) => ({
       padding: "1.8rem 1rem 0rem 1rem",
     },
     [theme.breakpoints.only("sm")]: {
-      fontSize: "2.8rem",
-      padding: "1.8rem 1rem 0rem 1rem",
+      fontSize: "2.2rem",
+      padding: "1.8rem 1rem 0rem 2rem",
     },
   },
   btn: {
@@ -70,7 +71,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.only("sm")]: {
       fontSize: "0.9rem",
-      margin: "1rem 1rem",
+      margin: "2rem 4rem",
       padding: "0rem 1rem",
     },
   },

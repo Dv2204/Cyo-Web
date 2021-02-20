@@ -24,7 +24,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "1.5rem",
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.only("sm")]: {
       fontSize: "2rem",
       textAlign: "center",
       paddingTop: "2rem",
@@ -58,7 +58,7 @@ export const useStyles = makeStyles((theme) => ({
       boxShadow: "0px 5px 12px rgba(38, 38, 38, 0.5)",
       bottom: "-0.1rem",
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.only("sm")]: {
       fontSize: "1rem",
       textAlign: "center",
       padding: "1rem 2rem",
@@ -81,7 +81,7 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "1rem",
       marginBottom: "1rem",
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.only("sm")]: {
       height: "2rem",
       width: "auto",
       marginTop: "1rem",
@@ -106,7 +106,7 @@ export const useStyles = makeStyles((theme) => ({
       marginTop: "1rem",
       padding: "0.3rem 1.3rem",
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.only("sm")]: {
       padding: "0.1rem 1.3rem",
       fontSize: "10px",
     },
@@ -120,7 +120,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       width: "89vw",
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.only("sm")]: {
       width: "59vw",
       marginTop:"0rem",
       marginLeft: "8rem",
