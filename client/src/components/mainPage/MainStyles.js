@@ -49,7 +49,7 @@ export const useStyles = makeStyles((theme) => ({
       padding: "1.8rem 1rem 0rem 1rem",
     },
     [theme.breakpoints.only("sm")]: {
-      fontSize: "2.2rem",
+      fontSize: "2.8rem",
       padding: "1.8rem 1rem 0rem 2rem",
     },
   },
@@ -65,13 +65,13 @@ export const useStyles = makeStyles((theme) => ({
       cursor: "pointer",
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: "0.5rem",
-      margin: "1rem 1.5rem",
-      padding: "0rem 1rem",
+      fontSize: "0.55rem",
+      margin: "1rem 0.6rem",
+      padding: "0 0.2rem",
     },
     [theme.breakpoints.only("sm")]: {
       fontSize: "0.9rem",
-      margin: "2rem 4rem",
+      margin: "1.5rem 1.5rem",
       padding: "0rem 1rem",
     },
   },
