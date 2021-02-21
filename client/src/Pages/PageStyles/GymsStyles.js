@@ -9,10 +9,10 @@ export const useStyles = makeStyles((theme) => ({
     letterSpacing: "0.1rem",
     textAlign: "center",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "3rem",
+      fontSize: "2.83rem",
     },
-    [theme.breakpoints.down("sm")]: {
-      fontSize: "4rem",
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "3.1rem",
     },
   },
 }));

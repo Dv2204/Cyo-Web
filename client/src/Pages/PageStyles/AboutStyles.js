@@ -10,14 +10,14 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   body: {
-    fontSize:"2.2vh",
+    fontSize:"2.6vh",
     [theme.breakpoints.down("xs")]: {
       margin: "2vh 12vw",
       fontSize: "2vh",
     },
     [theme.breakpoints.only("sm")]: {
       margin: "2vh 12vw",
-      fontSize: "2.5vh",
+      fontSize: "2.45vh",
     },
   },
   head: {

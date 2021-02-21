@@ -12,7 +12,7 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "2rem",
     },
     [theme.breakpoints.only("sm")]: {
-      fontSize: "2.5rem",
+      fontSize: "2.65rem",
       textAlign:'center'
     },
   },
