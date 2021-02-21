@@ -5,30 +5,36 @@ export const useStyles = makeStyles((theme) => ({
     width: "15vw",
     height: "15vw",
     [theme.breakpoints.down("xs")]: {
-      marginLeft: "28vw !important",
-      width: "50vw !important",
-      height: "50vw !important",
+      marginLeft: "27.5vw !important",
+      width: "45vw !important",
+      height: "45vw !important",
       alignSelf: "center !important",
     },
-    [theme.breakpoints.down("sm")]: {
-      width: "55vw",
-      height: "55vw",
-      alignSelf: "center",
+    [theme.breakpoints.only("sm")]: {
+      width: "19vw",
+      height: "19vw",
+      marginLeft: "40vw !important",
     },
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.only("md")]: {
       width: "15vw",
       height: "15vw",
       margin: "0px 5vw",
     },
   },
   name: {
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
+    },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.2rem",
     },
   },
   desig: {
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("xs")]: {
       fontSize: "0.8rem",
+    },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1rem",
     },
   },
   paper: {

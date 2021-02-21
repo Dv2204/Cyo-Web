@@ -12,12 +12,12 @@ export const useStyles = makeStyles((theme) => ({
   body: {
     fontSize:"2.2vh",
     [theme.breakpoints.down("xs")]: {
-      margin: "2vh 10vw",
-      fontSize: "2.2vh",
-    },
-    [theme.breakpoints.down("sm")]: {
       margin: "2vh 12vw",
       fontSize: "2vh",
+    },
+    [theme.breakpoints.only("sm")]: {
+      margin: "2vh 12vw",
+      fontSize: "2.5vh",
     },
   },
   head: {
@@ -28,13 +28,12 @@ export const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     fontWeight: "bold",
     [theme.breakpoints.down("xs")]: {
-      top: "10%",
-      fontSize: "9vw",
-      margin: "0.5vh 4vw",
-    },
-    [theme.breakpoints.down("sm")]: {
       top: "14%",
       fontSize: "7vw",
+    },
+    [theme.breakpoints.only("sm")]: {
+      top: "19%",
+      fontSize: "5vw",
     },
   },
 }));
