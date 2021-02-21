@@ -11,7 +11,7 @@ export const useStyles = makeStyles((theme) => ({
       textAlign: "center",
     },
     [theme.breakpoints.only("sm")]: {
-      fontSize: "2.4rem",
+      fontSize: "2.3rem",
       textAlign: "center",
     },
   },
@@ -41,7 +41,7 @@ export const useStyles = makeStyles((theme) => ({
       cursor: "pointer",
     },
     [theme.breakpoints.down("xs")]: {
-      padding: "0.2rem 1.5rem",
+      padding: "0.2rem 1.2rem",
       marginTop: "1.3rem",
     },
     [theme.breakpoints.only("sm")]: {
@@ -62,13 +62,12 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: "12rem",
     marginBottom: "1rem",
     [theme.breakpoints.down("xs")]: {
-      marginLeft: "2.5rem",
+      marginLeft: "2rem",
       fontSize: "1rem",
     },
     [theme.breakpoints.only("sm")]: {
-      // textAlign: "center",
-      marginLeft: "7rem",
-      fontSize: "1.4rem",
+      marginLeft: "16rem",
+      fontSize: "1.3rem",
     },
   },
   mac: {
