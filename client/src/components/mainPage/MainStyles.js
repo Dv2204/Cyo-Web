@@ -49,7 +49,7 @@ export const useStyles = makeStyles((theme) => ({
       padding: "1.8rem 1rem 0rem 1rem",
     },
     [theme.breakpoints.only("sm")]: {
-      fontSize: "2.2rem",
+      fontSize: "2.8rem",
       padding: "1.8rem 1rem 0rem 2rem",
     },
   },
@@ -71,7 +71,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.only("sm")]: {
       fontSize: "0.9rem",
-      margin: "2rem 4rem",
+      margin: "1.5rem 1.5rem",
       padding: "0rem 1rem",
     },
   },

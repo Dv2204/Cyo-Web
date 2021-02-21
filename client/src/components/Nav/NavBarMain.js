@@ -26,6 +26,10 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       cursor: "pointer",
     },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "0.8rem",
+      padding: "0.7rem 0.95rem",
+    },
   },
 }));
 
@@ -44,7 +48,9 @@ const NavBar = ({ toggle }) => {
               <img className="Logo" src={Logo} alt="logo" />
             </NavLink>
             <NavLink to="/">
-              <h2 className="LogoName" style={{fontFamily: "Bauman",}}>CYO GYMS</h2>
+              <h2 className="LogoName" style={{ fontFamily: "Bauman" }} >
+                CYO GYMS
+              </h2>
             </NavLink>
           </NavLogo>
           <NavMenu>

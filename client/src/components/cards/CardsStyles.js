@@ -35,6 +35,9 @@ export const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontWeight: "bold",
+      [theme.breakpoints.only("sm")]: {
+        fontSize:'1.1rem'
+      },
   },
   body: {
     fontSize: "14px",
