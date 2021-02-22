@@ -17,6 +17,9 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       marginLeft: "0.7rem",
     },
+    [theme.breakpoints.only("sm")]: {
+      marginLeft: "0.7rem",
+    },
   },
   line: {
     color: "grey",
@@ -29,8 +32,14 @@ export const useStyles = makeStyles((theme) => ({
     width: "3vw",
     borderRadius: "15px",
     [theme.breakpoints.down("xs")]: {
-      marginLeft: "5rem",
-      width: "11vw",
+      marginLeft: "9rem",
+      width: "13vw",
+      marginRight:'0.5rem',
+    },
+    [theme.breakpoints.only("sm")]: {
+      marginLeft: "70vw",
+      width: "5.5vw",
+      marginRight: '1rem'
     },
     [theme.breakpoints.between("md", "lg")]: {
      width: '3.8vw',
