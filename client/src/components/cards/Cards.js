@@ -15,6 +15,7 @@ import PinDropIcon from "@material-ui/icons/PinDrop";
 import InputBase from "@material-ui/core/InputBase";
 import IconButton from "@material-ui/core/IconButton";
 import SearchIcon from "@material-ui/icons/Search";
+import Slide from 'react-reveal/Slide';
 
 const Cards = () => {
   const classes = useStyles();
@@ -112,6 +113,7 @@ const Cards = () => {
       {filteredGym?.gym?.length > 0
         ? filteredGym.gym.map((item, index) => (
             <Grid item lg={4} md={4} sm={6} id="gym" className={classes.card}>
+            <Slide bottom>
               <Paper elevation={4} className={classes.paperNormal}>
                 <Grid container>
                   <Grid item xs={12} lg={12} md={12}>
@@ -217,11 +219,13 @@ const Cards = () => {
                   </Grid>
                 </Grid>
               </Paper>
+              </Slide>
             </Grid>
           ))
         : gym.gym.map((item, index) =>
             index < 9 ? (
               <Grid item lg={4} md={4} sm={6} id="gym" className={classes.card}>
+              <Slide bottom>
                 <Paper elevation={4} className={classes.paperNormal}>
                   <Grid container>
                     <Grid item lg={12} md={12}>
@@ -324,6 +328,7 @@ const Cards = () => {
                     </Grid>
                   </Grid>
                 </Paper>
+                </Slide>
               </Grid>
             ) : null
           )}

@@ -13,11 +13,17 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
     },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.3rem",
+    },
   },
   arrow:{
     [theme.breakpoints.down("xs")]:{
       fontSize: "1.2rem",
       marginBottom: "-0.31rem",
+    },
+    [theme.breakpoints.only("sm")]:{
+      fontSize: "1rem",
     },
   }
 }));
