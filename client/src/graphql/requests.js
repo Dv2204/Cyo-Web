@@ -200,6 +200,7 @@ export const GET_DETAIL = gql`
         machine {
           id
           name
+          image
         }
       }
       monthlyPrice

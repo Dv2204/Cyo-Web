@@ -11,9 +11,17 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   text: {
-    textAlign: 'center',
-    [theme.breakpoints.down("sm")]: {
+    textAlign: "center",
+    [theme.breakpoints.down("xs")]: {
       fontSize: "0.8rem",
     },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.1rem",
+    },
+  },
+  paperimage: {
+    height: "20vh",
+    width: "20vh",
+    borderRadius: "50%",
   },
 }));

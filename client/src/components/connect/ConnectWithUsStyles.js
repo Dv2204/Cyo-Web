@@ -64,6 +64,9 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.between("sm", "md")]: {
       display: "none",
     },
+    [theme.breakpoints.between("md", "lg")]: {
+      display: "none",
+    },
   },
   btn: {
     backgroundColor: "#000",
@@ -82,6 +85,9 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("sm")]: {
       fontSize: "15px",
       marginLeft: "20px",
+    },
+    [theme.breakpoints.between("md", "lg")]: {
+      marginBottom: '6rem'
     },
   },
 }));
