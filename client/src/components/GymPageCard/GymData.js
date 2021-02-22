@@ -11,11 +11,13 @@ import { Link } from "react-router-dom";
 import {
   IMAGE_URL,
 } from "../../graphql/requests";
+import Slide from 'react-reveal/Slide';
 
 const GymData = ({ item }) => {
     const classes = useStyles();
     return (
       <Grid item lg={4} sm={6} md={4} id="gym" className={classes.card}>
+      <Slide bottom>
         <Paper elevation={4} className={classes.paperNormal}>
           <Grid container>
             <Grid item lg={12} sm={12} md={12}>
@@ -107,6 +109,7 @@ const GymData = ({ item }) => {
             </Grid>
           </Grid>
         </Paper>
+        </Slide>
       </Grid>
     );
   };
