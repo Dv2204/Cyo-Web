@@ -5,6 +5,7 @@ import { ALL_PRODUCTS } from "../../graphql/requests";
 import { IMAGE_URL } from "../../graphql/requests";
 import { useQuery } from "@apollo/client";
 import Loader from "../Loader";
+import Slide from "react-reveal/Slide";
 
 const ProductCards = () => {
   const classes = useStyles();
@@ -37,17 +38,19 @@ const ProductCards = () => {
           <Grid item xs={12} lg={4} md={4} sm={4} key={item.id}>
             <Grid container justify="center">
               <Grid item xs={10} lg={6} md={6} sm={12}>
-                <Paper elevation={2} className={classes.paper}>
-                  <Grid container justify="center">
-                    <Grid item lg={12} md={12} sm={12}>
-                      <img
-                        className={classes.images}
-                        src={`${IMAGE_URL}${item.image}`}
-                        alt="Products"
-                      />
+                <Slide bottom>
+                  <Paper elevation={2} className={classes.paper}>
+                    <Grid container justify="center">
+                      <Grid item lg={12} md={12} sm={12}>
+                        <img
+                          className={classes.images}
+                          src={`${IMAGE_URL}${item.image}`}
+                          alt="Products"
+                        />
+                      </Grid>
                     </Grid>
-                  </Grid>
-                </Paper>
+                  </Paper>
+                </Slide>
                 <Typography variant="h5" className={classes.title}>
                   {item.title}
                 </Typography>
