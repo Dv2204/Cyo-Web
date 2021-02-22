@@ -32,6 +32,9 @@ export const useStyles = makeStyles((theme) => ({
       marginLeft: "5rem",
       width: "11vw",
     },
+    [theme.breakpoints.between("md", "lg")]: {
+     width: '3.8vw',
+    },
   },
   ratingIcon: {
     fontSize: "16px",
