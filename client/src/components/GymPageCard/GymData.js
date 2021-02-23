@@ -8,15 +8,13 @@ import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import StarIcon from "@material-ui/icons/Star";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import { Link } from "react-router-dom";
-import {
-  IMAGE_URL,
-} from "../../graphql/requests";
-import Slide from 'react-reveal/Slide';
+import { IMAGE_URL } from "../../graphql/requests";
+import Slide from "react-reveal/Slide";
 
 const GymData = ({ item }) => {
-    const classes = useStyles();
-    return (
-      <Grid item lg={4} sm={6} md={4} id="gym" className={classes.card}>
+  const classes = useStyles();
+  return (
+    <Grid item lg={4} sm={6} md={4} id="gym" className={classes.card}>
       <Slide bottom>
         <Paper elevation={4} className={classes.paperNormal}>
           <Grid container>
@@ -82,7 +80,7 @@ const GymData = ({ item }) => {
             <Grid container className={classes.row}>
               <Grid item lg={12} md={12}>
                 <Typography variant="caption" className={classes.location}>
-                  <LocationOnOutlinedIcon fontSize="small" />
+                  <LocationOnOutlinedIcon fontSize="small" className={classes.locationicon}/>
                   {item.city}
                 </Typography>
               </Grid>
@@ -90,7 +88,9 @@ const GymData = ({ item }) => {
             <Grid container className={classes.row}>
               <Grid item lg={12} md={12}>
                 <Typography variant="body1" className={classes.body}>
-                  {item.address}
+                  Weekly Price: {item.weeklyPrice} <br />
+                  Monthly Price: {item.monthlyPrice} <br />
+                  Quarterly Price: {item.quarterlyPrice}
                 </Typography>
               </Grid>
             </Grid>
@@ -109,9 +109,9 @@ const GymData = ({ item }) => {
             </Grid>
           </Grid>
         </Paper>
-        </Slide>
-      </Grid>
-    );
-  };
+      </Slide>
+    </Grid>
+  );
+};
 
-  export default GymData;
+export default GymData;

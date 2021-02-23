@@ -34,6 +34,9 @@ export const GET_GYM = gql`
         id
         name
       }
+      weeklyPrice
+      monthlyPrice
+      quarterlyPrice
       city
       pincode
       area
@@ -73,6 +76,9 @@ export const SEARCH_GYMS = gql`
         id
         name
       }
+      weeklyPrice
+      monthlyPrice
+      quarterlyPrice
       city
       pincode
       area
@@ -149,6 +155,9 @@ export const ALL_GYMS = gql`
         id
         name
       }
+      weeklyPrice
+      monthlyPrice
+      quarterlyPrice
       city
       pincode
       area
@@ -203,6 +212,7 @@ export const GET_DETAIL = gql`
           image
         }
       }
+      weeklyPrice
       monthlyPrice
       quarterlyPrice
       discountSet {
@@ -252,6 +262,9 @@ export const CITY_GYMS = gql`
         id
         name
       }
+      weeklyPrice
+      monthlyPrice
+      quarterlyPrice
       city
       pincode
       area

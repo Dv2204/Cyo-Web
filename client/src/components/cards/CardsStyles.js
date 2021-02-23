@@ -32,6 +32,14 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "13px",
     color: "grey",
     padding: "10px",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "11.5px",
+    },
+  },
+  locationicon:{
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "12px",
+    },
   },
   title: {
     fontWeight: "bold",
@@ -43,6 +51,13 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "14px",
     paddingLeft: "19px",
     paddingRight: "19px",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "11px",
+      letterSpacing: '0.1rem'
+    },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "12px",
+    },
   },
   small: {
     width: theme.spacing(5),
@@ -63,7 +78,7 @@ export const useStyles = makeStyles((theme) => ({
       flexDirection: "row",
       justifyContent: "center",
       alignItems: "center",
-      width: "10vw",
+      width: "9vw",
       padding: "3px 0 3px 0",
       marginBottom: "5px",
     },
