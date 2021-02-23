@@ -35,17 +35,23 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "11.5px",
     },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "11.5px",
+    },
   },
   locationicon:{
     [theme.breakpoints.down("xs")]: {
       fontSize: "12px",
     },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "14px",
+    },
   },
   title: {
     fontWeight: "bold",
-      [theme.breakpoints.only("sm")]: {
-        fontSize:'1.1rem'
-      },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "18px",
+    },
   },
   body: {
     fontSize: "14px",
@@ -87,7 +93,7 @@ export const useStyles = makeStyles((theme) => ({
       flexDirection: "row",
       justifyContent: "center",
       alignItems: "center",
-      width: "6vw",
+      width: "3.3vw",
       padding: "2px 0 2px 0",
       marginBottom: "15px",
     },
@@ -135,6 +141,10 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "10px",
       padding: "0 0.13rem",
+    },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "10.5px",
+      padding: "0 0.1rem",
     },
   },
   icon: {
