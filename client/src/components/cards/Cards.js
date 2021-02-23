@@ -15,7 +15,7 @@ import PinDropIcon from "@material-ui/icons/PinDrop";
 import InputBase from "@material-ui/core/InputBase";
 import IconButton from "@material-ui/core/IconButton";
 import SearchIcon from "@material-ui/icons/Search";
-import Slide from 'react-reveal/Slide';
+import Slide from "react-reveal/Slide";
 
 const Cards = () => {
   const classes = useStyles();
@@ -113,133 +113,21 @@ const Cards = () => {
       {filteredGym?.gym?.length > 0
         ? filteredGym.gym.map((item, index) => (
             <Grid item lg={4} md={4} sm={6} id="gym" className={classes.card}>
-            <Slide bottom>
-              <Paper elevation={4} className={classes.paperNormal}>
-                <Grid container>
-                  <Grid item xs={12} lg={12} md={12}>
-                    <Grid container item xs={12} className={classes.row}>
-                      <Grid item xs={12} lg={10} md={10}>
-                        <Grid container className={classes.top}>
-                          <Grid item xs={12} lg={2} md={2}>
-                            <Avatar
-                              src={head}
-                              alt="Profile"
-                              className={classes.small}
-                            />
-                          </Grid>
-                          <Grid item xs={12} lg={10} md={10}>
-                            <Typography variant="h6" className={classes.title}>
-                              {" "}
-                              {item.gym.name}{" "}
-                            </Typography>
-                            <Grid container>
-                              <Grid item xs={5} lg={2} md={2}>
-                                <Typography className={classes.rating}>
-                                  {item.rating}
-                                  <StarIcon className={classes.ratingIcon} />
-                                </Typography>
-                              </Grid>
-                              <Grid item xs={5} lg={10} md={10}>
-                                <Typography className={classes.count}>
-                                  {item.gym.counter} people
-                                </Typography>
-                              </Grid>
-                            </Grid>
-                          </Grid>
-                        </Grid>
-                      </Grid>
-                      <Grid item lg={2} md={2} xs={12}>
-                        <BeenhereOutlinedIcon
-                          fontSize="small"
-                          style={{
-                            color: "#11C62E",
-                            float: "right",
-                            justifyContent: "flex-end",
-                          }}
-                          className={classes.TickStyle}
-                        />
-                      </Grid>
-                    </Grid>
-                  </Grid>
-                  <Grid container justify="center" spacing={0}>
-                    <Grid item lg={12} md={12}>
-                      {item.gymimageSet.length > 0 ? (
-                        <img
-                          src={`${IMAGE_URL}${item.gymimageSet[0].image}`}
-                          alt="Profile"
-                          index={0}
-                          className={classes.avatarimage}
-                        />
-                      ) : (
-                        <img
-                          src={profile}
-                          alt="Profile"
-                          className={classes.avatarimage}
-                        />
-                      )}
-                    </Grid>
-                  </Grid>
-                  <Grid container className={classes.row}>
-                    <Grid item lg={12} md={12}>
-                      <Typography
-                        variant="caption"
-                        className={classes.location}
-                      >
-                        <LocationOnOutlinedIcon fontSize="small" />
-                        {item.city}
-                      </Typography>
-                    </Grid>
-                  </Grid>
-                  <Grid container className={classes.row}>
-                    <Grid item lg={12} md={12}>
-                      <Typography variant="body1" className={classes.body}>
-                        {item.address}
-                      </Typography>
-                     
-                    </Grid>
-                  </Grid>
-                  <Grid container className={classes.row}>
-                    <Grid item lg={10} md={10}>
-                      <Link
-                        to={`/gymdetails/${item.id}`}
-                        className={classes.nonunderlinelink}
-                      >
-                        <Chip
-                          label="View Details"
-                          className={classes.detailschip}
-                        />
-                      </Link>
-                    </Grid>
-                    <Grid item lg={2} md={2}>
-                      <LocationOnIcon
-                        fontSize="large"
-                        style={{ color: "#E93E7F" }}
-                      />
-                    </Grid>
-                  </Grid>
-                </Grid>
-              </Paper>
-              </Slide>
-            </Grid>
-          ))
-        : gym.gym.map((item, index) =>
-            index < 9 ? (
-              <Grid item lg={4} md={4} sm={6} id="gym" className={classes.card}>
               <Slide bottom>
                 <Paper elevation={4} className={classes.paperNormal}>
                   <Grid container>
-                    <Grid item lg={12} md={12}>
-                      <Grid container className={classes.row}>
-                        <Grid item lg={10} md={10}>
+                    <Grid item xs={12} lg={12} md={12}>
+                      <Grid container item xs={12} className={classes.row}>
+                        <Grid item xs={12} lg={10} md={10}>
                           <Grid container className={classes.top}>
-                            <Grid item lg={2} md={2}>
+                            <Grid item xs={12} lg={2} md={2}>
                               <Avatar
                                 src={head}
                                 alt="Profile"
                                 className={classes.small}
                               />
                             </Grid>
-                            <Grid item lg={10} md={10}>
+                            <Grid item xs={12} lg={10} md={10}>
                               <Typography
                                 variant="h6"
                                 className={classes.title}
@@ -248,13 +136,13 @@ const Cards = () => {
                                 {item.gym.name}{" "}
                               </Typography>
                               <Grid container>
-                                <Grid item lg={2} md={2}>
+                                <Grid item xs={5} lg={2} md={2}>
                                   <Typography className={classes.rating}>
                                     {item.rating}
                                     <StarIcon className={classes.ratingIcon} />
                                   </Typography>
                                 </Grid>
-                                <Grid item lg={10} md={10}>
+                                <Grid item xs={5} lg={10} md={10}>
                                   <Typography className={classes.count}>
                                     {item.gym.counter} people
                                   </Typography>
@@ -263,10 +151,15 @@ const Cards = () => {
                             </Grid>
                           </Grid>
                         </Grid>
-                        <Grid item lg={2} md={2}>
+                        <Grid item lg={2} md={2} xs={12}>
                           <BeenhereOutlinedIcon
                             fontSize="small"
-                            style={{ color: "#11C62E", float: "right" }}
+                            style={{
+                              color: "#11C62E",
+                              float: "right",
+                              justifyContent: "flex-end",
+                            }}
+                            className={classes.TickStyle}
                           />
                         </Grid>
                       </Grid>
@@ -295,7 +188,10 @@ const Cards = () => {
                           variant="caption"
                           className={classes.location}
                         >
-                          <LocationOnOutlinedIcon fontSize="small" />
+                          <LocationOnOutlinedIcon
+                            fontSize="small"
+                            className={classes.locationicon}
+                          />
                           {item.city}
                         </Typography>
                       </Grid>
@@ -303,7 +199,9 @@ const Cards = () => {
                     <Grid container className={classes.row}>
                       <Grid item lg={12} md={12}>
                         <Typography variant="body1" className={classes.body}>
-                          {item.address}
+                          Weekly Price: {item.weeklyPrice} <br />
+                          Monthly Price: {item.monthlyPrice} <br />
+                          Quarterly Price: {item.quarterlyPrice}
                         </Typography>
                       </Grid>
                     </Grid>
@@ -328,6 +226,122 @@ const Cards = () => {
                     </Grid>
                   </Grid>
                 </Paper>
+              </Slide>
+            </Grid>
+          ))
+        : gym.gym.map((item, index) =>
+            index < 9 ? (
+              <Grid item lg={4} md={4} sm={6} id="gym" className={classes.card}>
+                <Slide bottom>
+                  <Paper elevation={4} className={classes.paperNormal}>
+                    <Grid container>
+                      <Grid item lg={12} md={12}>
+                        <Grid container className={classes.row}>
+                          <Grid item lg={10} md={10}>
+                            <Grid container className={classes.top}>
+                              <Grid item lg={2} md={2}>
+                                <Avatar
+                                  src={head}
+                                  alt="Profile"
+                                  className={classes.small}
+                                />
+                              </Grid>
+                              <Grid item lg={10} md={10}>
+                                <Typography
+                                  variant="h6"
+                                  className={classes.title}
+                                >
+                                  {" "}
+                                  {item.gym.name}{" "}
+                                </Typography>
+                                <Grid container>
+                                  <Grid item lg={2} md={2}>
+                                    <Typography className={classes.rating}>
+                                      {item.rating}
+                                      <StarIcon
+                                        className={classes.ratingIcon}
+                                      />
+                                    </Typography>
+                                  </Grid>
+                                  <Grid item lg={10} md={10}>
+                                    <Typography className={classes.count}>
+                                      {item.gym.counter} people
+                                    </Typography>
+                                  </Grid>
+                                </Grid>
+                              </Grid>
+                            </Grid>
+                          </Grid>
+                          <Grid item lg={2} md={2}>
+                            <BeenhereOutlinedIcon
+                              fontSize="small"
+                              style={{ color: "#11C62E", float: "right" }}
+                            />
+                          </Grid>
+                        </Grid>
+                      </Grid>
+                      <Grid container justify="center" spacing={0}>
+                        <Grid item lg={12} md={12}>
+                          {item.gymimageSet.length > 0 ? (
+                            <img
+                              src={`${IMAGE_URL}${item.gymimageSet[0].image}`}
+                              alt="Profile"
+                              index={0}
+                              className={classes.avatarimage}
+                            />
+                          ) : (
+                            <img
+                              src={profile}
+                              alt="Profile"
+                              className={classes.avatarimage}
+                            />
+                          )}
+                        </Grid>
+                      </Grid>
+                      <Grid container className={classes.row}>
+                        <Grid item lg={12} md={12}>
+                          <Typography
+                            variant="caption"
+                            className={classes.location}
+                          >
+                            <LocationOnOutlinedIcon
+                              fontSize="small"
+                              className={classes.locationicon}
+                            />
+                            {item.city}
+                          </Typography>
+                        </Grid>
+                      </Grid>
+                      <Grid container className={classes.row}>
+                        <Grid item lg={12} md={12}>
+                          <Typography variant="body1" className={classes.body}>
+                            Weekly Price: {item.weeklyPrice} <br />
+                            Monthly Price: {item.monthlyPrice} <br />
+                            Quarterly Price: {item.quarterlyPrice}
+                          </Typography>
+                        </Grid>
+                      </Grid>
+                      <Grid container className={classes.row}>
+                        <Grid item lg={10} md={10}>
+                          <Link
+                            to={`/gymdetails/${item.id}`}
+                            className={classes.nonunderlinelink}
+                          >
+                            <Chip
+                              label="View Details"
+                              className={classes.detailschip}
+                            />
+                          </Link>
+                        </Grid>
+                        <Grid item lg={2} md={2}>
+                          <LocationOnIcon
+                            fontSize="large"
+                            style={{ color: "#E93E7F" }}
+                          />
+                        </Grid>
+                      </Grid>
+                    </Grid>
+                  </Paper>
                 </Slide>
               </Grid>
             ) : null

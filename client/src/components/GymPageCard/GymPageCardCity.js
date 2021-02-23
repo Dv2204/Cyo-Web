@@ -114,7 +114,7 @@ const Cards = () => {
               <Paper className={classes.root} elevation={2}>
                 <InputBase
                   className={classes.input}
-                  placeholder="Search by name o city"
+                  placeholder="Search by name or city"
                   onChange={onChangeHandler}
                 />
                 <IconButton
