@@ -2,17 +2,16 @@ import React, { useState } from "react";
 import { Typography, Paper, Grid } from "@material-ui/core";
 import { useStyles } from "./ProductsPageCardsStyles";
 import { ALL_PRODUCTS } from "../../graphql/requests";
-import { IMAGE_URL } from "../../graphql/requests";
 import { useQuery, useLazyQuery } from "@apollo/client";
 import Loader from "../Loader";
 import InputBase from "@material-ui/core/InputBase";
 import IconButton from "@material-ui/core/IconButton";
 import SearchIcon from "@material-ui/icons/Search";
 import { SEARCH_PRODUCT } from "../../graphql/requests";
-import Slide from "react-reveal/Slide";
 import ProductsDropdown from "../dropdown/productsDropdown";
+import ProductData from './ProductData';
 
-const ProductPageCards = () => {
+const ProductPageCards = (props) => {
   const classes = useStyles();
   const [searchText, setText] = useState(" ");
   const [isShown, setIsShown] = useState(false);
@@ -59,6 +58,18 @@ const ProductPageCards = () => {
   const clearFilter = () => {
     setText(" ");
   };
+
+  const renderComponent = () => {
+    if (filteredProduct?.searchProduct?.length > 0) {
+      return filteredProduct.searchProduct.map((item, index) => (
+        <ProductData item={item} key={index} />
+      ));
+    } else {
+      return products.products.map((item, index) => (
+        <ProductData item={item} key={index} />
+      ));
+    }
+  };
   return (
     <>
       <Grid container xs={12} lg={12} md={12} justify="center">
@@ -103,73 +114,7 @@ const ProductPageCards = () => {
         </Grid>
       </Grid>
 
-      {filteredProduct?.searchProduct?.length > 0
-        ? filteredProduct.searchProduct.map((item, index) => (
-            <Grid item xs={12} lg={4} md={4} sm={4} key={item.id}>
-              <Grid container justify="center">
-                <Grid item xs={10} lg={6} md={6} sm={12}>
-                  <Slide bottom>
-                    <Paper elevation={2} className={classes.paper}>
-                      <Grid container justify="center">
-                        <Grid item lg={12} md={12} sm={12}>
-                          <img
-                            className={classes.images}
-                            src={`${IMAGE_URL}${item.image}`}
-                            alt="Products"
-                          />
-                        </Grid>
-                      </Grid>
-                    </Paper>
-                  </Slide>
-                  <Typography variant="h5" className={classes.title}>
-                    {item.title}
-                  </Typography>
-                  <Typography variant="h5" className={classes.text}>
-                    ₹{item.discountedPrice} only
-                  </Typography>
-                  <Typography variant="caption" className={classes.mrp}>
-                    <span style={{ textDecoration: "line-through" }}>
-                      {" "}
-                      MRP: ₹{item.basePrice}
-                    </span>
-                  </Typography>
-                </Grid>
-              </Grid>
-            </Grid>
-          ))
-        : products.products.map((item, index) => (
-            <Grid item xs={12} lg={4} md={4} sm={4} key={item.id}>
-              <Grid container justify="center">
-                <Grid item xs={10} lg={6} md={6} sm={12}>
-                  <Slide bottom>
-                    <Paper elevation={2} className={classes.paper}>
-                      <Grid container justify="center">
-                        <Grid item lg={12} sm={12} md={12}>
-                          <img
-                            className={classes.images}
-                            src={`${IMAGE_URL}${item.image}`}
-                            alt="Products"
-                          />
-                        </Grid>
-                      </Grid>
-                    </Paper>
-                  </Slide>
-                  <Typography variant="h5" className={classes.title}>
-                    {item.title}
-                  </Typography>
-                  <Typography variant="h5" className={classes.text}>
-                    ₹{item.discountedPrice} only
-                  </Typography>
-                  <Typography variant="caption" className={classes.mrp}>
-                    <span style={{ textDecoration: "line-through" }}>
-                      {" "}
-                      MRP: ₹{item.basePrice}
-                    </span>
-                  </Typography>
-                </Grid>
-              </Grid>
-            </Grid>
-          ))}
+      {renderComponent()}
     </>
   );
 };

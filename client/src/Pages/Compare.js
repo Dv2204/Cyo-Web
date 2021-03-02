@@ -126,9 +126,8 @@ const Compare = () => {
               <Typography
                 variant="h2"
                 className={classes.text}
-                style={{ textAlign: "center" }}
+                style={{ textAlign: "center", zIndex: "2"  }}
                 justify="center"
-                style={{ zIndex: "2" }}
               >
                 COMPARE THE GYMS
               </Typography>
