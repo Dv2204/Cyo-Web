@@ -8,7 +8,7 @@ import Loader from "../Loader";
 import InputBase from "@material-ui/core/InputBase";
 import IconButton from "@material-ui/core/IconButton";
 import SearchIcon from "@material-ui/icons/Search";
-import { SEARCH_PRODUCT } from "../../graphql/requests";
+import { SEARCH_PRODUCT} from "../../graphql/requests";
 import Slide from "react-reveal/Slide";
 import ProductsDropdown from '../dropdown/productsDropdown';
 
@@ -31,6 +31,7 @@ const ProductPageCards = () => {
   ] = useLazyQuery(SEARCH_PRODUCT, {
     variables: { search: searchText },
   });
+
   if (productsLoading || filteredProductLoading) {
     return (
       <Grid
@@ -54,6 +55,7 @@ const ProductPageCards = () => {
     return <p style={{ color: "#fff" }}>{filteredProductError.message}</p>;
   }
 
+
   console.log(products);
   const clearFilter = () => {
     setText(" ");
@@ -61,7 +63,7 @@ const ProductPageCards = () => {
   return (
     <>
       <Grid container xs={12} lg={12} md={12} justify="center">
-        <Grid xs={6} sm={6} lg={8} md={8}>
+        <Grid xs={6} sm={6} lg={6} md={6}>
           <Paper className={classes.root} elevation={2}>
             <InputBase
               className={classes.input}
@@ -78,8 +80,8 @@ const ProductPageCards = () => {
             </IconButton>
           </Paper>
         </Grid>
-        <Grid item lg={2} md={2}>
-          <ProductsDropdown />
+        <Grid item lg={1} md={1}>
+          <ProductsDropdown  />
         </Grid>
         <Grid item xs={3} lg={2} sm={4} md={2}>
           <Typography

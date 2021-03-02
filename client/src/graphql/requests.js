@@ -323,7 +323,7 @@ export const ADD_MAIL = gql`
   }
 `;
 
-export const CATEGORY = gql`
+export const PRODUCT_CATEGORY = gql`
   query Category {
     category {
       id
