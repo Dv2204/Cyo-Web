@@ -92,7 +92,6 @@ export const useStyles = makeStyles((theme) => ({
   },
   filter: {
     color: "rgba(139, 139, 139, 1)",
-    marginLeft: "2rem",
     textAlign: "center",
     marginTop: "0.4rem",
     "&:hover": {

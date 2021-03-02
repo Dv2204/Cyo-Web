@@ -1,7 +1,7 @@
 import React from "react";
 import { Avatar, Typography, Grid, Paper, Chip } from "@material-ui/core";
 import head from "../../assets/2.PNG";
-import profile from "../../assets/compare.jpg";
+import profile from "../../assets/notFound.jpg";
 import { useStyles } from "./GymPageCardStyles";
 import BeenhereOutlinedIcon from "@material-ui/icons/BeenhereOutlined";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
