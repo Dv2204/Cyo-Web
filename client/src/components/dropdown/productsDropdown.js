@@ -2,12 +2,14 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 import { Menu, MenuItem, MenuButton, SubMenu } from "@szhsin/react-menu";
 import "@szhsin/react-menu/dist/index.css";
+import {useStyles} from './DropdownStyles.js';
 import {  Grid } from "@material-ui/core";
 import { PRODUCT_CATEGORY } from "../../graphql/requests";
 import Loader from "../Loader";
 
 
 const ProductsDropdown = () => {
+    const classes = useStyles();
   const {
     data: categoryData,
     loading: categoryLoading,
@@ -35,11 +37,10 @@ const ProductsDropdown = () => {
   }
 
   return (
-    <Menu menuButton={<MenuButton>Category</MenuButton>}>
+         <Menu menuButton={<MenuButton>Category</MenuButton>}>
     {categoryData.category.map((item, index) => (
         <MenuItem>{item.categoryName}</MenuItem>
     ))}
-    
     </Menu>
   );
 }

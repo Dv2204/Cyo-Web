@@ -8,9 +8,9 @@ import Loader from "../Loader";
 import InputBase from "@material-ui/core/InputBase";
 import IconButton from "@material-ui/core/IconButton";
 import SearchIcon from "@material-ui/icons/Search";
-import { SEARCH_PRODUCT} from "../../graphql/requests";
+import { SEARCH_PRODUCT } from "../../graphql/requests";
 import Slide from "react-reveal/Slide";
-import ProductsDropdown from '../dropdown/productsDropdown';
+import ProductsDropdown from "../dropdown/productsDropdown";
 
 const ProductPageCards = () => {
   const classes = useStyles();
@@ -55,7 +55,6 @@ const ProductPageCards = () => {
     return <p style={{ color: "#fff" }}>{filteredProductError.message}</p>;
   }
 
-
   console.log(products);
   const clearFilter = () => {
     setText(" ");
@@ -80,8 +79,13 @@ const ProductPageCards = () => {
             </IconButton>
           </Paper>
         </Grid>
-        <Grid item lg={1} md={1}>
-          <ProductsDropdown  />
+        <Grid
+          item
+          lg={1}
+          md={1}
+          style={{ marginLeft: "2rem", marginTop: "0.3rem" }}
+        >
+          <ProductsDropdown />
         </Grid>
         <Grid item xs={3} lg={2} sm={4} md={2}>
           <Typography
