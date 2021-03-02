@@ -322,3 +322,26 @@ export const ADD_MAIL = gql`
     }
   }
 `;
+
+export const CATEGORY = gql`
+  query Category {
+    category {
+      id
+      categoryName
+    }
+  }
+`;
+
+export const PRODUCTS = gql`
+  query Products($category: String) {
+    products(category: $category) {
+      id
+      title
+      image
+      description
+      basePrice
+      discountedPrice
+      discountValue
+    }
+  }
+`;

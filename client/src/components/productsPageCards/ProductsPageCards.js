@@ -10,6 +10,7 @@ import IconButton from "@material-ui/core/IconButton";
 import SearchIcon from "@material-ui/icons/Search";
 import { SEARCH_PRODUCT } from "../../graphql/requests";
 import Slide from "react-reveal/Slide";
+import ProductsDropdown from '../dropdown/productsDropdown';
 
 const ProductPageCards = () => {
   const classes = useStyles();
@@ -76,6 +77,9 @@ const ProductPageCards = () => {
               <SearchIcon />
             </IconButton>
           </Paper>
+        </Grid>
+        <Grid item lg={2} md={2}>
+          <ProductsDropdown />
         </Grid>
         <Grid item xs={3} lg={2} sm={4} md={2}>
           <Typography
