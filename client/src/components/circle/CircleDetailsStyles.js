@@ -6,14 +6,19 @@ export const useStyles = makeStyles((theme) => ({
     width: "20vh",
     backgroundColor: "rgba(196, 196, 196, 1)",
     borderRadius: "50%",
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.only("sm")]: {
       marginLeft: "1.5rem",
+    },
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: "1.5rem",
+      height: "15vh",
+      width: "15vh",
     },
   },
   text: {
     textAlign: "center",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "0.8rem",
+      fontSize: "0.95rem",
     },
     [theme.breakpoints.only("sm")]: {
       fontSize: "1.1rem",
@@ -23,5 +28,9 @@ export const useStyles = makeStyles((theme) => ({
     height: "20vh",
     width: "20vh",
     borderRadius: "50%",
+    [theme.breakpoints.down("xs")]: {
+      height: "15vh",
+      width: "15vh",
+    },
   },
 }));
