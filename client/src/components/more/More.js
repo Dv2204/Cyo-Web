@@ -15,8 +15,12 @@ const ViewMore = () => {
     >
       <Grid item lg={2} md={2}>
         <Typography>
-          <Link to="/gyms" className={classes.text}>
-            View More <DoubleArrowIcon className={classes.arrow}/>
+          <Link
+            to="/gyms"
+            className={classes.text}
+            style={{ fontFamily: "Poppins" }}
+          >
+            View More <DoubleArrowIcon className={classes.arrow} />
           </Link>{" "}
         </Typography>
       </Grid>

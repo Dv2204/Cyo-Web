@@ -39,7 +39,13 @@ const About = () => {
               className={classes.body}
               style={{ textAlign: "center", marginBottom: "10vh" }}
             >
-              <Typography style={{ fontSize: "3vh", fontWeight: "bold" }}>
+              <Typography
+                style={{
+                  fontSize: "3vh",
+                  fontWeight: "bold",
+                  fontFamily: "Poppins",
+                }}
+              >
                 WHO ARE WE
               </Typography>{" "}
               We are a team of Passionate designer, Developers and Programmers
@@ -53,6 +59,7 @@ const About = () => {
                   fontSize: "3vh",
                   fontWeight: "bold",
                   marginTop: "0.9rem",
+                  fontFamily: "Poppins",
                 }}
               >
                 OUR MISSION
@@ -68,6 +75,7 @@ const About = () => {
                   fontSize: "3vh",
                   fontWeight: "bold",
                   marginTop: "0.9rem",
+                  fontFamily: "Poppins",
                 }}
               >
                 TEAMWORK
@@ -82,6 +90,7 @@ const About = () => {
                   fontSize: "3vh",
                   fontWeight: "bold",
                   marginTop: "0.9rem",
+                  fontFamily: "Poppins",
                 }}
               >
                 HOW WE WORK
@@ -95,9 +104,7 @@ const About = () => {
             </Typography>
           </Grid>
           <Grid container md={12} lg={12} justify="center">
-            <Grid item lg={4} md={4} sm={12} xs={12}>
-              
-            </Grid>
+            <Grid item lg={4} md={4} sm={12} xs={12}></Grid>
             <Grid item lg={4}>
               <Developers
                 name="Rupesh Gaur"
@@ -106,9 +113,7 @@ const About = () => {
                 className={classes.dev}
               />
             </Grid>
-            <Grid item lg={4}>
-              
-            </Grid>
+            <Grid item lg={4}></Grid>
           </Grid>
           <Grid container md={12} lg={12} justify="center">
             <Grid item lg={4} md={4} sm={12} xs={12}>
@@ -168,9 +173,7 @@ const About = () => {
               />
             </Grid>
             <Grid item lg={4}>
-              <Developers 
-              name="Sushila Kaur" 
-              skill="Designer" pic={Sushila} />
+              <Developers name="Sushila Kaur" skill="Designer" pic={Sushila} />
             </Grid>
             <Grid item lg={4}>
               <Developers
@@ -181,9 +184,9 @@ const About = () => {
             </Grid>
           </Grid>
         </Grid>
-       <Grid container>
+        <Grid container>
           <ContactUsNew />
-       </Grid>
+        </Grid>
       </div>
     </>
   );

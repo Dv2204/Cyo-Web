@@ -26,14 +26,18 @@ const Developers = ({ name, skill, pic }) => {
             <Typography
               variant="h5"
               className={classes.name}
-              style={{ fontWeight: "bold", textAlign: "center" }}
+              style={{
+                fontWeight: "bold",
+                textAlign: "center",
+                fontFamily: "Poppins",
+              }}
             >
               {name}
             </Typography>
             <Typography
               variant="h6"
               className={classes.desig}
-              style={{ textAlign: "center" }}
+              style={{ textAlign: "center", fontFamily: "Poppins" }}
             >
               {skill}
             </Typography>

@@ -12,6 +12,7 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "4em",
   },
   text: {
+    fontFamily: "Ubuntu",
     paddingTop: "9rem",
     paddingBottom: "4rem",
     fontWeight: "bold",

@@ -9,7 +9,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       margin: "0px 50px",
       marginTop: "20px",
-      height: '28vh'
+      height: "28vh",
     },
     [theme.breakpoints.only("sm")]: {
       margin: "0px 20px",
@@ -24,22 +24,24 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   title: {
+    fontFamily: "Poppins",
     color: "#FFF",
     letterSpacing: "0.2rem",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "5rem",
-      fontSize: '1.3rem'
+      fontSize: "1.3rem",
     },
     [theme.breakpoints.only("sm")]: {
       marginLeft: "2rem",
-      fontSize:"1.3rem"
+      fontSize: "1.3rem",
     },
   },
   text: {
+    fontFamily: "Poppins",
     color: "#FFF",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "5rem",
-      fontSize: '1rem'
+      fontSize: "1rem",
     },
     [theme.breakpoints.only("sm")]: {
       marginLeft: "2rem",
@@ -47,6 +49,7 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   mrp: {
+    fontFamily: "Poppins",
     color: "#fff",
     marginLeft: "2rem",
     [theme.breakpoints.down("xs")]: {
@@ -69,7 +72,7 @@ export const useStyles = makeStyles((theme) => ({
     borderRadius: "13px",
     BackgroundSize: "cover",
     [theme.breakpoints.down("xs")]: {
-      height: '28vh'
+      height: "28vh",
     },
   },
 }));

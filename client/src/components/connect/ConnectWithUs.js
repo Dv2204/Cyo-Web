@@ -19,12 +19,20 @@ const ConnectWithUs = () => {
                     <Paper elevation={0} className={classes.vertical}></Paper>
                   </Grid>
                   <Grid item xs={11} lg={11} md={11} sm={11}>
-                    <Typography variant="h3" className={classes.heading}>
+                    <Typography
+                      variant="h3"
+                      className={classes.heading}
+                      style={{ fontFamily: "Ubuntu" }}
+                    >
                       CONNECT WITH US
                     </Typography>
                   </Grid>
                 </Grid>
-                <Typography variant="body1" className={classes.body}>
+                <Typography
+                  variant="body1"
+                  className={classes.body}
+                  style={{ fontFamily: "Roboto" }}
+                >
                   CYO GYMS introduced in 2020-2021 when our team realized that
                   users didn’t want to or couldn’t pay yearly gym membership
                   fees upfront. There was intent since everyone tried several

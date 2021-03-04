@@ -2,6 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
   text: {
+    fontFamily: "Ubuntu",
     paddingTop: "5rem",
     paddingBottom: "1.7rem",
     fontWeight: "bold",
@@ -13,7 +14,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.only("sm")]: {
       fontSize: "2.65rem",
-      textAlign:'center'
+      textAlign: "center",
     },
   },
 }));

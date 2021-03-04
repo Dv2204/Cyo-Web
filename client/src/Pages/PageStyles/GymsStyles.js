@@ -2,6 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
   text: {
+    fontFamily: "Ubuntu",
     paddingTop: "5rem",
     paddingBottom: "1.7rem",
     fontWeight: "bold",
