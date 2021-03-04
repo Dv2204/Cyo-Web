@@ -101,7 +101,7 @@ const Support = () => {
                 justify="center"
                 style={{ marginTop: "2.5rem" }}
               >
-                <Grid item lg={4} md={4} sm={10} xs={10}>
+                <Grid item lg={4} md={4} sm={4} xs={10}>
                   <TextField
                     id="input-with-icon-grid"
                     label="Name"
@@ -112,7 +112,7 @@ const Support = () => {
                     className={classes.textfield}
                   />
                 </Grid>
-                <Grid item lg={4} md={4} sm={10} xs={10}>
+                <Grid item lg={4} md={4} sm={4} xs={10}>
                   <TextField
                     id="input-with-icon-grid"
                     label="Mobile"
@@ -123,7 +123,7 @@ const Support = () => {
                     className={classes.textfieldtwo}
                   />
                 </Grid>
-                <Grid item lg={4} md={4} xs={10} sm={10}>
+                <Grid item lg={4} md={4} xs={10} sm={4}>
                   <TextField
                     id="input-with-icon-grid"
                     label="Email"
