@@ -26,6 +26,13 @@ const useStyles = makeStyles((theme) => ({
       cursor: "pointer",
     },
   },
+  links: {
+    padding: "0.3rem 0",
+    "&:hover": {
+      borderBottom: "2px solid #fff",
+      transform: "translateY(-8%)",
+    },
+  },
 }));
 
 const DetailsNavBar = ({ toggle }) => {
@@ -43,23 +50,25 @@ const DetailsNavBar = ({ toggle }) => {
               <img className="Logo" src={Logo} alt="logo" />
             </NavLink>
             <NavLink to="/">
-              <h2 className="LogoName" style={{fontFamily: "Bauman",}}>CYO GYMS</h2>
+              <h2 className="LogoName" style={{ fontFamily: "Bauman" }}>
+                CYO GYMS
+              </h2>
             </NavLink>
           </NavLogo>
           <NavMenu>
-            <NavLink to="/gyms" activeStyle>
+            <NavLink to="/gyms" activeStyle className={classes.links}>
               Gyms
             </NavLink>
             <Dot />
-            <NavLink to="/products" activeStyle>
+            <NavLink to="/products" activeStyle className={classes.links}>
               Products
             </NavLink>
             <Dot />
-            <NavLink to="/compare" activeStyle>
+            <NavLink to="/compare" activeStyle className={classes.links}>
               Compare
             </NavLink>
             <Dot />
-            <NavLink to="/support" activeStyle>
+            <NavLink to="/support" activeStyle className={classes.links}>
               Support
             </NavLink>
             <Chip label="Register Your Gym" className={classes.chipStyle} />

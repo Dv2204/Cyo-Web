@@ -26,6 +26,13 @@ const useStyles = makeStyles((theme) => ({
       cursor: "pointer",
     },
   },
+  links: {
+    padding: "0.3rem 0",
+    "&:hover": {
+      borderBottom: "2px solid #fff",
+      transform: "translateY(-8%)",
+    },
+  },
 }));
 
 
@@ -48,15 +55,15 @@ const PrivacyNav = ({ toggle }) => {
             </NavLink>
           </NavLogo>
           <NavMenu>
-            <NavLink to="/gyms" activeStyle>
+            <NavLink to="/gyms" activeStyle className={classes.links}>
               Gyms
             </NavLink>
             <Dot />
-            <NavLink to="/products" activeStyle>
+            <NavLink to="/products" activeStyle className={classes.links}>
               Products
             </NavLink>
             <Dot />
-            <NavLink to="/compare" activeStyle>
+            <NavLink to="/compare" activeStyle className={classes.links}>
               Compare
             </NavLink>
             <Chip label="Register Your Gym" className={classes.chipStyle} />

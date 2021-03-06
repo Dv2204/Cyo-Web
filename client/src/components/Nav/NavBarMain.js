@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
     padding: '0.3rem 0',
     "&:hover":{
       borderBottom:'2px solid #fff',
+      transform: 'translateY(-8%)',
     }
   }
 }));
