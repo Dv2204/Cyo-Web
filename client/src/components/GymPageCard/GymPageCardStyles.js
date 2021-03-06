@@ -34,7 +34,7 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "11.5px",
     },
   },
-  locationicon:{
+  locationicon: {
     [theme.breakpoints.down("xs")]: {
       fontSize: "12px",
     },
@@ -44,8 +44,10 @@ export const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontWeight: "bold",
+    marginLeft: "0.5rem",
     [theme.breakpoints.only("sm")]: {
       fontSize: "18px",
+      marginLeft: "0.14rem",
     },
   },
   body: {
@@ -54,7 +56,7 @@ export const useStyles = makeStyles((theme) => ({
     paddingRight: "19px",
     [theme.breakpoints.down("xs")]: {
       fontSize: "11px",
-      letterSpacing: '0.1rem'
+      letterSpacing: "0.1rem",
     },
     [theme.breakpoints.only("sm")]: {
       fontSize: "12px",
@@ -65,8 +67,8 @@ export const useStyles = makeStyles((theme) => ({
     height: theme.spacing(5),
     paddingLeft: "10px",
     [theme.breakpoints.only("sm")]: {
-      width:"2rem",
-      height:"2rem"
+      width: "2rem",
+      height: "2rem",
     },
   },
   rating: {
@@ -96,9 +98,9 @@ export const useStyles = makeStyles((theme) => ({
       marginBottom: "15px",
     },
   },
-  tick:{
+  tick: {
     [theme.breakpoints.only("sm")]: {
-      display: "none !important"
+      display: "none !important",
     },
   },
   ratingIcon: {
@@ -131,6 +133,7 @@ export const useStyles = makeStyles((theme) => ({
     padding: "0 0.17rem",
     marginLeft: "0.6rem",
     textDecoration: "none",
+    margin: "0.5rem 0",
     fontSize: "12px",
     "&:hover": {
       cursor: "pointer",
@@ -196,7 +199,7 @@ export const useStyles = makeStyles((theme) => ({
     height: "20vh",
     [theme.breakpoints.down("xs")]: {
       width: "80vw",
-      height: '15vh'
+      height: "15vh",
     },
   },
   alternateimage: {
