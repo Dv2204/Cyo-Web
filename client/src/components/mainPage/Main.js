@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import { Typography, Chip } from "@material-ui/core";
 import mainimage from "../../assets/newMain.png";
 import { useStyles } from "./MainStyles";
+// import Carouselmain from './carouselmain';
 
 const Main = () => {
   const classes = useStyles();
@@ -21,6 +22,7 @@ const Main = () => {
                     Feed your <br />
                     Focus
                   </Typography>
+                  {/* <Carouselmain/> */}
                   <Chip className={classes.btn} label="Get the App!"></Chip>
                 </Paper>
               </Grid>

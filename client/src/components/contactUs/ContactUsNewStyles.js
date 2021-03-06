@@ -418,4 +418,10 @@ export const useStyles = makeStyles((theme) => ({
       textDecoration: "none",
     },
   },
+  break:{
+    display: 'none',
+    [theme.breakpoints.down("xs")]: {
+      display: 'initial'
+    },
+  }
 }));
