@@ -364,11 +364,12 @@ export const useStyles = makeStyles((theme) => ({
   textfooter: {
     color: "#c4c4c4",
     textAlign: "center",
+    fontSize: '1rem',
     [theme.breakpoints.down("xs")]: {
-      fontSize: "0.95rem",
+      fontSize: "0.8rem",
     },
     [theme.breakpoints.only("sm")]: {
-      fontSize: "1.1rem",
+      fontSize: "0.9rem",
     },
   },
   footerlink: {
