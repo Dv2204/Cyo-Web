@@ -117,6 +117,26 @@ export const useStyles = makeStyles((theme) => ({
       display: "none",
     },
   },
+  menu: {
+    display: 'none',
+    [theme.breakpoints.down("xs")]: {
+      display: 'initial',
+      color: '#fff',
+      fontWeight: 'bold',
+      marginLeft: '3rem',
+      fontSize: '1.2rem',
+      letterSpacing: '0.3rem'
+    },
+  },
+  menuicons: {
+    display:'none',
+    [theme.breakpoints.down("xs")]: {
+      display: 'initial',
+      color: '#fff',
+      marginRight: '0.4rem',
+      marginBottom: '-0.3rem'
+    },
+  },
   pagestop: {
     color: "#fff",
     marginTop: "2.5rem",
@@ -126,7 +146,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
       marginTop: "1.2rem",
-      marginLeft: "9rem",
+      marginLeft: '3rem',
     },
     [theme.breakpoints.only("sm")]: {
       fontSize: "1.3rem",
@@ -141,7 +161,7 @@ export const useStyles = makeStyles((theme) => ({
     marginBottom: "0.4rem",
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
-      marginLeft: "6.96rem",
+      marginLeft: "3rem",
     },
     [theme.breakpoints.only("sm")]: {
       fontSize: "1.3rem",
@@ -156,7 +176,7 @@ export const useStyles = makeStyles((theme) => ({
     marginBottom: "0.4rem",
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
-      marginLeft: "9.35rem",
+      marginLeft: "3rem",
     },
     [theme.breakpoints.only("sm")]: {
       fontSize: "1.3rem",
@@ -176,7 +196,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
       marginTop: "0.1rem",
-      marginLeft: "6rem",
+      marginLeft: "3rem",
     },
     [theme.breakpoints.only("sm")]: {
       fontSize: "1.3rem",
@@ -194,7 +214,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
       marginTop: "0.1rem",
-      marginLeft: "6rem",
+      marginLeft: "3rem",
     },
     [theme.breakpoints.only("sm")]: {
       fontSize: "1.3rem",
@@ -211,7 +231,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
       marginTop: "0.1rem",
-      marginLeft: "8rem",
+      marginLeft: "3rem",
     },
     [theme.breakpoints.only("sm")]: {
       fontSize: "1.3rem",
@@ -227,7 +247,7 @@ export const useStyles = makeStyles((theme) => ({
     marginBottom: "0.4rem",
     [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
-      marginLeft: "8.9rem",
+      marginLeft: "3rem",
     },
     [theme.breakpoints.only("sm")]: {
       fontSize: "1.3rem",

@@ -17,6 +17,10 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import { Link } from "react-router-dom";
 import { ADD_MAIL } from "../../graphql/requests";
 import { useMutation } from "@apollo/client";
+import InfoIcon from '@material-ui/icons/Info';
+import PeopleIcon from '@material-ui/icons/People';
+import HelpIcon from '@material-ui/icons/Help';
+import PolicyIcon from '@material-ui/icons/Policy';
 import Loader from "../Loader";
 
 const ContactUsNew = () => {
@@ -155,18 +159,22 @@ const ContactUsNew = () => {
           <Grid item lg={4} md={4} xs={12} sm={12}>
             <Grid container>
               <Grid item lg={6} md={6} xs={12} sm={12}>
+              <Typography className={classes.menu}>MENU</Typography>
                 <Link to="/aboutgyms" className={classes.nonunderlinelink}>
                   <Typography variant="h6" className={classes.pagestop}>
+                  <InfoIcon className={classes.menuicons} />
                     About Us
                   </Typography>
                 </Link>
                 <Link to="/about" className={classes.nonunderlinelink}>
                   <Typography variant="h6" className={classes.pages}>
+                  <PeopleIcon className={classes.menuicons} />
                     About Developers
                   </Typography>
                 </Link>
                 <Link to="/support" className={classes.nonunderlinelink}>
                   <Typography variant="h6" className={classes.pagessupport}>
+                  <HelpIcon className={classes.menuicons}/>
                     Support
                   </Typography>
                 </Link>
@@ -181,6 +189,7 @@ const ContactUsNew = () => {
                     className={classes.pagestwotop}
                     style={{ textDecoration: "none" }}
                   >
+                  <PolicyIcon className={classes.menuicons} />
                     Licenses & Registration
                   </Typography>
                 </Link>
@@ -195,6 +204,7 @@ const ContactUsNew = () => {
           <Grid item lg={2} md={2} xs={12} sm={12}>
             <Link to="/privacypolicy" className={classes.nonunderlinelink}>
               <Typography variant="h6" className={classes.pagesthreetop}>
+              <PolicyIcon className={classes.menuicons} />
                 Privacy Policy
               </Typography>
             </Link>
@@ -204,11 +214,13 @@ const ContactUsNew = () => {
                 className={classes.pagesthree}
                 style={{ textDecoration: "none !important" }}
               >
+               <PolicyIcon className={classes.menuicons} />
                 API Policy
               </Typography>
             </Link>
             <Link to="/csrpolicy" className={classes.nonunderlinelink}>
               <Typography variant="h6" className={classes.pagesthree}>
+              <PolicyIcon className={classes.menuicons} />
                 CSR Policy
               </Typography>
             </Link>
