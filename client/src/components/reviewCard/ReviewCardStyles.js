@@ -35,12 +35,14 @@ export const useStyles = makeStyles((theme) => ({
   name: {
     marginLeft: "1.5rem",
     color: "#000000",
+    fontSize: '1rem',
     [theme.breakpoints.down("xs")]: {
       fontSize: "1.2rem",
       marginLeft: "1rem",
     },
   },
   text: {
+    fontSize: '0.9rem',
     [theme.breakpoints.down("xs")]: {
       fontSize: "0.8rem",
     },
