@@ -9,7 +9,7 @@ import IconButton from "@material-ui/core/IconButton";
 import SearchIcon from "@material-ui/icons/Search";
 import { SEARCH_PRODUCT } from "../../graphql/requests";
 import ProductsDropdown from "../dropdown/productsDropdown";
-import ProductData from './ProductData';
+import ProductData from "./ProductData";
 
 const ProductPageCards = (props) => {
   const classes = useStyles();
@@ -92,9 +92,7 @@ const ProductPageCards = (props) => {
         </Grid>
         <Grid
           item
-          lg={1}
-          md={1}
-          style={{ marginLeft: "2rem", marginTop: "0.3rem" }}
+          className={classes.categorycol}
         >
           <ProductsDropdown />
         </Grid>
