@@ -11,7 +11,7 @@ import { SEARCH_PRODUCT } from "../../graphql/requests";
 import ProductsDropdown from "../dropdown/productsDropdown";
 import ProductData from "./ProductData";
 
-const ProductPageCards = (props) => {
+const ProductPageCards = ({catid}) => {
   const classes = useStyles();
   const [searchText, setText] = useState(" ");
   const [isShown, setIsShown] = useState(false);
@@ -58,6 +58,8 @@ const ProductPageCards = (props) => {
   const clearFilter = () => {
     setText(" ");
   };
+
+  console.log(catid);
 
   const renderComponent = () => {
     if (filteredProduct?.searchProduct?.length > 0) {

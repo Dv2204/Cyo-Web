@@ -39,7 +39,7 @@ const ProductsDropdown = () => {
 
 const handleClick = (id) => {
   const catid = id
-  console.log(catid) 
+  console.log(catid)
 }
   return (
     <>
