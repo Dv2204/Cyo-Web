@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { useQuery } from "@apollo/client";
-import { Menu, MenuItem, MenuButton, SubMenu } from "@szhsin/react-menu";
-import "@szhsin/react-menu/dist/index.css";
 import { Grid } from "@material-ui/core";
 import { PRODUCT_CATEGORY } from "../../graphql/requests";
 import Loader from "../Loader";
+import { useStyles } from "./DropdownStyles";
 
 const ProductsDropdown = () => {
+  const classes = useStyles();
+  const [showMenu, setShowMenu] = useState(false);
+  const handleChange = (e) => {
+    setShowMenu(!showMenu);
+  };
   const {
     data: categoryData,
     loading: categoryLoading,
@@ -34,11 +38,22 @@ const ProductsDropdown = () => {
   }
 
   return (
-    <Menu menuButton={<MenuButton>Category</MenuButton>}>
-      {categoryData.category.map((item, index) => (
-        <MenuItem>{item.categoryName}</MenuItem>
-      ))}
-    </Menu>
+    <>
+      <button
+        onClick={handleChange}
+        style={{ color: "white", backgroundColor: "#000" }}
+      >
+        Category
+      </button>
+
+      {showMenu ? (
+        <div className={classes.menuitems}>
+          {categoryData.category.map((item, index) => (
+            <button>{item.categoryName}</button>
+          ))}
+        </div>
+      ) : null}
+    </>
   );
 };
 

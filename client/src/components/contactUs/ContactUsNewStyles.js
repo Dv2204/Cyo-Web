@@ -9,6 +9,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "1.7rem",
       textAlign: "center",
+      marginLeft: '0'
     },
     [theme.breakpoints.only("sm")]: {
       fontSize: "2.3rem",
@@ -131,6 +132,12 @@ export const useStyles = makeStyles((theme) => ({
   menuicons: {
     display:'none',
     [theme.breakpoints.down("xs")]: {
+      display: 'initial',
+      color: '#fff',
+      marginRight: '0.4rem',
+      marginBottom: '-0.3rem'
+    },
+    [theme.breakpoints.only("sm")]: {
       display: 'initial',
       color: '#fff',
       marginRight: '0.4rem',
