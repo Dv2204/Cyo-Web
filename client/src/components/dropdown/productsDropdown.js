@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useQuery } from "@apollo/client";
-import { Grid } from "@material-ui/core";
+import { Grid, Chip } from "@material-ui/core";
 import { PRODUCT_CATEGORY } from "../../graphql/requests";
 import Loader from "../Loader";
 import { useStyles } from "./DropdownStyles";
@@ -39,17 +39,15 @@ const ProductsDropdown = () => {
 
   return (
     <>
-      <button
+      <Chip
         onClick={handleChange}
-        style={{ color: "white", backgroundColor: "#000" }}
-      >
-        Category
-      </button>
-
+        className={classes.menu}
+        label="Category"
+      />
       {showMenu ? (
         <div className={classes.menuitems}>
           {categoryData.category.map((item, index) => (
-            <button>{item.categoryName}</button>
+            <Chip className={classes.menuchip} label={item.categoryName} />
           ))}
         </div>
       ) : null}
