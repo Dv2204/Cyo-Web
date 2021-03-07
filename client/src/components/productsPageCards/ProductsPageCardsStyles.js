@@ -122,7 +122,11 @@ export const useStyles = makeStyles((theme) => ({
   categorycol: {
     marginLeft: "2rem",
     marginTop: "0.45rem",
-    marginRight: "-1.5rem",
+    marginRight: "-1.7rem",
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: '1rem',
+      marginRight: '1rem'
+    },
     [theme.breakpoints.only("sm")]: {
       marginLeft: "1.4rem",
       marginRight: "-2.4rem",

@@ -9,7 +9,7 @@ export const useStyles = makeStyles((theme) => ({
       backgroundColor: "#c24e00",
     },
     "&:focus": {
-      backgroundColor: "#a34100",
+      backgroundColor: "#a34100"
     },
   },
   menuitems: {

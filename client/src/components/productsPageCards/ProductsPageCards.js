@@ -98,7 +98,7 @@ const ProductPageCards = (props) => {
         </Grid>
         <Grid item xs={3} lg={2} sm={4} md={2}>
           <Typography
-            variant="h5"
+            variant="h6"
             onClick={() => clearFilter()}
             className={classes.filter}
           >
