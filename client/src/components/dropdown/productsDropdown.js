@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { useQuery } from "@apollo/client";
-import { Menu, MenuItem, MenuButton, SubMenu } from "@szhsin/react-menu";
-import "@szhsin/react-menu/dist/index.css";
-import { Grid } from "@material-ui/core";
+import { Grid, Chip } from "@material-ui/core";
 import { PRODUCT_CATEGORY } from "../../graphql/requests";
 import Loader from "../Loader";
+import { useStyles } from "./DropdownStyles";
 
 const ProductsDropdown = () => {
+  const classes = useStyles();
+  const [showMenu, setShowMenu] = useState(false);
+  const handleChange = (e) => {
+    setShowMenu(!showMenu);
+  };
   const {
     data: categoryData,
     loading: categoryLoading,
@@ -33,12 +37,25 @@ const ProductsDropdown = () => {
     return <p style={{ color: "#fff" }}>{categoryError.message}</p>;
   }
 
+const handleClick = (id) => {
+  const catid = id
+  console.log(catid)
+}
   return (
-    <Menu menuButton={<MenuButton>Category</MenuButton>}>
-      {categoryData.category.map((item, index) => (
-        <MenuItem>{item.categoryName}</MenuItem>
-      ))}
-    </Menu>
+    <>
+      <Chip
+        onClick={handleChange}
+        className={classes.menu}
+        label="Category"
+      />
+      {showMenu ? (
+        <div className={classes.menuitems}>
+          {categoryData.category.map((item, index) => (
+            <Chip key={index} className={classes.menuchip} onClick={() => handleClick(item.id)} label={item.categoryName} />
+          ))}
+        </div>
+      ) : null}
+    </>
   );
 };
 

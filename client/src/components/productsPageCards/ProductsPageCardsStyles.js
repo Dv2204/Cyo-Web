@@ -9,7 +9,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       margin: "0px 50px",
       marginTop: "20px",
-      height: '28vh'
+      height: "28vh",
     },
     [theme.breakpoints.only("sm")]: {
       margin: "0px 20px",
@@ -32,13 +32,13 @@ export const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.only("sm")]: {
       marginLeft: "2rem",
-      fontSize:"1.3rem"
+      fontSize: "1.3rem",
     },
   },
   text: {
     color: "rgba(145, 145, 145, 1)",
     marginLeft: "1.1rem",
-      fontSize: "1.3rem",
+    fontSize: "1.3rem",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "5rem",
       fontSize: "1rem",
@@ -51,7 +51,7 @@ export const useStyles = makeStyles((theme) => ({
   mrp: {
     color: "rgba(145, 145, 145, 1)",
     marginLeft: "1.2rem",
-      fontSize: "0.8rem",
+    fontSize: "0.8rem",
     [theme.breakpoints.down("xs")]: {
       marginLeft: "6rem",
       marginBottom: "2rem",
@@ -72,7 +72,7 @@ export const useStyles = makeStyles((theme) => ({
     borderRadius: "13px",
     BackgroundSize: "cover",
     [theme.breakpoints.down("xs")]: {
-      height: '28vh'
+      height: "28vh",
     },
   },
   root: {
@@ -98,8 +98,13 @@ export const useStyles = makeStyles((theme) => ({
       cursor: "pointer",
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: "4vw",
+      fontSize: "4.2vw",
       marginBottom: "2rem",
+      marginTop: "0.5rem",
+    },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.1rem",
+      marginTop: "0.75rem",
     },
   },
   hover: {
@@ -112,6 +117,19 @@ export const useStyles = makeStyles((theme) => ({
     letterSpacing: "0.05rem",
     [theme.breakpoints.down("xs")]: {
       display: "none",
+    },
+  },
+  categorycol: {
+    marginLeft: "2rem",
+    marginTop: "0.45rem",
+    marginRight: "-1.7rem",
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: '1rem',
+      marginRight: '1rem'
+    },
+    [theme.breakpoints.only("sm")]: {
+      marginLeft: "1.4rem",
+      marginRight: "-2.4rem",
     },
   },
 }));

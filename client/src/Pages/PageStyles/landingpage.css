@@ -1,4 +1,4 @@
-.{
+. {
   box-sizing: border-box;
   overflow-x: hidden !important;
 }
@@ -19,7 +19,7 @@ img .phoneview {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ffa600;
+  background-color: #000;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -29,8 +29,4 @@ img .phoneview {
     width: 100vw !important;
     height: 100vh;
   }
-
-  /* .bla{
-        display: none ;
-    } */
 }
